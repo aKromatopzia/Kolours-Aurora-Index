@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<name>Ardling from One DND</name>
+	<element name="Ardling" type="Race" source="UA: 2022 - One DND" id="ID_UA_ODND_RACE_ARDLING">
+		<description>
+		<p>Celestial animals roam the Beastlands, a plane of untamed beauty and wild nature. Many of those otherworldly animals serve the Beast Lords, and in the early days of the multiverse, some of the animals evolved into bipedal forms. Among their number are Ardlings, people with beastlike heads, keen senses, and an innate connection to divine magic. Long ago, the ancestors of Ardlings migrated to the Material Plane, and Ardlings can now be found on many worlds.</p>
+		<p class="indent">An Ardling has a head resembling that of an animal. Depending on the animal, the Ardlingmight also have fur, feathers, or scales. Some little and others hulking, Ardlings are as varied as the animals they resemble.</p>
+		<h4>ARDLING TRAITS</h4>
+		<p>As an ardling, you have the following racial traits.</p>
+		<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+		<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 4–7 feet tall) or Small (about 3–4 feet tall), chosen when you select this Species</p>
+		<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+		<p class="indent"><strong><em>Animal Ancestry.</em></strong> You are descended from a Celestial animal. Choose one of the ancestry types below, then choose one of the example animals listed for that ancestry (or a similar animal); you gain the benefits of that ancestry, and your head resembles the head of the chosen animal:</p>
+		<li style="margin-left:1em;text-indent:-1em;"><strong>Climber (Bear, Cat, Lizard, Squirrel).</strong> You have hooked claws, sharp nails, or a serpentine tail. As a result, you have a Climb Speed equal to your Speed, and once per turn when you deal damage with your Unarmed Strike to a target, you can increase the damage to that target by an amount equal to your Proficiency Bonus.</li>
+		<li style="margin-left:1em;text-indent:-1em;"><strong>Flyer (Bat, Eagle, Owl, Raven).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
+		<li style="margin-left:1em;text-indent:-1em;"><strong>Racer (Deer, Dog, Horse, Triceratops).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
+		<li style="margin-left:1em;text-indent:-1em;"><strong>Swimmer (Crocodile, Dolphin, Frog, Shark).</strong> You can hold your breath for up to an hour at a time, and you have a Swim Speed equal to your Speed. In addition, you have Resistance to Cold Damage.</li>
+		<p class="indent"><strong><em>Divine Magic.</em></strong> You can innately channel minor divine magic; you know the Thaumaturgy Spell. Whenever you finish a Long Rest, you can replace that Spell with a different 0-level Spell from the Divine Spell list.</p>
+		<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for any Spell you cast with this trait (choose the ability when you select the Species).</p>
+		<p class="indent"><strong><em>Keen Senses.</em></strong> You have Proficiency in the Perception Skill.</p>
+		</description>
+		<rules>
+		<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ardling)" supports="Custom Ability Score Improvement Option" />
+		<select type="Racial Trait" name="Size (Ardling)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+		<stat name="innate speed" value="30" bonus="base" />  
+
+		<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		<select type="Language" name="Customized Language (Ardling)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+		<select type="Language" name="Language (Ardling)" supports="Standard||Exotic" />
+		
+		<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY" />
+		<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC" />
+		<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES" />
+		</rules>
+	</element>
+		<element name="Animal Ancestry" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY">
+			<description>
+				<p>You are descended from a Celestial animal. Choose one of the ancestry types below, then choose one of the example animals listed for that ancestry (or a similar animal); you gain the benefits of that ancestry, and your head resembles the head of the chosen animal.</p>
+				<ul class="unstyled">
+					<li style="margin-left:1em;text-indent:-1em;"><strong>Climber (Bear, Cat, Lizard, Squirrel).</strong> You have hooked claws, sharp nails, or a serpentine tail. As a result, you have a Climb Speed equal to your Speed, and once per turn when you deal damage with your Unarmed Strike to a target, you can increase the damage to that target by an amount equal to your Proficiency Bonus.</li>
+					<li style="margin-left:1em;text-indent:-1em;"><strong>Flyer (Bat, Eagle, Owl, Raven).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
+					<li style="margin-left:1em;text-indent:-1em;"><strong>Racer (Deer, Dog, Horse, Triceratops).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten 	times your Proficiency Bonus.</li>
+					<li style="margin-left:1em;text-indent:-1em;"><strong>Swimmer (Crocodile, Dolphin, Frog, Shark).</strong> You can hold your breath for up to an hour at a time, and you have a Swim Speed equal to your Speed. In addition, you have Resistance to Cold Damage.</li>
+				</ul>
+			</description>
+			<sheet display="false" />
+			<rules>
+				<select type="Racial Trait" name="Animal Ancestry" supports="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_CLIMBER|ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_FLYER|ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_RACER|ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER" />
+			</rules>
+		</element>
+		<element name="Climber" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_CLIMBER">
+		<supports>Animal Ancestry</supports>
+			<description>
+				<p>You have hooked claws, sharp nails, or a serpentine tail. As a result, you have a Climb Speed equal to your Speed, and once per turn when you deal damage with your Unarmed Strike to a target, you can increase the damage to that target by an amount equal to your Proficiency Bonus.</p>
+			</description>
+			<sheet>
+				<sheet action="Free Action">
+			<description>Increase the damage of your Unarmed Strike by an amount equal to your Proficiency Bonus.</description>
+		</sheet>
+		</sheet>
+	</element>
+		<element name="Flyer" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_FLYER">
+		<supports>Animal Ancestry</supports>
+			<description>
+				<p>You have vestigial wings. As a result, when you fall at least 10 feet, you can use your Reaction to safely glide downward, taking no damage from the fall. In addition, when you take the Jump Action, you can flap your wings to gain Advantage on that Action’s Ability Check.</p>
+			</description>
+			<sheet>
+				<sheet action="Reaction">
+			<description>When you fall at least 10 feet, you can use your Reaction to safely glide downward, taking no damage from the fall.</description>
+				</sheet>
+			</sheet>
+	</element>
+		<element name="Racer" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_RACER">
+		<supports>Animal Ancestry</supports>
+			<description>
+			<p>When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus. ({{racer:speed}} feet.)</p>
+			</description>
+			<sheet>
+				<description>
+				When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus. ({{racer:speed}} feet.)
+				</description>
+			</sheet>
+			<rules>
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+				<stat name="racer:speed" value="proficiency" />
+			</rules>
+		
+	</element>
+		<element name="Swimmer" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER">
+		<supports>Animal Ancestry</supports>
+		<description>
+			<p>You can hold your breath for up to an hour at a tim; A Swim Speed equal to your Speed; And Resistance to Cold Damage.</p>
+		</description>
+		<sheet>
+			<description>You can hold your breath for up to an hour at a time; A Swim Speed equal to your Speed; And Resistance to Cold Damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER" />
+		</rules>
+	</element>
+		<element name="Divine Magic" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC">
+		<description>
+			<p>You can innately channel minor divine magic; you know the Thaumaturgy Spell. Whenever you finish a Long Rest, you can replace that Spell with a different 0-level Spell from the Divine Spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Cantrip (Divine Magic)" supports="0,(Cleric||Druid)" />
+			<select type="Racial Trait" name="Spellcasting Ability (Divine Magic)" supports="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_INTELLIGENCE|ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_WISDOM|ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_CHARISMA" />
+		</rules>
+	</element>
+		<element name="Intelligence" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for the divine cantrip is Intelligence.</p>
+		</description>
+		<sheet alt="Divine Magic">
+			<description>Your spellcasting ability for the divine cantrip is Intelligence.</description>
+		</sheet>
+	</element>
+		<element name="Wisdom" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for the cantrip is Wisdom.</p>
+		</description>
+		<sheet alt="Divine Magic">
+			<description>Your spellcasting ability for the divine cantrip is Wisdom.</description>
+		</sheet>
+	</element>
+		<element name="Charisma" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p>Your spellcasting ability for the cantrip is Charisma.</p>
+		</description>
+		<sheet alt="Divine Magic">
+			<description>Your spellcasting ability for the cantrip is Charisma.</description>
+		</sheet>
+	</element>
+		<element name="Keen Senses" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES">
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"  requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Keen Senses)" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+</elements>
