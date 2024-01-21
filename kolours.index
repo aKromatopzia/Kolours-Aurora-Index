@@ -6,6 +6,9 @@
 		</update>
 	</info>
 	<files>
-		<file name="UA_2023_Bastions_and_Cantrips.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Bastions_and_Cantrips.xml" />	
+		<file name="UA_2023_Bastions_and_Cantrips.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Bastions_and_Cantrips.xml" />
+		<file name="race-ardling.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/ancestries/race-ardling.xml" />
+		<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
+		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 	</files>
 </index>
