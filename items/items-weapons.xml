@@ -3,10 +3,112 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
+	
+	
+	<!--Special-->
+	<!--Scythe-->
+	<element name="Scythe" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<description>
+			<p>
+				<i>You are proficient with this weapon if you are proficient with the halberd, glaive, or pike.</i>
+			</p>
+			<p>This farming tool has been dangerously refitted to serve as a killing edge on the battlefield. This weapon can only be effectively wielded with two hands.</p>
+			<p>On a hit, the scythe does 2d4 piercing damage. On a critical hit, a scythe instead deals 8d4 piercing damage. This weapon will critically hit on a 19 or 20.</p>
+			<p>You may also attack with the blade of the scythe instead of the point. This will do 2d6 slashing damage on a hit, but will not gain the scythes critical hit range or damage.</p>
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SCYTHE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="20 gp">–</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d6</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_SCYTHE</set>
+		</setters>
+	</element>
+	<element name="Special (Scythe)" type="Weapon Property" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SCYTHE">
+		<description>
+			<p>Rather than deal 2d6 slashing damage with its blade, you can attempt to strike with the scythe's point to deal 2d4 piercing damage. This attack instead has a critical range of 19-20 (which can compound with similar effects) and deals 8d4 piercing damage on a critical hit rather than dealing double the weapon's damage roll.</p>
+		</description>
+	</element>
+	<element name="Weapon Proficiency (Scythe)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_SCYTHE">
+		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SCYTHE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_SCYTHE" />
+		</rules>
+	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_SCYTHE" />
+		</rules>
+	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_SCYTHE" />
+		</rules>
+	</append>
+
+	<!--Battle Staff-->
+	<element name="Battle Staff" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_BATTLE_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,  ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+		<description>
+			<p>
+				<i>You are proficient with this weapon if you are proficient with the halberd, glaive, or pike; Otherwise, add only half your proficiency if you are proficient with a quarterstaff but not the previously-mentioned weapons.</i>
+			</p>
+			<p>
+				<i>>This counts as a MNK weapon.</i>
+			</p>
+			<p>This staff sports a much longer, heavier frame than your standard quarterstaff, letting you put some serious weight into your swings with it, but as a result, it can only be effectively wielded with two hands.</p>
+			<p>On a hit, a battle staff deals 2d6 bludgeoning damage.</p>
+			<p>Polearm Mastery and other effects that include that set of weapons affect the battle staff.</p>
+			<div element="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="20 gp">–</set>
+			<set name="weight" lb="5">5 lbs.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">2d6</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF</set>
+		</setters>
+	</element>
+	<element name="Weapon Proficiency (Battle Staff)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF">
+		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_BATTLE_STAFF, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
+		</rules>
+	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
+		</rules>
+	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
+		</rules>
+	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
+		</rules>
+	</append>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE">
+		<rules>
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
+		</rules>
+	</append>
 	
 	<!-- Exotic -->
 	<!-- Hand Cannon-->
