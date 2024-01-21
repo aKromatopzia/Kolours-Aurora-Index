@@ -41,26 +41,26 @@
 				<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_CLAW" />
 			</rules>
 		</append>
-		
-			<element name="Studded Knuckles" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_KNUCKLES">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
-		<description>
-			<p>
-				<i>This counts as a monk weapon</i>
-			</p>
-			<p>Most oftenly simply a leather strap with studs attached to its top, the simplicity of the weapon belies its effectiveness.</p>
-			<p>On a hit, it deals 1d4 piercing damage.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND" />
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="20 gp">–</set>
-			<set name="weight" lb="1">1 lbs.</set>
-			<set name="slot"></set>
-			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_KNUCKLES</set>
-		</setters>
-		
+
+		<element name="Studded Knuckles" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_KNUCKLES">
+			<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+			<description>
+				<p>
+					<i>This counts as a monk weapon</i>
+				</p>
+				<p>Most oftenly simply a leather strap with studs attached to its top, the simplicity of the weapon belies its effectiveness.</p>
+				<p>On a hit, it deals 1d4 piercing damage.</p>
+				<div element="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND" />
+			</description>
+			<setters>
+				<set name="category">Weapons</set>
+				<set name="cost" currency="20 gp">–</set>
+				<set name="weight" lb="1">1 lbs.</set>
+				<set name="slot"></set>
+				<set name="damage" type="slashing">1d4</set>
+				<set name="proficiency">ID_KOLOURS_PROFICIENCY_KNUCKLES</set>
+			</setters>
+		</element>
 		<element name="Weapon Proficiency (Knuckles)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_KNUCKLES">
 			<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
 		</element>
