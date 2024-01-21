@@ -26,7 +26,7 @@
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
-			<set name="cost" currency="20 gp">–</set>
+			<set name="cost" currency="5 sp">–</set>
 			<set name="weight" lb="1">1 lbs.</set>
 			<set name="slot"></set>
 			<set name="damage" type="slashing">1d4</set>
@@ -54,7 +54,7 @@
 			</description>
 			<setters>
 				<set name="category">Weapons</set>
-				<set name="cost" currency="20 gp">–</set>
+				<set name="cost" currency="5 sp">–</set>
 				<set name="weight" lb="1">1 lbs.</set>
 				<set name="slot"></set>
 				<set name="damage" type="slashing">1d4</set>
