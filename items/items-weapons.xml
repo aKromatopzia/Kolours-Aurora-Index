@@ -3,12 +3,73 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
-	
-	
+	<!--Universal Specials-->
+	<element name="Special (Free Hand)" type="Weapon Property" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND">
+		<description>
+			<p>The hand this weapon is equipped on still counts as a free hand, with the exception of the use of a shield or another weapon in the same hand.</p>
+		</description>
+	</element>
+	<!--Simple-->
+	<element name="Claw" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_CLAW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>
+				<i>This counts as a monk weapon</i>
+			</p>
+			<p>Most oftenly simply a leather strap with blades attached to its top, the simplicity of the weapon belies its effectiveness.</p>
+			<p>On a hit, it deals 1d4 slashing damage.</p>
+			<div element="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="20 gp">–</set>
+			<set name="weight" lb="1">1 lbs.</set>
+			<set name="slot"></set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_KOLOURS_PROFICIENCY_CLAW</set>
+		</setters>
+		
+		<element name="Weapon Proficiency (Claw)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_CLAW">
+			<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		</element>
+		<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
+			<rules>
+				<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_CLAW" />
+			</rules>
+		</append>
+		
+			<element name="Studded Knuckles" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_KNUCKLES">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		<description>
+			<p>
+				<i>This counts as a monk weapon</i>
+			</p>
+			<p>Most oftenly simply a leather strap with studs attached to its top, the simplicity of the weapon belies its effectiveness.</p>
+			<p>On a hit, it deals 1d4 piercing damage.</p>
+			<div element="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="20 gp">–</set>
+			<set name="weight" lb="1">1 lbs.</set>
+			<set name="slot"></set>
+			<set name="damage" type="slashing">1d4</set>
+			<set name="proficiency">ID_KOLOURS_PROFICIENCY_KNUCKLES</set>
+		</setters>
+		
+		<element name="Weapon Proficiency (Knuckles)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_KNUCKLES">
+			<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+		</element>
+		<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
+			<rules>
+				<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_KNUCKLES" />
+			</rules>
+		</append>
+		
 	<!--Special-->
 	<!--Scythe-->
 	<element name="Scythe" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SCYTHE">
@@ -18,8 +79,8 @@
 				<i>You are proficient with this weapon if you are proficient with the halberd, glaive, or pike.</i>
 			</p>
 			<p>This farming tool has been dangerously refitted to serve as a killing edge on the battlefield. This weapon can only be effectively wielded with two hands.</p>
-			<p>On a hit, the scythe does 2d4 piercing damage. On a critical hit, a scythe instead deals 8d4 piercing damage. This weapon will critically hit on a 19 or 20.</p>
-			<p>You may also attack with the blade of the scythe instead of the point. This will do 2d6 slashing damage on a hit, but will not gain the scythes critical hit range or damage.</p>
+			<p>On a hit, it deals 2d6 slashing damage.</p>
+			<p>You may also attack with the point of the scythe instead of the blade. the scythe does 2d4 piercing damage. On a critical hit, a scythe instead deals 8d4 piercing damage. This weapon will critically hit on a 19 or 20.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SCYTHE" />
 		</description>
 		<setters>
@@ -61,10 +122,10 @@
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING,  ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
 		<description>
 			<p>
-				<i>You are proficient with this weapon if you are proficient with the halberd, glaive, or pike; Otherwise, add only half your proficiency if you are proficient with a quarterstaff but not the previously-mentioned weapons.</i>
+				<i>You are proficient with this weapon if you are proficient with the halberd, glaive, pike, trident, or lance; Otherwise, add only half your proficiency if you are proficient with a quarterstaff but not the previously-mentioned weapons.</i>
 			</p>
 			<p>
-				<i>>This counts as a MNK weapon.</i>
+				<i>This counts as a MNK weapon.</i>
 			</p>
 			<p>This staff sports a much longer, heavier frame than your standard quarterstaff, letting you put some serious weight into your swings with it, but as a result, it can only be effectively wielded with two hands.</p>
 			<p>On a hit, a battle staff deals 2d6 bludgeoning damage.</p>
@@ -77,7 +138,6 @@
 			<set name="weight" lb="5">5 lbs.</set>
 			<set name="slot">twohand</set>
 			<set name="damage" type="bludgeoning">2d6</set>
-			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF</set>
 		</setters>
 	</element>
 	<element name="Weapon Proficiency (Battle Staff)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF">
@@ -110,10 +170,9 @@
 		</rules>
 	</append>
 	
-	<!-- Exotic -->
 	<!-- Hand Cannon-->
 	<element name="Hand Cannon, light" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
@@ -127,12 +186,12 @@
 			<set name="weight" lb="8">8 lbs.</set>
 			<set name="slot">twohand</set>
 			<set name="range">30ft. cone or 80/320ft.</set>
-			<set name="damage" type="piercing (cone) 4d8 or bludgeoning (single)">6d8</set>
+			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single)">4d8</set>
 			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
 	</element>
 	<element name="Hand Cannon, heavy" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
@@ -146,7 +205,7 @@
 			<set name="weight" lb="12">12 lbs.</set>
 			<set name="slot">twohand</set>
 			<set name="range">30ft. cone or 80/320ft.</set>
-			<set name="damage" type="piercing (cone) 4d8 or bludgeoning (single)">6d8</set>
+			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single)">4d8</set>
 			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
 	</element>
