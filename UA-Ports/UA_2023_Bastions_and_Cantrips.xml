@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Unearthed Arcana: Bastions And Cantrips</name>
+		<update version="0.0.1">
+			<file name="UA_2023_Spells.xml" url="" />
+		</update>
+	</info>
+
+<element name="Acid Splash" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_ACID_SPLASH">
+		<supports>Sorcerer, Wizard, Artificer</supports>
+		<description>
+			<p>You create an acidic bubble and hurl it at a point within range, where it explodes in a 5- foot-radius sphere. Each creature in that sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage</p>
+			<p class="indent">This spell’s damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">acid</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="True Strike" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_TRUE_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>Guided by a flash of magical insight, you make one attack with the weapon used in the spell’s casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon’s normal damage type (your choice).</p>
+			<p class="indent">Whether you choose to deal Radiant damage or the weapon’s normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">radiant</set>
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon with which you have proficiency</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Shillelagh" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_SHILLELAGH">
+		<supports>Druid</supports>
+		<description>
+			<p>A Club or Quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).</p>
+			<p>The spell ends early if you cast it again or if you let go of the weapon.</p>
+			<p class="indent">The weapon’s damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">force</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">Bonus Action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">mistletoe, a shamrock leaf, and a Club or Quarterstaff</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Spare the Dying" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_SPARE_THE_DYING">
+		<supports>Artificer, Cleric, Druid</supports>
+		<description>
+			<p>Choose a creature within range that has 0 Hit Points yet is alive. The creature becomes Stable.</p>
+			<p class="indent">The spell’s range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet)</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">15/30/60/120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Chill Touch" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_CHILL_TOUCH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You channel the chill of the grave toward one creature you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d10 Necrotic damage, and it can’t regain Hit Points until the end of your next turn.</p>
+			<p class="indent">This spell’s damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)</p>
+		</description>
+		<setters>
+			<set name="keywords">necrotic</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Blade Ward" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_BLADE_WAED">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You trace a sigil of warding, imposing Disadvantage on the creature’s attack roll against you.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">Reaction, which you take in response to a visible creature targeting you with a melee attack</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Produce Flame" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_PRODUCE_FLAME">
+		<supports>Druid</supports>
+		<description>
+			<p>A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The spell ends if you dismiss it as a Bonus Action or if you cast it again.</p>
+			<p>Until the spell ends, you can take a Cast a Spell action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.</p>
+			<p class="indent">This spell’s damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">fire</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Poison Spray" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_POISON_SPRAY">
+		<supports>Artificer, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You launch a mist of toxic energy at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.</p>
+			<p class="indent">This spell’s damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">poison</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+<element name="Friends" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_FRIENDS">
+		<supports>Artificer, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>You magically emanate a sense of friendship toward one visible creature within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn’t a Humanoid, if you’re fighting it, or if you have cast this spell on it within the past 24 hours.</p>
+			<p>The spell ends early if the target takesdamage or if you make an attack roll, deal damage, or force anyone to make a saving throw</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">some makeup</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
