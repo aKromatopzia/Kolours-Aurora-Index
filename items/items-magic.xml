@@ -2,7 +2,7 @@
 <elements>
 	<name>Custom Magic Items</name>
 	<info>
-		<description></description>
+		<description>Created for Sellswords Basin</description>
 		<update version="0.0.2">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>

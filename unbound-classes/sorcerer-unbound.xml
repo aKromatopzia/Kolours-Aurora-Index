@@ -1,5 +1,9 @@
 <elements>
 	<name>Sorcerer Unbound Optional Features</name>
+	<update version="0.1.1">
+		<file name="sorcerer-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/unbound-classes/sorcerer-unbound.xml" />
+	</update>
+	</info>
 	<!-- Extra Metamagic Options -->
 	<element name="Adjudicating Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_ADJUDICATING_SPELL">
 		<supports>Metamagic</supports>

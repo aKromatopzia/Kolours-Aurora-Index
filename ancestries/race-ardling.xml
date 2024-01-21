@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-	<name>Ardling from One DND</name>
+	<name>Ardling</name>
 	<info>
-		<description></description>
+		<description>Ported from UA 2023: One DND</description>
 		<update version="0.0.5">
 			<file name="race-ardling.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/ancestries/race-ardling.xml" />
 		</update>
