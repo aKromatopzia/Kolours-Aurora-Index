@@ -33,7 +33,7 @@
 		<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES" />
 		</rules>
 	</element>
-		<element name="Animal Ancestry" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY">
+		<element name="Animal Ancestry" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY">
 			<description>
 				<p>You are descended from a Celestial animal. Choose one of the ancestry types below, then choose one of the example animals listed for that ancestry (or a similar animal); you gain the benefits of that ancestry, and your head resembles the head of the chosen animal.</p>
 				<ul class="unstyled">
@@ -48,7 +48,7 @@
 				<select type="Racial Trait" name="Animal Ancestry" supports="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_CLIMBER|ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_FLYER|ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_RACER|ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER" />
 			</rules>
 		</element>
-		<element name="Climber" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_CLIMBER">
+		<element name="Climber" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_CLIMBER">
 		<supports>Animal Ancestry</supports>
 			<description>
 				<p>You have hooked claws, sharp nails, or a serpentine tail. As a result, you have a Climb Speed equal to your Speed, and once per turn when you deal damage with your Unarmed Strike to a target, you can increase the damage to that target by an amount equal to your Proficiency Bonus.</p>
@@ -59,7 +59,7 @@
 		</sheet>
 		</sheet>
 	</element>
-		<element name="Flyer" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_FLYER">
+		<element name="Flyer" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_FLYER">
 		<supports>Animal Ancestry</supports>
 			<description>
 				<p>You have vestigial wings. As a result, when you fall at least 10 feet, you can use your Reaction to safely glide downward, taking no damage from the fall. In addition, when you take the Jump Action, you can flap your wings to gain Advantage on that Action’s Ability Check.</p>
@@ -70,7 +70,7 @@
 				</sheet>
 			</sheet>
 	</element>
-		<element name="Racer" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_RACER">
+		<element name="Racer" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_RACER">
 		<supports>Animal Ancestry</supports>
 			<description>
 			<p>When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus. ({{racer:speed}} feet.)</p>
@@ -94,7 +94,7 @@
 			</rules>
 		
 	</element>
-		<element name="Swimmer" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER">
+		<element name="Swimmer" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER">
 		<supports>Animal Ancestry</supports>
 		<description>
 			<p>You can hold your breath for up to an hour at a tim; A Swim Speed equal to your Speed; And Resistance to Cold Damage.</p>
@@ -106,7 +106,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" requirements="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY_SWIMMER" />
 		</rules>
 	</element>
-		<element name="Divine Magic" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC">
+		<element name="Divine Magic" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC">
 		<description>
 			<p>You can innately channel minor divine magic; you know the Thaumaturgy Spell. Whenever you finish a Long Rest, you can replace that Spell with a different 0-level Spell from the Divine Spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for that cantrip (choose when you select this race).</p>
 		</description>
@@ -116,7 +116,7 @@
 			<select type="Racial Trait" name="Spellcasting Ability (Divine Magic)" supports="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_INTELLIGENCE|ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_WISDOM|ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_CHARISMA" />
 		</rules>
 	</element>
-		<element name="Intelligence" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_INTELLIGENCE">
+		<element name="Intelligence" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_INTELLIGENCE">
 		<compendium display="false" />
 		<description>
 			<p>Your spellcasting ability for the divine cantrip is Intelligence.</p>
@@ -125,7 +125,7 @@
 			<description>Your spellcasting ability for the divine cantrip is Intelligence.</description>
 		</sheet>
 	</element>
-		<element name="Wisdom" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_WISDOM">
+		<element name="Wisdom" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_WISDOM">
 		<compendium display="false" />
 		<description>
 			<p>Your spellcasting ability for the cantrip is Wisdom.</p>
@@ -134,7 +134,7 @@
 			<description>Your spellcasting ability for the divine cantrip is Wisdom.</description>
 		</sheet>
 	</element>
-		<element name="Charisma" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_CHARISMA">
+		<element name="Charisma" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_CHARISMA">
 		<compendium display="false" />
 		<description>
 			<p>Your spellcasting ability for the cantrip is Charisma.</p>
@@ -143,7 +143,7 @@
 			<description>Your spellcasting ability for the cantrip is Charisma.</description>
 		</sheet>
 	</element>
-		<element name="Keen Senses" type="Racial Trait" source="UA 2022 - ODND" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES">
+		<element name="Keen Senses" type="Racial Trait" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES">
 		<description>
 			<p>You have proficiency in the Perception skill.</p>
 		</description>
