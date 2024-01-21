@@ -14,7 +14,7 @@
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_EXOTIC_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
-			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence.</p>
+			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
 			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod - STR mod (max 0) negative while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod - STR mod (max 0). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
 			<p class="indent">It takes an Action to deploy or retrieve a hand cannon.</p>
 			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_HAND_CANNON" />

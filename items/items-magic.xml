@@ -3,26 +3,26 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
 	
-	<element name="Abyssal Huo-Chong, light" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_KOLOURS_MAGIC_ITEMS_INFERNAL_HUO_CHONG">
+	<element name="Abyssal Huo-Chong" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_KOLOURS_MAGIC_ITEMS_INFERNAL_HUO_CHONG">
 	<description>
 			<p>This hand cannon was constructed using materials from the plane of Abyss. In addition to its normal functions, the huo-chong has been modified to both act as a spellcasting focus and create its own ammunition when needed.</p>
 			<p class="indent">Add your spellcasting ability modifier to Attack rolls and DCs of Attacks made with this weapon.</p>
-			<p class="indent">s a Bonus Action, the infernal huo-chong can extend or retract a wooden rod with which to enable firing while held, or be deployed or retrieved.</p>
+			<p class="indent">As a Bonus Action, the infernal huo-chong can extend or retract a wooden rod with which to enable firing while held, or be deployed or retrieved.</p>
 			<p class="indent">The weapon can be made to fire while it lacks a projectile and/or smokepowder by consuming the item’s charges or user’s spell slots. It has 1d3 charges, recharging each dusk. When used in this way, its damage dice is instead 2d8 for spread shots and 3d8 for single shots, increasing by 1d8 for each spell level over 1st or each additional charge used.</p> 
 	</description>
 		<setters>
 			<set name="keywords">spellcasting, focus, hand cannon</set>
 			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">–</set>
+			<set name="cost" currency="gp">0</set>
 			<set name="attunement">true</set>
-			<set name="type" addition="Hand Cannon">Weapon</set>
+			<set name="type" addition="hand cannon">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="weapon">Hand Cannon, light||Hand Cannon, light||ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT||ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY</set>
+			<set name="weapon">Hand Cannon, light||ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT</set>
 			<set name="charges">1d3</set>
 		</setters>
 	</element>
