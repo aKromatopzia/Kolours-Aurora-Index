@@ -120,11 +120,11 @@
 	<requirements>ID_WOTC_XGTE_SORCERER_ARCHETYPE_SHADOW_MAGIC</requirements>
 		<description>
 			<p>Requirements: Shadow Magic</p>
-			<p>When you cast a spell with an area-of-effect, you can spend 2 or 3 sorcery points to cause the spell to leave behind a zone of magical shadow. The light level in the area of the spell goes down by one tier: From bright to dim, from dim to dark. It fades at the start of your next turn unless you spent 2 sorcery points for it to last until the spell ends. You can see in the area of this magical darkness as if it were one tier higher.</p>
+			<p>When you cast a spell with an area-of-effect, you can spend 2 or 3 sorcery points to cause the spell to leave behind a zone of magical shadow. The light level in the area of the spell goes down by one tier: From bright to dim, from dim to dark. It fades at the end of your next turn unless you spent 3 sorcery points for it to last until the spell ends. You can see in the area of this magical darkness as if it were one tier higher.</p>
 			<p class="indent">If any of this spell's area overlaps with an area of light created by another spell of its level or lower, the spell that created the light is dispelled.</p>
 		</description>
 		<sheet usage="2 or 3 sorcery points">
-			<description>When you cast a spell with an area-of-effect, you can spend 2 or 3 sorcery points to cause the spell to leave behind a zone of magical shadow. The light level in the area of the spell goes down by one tier: From bright to dim, from dim to dark. It fades at the start of your next turn unless you spent 2 sorcery points for it to last until the spell ends. You can see in the area of this magical darkness as if it were one tier higher. It also dispels weaker magical light.</description>
+			<description>When you cast a spell with an area-of-effect, you can spend 2 or 3 sorcery points to cause the spell to leave behind a zone of magical shadow. The light level in the area of the spell goes down by one tier: From bright to dim, from dim to dark. It fades at the end of your next turn unless you spent 3 sorcery points for it to last until the spell ends. You can see in the area of this magical darkness as if it were one tier higher. It also dispels weaker magical light.</description>
 		</sheet>
 	</element>
 	<element name="Intuitive Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_INTUITIVE_SPELL">
