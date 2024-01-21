@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<name>Ardling from One DND</name>
-	<element name="Ardling" type="Race" source="UA: 2022 - One DND" id="ID_UA_ODND_RACE_ARDLING">
+	<element name="Ardling" type="Race" source="UA: 2023: One DND" id="ID_UA_ODND_RACE_ARDLING">
 		<description>
 		<p>Celestial animals roam the Beastlands, a plane of untamed beauty and wild nature. Many of those otherworldly animals serve the Beast Lords, and in the early days of the multiverse, some of the animals evolved into bipedal forms. Among their number are Ardlings, people with beastlike heads, keen senses, and an innate connection to divine magic. Long ago, the ancestors of Ardlings migrated to the Material Plane, and Ardlings can now be found on many worlds.</p>
 		<p class="indent">An Ardling has a head resembling that of an animal. Depending on the animal, the Ardlingmight also have fur, feathers, or scales. Some little and others hulking, Ardlings are as varied as the animals they resemble.</p>
