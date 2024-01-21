@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -25,19 +25,21 @@
 			<set name="charges">1d3</set>
 		</setters>
 	</element>
-	<element name="Blue Flame Lancet" type="Wondrous Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET">
+	<element name="Blue Flame Lancet" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET">
 		<description>
 			<p>A small razor with an a blade that is faintly wreathed in heatless blue flame.</p>
-			<p class="indent"> <b>Tattoo Attunement.</b>  To attune to this item, you hold the lancet to your skin where you want the tattoo to appear, pressing the lancet there throughout the attunement process. The tattoo itself is always at least fully covers one part of the attuned’s body; Optionally, you can trace and influence how the spellscar appears. When the attunement is complete, the lancet disappears. If your attunement to the scar ends, it vanishes, and the lancet reappears in your space.</p>
-			<p class="indent"> <b>Spellscarred.</b> You gain the Spellscarred subtype.</p>
 			<p class="indent">
-				<b>Magical Strikes.</b> While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
+				<strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the lancet to your skin where you want the tattoo to appear, pressing the lancet there throughout the attunement process. The tattoo itself is always at least fully covers one part of the attuned’s body; Optionally, you can trace and influence how the spellscar appears. When the attunement is complete, the lancet disappears. If your attunement to the scar ends, it vanishes, and the lancet reappears in your space.
 			</p>
 			<p class="indent">
-				<b>Spellscarred.</b> You gain the Spellscarred subtype.
+				<strong><em>Spellscarred.</em></strong> You gain the Spellscarred subtype.</p>
+			<p class="indent">
+				<strong><em>Magical Strikes.</em></strong> While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
 			</p>
 			<p class="indent">
-				<b>Blue Flame Strike.</b> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
+				<strong>
+					<em>Blue-Flame Strike.</em>
+				</strong> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
 			</p>
 			</description>
 		<setters>
@@ -52,7 +54,9 @@
 		<description>
 			<p>The back of this wooden claw bears Bastet’s holy symbol. Due to its enchantments, divine and primal magics can be casted through it as a focus. Once used by members of the Lioness’ Vigil, one has been gifted to the guild.</p>
 			<p class="indent">
-				<b>Lioness' Wrath.</b> As a Bonus Action, its wielder can Ready a spell. It can be maintained for up to a minute without requiring the caster’s concentration and is only expended on a hit. While a spell is readied in this manner, it can be delivered through an attack made with this weapon. The attack gains a bonus to hit equal to the spell’s level and cantrips are +0; The spell’s DC gains a bonus equal to the wielder’s STR or DEX, whichever was used for the attack. Once expended, the spell still needs to be concentrated upon.
+				<strong>
+					<em>Lioness' Wrath.</em>
+				</strong> As a Bonus Action, its wielder can Ready a spell. It can be maintained for up to a minute without requiring the caster’s concentration and is only expended on a hit. While a spell is readied in this manner, it can be delivered through an attack made with this weapon. The attack gains a bonus to hit equal to the spell’s level and cantrips are +0; The spell’s DC gains a bonus equal to the wielder’s STR or DEX, whichever was used for the attack. Once expended, the spell still needs to be concentrated upon.
 			</p>
 		</description>
 		<setters>
