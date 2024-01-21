@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<update version="0.0.1">
+			<file name="Kolours.index" url="https://raw.githubusercontent.com/community-elements/elements-reddit/master/reddit.index" />
+		</update>
+	</info>
+	<files>
+		<file name="UA_2023_Bastions_and_Cantrips.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Bastions_and_Cantrips.xml" />	
+	</files>
+</index>
