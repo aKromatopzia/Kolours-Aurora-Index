@@ -174,7 +174,7 @@
 			<set name="school">Necromancy</set>
 			<set name="time">1 Action</set>
 			<set name="duration">Instantaneous</set>
-			<set name="range">Self</set>
+			<set name="range">30 ft.</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
@@ -185,7 +185,7 @@
 	</element>
 	
 <element name="Friends" type="Spell" source="Unearthed Arcana: Bastions and Cantrips" id="ID_UA2023BNC_SPELL_FRIENDS">
-		<supports>Artificer, Druid, Sorcerer, Warlock, Wizard</supports>
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
 			<p>You magically emanate a sense of friendship toward one visible creature within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn’t a Humanoid, if you’re fighting it, or if you have cast this spell on it within the past 24 hours.</p>
 			<p>The spell ends early if the target takesdamage or if you make an attack roll, deal damage, or force anyone to make a saving throw</p>
