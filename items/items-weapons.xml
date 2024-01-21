@@ -32,10 +32,10 @@
 			<set name="damage" type="slashing">1d4</set>
 			<set name="proficiency">ID_KOLOURS_PROFICIENCY_CLAW</set>
 		</setters>
-		
+	</element>
 		<element name="Weapon Proficiency (Claw)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_CLAW">
 			<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
-		</element>
+	</element>
 		<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
 			<rules>
 				<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_CLAW" />
@@ -223,4 +223,5 @@
 			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON" />
 		</rules>
 	</append>
+
 </elements>
