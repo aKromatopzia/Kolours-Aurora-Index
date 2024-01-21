@@ -3,7 +3,7 @@
 	<info>
 		<name>Unearthed Arcana: Bastions And Cantrips</name>
 		<update version="0.0.1">
-			<file name="UA_2023_Bastions_and_Cantrips.xml" url="https://github.com/aKromatopzia/Kolours-Aurora-Index/blob/main/UA-Ports/UA_2023_Bastions_and_Cantrips.xml" />
+			<file name="UA_2023_Bastions_and_Cantrips.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Bastions_and_Cantrips.xml" />
 		</update>
 	</info>
 
