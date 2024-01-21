@@ -112,6 +112,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
 			<select type="Spell" name="Cantrip (Divine Magic)" supports="0,(Cleric||Druid)" />
 			<select type="Racial Trait" name="Spellcasting Ability (Divine Magic)" supports="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_INTELLIGENCE|ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_WISDOM|ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC_CHARISMA" />
 		</rules>
