@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<name>Custom Magic Items</name>
+	<info>
+		<description></description>
+		<update version="0.0.2">
+			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
+		</update>
+	</info>
 	
 	<element name="Abyssal Huo-Chong, light" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_KOLOURS_MAGIC_ITEMS_INFERNAL_HUO_CHONG">
 	<description>

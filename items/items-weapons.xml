@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<name>Custom Weaponry</name>
-	<!--<info>
-		
+	<info>
 		 <description></description>
-		<update version="0.0.1">
-			<file name="items-weapons.xml" url="" />
+		<update version="0.0.2">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
-	</info> -->
+	</info>
 	
 	<!-- Exotic -->
 	<!-- Hand Cannon-->
