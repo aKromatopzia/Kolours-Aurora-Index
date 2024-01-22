@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -21,7 +21,7 @@
 			<set name="attunement">true</set>
 			<set name="type" addition="hand cannon, light">Weapon</set>
 			<set name="rarity">Rare</set>
-			<set name="weapon">ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT</set>
+			<set name="weapon">Hand Cannon, light</set>
 			<set name="charges">1d3</set>
 		</setters>
 	</element>
