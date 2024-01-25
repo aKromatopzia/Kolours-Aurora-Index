@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>UA 2023: Eldritch Knight</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
 		</update>
 	</info>
@@ -63,7 +63,7 @@
 			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
 			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="3" number="2" spellcasting="Eldritch Knight" />
 			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="10" number="1" spellcasting="Eldritch Knight" />
-			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, 1" level="3" number="1" spellcasting="Eldritch Knight" />
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Eldritch Knight" />
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
@@ -77,7 +77,7 @@
 			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
 		</rules>
 	</element>
-	<element name="Eldritch Knight, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_WAR_MAGIC">
+	<element name="Eldritch Knight, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_SPELLCASTING">
 		<compendium display="false" />
 		<description>
 			<p>
