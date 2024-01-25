@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="kolours-aurora.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/kolours-aurora.index" />
 		</update>
 	</info>
@@ -11,5 +11,6 @@
 		<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		<file name="sorcerer-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/unbound-classes/sorcerer-unbound.xml" />
+		<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 	</files>
 </index>
