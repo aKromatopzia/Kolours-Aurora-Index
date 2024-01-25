@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Weapon Masteries</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
 		</update>
 	</info>
@@ -40,7 +40,6 @@
 		</description>
 		<sheet>
 			<description>You gain the ability to use the mastery trait of {{weapon-mastery:value}} weapons.</description>
-		</sheet>
 		</sheet>
 		<rules>
 			<stat name="weapon-mastery:value" value="3" bonus="base" requirements="[level:fighter:1]" />
@@ -101,7 +100,6 @@
 		</description>
 		<sheet>
 			<description>You gain the ability to use the mastery trait of {{weapon-mastery:value}} weapons.</description>
-		</sheet>
 		</sheet>
 		<rules>
 			<stat name="weapon-mastery:value" value="2" bonus="base" requirements="[level:barbarian:1]" />
