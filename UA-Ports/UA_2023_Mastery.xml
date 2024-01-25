@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Unearthed Arcana: Bastions And Cantrips</name>
+		<name>Unearthed Arcana: Weapon Masteries</name>
 		<update version="0.0.1">
 			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
 		</update>
