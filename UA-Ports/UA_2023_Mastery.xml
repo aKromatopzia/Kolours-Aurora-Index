@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Weapon Masteries</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
 		</update>
 	</info>
@@ -73,7 +73,7 @@
 			<p><i>This feature does not replace anything. Note the mastered weapons on your sheet by yourself.</i></p>
 			<p>our training with weapons allows you to use the Mastery property of two kinds of Simple or Martial melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish an Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
 			<p>When you reach certain levels in this class, you gain the ability to use the Mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian table (below).</p>
-			<table class="weapon-master-fht">
+			<table class="weapon-master-brb">
 				<thead>
 					<tr><td class="col-5">Level</td><td class="left">Weapon Mastery</td></tr>
 				</thead>
