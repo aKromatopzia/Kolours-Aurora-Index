@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Bastions And Cantrips</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="UA_2023_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Spells.xml" />
 		</update>
 	</info>
@@ -254,7 +254,7 @@
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
-			<set name="school">Divination</set>
+			<set name="school">Abjuration</set>
 			<set name="time">Reaction, which you take in response to you or an ally within 10 feet of you failing an Saving Throw</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">10 ft</set>
