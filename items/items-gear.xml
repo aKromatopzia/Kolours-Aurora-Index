@@ -3,12 +3,12 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
 	
-	<element name="Hurdy-Gurdy" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_INSTRUMENT_HURDYGURDY">
+	<element name="Hurdy-Gurdy" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_HURDYGURDY">
 		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
 		<description>
 			<p>If you have proficiency with the hurdy-gurdy, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus.</p>
@@ -16,13 +16,13 @@
 		<setters>
 			<set name="category">Musical Instruments</set>
 			<set name="cost" currency="gp">4</set>
-			<set name="weight" lb="6">6 lbs.</set>
+			<set name="weight" lb="2">2 lbs.</set>
 			<set name="slot">onehand</set>
 			<set name="type">Tool</set>
-			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_HURDYGURDY</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_HURDYGURDY </set>
 		</setters>
 	</element>
 	<element name="Instrument Proficiency (Hurdy-Gurdy)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_HURDYGURDY">
-		<supports>Tool, Instrument</supports>
+		<supports>Tool, Musical Instrument</supports>
 	</element>
 </elements>
