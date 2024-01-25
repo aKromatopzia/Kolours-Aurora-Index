@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Weapon Masteries</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
 		</update>
 	</info>
@@ -193,211 +193,253 @@
 		</description>
 	</append> -->
 	<append id="ID_SELLSWORDS_ITEMS_WEAPON_BATTLE_STAFF">
+		<supports>ID_UA2023_MASTERY_TRAIT_PUSH</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
 		</description>
 	</append>
 	<append id="ID_SELLSWORDS_ITEMS_WEAPON_SCYTHE">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_CLUB">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_DAGGER">
+		<supports>ID_UA2023_MASTERY_TRAIT_NICK</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_GREATCLUB">
+		<supports>ID_UA2023_MASTERY_TRAIT_PUSH</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_HANDAXE">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_JAVELIN">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_LIGHTHAMMER">
+		<supports>ID_UA2023_MASTERY_TRAIT_NICK</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_MACE">
+		<supports>ID_UA2023_MASTERY_TRAIT_SAP</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_QUARTERSTAFF">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_SICKLE">
+		<supports>ID_UA2023_MASTERY_TRAIT_NICK</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_SPEAR">
+		<supports>ID_UA2023_MASTERY_TRAIT_SAP</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_LIGHT">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_DART">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_SHORTBOW">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_SLING">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_BATTLEAXE">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_FLAIL">
+		<supports>ID_UA2023_MASTERY_TRAIT_SAP</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_GLAIVE">
+		<supports>ID_UA2023_MASTERY_TRAIT_GRAZE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_GRAZE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_GREATAXE">
+		<supports>ID_UA2023_MASTERY_TRAIT_CLEAVE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_CLEAVE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_GREATSWORD">
+		<supports>ID_UA2023_MASTERY_TRAIT_GRAZE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_GRAZE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_HALBERD">
+		<supports>ID_UA2023_MASTERY_TRAIT_CLEAVE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_CLEAVE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_LANCE">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_LONGSWORD">
+		<supports>ID_UA2023_MASTERY_TRAIT_SAP</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_MAUL">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_MORNINGSTAR">
+		<supports>ID_UA2023_MASTERY_TRAIT_SAP</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_PIKE">
+		<supports>ID_UA2023_MASTERY_TRAIT_PUSH</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_RAPIER">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_SCIMITAR">
+		<supports>ID_UA2023_MASTERY_TRAIT_NICK</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_SHORTSWORD">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_TRIDENT">
+		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_WARHAMMER">
+		<supports>ID_UA2023_MASTERY_TRAIT_PUSH</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_WAR_PICK">
+		<supports>ID_UA2023_MASTERY_TRAIT_SAP</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_WHIP">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_BLOWGUN">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
+		<supports>ID_UA2023_MASTERY_TRAIT_PUSH</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_LONGBOW">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_MUSKET">
+		<supports>ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
 	<append id="ID_WOTC_PHB_WEAPON_PISTOL">
+		<supports>ID_UA2023_MASTERY_TRAIT_VEX</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
 		</description>
