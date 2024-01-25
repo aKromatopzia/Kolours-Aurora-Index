@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -22,7 +22,7 @@
 			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_HURDYGURDY</set>
 		</setters>
 	</element>
-	<element name="Instrument Proficiency (Hurdy-Gurdy)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_HURDYGURDY">
+	<element name="Tool Proficiency (Hurdy-Gurdy)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_HURDYGURDY">
 		<supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
 		<sheet alt="Hurdy-Gurdy" />
 	</element>
