@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Unearthed Arcana: Bastions And Cantrips</name>
+		<update version="0.0.1">
+			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
+		</update>
+	</info>
+	<!-- Weapon Mastery to Fighter & Barbarian -->
+	<element name="Weapon Mastery (FHT)" type="Class Feature" source="Unearthed Arcana: 2023" id="ID_UA2023_CLASS_FEATURE_FIGHTER_WEAPON_MASTERY">
+		<description>
+			<p><i>This feature does not replace anything. Note the mastered weapons on your sheet by yourself.</i></p>
+			<p>our training with weapons allows you to use the Mastery property of two kinds of Simple or Martial melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish an Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+			<p>When you reach certain levels in this class, you gain the ability to use the Mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Fighter table (below).</p>
+			<table class="weapon-master-fht">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Weapon Mastery</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">3</td></tr>
+				<tr><td> 2nd</td><td class="left">3</td></tr>
+				<tr><td> 3rd</td><td class="left">3</td></tr>
+				<tr><td> 4th</td><td class="left">4</td></tr>
+				<tr><td> 5th</td><td class="left">4</td></tr>
+				<tr><td> 6th</td><td class="left">4</td></tr>
+				<tr><td> 7th</td><td class="left">4</td></tr>
+				<tr><td> 8th</td><td class="left">4</td></tr>
+				<tr><td> 9th</td><td class="left">4</td></tr>
+				<tr><td>10th</td><td class="left">5</td></tr>
+				<tr><td>11th</td><td class="left">5</td></tr>
+				<tr><td>12th</td><td class="left">5</td></tr>
+				<tr><td>13th</td><td class="left">5</td></tr>
+				<tr><td>14th</td><td class="left">5</td></tr>
+				<tr><td>15th</td><td class="left">5</td></tr>
+				<tr><td>16th</td><td class="left">6</td></tr>
+				<tr><td>17th</td><td class="left">6</td></tr>
+				<tr><td>18th</td><td class="left">6</td></tr>
+				<tr><td>19th</td><td class="left">6</td></tr>
+				<tr><td>20th</td><td class="left">6</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain the ability to use the mastery trait of {{weapon-mastery:value}} weapons.</description>
+		</sheet>
+		</sheet>
+		<rules>
+			<stat name="weapon-mastery:value" value="3" bonus="base" requirements="[level:fighter:1]" />
+			<stat name="weapon-mastery:value" value="4" bonus="base" requirements="[level:fighter:4]" />
+			<stat name="weapon-mastery:value" value="5" bonus="base" requirements="[level:fighter:10]" />
+			<stat name="weapon-mastery:value" value="6" bonus="base" requirements="[level:fighter:16]" />
+		</rules>
+	</element>
+	<element name="Fighter, LV01: Weapon Mastery" type="Item" source="Unearthed Arcana: 2023" id="ID_UA2023_ITEM_OCF_FIGHTER_WEAPON_MASTERY">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_UA2023_CLASS_FEATURE_FIGHTER_WEAPON_MASTERY" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_UA2023_CLASS_FEATURE_FIGHTER_WEAPON_MASTERY" requirements="[level:fighter:1]"/>
+		</rules>
+	</element>
+	
+	<element name="Weapon Mastery (BRB)" type="Class Feature" source="Unearthed Arcana: 2023" id="ID_UA2023_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY">
+		<description>
+			<p><i>This feature does not replace anything. Note the mastered weapons on your sheet by yourself.</i></p>
+			<p>our training with weapons allows you to use the Mastery property of two kinds of Simple or Martial melee weapons of your choice, such as Greataxes and Handaxes. Whenever you finish an Long Rest, you can practice weapon drills and change one of those weapon choices.</p>
+			<p>When you reach certain levels in this class, you gain the ability to use the Mastery properties of more kinds of weapons, as shown in the Weapon Mastery column of the Barbarian table (below).</p>
+			<table class="weapon-master-fht">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="left">Weapon Mastery</td></tr>
+				</thead>
+				<tr><td> 1st</td><td class="left">2</td></tr>
+				<tr><td> 2nd</td><td class="left">2</td></tr>
+				<tr><td> 3rd</td><td class="left">2</td></tr>
+				<tr><td> 4th</td><td class="left">3</td></tr>
+				<tr><td> 5th</td><td class="left">3</td></tr>
+				<tr><td> 6th</td><td class="left">3</td></tr>
+				<tr><td> 7th</td><td class="left">3</td></tr>
+				<tr><td> 8th</td><td class="left">3</td></tr>
+				<tr><td> 9th</td><td class="left">3</td></tr>
+				<tr><td>10th</td><td class="left">4</td></tr>
+				<tr><td>11th</td><td class="left">4</td></tr>
+				<tr><td>12th</td><td class="left">4</td></tr>
+				<tr><td>13th</td><td class="left">4</td></tr>
+				<tr><td>14th</td><td class="left">4</td></tr>
+				<tr><td>15th</td><td class="left">4</td></tr>
+				<tr><td>16th</td><td class="left">4</td></tr>
+				<tr><td>17th</td><td class="left">4</td></tr>
+				<tr><td>18th</td><td class="left">4</td></tr>
+				<tr><td>19th</td><td class="left">4</td></tr>
+				<tr><td>20th</td><td class="left">4</td></tr>
+			</table>
+		</description>
+		<sheet>
+			<description>You gain the ability to use the mastery trait of {{weapon-mastery:value}} weapons.</description>
+		</sheet>
+		</sheet>
+		<rules>
+			<stat name="weapon-mastery:value" value="2" bonus="base" requirements="[level:barbarian:1]" />
+			<stat name="weapon-mastery:value" value="3" bonus="base" requirements="[level:barbarian:4]" />
+			<stat name="weapon-mastery:value" value="4" bonus="base" requirements="[level:barbarian:10]" />
+		</rules>
+	</element>
+	<element name="Barbarian, LV01: Weapon Mastery" type="Item" source="Unearthed Arcana: 2023" id="ID_UA2023_ITEM_OCF_BARBARIAN_WEAPON_MASTERY">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_UA2023_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">first level, 1st level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_UA2023_CLASS_FEATURE_BARBARIAN_WEAPON_MASTERY" requirements="[level:barbarian:1]"/>
+		</rules>
+	</element>
+
+<!-- Mastery Traits -->
+	<element name="Weapon Mastery: Cleave" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_CLEAVE">
+		<description>
+			<p><i>Prerequisites: Melee, Heavy</p></i>
+			<p>If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.</p>
+		</description>
+	</element>
+	<element name="Weapon Mastery: Graze" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_GRAZE">
+		<description>
+			<p><i>Prerequisites: Melee, Heavy</p></i>
+			<p>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can’t be increased in any way, other than increasing the ability modifier.</p>
+		</description>
+	</element>
+	<element name="Weapon Mastery: Nick" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_NICK">
+		<description>
+			<p><i>Prerequisites: Light</p></i>
+			<p>When you make the extra attack of the Light property, you can make it as part of the Attack action, instead of as a Bonus Action. You can still make this extra attack only once per turn.</p>
+		</description>
+	</element>
+	<element name="Weapon Mastery: Push" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_PUSH">
+		<description>
+			<p><i>Prerequisites: Heavy, Two-Handed, or Versatile</p></i>
+			<p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller</p>
+		</description>
+	</element>
+	<element name="Weapon Mastery: Sap" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_SAP">
+		<description>
+			<p><i>Prerequisites: Versatile, or no properties</p></i>
+			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn</p>
+		</description>
+	</element>
+	<element name="Weapon Mastery: Slow" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_SLOW">
+		<description>
+			<p><i>Prerequisites: -</p></i>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you can reduce its Speed by 10 feet until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 10 feet.</p>
+		</description>
+	</element>
+	<element name="Weapon Mastery: Topple" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_TOPPLE">
+		<description>
+			<p><i>Prerequisites: Heavy, Reach, or Versatile</p></i>
+			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw with a DC equal to 8 + your Proficiency Bonus + the ability modifier used to make the attack roll. On a failed save, the creature has the Prone condition.</p>
+		</description>
+	</element>
+		<element name="Weapon Mastery: Vex" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_VEX">
+		<description>
+			<p><i>Prerequisites: Ammunition, Finesse, or Light</p></i>
+			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn</p>
+		</description>
+	</element>
+		
+<!--	<element name="Weapon Mastery:" type="Mastery Trait" source="Unearthed Arcana: 2023" id="ID_UA2023_MASTERY_TRAIT_">
+		<description>
+			<p><i>Prerequisites: </p></i>
+			<p></p>
+		</description>
+	</element> -->
+
+<!-- Append to weapons -->
+<!-- 	<append id="">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_" />
+		</description>
+	</append> -->
+	<append id="ID_SELLSWORDS_ITEMS_WEAPON_BATTLE_STAFF">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
+		</description>
+	</append>
+	<append id="ID_SELLSWORDS_ITEMS_WEAPON_SCYTHE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_CLUB">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_DAGGER">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_GREATCLUB">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_HANDAXE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_JAVELIN">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_LIGHTHAMMER">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_MACE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_QUARTERSTAFF">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SICKLE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SPEAR">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_LIGHT">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_DART">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SHORTBOW">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SLING">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_BATTLEAXE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_FLAIL">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_GLAIVE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_GRAZE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_GREATAXE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_CLEAVE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_GREATSWORD">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_GRAZE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_HALBERD">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_CLEAVE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_LANCE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_LONGSWORD">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_MAUL">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_MORNINGSTAR">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_PIKE">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_RAPIER">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SCIMITAR">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_SHORTSWORD">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_TRIDENT">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_WARHAMMER">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_WAR_PICK">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SAP" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_WHIP">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_BLOWGUN">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HAND">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_CROSSBOW_HEAVY">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_LONGBOW">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_MUSKET">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+		</description>
+	</append>
+	<append id="ID_WOTC_PHB_WEAPON_PISTOL">
+		<description>
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+		</description>
+	</append>
+	
+</elements>
