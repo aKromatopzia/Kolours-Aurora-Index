@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>UA 2023: Eldritch Knight</name>
+		<update version="0.0.1">
+			<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
+		</update>
+	</info>
+	<element name="Unearthed Spellcasting" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
+		<description>
+			<p>When you reach 3rd level, you augment your martial prowess with the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>
+			<p class="indent"><strong><em>Cantrips.</em></strong> You learn two cantrips of your choice from the wizard spell list. You learn an additional wizard cantrip of your choice at 10th level.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Eldritch Knight Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+			<p class="indent"><strong><em>Spells Known of 1st-Level and Higher.</em></strong> You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list.</p>
+			<p class="indent">The Spells Known column of the Eldritch Knight Spellcasting table shows when you learn more wizard spells of 1st level or higher. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new spell of 1st or 2nd level.</p>
+			<p class="indent"><strong><em>Changing Your Prepared Spells.</em></strong>Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots.</p>
+			<p class="indent"><strong><em>Spellcasting Ability.</em></strong> Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.</p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5 class="caption">ELDRITCH KNIGHT SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Fighter Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td></tr>
+				</thead>
+				<tr><td> 3rd</td><td>2</td><td> 3</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 4th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 5th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 6th</td><td>2</td><td> 4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				<tr><td> 7th</td><td>2</td><td> 5</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 8th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td> 9th</td><td>2</td><td> 6</td><td>4</td><td>2</td><td>—</td><td>—</td></tr>
+				<tr><td>10th</td><td>3</td><td> 7</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>11th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>12th</td><td>3</td><td> 8</td><td>4</td><td>3</td><td>—</td><td>—</td></tr>
+				<tr><td>13th</td><td>3</td><td> 9</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>14th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>15th</td><td>3</td><td>10</td><td>4</td><td>3</td><td>2</td><td>—</td></tr>
+				<tr><td>16th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>17th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>18th</td><td>3</td><td>11</td><td>4</td><td>3</td><td>3</td><td>—</td></tr>
+				<tr><td>19th</td><td>3</td><td>12</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+				<tr><td>20th</td><td>3</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your martial prowess with the ability to cast spells.</description>
+		</sheet>
+		<spellcasting name="Eldritch Knight" ability="Intelligence" prepare="false" allowReplace="true">
+			<list>Wizard,(Abjuration||Evocation)</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<stat name="eldritch knight:spellcasting:slots:1" value="2" level="3" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="4" />
+			<stat name="eldritch knight:spellcasting:slots:1" value="1" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="2" level="7" />
+			<stat name="eldritch knight:spellcasting:slots:2" value="1" level="10" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="2" level="13" />
+			<stat name="eldritch knight:spellcasting:slots:3" value="1" level="16" />
+			<stat name="eldritch knight:spellcasting:slots:4" value="1" level="19" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Cantrip (Eldritch Knight)" supports="Wizard, 0" level="10" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard), 1" level="3" number="1" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, 1" level="3" number="2" spellcasting="Eldritch Knight" />
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="4" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="7" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard), $(spellcasting:slots)" level="8" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="10" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="11" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="13" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard), $(spellcasting:slots)" level="14" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="16" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="Wizard, $(spellcasting:slots)" level="19" spellcasting="Eldritch Knight"/>
+			<select type="Spell" name="Spellcasting (Eldritch Knight)" supports="(Wizard), $(spellcasting:slots)" level="20" spellcasting="Eldritch Knight"/>
+		</rules>
+	</element>
+	<element name="Eldritch Knight, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_WAR_MAGIC">
+		<compendium display="false" />
+		<description>
+			<p>
+				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+			</p>
+			<div class="reference">
+				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
+			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
+		</rules>
+	</element>
+
+	<element name="Unearthed War Magic" type="Class Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
+		<description>
+			<p>
+				When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
+			</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Knight, LV3: Unearthed War Magic" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_WAR_MAGIC">
+		<compendium display="false" />
+		<description>
+			<p>
+				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+			</p>
+			<div class="reference">
+				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
+		</rules>
+	</element>
+
+	<element name="Unearthed Enhanced War Magic" type="Class Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC">
+		<description>
+			<p>
+				When you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your Wizard spells that has a casting time of an action
+			</p>
+		</description>
+		<sheet>
+			<description>When you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your Wizard spells that has a casting time of an action.</description>
+		</sheet>
+	</element>
+	<element name="Eldritch Knight, LV18: Unearthed Enhanced War Magic" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC">
+		<compendium display="false" />
+		<description>
+			<p>
+				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+			</p>
+			<div class="reference">
+				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">third level, 3rd level</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" requirements="[level:fighter:3]"/>
+		</rules>
+	</element>	
+
+</elements>

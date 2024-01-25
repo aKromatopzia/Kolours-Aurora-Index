@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>UA.index</name>
+		<update version="0.0.1">
+			<file name="UA.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA.index" />
+		</update>
+	</info>
+	<files>
+		<file name="UA_2023_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Spells.xml" />
+		<file name="race-ardling.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/ancestries/race-ardling.xml" />
+		<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
+		<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
+	</files>
+</index>
