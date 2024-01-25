@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>UA 2023: Eldritch Knight</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
 		</update>
 	</info>
@@ -94,12 +94,12 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
-			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
 		</rules>
 	</element>
 
-	<element name="Unearthed War Magic" type="Class Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
+	<element name="Unearthed War Magic" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
 		<description>
 			<p>
 				When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.
@@ -126,12 +126,12 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
-			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
 		</rules>
 	</element>
 
-	<element name="Unearthed Enhanced War Magic" type="Class Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC">
+	<element name="Unearthed Enhanced War Magic" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC">
 		<description>
 			<p>
 				When you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your Wizard spells that has a casting time of an action
@@ -158,8 +158,8 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" requirements="[level:fighter:3]"/>
-			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" requirements="[level:fighter:3]"/>
 		</rules>
 	</element>	
 
