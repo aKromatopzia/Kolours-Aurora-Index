@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Weapon Masteries</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
 		</update>
 	</info>
@@ -130,56 +130,56 @@
 	</element>
 
 <!-- Mastery Traits -->
-	<element name="Weapon Mastery: Cleave" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_CLEAVE">
+	<element name="Weapon Mastery: Cleave" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_CLEAVE">
 		<description>
 			<p><i>Prerequisites: Melee, Heavy</i></p>
 			<p>If you hit a creature with a melee attack using this weapon, you can make an attack roll with the weapon against a second creature within 5 feet of the first that is also within your reach. On a hit, the second creature takes the weapon’s damage, but don’t add your ability modifier to that damage unless that modifier is negative. You can make this extra attack only once per turn.</p>
 		</description>
 	</element>
-	<element name="Weapon Mastery: Graze" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_GRAZE">
+	<element name="Weapon Mastery: Graze" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_GRAZE">
 		<description>
 			<p><i>Prerequisites: Melee, Heavy</i></p>
 			<p>If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifier you used to make the attack roll. This damage is the same type dealt by the weapon, and the damage can’t be increased in any way, other than increasing the ability modifier.</p>
 		</description>
 	</element>
-	<element name="Weapon Mastery: Nick" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_NICK">
+	<element name="Weapon Mastery: Nick" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_NICK">
 		<description>
 			<p><i>Prerequisites: Light</i></p>
 			<p>When you make the extra attack of the Light property, you can make it as part of the Attack action, instead of as a Bonus Action. You can still make this extra attack only once per turn.</p>
 		</description>
 	</element>
-	<element name="Weapon Mastery: Push" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_PUSH">
+	<element name="Weapon Mastery: Push" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_PUSH">
 		<description>
 			<p><i>Prerequisites: Heavy, Two-Handed, or Versatile</i></p>
 			<p>If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Large or smaller</p>
 		</description>
 	</element>
-	<element name="Weapon Mastery: Sap" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_SAP">
+	<element name="Weapon Mastery: Sap" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_SAP">
 		<description>
 			<p><i>Prerequisites: Versatile, or no properties</i></p>
 			<p>If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your next turn</p>
 		</description>
 	</element>
-	<element name="Weapon Mastery: Slow" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_SLOW">
+	<element name="Weapon Mastery: Slow" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_SLOW">
 		<description>
 			<p><i>Prerequisites: -</i></p>
 			<p>If you hit a creature with this weapon and deal damage to the creature, you can reduce its Speed by 10 feet until the start of your next turn. If you hit the creature more than once with this property, the Speed reduction doesn’t exceed 10 feet.</p>
 		</description>
 	</element>
-	<element name="Weapon Mastery: Topple" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_TOPPLE">
+	<element name="Weapon Mastery: Topple" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_TOPPLE">
 		<description>
 			<p><i>Prerequisites: Heavy, Reach, or Versatile</i></p>
 			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw with a DC equal to 8 + your Proficiency Bonus + the ability modifier used to make the attack roll. On a failed save, the creature has the Prone condition.</p>
 		</description>
 	</element>
-		<element name="Weapon Mastery: Vex" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_VEX">
+		<element name="Weapon Mastery: Vex" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_VEX">
 		<description>
 			<p><i>Prerequisites: Ammunition, Finesse, or Light</i></p>
 			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn</p>
 		</description>
 	</element>
 		
-<!--	<element name="Weapon Mastery:" type="Mastery Trait" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_">
+<!--	<element name="Weapon Mastery:" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_">
 		<description>
 			<p><i>Prerequisites: </i></p>
 			<p></p>
