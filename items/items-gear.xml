@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -25,5 +25,62 @@
 	<element name="Tool Proficiency (Hurdy-Gurdy)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_HURDYGURDY">
 		<supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
 		<sheet alt="Hurdy-Gurdy" />
+	</element>
+		<element name="Fisher's Supplies" type="Item" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_TOOL_FISHERS_SUPPLIES">
+		<supports>ID_INTERNAL_TOOL_ARTISAN_TOOLS</supports>
+		<description>
+			<p>These supplies are a type of artisan’s tools that include a basic fishing pole and a tackle box with a simple line, hooks, bait, bobbers, and lures.</p>
+		</description>
+		<setters>
+			<set name="category">Artisan Tool</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="8">8 lbs.</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_FISHINGTOOLS</set>
+		</setters>
+	</element>
+	<element name="Improved Pole" type="Item" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_ITEM_IMPROVED_POLE">
+		<description>
+			<p>This reinforced fishing pole is of much higher quality than a basic pole. It grants a +3 bonus to your overall fishing score (after any multipliers).</p>
+		</description>
+		<setters>
+			<set name="category">Item</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" lb="2">2 lbs.</set>
+		</setters>
+	</element>
+		<element name="Improved Line" type="Item" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_ITEM_IMPROVED_LINE">
+		<description>
+			<p>This mithril-infused line enables you to reel in tougher fish. It grants a +1 bonus to your overall fishing score (after any multipliers).</p>
+		</description>
+		<setters>
+			<set name="category">Item</set>
+			<set name="cost" currency="gp">5</set>
+		</setters>
+	</element>
+	<element name="Improved Lures" type="Item" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_ITEM_IMPROVED_LURES">
+		<description>
+			<p>These vibrant lures catch the eye of more elusive fish. They grant a +1 bonus to your overall fishing score (after any multipliers).</p>
+		</description>
+		<setters>
+			<set name="category">Item</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="1">1 lbs.</set>
+		</setters>
+	</element>
+	<element name="Tool Proficiency (Fishing Tools)" type="Proficiency" source="Sellsword Stuff: Fishing" id="ID_SELLSWORDS_PROFICIENCY_FISHINGTOOLS">
+		<supports>Tool, Musical Instrument, ID_PROFICIENCY_ARTISAN_TOOLS</supports>
+		<sheet alt="Fishing Tools" />
+	</element>
+	<element name="Angler" type="Feat" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_FEAT_ANGLER">
+		<description>
+			<p><i>You gain this feat after spending 30 or more in-game days fishing. </i>You roll one additional d6 when you fish (total of 6d6). In addition, you can choose to gain a + 10 bonus to your overall fishing score (after any multipliers) whenever you fish. </p>
+		</description>
+	</element>
+	<element name="Master Angler" type="Feat" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_FEAT_MASTER_ANGLER">
+		<description>
+			<p><i>You gain this feat after spending 100 or more in-game days fishing. </i>You roll one additional d6 when you fish (total of 7d6). In addition, you can choose to gain a + 10 bonus to your overall fishing score (after any multipliers) whenever you fish. This ability can be used along with the bonus granted from Angler.</p>
+		</description>
 	</element>
 </elements>
