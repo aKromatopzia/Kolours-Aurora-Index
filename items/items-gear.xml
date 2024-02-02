@@ -26,13 +26,13 @@
 		<supports>Tool, Musical Instrument, ID_PROFICIENCY_MUSICAL_INSTRUMENT</supports>
 		<sheet alt="Hurdy-Gurdy" />
 	</element>
-		<element name="Fisher's Supplies" type="Item" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_TOOL_FISHERS_SUPPLIES">
+	<element name="Fisher's Supplies" type="Item" source="Sellswords Stuff: Fishing" id="ID_SELLSWORDS_TOOL_FISHERS_SUPPLIES">
 		<supports>ID_INTERNAL_TOOL_ARTISAN_TOOLS</supports>
 		<description>
 			<p>These supplies are a type of artisan’s tools that include a basic fishing pole and a tackle box with a simple line, hooks, bait, bobbers, and lures.</p>
 		</description>
 		<setters>
-			<set name="category">Artisan Tool</set>
+			<set name="category">Tools</set>
 			<set name="cost" currency="gp">5</set>
 			<set name="weight" lb="8">8 lbs.</set>
 			<set name="slot">onehand</set>
@@ -45,7 +45,7 @@
 			<p>This reinforced fishing pole is of much higher quality than a basic pole. It grants a +3 bonus to your overall fishing score (after any multipliers).</p>
 		</description>
 		<setters>
-			<set name="category">Item</set>
+			<set name="category">Tools</set>
 			<set name="cost" currency="gp">12</set>
 			<set name="weight" lb="2">2 lbs.</set>
 		</setters>
@@ -55,7 +55,7 @@
 			<p>This mithril-infused line enables you to reel in tougher fish. It grants a +1 bonus to your overall fishing score (after any multipliers).</p>
 		</description>
 		<setters>
-			<set name="category">Item</set>
+			<set name="category">Tools</set>
 			<set name="cost" currency="gp">5</set>
 		</setters>
 	</element>
@@ -64,7 +64,7 @@
 			<p>These vibrant lures catch the eye of more elusive fish. They grant a +1 bonus to your overall fishing score (after any multipliers).</p>
 		</description>
 		<setters>
-			<set name="category">Item</set>
+			<set name="category">Tools</set>
 			<set name="cost" currency="gp">8</set>
 			<set name="weight" lb="1">1 lbs.</set>
 		</setters>
