@@ -86,7 +86,7 @@
 		</setters>
 	</element>
 	<!-- <! Wax & Wane > -->	
-	<element name="Wax & Wane" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LUNACY_AX">
+	<element name="Wax And Wane" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LUNACY_AX">
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p>Whenever wielded with one hand, or when wielded under the light of the moon, the wielder gains +1 to AC.</p>
