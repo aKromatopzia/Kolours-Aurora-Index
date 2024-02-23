@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -68,5 +68,78 @@
 			<set name="weapon">Claw</set>
 		</setters>
 	</element>
-
+	<!-- <! Gavel of Martial Symmetry > -->
+	<element name="Gavel of Martial Symmetry" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_2WF_LIGHTHAMMER">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>While you are attuned to this weapon, whenever you attack with it as an off-hand weapon, it benefits from the Extra Attack feat, or similar feats.</p>
+		</description>
+		<setters>
+			<set name="keywords">light hammer, sellswords</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light hammer">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Light hammer</set>
+		</setters>
+	</element>
+	<!-- <! Wax & Wane > -->	
+	<element name="Wax & Wane" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LUNACY_AX">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>Whenever wielded with one hand, or when wielded under the light of the moon, the wielder gains +1 to AC.</p>
+			<p>Whenever wielded with two hands, or when wielded under the light of the moon, the weapon deals an additional 1d4 radiant damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">battleaxe, sellswords, radiant, armor class</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="battleaxe">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Battleaxe</set>
+		</setters>
+	</element>
+	
+	<!-- <! Sweetgum Shillelagh > -->	
+	<element name="Sweetgum Shillelagh" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SWEETGUM_SHILLELAGH">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon, and a character that has been hit by this weapon has its speed reduced by 5 feet until the end of its next turn.</p>
+			<p>You can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon.</p>
+			<p>You are proficient with this weapon if you are a druid.</p>
+		</description>
+		<setters>
+			<set name="keywords">morningstar, sellswords, druid</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="morningstar">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Morningstar</set>
+		</setters>
+	</element>
+	
+	<!-- <! Bolt of Light > -->	
+	<element name="Bolt of Light" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ARM_OF_LIGHT">
+		<description>
+			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>When you hurl it, its range changes to 120/120. The javelin forms a streak of light to its target, and on a hit, deals its weapon damage as radiant damage, and an additional 1d4 as radiant damage.</p>
+			<p>Hit or miss, the weapon is then shunted into an extradimensional space. As part of an attack action, you can freely manifest the weapon into your hand.</p>
+		</description>
+		<setters>
+			<set name="keywords">javelin, sellswords, radiant</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="javelin">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Javelin</set>
+		</setters>
+	</element>
+	
 </elements>
