@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -82,7 +82,7 @@
 			<set name="attunement">true</set>
 			<set name="rarity">uncommon</set>
 			<set name="enhancement">1</set>
-			<set name="weapon">Light hammer</set>
+			<set name="weapon">Light Hammer</set>
 		</setters>
 	</element>
 	<!-- <! Wax & Wane > -->	
