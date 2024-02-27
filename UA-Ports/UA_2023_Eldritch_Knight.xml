@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>UA 2023: Eldritch Knight</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
 		</update>
 	</info>
@@ -82,6 +82,7 @@
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+				<1>This feature replaces Spellcasting (Eldritch Knight)</i>
 			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
@@ -94,8 +95,8 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
-			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:7]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:7]"/>
 		</rules>
 	</element>
 
@@ -109,11 +110,12 @@
 			<description>When you take the Attack action on your turn, you can replace one of the attacks with a casting of one of your Wizard cantrips that has a casting time of an action.</description>
 		</sheet>
 	</element>
-	<element name="Eldritch Knight, LV3: Unearthed War Magic" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_WAR_MAGIC">
+	<element name="Eldritch Knight, LV7: Unearthed War Magic" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_WAR_MAGIC">
 		<compendium display="false" />
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+				<1>This feature replaces War Magic</i>
 			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" />
@@ -121,7 +123,7 @@
 		</description>
 		<setters>
 			<set name="category">Optional Class Features</set>
-			<set name="keywords">third level, 3rd level</set>
+			<set name="keywords">seventh level, 7th level</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
 		</setters>
@@ -146,6 +148,7 @@
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+				<1>This feature replaces Enhanced War Magic</i>
 			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" />
@@ -153,7 +156,7 @@
 		</description>
 		<setters>
 			<set name="category">Optional Class Features</set>
-			<set name="keywords">third level, 3rd level</set>
+			<set name="keywords">eighteenth level, 18th level</set>
 			<set name="slot">misc</set>
 			<set name="inventory-hidden">true</set>
 		</setters>
