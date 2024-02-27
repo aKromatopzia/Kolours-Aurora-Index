@@ -80,8 +80,12 @@
 	<element name="Eldritch Knight, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_SPELLCASTING">
 		<compendium display="false" />
 		<description>
-			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
-			<p><i>This feature replaces Spellcasting (Eldritch Knight)</i></p>
+			<p>
+				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+			</p>
+			<p>
+				<i>This feature replaces Spellcasting (Eldritch Knight)</i>
+			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
 			</div>
@@ -111,8 +115,12 @@
 	<element name="Eldritch Knight, LV7: Unearthed War Magic" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_WAR_MAGIC">
 		<compendium display="false" />
 		<description>
-			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
-			<p><i>This feature replaces War Magic</i></p>
+			<p>
+				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+			</p>
+			<p>
+				<i>This feature replaces War Magic</i>
+			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" />
 			</div>
@@ -142,8 +150,12 @@
 	<element name="Eldritch Knight, LV18: Unearthed Enhanced War Magic" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC">
 		<compendium display="false" />
 		<description>
-			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
-			<p><i>This feature replaces Enhanced War Magic</i></p>
+			<p>
+				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
+			</p>
+			<p>
+				<i>This feature replaces Enhanced War Magic</i>
+			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" />
 			</div>
