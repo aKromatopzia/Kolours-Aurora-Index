@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -83,4 +83,51 @@
 			<p><i>You gain this feat after spending 100 or more in-game days fishing. </i>You roll one additional d6 when you fish (total of 7d6). In addition, you can choose to gain a + 10 bonus to your overall fishing score (after any multipliers) whenever you fish. This ability can be used along with the bonus granted from Angler.</p>
 		</description>
 	</element>
+	<element name="Incense Paper (Sheet)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_SHEET">
+		<description>
+			<p>A sheet of incenae paper, usually bundled in cotton strings. Although the quality of these parchments aren't very high, depending on the ritual they may be treated with perfumes or have metals embedded into them.</p>
+			<p>Sheets of these are often burnt as offerings as part of Kara-Turan traditions which regard the dead.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Incense Paper (Stack)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_BLOCK">
+		<description>
+			<p>A stack of 60 sheets of incenae paper, usually bundled in cotton strings. Although the quality of these parchments aren't very high, depending on the ritual they may be treated with perfumes or have metals embedded into them.</p>
+			<p>Sheets of these are often burnt as offerings as part of Kara-Turan traditions which regard the dead.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lbs.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>	
+	<element name="Incense Cloth (50ft.)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_CLOTH">
+		<description>
+			<p>A bolt of perfumed incense cloth. These fabrics are typically 6in in diameter and made of of cotton or other absorbent materials to better soak the perfume it is treated in. Oftentimes, text is inked into the cloth right before use or before it is sold.</p>
+			<p>These are typically used in Multhorandi funerary rites to prepare bodies for burial, but find use as apparel by warriors, nobles and spellweavers alike.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="gp">5</set>
+			<set name="weight" lb="1">1 lbs.</set>
+		</setters>
+	</element>
+	<element name="Incense Stick" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_STICK">
+		<description>
+			<p>A stick treated with fragrant oils. They are usually made from dense woods which burn slowly.</p>
+			<p>These are burnt in religious rites and come in a variety of fragrances depending on the culture and occasion.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="cp">20</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>	
 </elements>
