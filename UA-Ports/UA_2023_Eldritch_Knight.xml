@@ -82,7 +82,6 @@
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<p><i>This feature replaces Spellcasting (Eldritch Knight)</i></p>
-			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
 			</div>
