@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sellsword's Basin: Mercenary Spellcasting</name>
+		<update version="0.0.1">
+			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
+		</update>
+	</info>
+
+	<element name="Arcane Spellblade" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SSBMC_SPELL_TRUE_STRIKE">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>When you learn this spell, you select one damage type from: Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, or Thunder.</p>
+			<p>You brandish your weapon with a surge of magic, and then you make one attack with the weapon used in the spell’s casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, you deal the weapon's damage as the damage type you selected when this spell was learned. This damage increases when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, Thunder</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon with which you have proficiency</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+
+</elements>
