@@ -82,7 +82,7 @@
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
-				<1>This feature replaces Spellcasting (Eldritch Knight)</i>
+				<i>This feature replaces Spellcasting (Eldritch Knight)</i>
 			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" />
@@ -115,7 +115,7 @@
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
-				<1>This feature replaces War Magic</i>
+				<i>This feature replaces War Magic</i>
 			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" />
@@ -148,7 +148,7 @@
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
-				<1>This feature replaces Enhanced War Magic</i>
+				<i>This feature replaces Enhanced War Magic</i>
 			</p>
 			<div class="reference">
 				<div element="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_ENHANCED_WAR_MAGIC" />
