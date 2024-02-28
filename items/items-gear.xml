@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -85,8 +85,8 @@
 	</element>
 	<element name="Incense Paper (Sheet)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_SHEET">
 		<description>
-			<p>A sheet of incenae paper, usually bundled in cotton strings. Although the quality of these parchments aren't very high, depending on the ritual they may be treated with perfumes or have metals embedded into them.</p>
-			<p>Sheets of these are often burnt as offerings as part of Kara-Turan traditions which regard the dead.</p>
+			<p>A sheet of incense paper, usually bundled in cotton strings. Although the quality of these parchments aren't very high in regards to their longevity, depending on the ritual they may have been treated with perfumes or have metals embedded into them.</p>
+			<p>Sheets of these are used in Kara-Turan traditions which regard the dead. Most oftenly they are burnt, but they may also be dissolved in water.</p>
 		</description>
 		<setters>
 			<set name="category">Treasure</set>
@@ -97,8 +97,8 @@
 	</element>
 	<element name="Incense Paper (Stack)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_BLOCK">
 		<description>
-			<p>A stack of 60 sheets of incenae paper, usually bundled in cotton strings. Although the quality of these parchments aren't very high, depending on the ritual they may be treated with perfumes or have metals embedded into them.</p>
-			<p>Sheets of these are often burnt as offerings as part of Kara-Turan traditions which regard the dead.</p>
+			<p>A stack of 60 sheets of incense papers, usually bundled in cotton strings. Although the quality of these parchments aren't very high in regards to their longevity, depending on the ritual they may have been treated with perfumes or have metals embedded into them.</p>
+			<p>Sheets of these are used in Kara-Turan traditions which regard the dead. Most oftenly they are burnt, but they may also be dissolved in water.</p>
 		</description>
 		<setters>
 			<set name="category">Treasure</set>
