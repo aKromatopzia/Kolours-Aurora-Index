@@ -4,7 +4,7 @@
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
 		<update version="0.0.1">
-			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-boons.xml" />
+			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
 	<element name="Spellmark Properties" type="???????" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY">
