@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -68,7 +68,7 @@
 				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
 			</div>
 			<p class="indent">
-				<strong><em>Withered.</em></strong> All your hit dice are one size smaller. Maximum hit points lost in this way are also deducted from your current hit points. The reduction is determined by the difference of the die sizes' average rolls.
+				<strong><em>Withered.</em></strong> he spellmark or spellscar gains the potential to house one additional property, including this one. All your hit dice are one size smaller. Maximum hit points lost in this way are also deducted from your current hit points. The reduction is determined by the difference of the die sizes' average rolls.
 			</p>
 		</description>
 		<setters>
