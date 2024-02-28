@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -20,7 +20,7 @@
 				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
 			</div>
 			<p class="indent">
-				<strong><em>Magical Strikes.</em></strong>While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
+				<strong><em>Magical Strikes.</em></strong> While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
 			</p>
 		</description>
 		<setters>
@@ -53,7 +53,7 @@
 				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
 			</div>
 			<p class="indent">
-				<strong><em>Bolster, minor.</em></strong>Whenever you roll a skill check, you may expend a Hit Dice as a free action to grant yourself expertise in a skill you are aready proficient in for a number of seconds equal to the number rolled (with a minimum of 1 round).
+				<strong><em>Bolster, minor.</em></strong> Whenever you roll a skill check, you may expend a Hit Dice as a free action to grant yourself expertise in a skill you are aready proficient in for a number of seconds equal to the number rolled (with a minimum of 1 round).
 			</p>
 		</description>
 		<setters>
@@ -68,10 +68,22 @@
 				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
 			</div>
 			<p class="indent">
-				<strong><em>Deeply Etched.</em></strong>The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification.
+				<strong><em>Withered.</em></strong> All your hit dice are one size smaller. Maximum hit points lost in this way are also deducted from your current hit points. The reduction is determined by the difference of the die sizes' average rolls.
 			</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	<element name="Spellmark Property: Deep Etching" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DEEP_ETCH">
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
+			</div>
 			<p class="indent">
-				<strong><em>Withered.</em></strong> All your hit dice are one size smaller.
+				<strong><em>Deeply Etched.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification.
 			</p>
 		</description>
 		<setters>
