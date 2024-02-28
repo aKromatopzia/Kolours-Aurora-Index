@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sellswords Boons</name>
+		<description>Created for Sellswords Basin</description>
+		<update version="0.0.1">
+			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-boons.xml" />
+		</update>
+	</info>
+	<element name="Spellmark Properties" type="???????" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY">
+		<description>
+			<p>Spellmarks and spellscars are commonly regarded as curses or arcane infections, but they can confer beneficial effects and abilities onto their bearers.</p>
+			<p>Such properties may be selected by or bestowed upon their bearers, but each scar or mark may only be so diverse. The ones created by Gui-Ji have limited potential.</p>
+		</description>
+	</element>
+	
+	<element name="Spellmark Property: Magical Strikes" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_MAGIC_STRIKES">
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
+			</div>
+			<p class="indent">
+				<strong><em>Magical Strikes.</em></strong>While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	
+	<element name="Spellmark Property: Blue Flame Strike" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BLUE_FLAME_STRIKE">
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
+			</div>
+			<p class="indent">
+				<strong>
+					<em>Blue-Flame Strike.</em>
+				</strong> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	<element name="Spellmark Property: Bolster, minor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BOLSTER_MINOR">
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
+			</div>
+			<p class="indent">
+				<strong><em>Bolster, minor.</em></strong>Whenever you roll a skill check, you may expend a Hit Dice as a free action to grant yourself expertise in a skill you are aready proficient in for a number of seconds equal to the number rolled (with a minimum of 1 round).
+			</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	<element name="Spellmark Property: Withered" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_WITHERED">
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" />
+			</div>
+			<p class="indent">
+				<strong><em>Deeply Etched.</em></strong>The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification.
+			</p>
+			<p class="indent">
+				<strong><em>Withered.</em></strong> All your hit dice are one size smaller.
+			</p>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+</elements>

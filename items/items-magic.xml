@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -27,7 +27,7 @@
 	</element>
 	<element name="Blue Flame Lancet" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET">
 		<description>
-			<p>A small razor with an a blade that is faintly wreathed in heatless blue flame.</p>
+			<p>A small razor with an a blade that is faintly wreathed in heatless blue flame. It has the potential to house 1 additional property.</p>
 			<p class="indent">
 				<strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the lancet to your skin where you want the tattoo to appear, pressing the lancet there throughout the attunement process. The tattoo itself is always at least fully covers one part of the attuned’s body; Optionally, you can trace and influence how the spellscar appears. When the attunement is complete, the lancet disappears. If your attunement to the scar ends, it vanishes, and the lancet reappears in your space.
 			</p>
@@ -41,6 +41,23 @@
 					<em>Blue-Flame Strike.</em>
 				</strong> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
 			</p>
+			</description>
+		<setters>
+			<set name="keywords">tattoo, force</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Blue Flame Lancet [Blank]" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET_BLANK">
+		<description>
+			<p>A small razor with an a blade that is faintly wreathed in heatless blue flame. It has the potential to house 2 additional properties.</p>
+			<p class="indent">
+				<strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the lancet to your skin where you want the tattoo to appear, pressing the lancet there throughout the attunement process. The tattoo itself is always at least fully covers one part of the attuned’s body; Optionally, you can trace and influence how the spellscar appears. When the attunement is complete, the lancet disappears. If your attunement to the scar ends, it vanishes, and the lancet reappears in your space.
+			</p>
+			<p class="indent">
+				<strong><em>Spellscarred.</em></strong> You gain the Spellscarred subtype.</p>
 			</description>
 		<setters>
 			<set name="keywords">tattoo, force</set>
