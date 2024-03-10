@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sorcerer Unbound Optional Features</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="sorcerer-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/unbound-classes/sorcerer-unbound.xml" />
 		</update>
 	</info>
@@ -88,11 +88,11 @@
 		<requirements>ID_WOTC_TCOE_ARCHETYPE_SORCERER_CLOCKWORK_SOUL</requirements>
 		<description>
 			<p>Requirements: Clockwork Soul Origin</p>
-			<p>When you cast a spell which rolls for its result, such as with damage or healing, you can spend 1 sorcery point to use a static number instead. Use half the maximum value of each die rolled for the spell.</p>
+			<p>When you cast a spell which rolls for its damage or healing, you can spend 1 sorcery point to use a static number instead for one of the rolls. Use half the highest value of each die rolled for the spell plus your CHA mod. This cannot total to above the dice's maximum size.</p>
 			<p>This does not work for spells which specify ability checks, such as Counterspell.</p>
 		</description>
 		<sheet usage="1 sorcery point">
-			<description>When you cast a spell which rolls for an effect, instead use half the maximum value of its dice.</description>
+			<description>When you cast a spell which rolls for an effect, instead use half the highest value of each die rolled for the spell plus your CHA mod. This cannot total to above the dice's maximum size.</description>
 		</sheet>
 	</element>
 	<element name="Breath Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_BREATH_SPELL">
@@ -170,11 +170,30 @@
 		<requirements>ID_WOTC_SCAG_ARCHETYPE_STORM_SORCERY</requirements>
 		<description>
 			<p>Requirements: Storm Origin</p>
-			<p>When you cast a spell with an area of affect, you can spend 2 sorcery points to cause air in its space to become violently displaced. Each creature must make a Strength saving throw or be pulled or pushed 5 feet away from the spell’s centre or fall prone. If the spell already has a Strength saving throw, they are pushed or fall prone in addition to the spell’s normal effects until the start of your next turn on a failure.</p>
+			<p>When you cast a spell with an area of affect, you can spend 2 sorcery points to cause air in its space to become violently displaced. Each creature or object affected is pulled toward or pushed away by 5 feet from or toward the spell’s centre or fall prone. Each creature and object is affected the same way.</p>
 			<p>A line spell’s centre is along its width, not length.</p>
 		</description>
 		<sheet usage="2 sorcery points">
-			<description>When you cast a spell with an area of affect, you can spend 2 sorcery points to cause creatures and objects to be pulled or pushed 5 feet away from the spell’s centre or fall prone</description>
+			<description>When you cast a spell with an area of affect, you can spend 2 sorcery points to cause creatures and objects to be pulled or pushed 5 feet away from the spell’s centre or fall prone. Each creature and object is affected the same way.</description>
+		</sheet>
+	</element>
+	<element name="Ruinous Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_RUIN_SPELL">
+		<supports>Metamagic</supports>
+		<description>
+			<p>When you cast a spell with an area of affect, you can spend 1 sorcery point to cause any terrain it contacted to become difficult terrain for the spell's duration, or 1 round if it was instantaneous.</p>
+		</description>
+		<sheet usage="1 sorcery point">
+			<description>When you cast a spell with an area of affect, cause any terrain it contacted to become difficult terrain for the spell's duration, or 1 round if it was instantaneous</description>
+		</sheet>
+	</element>
+	<element name="Keen Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_KEEN_SPELL">
+		<supports>Metamagic</supports>
+		<requirements>ID_WOTC_UA_ARCHETYPE_STONE_SORCERER</requirements>
+		<description>
+			<p>When you cast a spell, you can spend 1 sorcery point to hone its ability to pierce any defenses. The spell ignores a creature's shield bonus to AC or saving throws.</p>
+		</description>
+		<sheet usage="1 sorcery point">
+			<description>The spell ignores a creature's shield bonus to AC or saving throws.</description>
 		</sheet>
 	</element>
 	<!-- Unbound Spell List -->
