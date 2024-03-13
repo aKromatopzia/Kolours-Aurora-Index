@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unbound: Arcane Trickster</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
@@ -47,7 +47,7 @@
 			</table>				
 		</description>
 		<sheet display="false" />
-		<spellcasting name="Arcane Trickster" ability="Intelligence" allowReplace="true">
+		<spellcasting name="Arcane Trickster" ability="Intelligence" prepare="false" allowReplace="true">
 			<list>Wizard,(Enchantment||Illusion)</list>
 		</spellcasting>
 		<rules>
@@ -60,6 +60,7 @@
 			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
 			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
 			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" spellcasting="Arcane Trickster" />
 			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Trickster" />
 			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="10" number="1" spellcasting="Arcane Trickster" />
 			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, 1" level="3" number="1" spellcasting="Arcane Trickster" />
@@ -96,8 +97,8 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:fighter:3]"/>
-			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
 		</rules>
 	</element>
 
