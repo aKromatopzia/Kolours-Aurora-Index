@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>UA.index</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="UA.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA.index" />
 		</update>
 	</info>
