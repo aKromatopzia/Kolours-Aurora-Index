@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unbound: Arcane Trickster</name>
-		<update version="0.0.5">
+		<update version="0.0.7">
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
@@ -46,7 +46,9 @@
 				<tr><td>20th</td><td>4</td><td>13</td><td>4</td><td>3</td><td>3</td><td>1</td></tr>
 			</table>				
 		</description>
-		<sheet display="false" />
+		<sheet display="false">
+			<description>You enhance you fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion.</description>
+		</sheet>
 		<spellcasting name="Arcane Trickster" ability="Intelligence" prepare="false" allowReplace="true">
 			<list>Wizard,(Illusion||Enchantment)</list>
 		</spellcasting>
@@ -98,7 +100,7 @@
 		</setters>
 		<rules>
 			<grant type="Archetype Feature" id="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
-			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
 		</rules>
 	</element>
 
