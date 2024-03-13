@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>UA 2023: Eldritch Knight</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
 		</update>
 	</info>
@@ -97,8 +97,8 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:7]"/>
-			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:7]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_SPELLCASTING" requirements="[level:fighter:3]"/>
 		</rules>
 	</element>
 
@@ -132,8 +132,8 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
-			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:3]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:7]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ELDRITCH_KNIGHT_WAR_MAGIC" requirements="[level:fighter:7]"/>
 		</rules>
 	</element>
 
