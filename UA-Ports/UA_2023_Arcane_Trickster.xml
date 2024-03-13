@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unbound: Arcane Trickster</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
@@ -60,20 +60,20 @@
 			<stat name="arcane trickster:spellcasting:slots:3" value="2" level="13" />
 			<stat name="arcane trickster:spellcasting:slots:3" value="1" level="16" />
 			<stat name="arcane trickster:spellcasting:slots:4" value="1" level="19" />
-			<select type="Spell" name="Cantrip (arcane trickster)" supports="Wizard, 0" level="3" number="2" spellcasting="arcane trickster" />
-			<select type="Spell" name="Cantrip (arcane trickster)" supports="Wizard, 0" level="10" number="1" spellcasting="arcane trickster" />
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, 1" level="3" number="1" spellcasting="arcane trickster" />
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="arcane trickster" />
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="4" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="7" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="8" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="10" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="11" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="13" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="14" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="16" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="19" spellcasting="arcane trickster"/>
-			<select type="Spell" name="Spellcasting (arcane trickster)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="arcane trickster"/>
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Cantrip (Arcane Trickster)" supports="Wizard, 0" level="10" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, 1" level="3" number="1" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arcane Trickster" />
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="4" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="7" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="8" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="10" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="11" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="13" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="14" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="16" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="19" spellcasting="Arcane Trickster"/>
+			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
 		</rules>
 	</element>
 	<element name="Arcane Trickster, LV3: Unbound Spellcasting" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_ARCANE_TRICKSTER_SPELLCASTING">
