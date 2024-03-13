@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unbound: Arcane Trickster</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
@@ -48,7 +48,7 @@
 		</description>
 		<sheet display="false" />
 		<spellcasting name="Arcane Trickster" ability="Intelligence" prepare="false" allowReplace="true">
-			<list>Wizard,(Enchantment||Illusion)</list>
+			<list>Wizard,(Illusion||Enchantment)</list>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
@@ -77,17 +77,17 @@
 			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
 		</rules>
 	</element>
-	<element name="Arcane Trickster, LV3: Unbound Spellcasting" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_ARCANE_TRICKSTER_SPELLCASTING">
+	<element name="Arcane Trickster, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ARCANE_TRICKSTER_SPELLCASTING">
 		<compendium display="false" />
 		<description>
 			<p>
 				<i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i>
 			</p>
 			<p>
-				<i>This feature replaces Spellcasting (arcane trickster)</i>
+				<i>This feature replaces Spellcasting (Arcane Trickster)</i>
 			</p>
 			<div class="reference">
-				<div element="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
+				<div element="ID_UA2023ODND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
 			</div>
 		</description>
 		<setters>
@@ -97,8 +97,8 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
-			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
+			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
 		</rules>
 	</element>
 
