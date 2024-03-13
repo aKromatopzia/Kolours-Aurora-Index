@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>UA 2023: arcane trickster</name>
-		<update version="0.0.5">
-			<file name="UA_2023_Eldritch_Knight.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Eldritch_Knight.xml" />
+		<name>Unbound: Arcane Trickster</name>
+		<update version="0.0.1">
+			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
 	<element name="Unearthed Spellcasting" type="Archetype Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
