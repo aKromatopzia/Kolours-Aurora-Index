@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unbound: Arcane Trickster</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
@@ -77,7 +77,7 @@
 			<select type="Spell" name="Spellcasting (Arcane Trickster)" supports="Wizard, $(spellcasting:slots)" level="20" spellcasting="Arcane Trickster"/>
 		</rules>
 	</element>
-	<element name="Arcane Trickster, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UA2023ODND_ITEM_OCF_ARCANE_TRICKSTER_SPELLCASTING">
+	<element name="Arcane Trickster, LV3: Unearthed Spellcasting" type="Item" source="UA 2023: One DND" id="ID_UNBOUND_OCF_ARCANE_TRICKSTER_SPELLCASTING">
 		<compendium display="false" />
 		<description>
 			<p>
@@ -87,7 +87,7 @@
 				<i>This feature replaces Spellcasting (Arcane Trickster)</i>
 			</p>
 			<div class="reference">
-				<div element="ID_UA2023ODND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
+				<div element="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" />
 			</div>
 		</description>
 		<setters>
@@ -97,7 +97,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UA2023ODND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
+			<grant type="Archetype Feature" id="ID_UNBOUND_CLASS_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
 			<grant type="Archetype Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_ARCANE_TRICKSTER_SPELLCASTING" requirements="[level:rogue:3]"/>
 		</rules>
 	</element>
