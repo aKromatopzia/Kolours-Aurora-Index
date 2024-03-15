@@ -157,7 +157,7 @@
 			<description>king of the pride</description>
 		</sheet>
 	</element>
-	<element name="Anubis" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ANUBIS>
+	<element name="Anubis" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ANUBIS">
 		<description>
 			<p class="flavor">Guardian of the Dead</p>
 		</description>
