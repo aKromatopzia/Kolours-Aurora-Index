@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Languages</name>
+		<update version="0.0.1">
+			<file name="languages.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/languages.xml" />
+		</update>
+	</info>
+
+	<element name="Kao-te-Shou" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KT_SHOU">
+		<supports>KTS, Exotic</supports>
+		<description>
+			<p>Spoken by Shou. It has roots in draconic, so anybody who knows draconic would have advantage on interpreting KTS.</p>
+		</description>
+		<setters>
+			<set name="script">Draconic</set>
+		</setters>
+	</element>
+	<element name="Kara-Tur Tradespeak" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KT_TRADE">
+		<supports>KTS, Exotic</supports>
+		<description>
+			<p>Spoken by those from Kara-Tur who intend to trade with Faerunians. The language is a coarse mix of commonspeak - which is itself a mix of elvish and dwarvish - and KTS, and is only seriously used by merchants and privateers. It has roots in draconic, so anybody who knows draconic would have advantage on interpreting KTT</p>
+		</description>
+		<setters>
+			<set name="script">Dwarvish and Draconic</set>
+		</setters>
+	</element>
+	<element name="Han" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_Han">
+		<supports>KTS, Exotic</supports>
+		<description>
+			<p>Spoken sages and arcanists of Kara-Tur. Although historically known as the language of the gods, it has fallen out of popular use.</p>
+		</description>
+		<setters>
+			<set name="script">Celestial</set>
+		</setters>
+	</element>
+</elements>
