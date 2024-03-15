@@ -8,6 +8,6 @@
 	</info>
 	<files>
 		<file name="deities.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/deities.xml" />
-		<file name="languages.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/Sellswords-Setting/languages.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/languages.xml" />
 	</files>
 </index>
