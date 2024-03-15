@@ -172,7 +172,7 @@
 			<description>Guardian of the Dead</description>
 		</sheet>
 	</element>
-	<element name="Bastet" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_BASTET>
+	<element name="Bastet" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_BASTET">
 		<description>
 			<p class="flavor">The Dancing Lady</p>
 		</description>
