@@ -3,7 +3,7 @@
 	<info>
 		<name>Deities</name>
 		<description>Deities from the Player’s Handbook.</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="deities.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/deities.xml" />
 		</update>
 	</info>
@@ -185,6 +185,96 @@
 		</setters>
 		<sheet>
 			<description>The Dancing Lady</description>
+		</sheet>
+	</element>
+	<element name="Asgorath" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ASGPORATH">
+		<description>
+			<p class="flavor">The World Shaper</p>
+		</description>
+		<setters>
+			<set name="setting">Abeir-Toril/Outer Planes</set>
+			<set name="alignment">TN</set>
+			<set name="domains">Dragons, balance, knowledge, magic, travel</set>
+			<set name="symbol">A Plain Circle</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The World Shaper</description>
+		</sheet>
+	</element>
+	<element name="Kereska" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_KERESKA">
+		<description>
+			<p class="flavor">Wonderbringer</p>
+		</description>
+		<setters>
+			<set name="setting">Abeir-Toril</set>
+			<set name="alignment">TN</set>
+			<set name="domains">Magic, dragon magic, and magical creativity</set>
+			<set name="symbol">A Five-Pointed Star with the Lower-Two Points Extended.</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>Wonderbringer</description>
+		</sheet>
+	</element>
+	<element name="Sardior" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_SARDIOR">
+		<description>
+			<p class="flavor">Master of the Gemdrakes</p>
+		</description>
+		<setters>
+			<set name="setting">Abeir-Toril</set>
+			<set name="alignment">TN</set>
+			<set name="domains">Neutral dragons, night, psionics, secrets</set>
+			<set name="symbol">A Five-Pointed Star with the Lower-Two Points Extended.</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>Master of the Gemdrakes</description>
+		</sheet>
+	</element>
+	<element name="Astilabor" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ASTILABOR">
+		<description>
+			<p class="flavor">The Acquisitor</p>
+		</description>
+		<setters>
+			<set name="setting">Abeir-Toril</set>
+			<set name="alignment">TN</set>
+			<set name="domains">Dragon, Protection, Wealth, Cavern, Metal</set>
+			<set name="symbol">A TWelve-Facted Gem</set>
+			<set name="gender">female</set>
+		</setters>
+		<sheet>
+			<description>The Acquisitor</description>
+		</sheet>
+	</element>
+	<element name="Null" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NULL">
+		<description>
+			<p class="flavor">Guardian of the Lost</p>
+		</description>
+		<setters>
+			<set name="setting">Abeir-Toril</set>
+			<set name="alignment">LE</set>
+			<set name="domains">Death, Fate, Knowledge, Law, Scalykind</set>
+			<set name="symbol">A Circle Divided Diagonally into White and Black Semicircles</set>
+			<set name="gender">neutral</set>
+		</setters>
+		<sheet>
+			<description>Guardian of the Lost</description>
+		</sheet>
+	</element>
+	<element name="Task" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_TASK">
+		<description>
+			<p class="flavor">The Taker and Holder</p>
+		</description>
+		<setters>
+			<set name="setting">Abeir-Toril</set>
+			<set name="alignment">TN</set>
+			<set name="domains">Chaos, Planning, Evil, Scalykind</set>
+			<set name="symbol">A Pile of Five Coins</set>
+			<set name="gender">male</set>
+		</setters>
+		<sheet>
+			<description>The Taker and Holder</description>
 		</sheet>
 	</element>
 </elements>
