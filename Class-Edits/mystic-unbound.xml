@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>	
+<elements>
+	<info>
+		<name>Mystic "Unbound"</name>
+		<update version="0.0.1">
+			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
+		</update>
+	</info>
+
+	<element name="Psionic Restoration" type="Spell" source="Mystic Unbound" id="ID_UNBOUND_SPELL_MYSTIC_PSIONIC_RESTORATION">
+		<supports>Psionic Disciplines</supports>
+		<requirements>ID_WOTC_UA20170313_CLASS_MYSTIC||ID_WOTC_UA20170313_MULTICLASS_MYSTIC</requirements>
+		<description>
+			<p>You wield psionic energy to cure wounds and restore health to yourself and others.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you can use a bonus action to touch a creature that has 0 hit points and stabilize it.</p>
+			<p class="indent"><b>Mend Wounds (1–7 psi).</b> As an action, you can spend psi points to restore hit points to one creature you touch. The creature regains 1d8 hit points per psi point spent.</p>
+			<p class="indent"><b>Restore Health (3 psi).</b> As an action, you touch one creature and remove one of the following conditions from it: blinded, deafened, paralyzed, or poisoned. Alternatively, you remove one disease from the creature.</p>
+			<p class="indent"><b>Vim Pulse (5 psi).</b> As an action, you expel a psychic force to mend that which is broken. All creatures within 20ft. heal for 2d6 hit points. This does not affect Constructs.</p>
+			<p class="indent"><b>Restore Vigor (7 psi) .</b> As an action, you can touch one creature and choose one of the following: remove any reductions to one of its ability scores, remove one effect that reduces its hit point maximum, or reduce its exhaustion level by one.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Immortal Discipline</set>
+			<set name="time">Variable</set>
+			<set name="duration">Variable</set>
+			<set name="range">Variable</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
