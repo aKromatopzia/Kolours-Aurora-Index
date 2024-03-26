@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>kolours-aurora.index</name>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="kolours-aurora.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/kolours-aurora.index" />
 		</update>
 	</info>
