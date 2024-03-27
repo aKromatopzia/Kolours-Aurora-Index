@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Features</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="items-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -22,7 +22,7 @@
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Psionic Talents (Psionic Awakening)" supports="Psionic Talents" />
-			<select type="Spell" name="Psionic Discipline (Psionic Awakening)" supports="Psionic Disciplines" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (Psionic Awakening)" supports="Psionic Disciplines"/>
 		</rules>
 	</element>
 </elements>
