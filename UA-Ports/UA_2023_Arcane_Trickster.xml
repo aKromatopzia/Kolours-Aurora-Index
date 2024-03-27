@@ -6,7 +6,7 @@
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
-	<element name="Arcane Trickster" type="Archetype" source="Unbound" id="ID_UNBOUND_ARCHETYPE_ARCANE_TRICKSTER">
+	<element name="Arcane Trickster" type="Archetype" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ARCHETYPE_ARCANE_TRICKSTER">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.</p>
@@ -20,7 +20,7 @@
 			<description>You enhance you fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion.</description>
 		</sheet>
 		<rules>
-			<grant type="Archetype Feature" id="ID_UNBOUND_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_SELLSWORD_REWORKS_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING" level="3"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGE_HAND_LEGERDEMAIN" level="3"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_MAGICAL_AMBUSH" level="9"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_VERSATILE_TRICKSTER" level="13"/>
@@ -29,7 +29,7 @@
 		</rules>
 	</element>
 
-	<element name="Unbound Spellcasting" type="Archetype Feature" source="Unbound" id="ID_UNBOUND_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
+	<element name="Unbound Spellcasting" type="Archetype Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ARCHETYPE_FEATURE_ARCANE_TRICKSTER_SPELLCASTING">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_ARCANE_TRICKSTER_SPELLCASTING</requirements>
 		<description>
 			<p>When you reach 3rd level, you gain the ability to cast spells. See chapter 10 for the general rules of spellcasting and chapter 11 for the wizard spell list.</p>

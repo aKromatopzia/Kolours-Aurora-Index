@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Sorcerer Unbound Optional Features</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="sorcerer-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/sorcerer-unbound.xml" />
 		</update>
 	</info>
 	
 	<!-- Extra Metamagic Options -->
-	<element name="Adjudicating Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_ADJUDICATING_SPELL">
+	<element name="Adjudicating Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_ADJUDICATING_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_XGTE_SORCERER_ARCHETYPE_DIVINE_SOUL</requirements>
 		<description>
@@ -20,7 +20,7 @@
 			<description>WWhen you cast a spell, you can spend 2 sorcery points to cause targets of an alignment of your choice to be outlined in light. The attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible. If any are successful, they immediately stop glowing.</description>
 		</sheet>
 	</element>	
-	<element name="Lingering Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_LINGERING_SPELL">
+	<element name="Lingering Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_LINGERING_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell with an area-of-effect and duration of instantaneous, you can spend 1 sorcery point to alter the spell such that it persists until the start of your next turn. Creatures and objects already affected by the spell suffer no additional consequences, but those that enter the area will come under effect of the spell. Entering and exiting the area will not cause one to be affected again.</p>
@@ -29,7 +29,7 @@
 			<description>When you cast a spell with an area-of-effect and duration of instantaneous, you can spend 1 sorcery point to alter the spell such that it persists until the start of your next turn. Nothing can be affected multiple times.</description>
 		</sheet>
 	</element>
-	<element name="Spreading Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_ENLARGED_SPELL">
+	<element name="Spreading Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_ENLARGED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell with a range of self and an area-of-affect, you can spend 3 sorcery points to increase its a parameter of its size by 5 ft.</p>
@@ -42,7 +42,7 @@
 			<description>When you cast a spell with a range of self and an area-of-affect, you can spend 2 sorcery points to increase its size slightly.</description>
 		</sheet>
 	</element>
-	<element name="Delayed Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_DELAYED_SPELL">
+	<element name="Delayed Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_DELAYED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>WWhen you cast a spell that affects one or more points or directions (such as bonfire, burning hands, and sword burst), you can spend 1 sorcery point to delay its effect up to a number of rounds equal to your proficiency bonus. It becomes a magical mote at the origin (for lines and cones) or center (for circles and squares). The space must be unoccupied. It can then be activated as an action on your turn (or as a reaction, if the action was readied) for the spell to be cast from the mote’s location. Any decisions needed for the spell is made when it was cast. For example, using mold earth to create difficult terrain in a certain spot. </p>
@@ -57,7 +57,7 @@
 			<stat name="metamagic delayed spell:timer" value="proficiency" bonus="base" />
 		</rules>
 	</element>
-	<element name="Elemental Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_ELEMENTAL_SPELL">
+	<element name="Elemental Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_ELEMENTAL_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><i>They really looked at people who wanted to play specialized elementalists and said no.</i></p>
@@ -73,7 +73,7 @@
 			<stat name="metamagic elemental spell:damage" value="charisma:modifier" bonus="base" />
 		</rules>
 	</element>
-	<element name="Amplified Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_AMPLIFIED_SPELL">
+	<element name="Amplified Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_AMPLIFIED_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p><i>Now here's the actual Heightened Spell. It's a bit weak and still doesn't do what it was meant to, but hey it cheats on some action economy.</i></p>
@@ -83,7 +83,7 @@
 			<description>When you cast a spell that has effects based on the spell slot level used, you can spend sorcery points to increase the effective spell slot level by that much, up to the highest level of a spell you could normally cast.</description>
 		</sheet>
 	</element>	
-	<element name="Balanced Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_BALANCED_SPELL">
+	<element name="Balanced Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_BALANCED_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_TCOE_ARCHETYPE_SORCERER_CLOCKWORK_SOUL</requirements>
 		<description>
@@ -95,7 +95,7 @@
 			<description>When you cast a spell which rolls for an effect, instead use half the highest value of each die rolled for the spell plus your CHA mod. This cannot total to above the dice's maximum size.</description>
 		</sheet>
 	</element>
-	<element name="Breath Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_BREATH_SPELL">
+	<element name="Breath Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_BREATH_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_PHB_ARCHETYPE_DRACONIC_BLOODLINE</requirements>
 		<description>
@@ -111,7 +111,7 @@
 			<description>When you cast a spell which does damage in only the type associated with your Dragon Ancestor, you can spend 1 sorcery point to instead cast it with a range of self(15-feet cone).</description>
 		</sheet>
 	</element>	
-	<element name="Horrifying Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_HORRIFYING_SPELL">
+	<element name="Horrifying Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_HORRIFYING_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_TCOE_ARCHETYPE_SORCERER_ABERRANT_MIND</requirements>
 		<description>
@@ -122,7 +122,7 @@
 			<description>When you cast a spell which does damage, you can spend 2 sorcery points to deal half its maximum potential damage instead of rolling.</description>
 		</sheet>
 	</element>	
-	<element name="Obscuring Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_OBSCURING_SPELL">
+	<element name="Obscuring Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_OBSCURING_SPELL">
 	<supports>Metamagic</supports>
 	<requirements>ID_WOTC_XGTE_SORCERER_ARCHETYPE_SHADOW_MAGIC</requirements>
 		<description>
@@ -134,7 +134,7 @@
 			<description>When you cast a spell with an area-of-effect, you can spend 2 or 3 sorcery points to cause the spell to leave behind a zone of magical shadow. The light level in the area of the spell goes down by one tier: From bright to dim, from dim to dark. It fades at the end of your next turn unless you spent 3 sorcery points for it to last until the spell ends. You can see in the area of this magical darkness as if it were one tier higher. It also dispels weaker magical light.</description>
 		</sheet>
 	</element>
-	<element name="Intuitive Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_INTUITIVE_SPELL">
+	<element name="Intuitive Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_INTUITIVE_SPELL">
 	<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell that requires concentration or maintain concentration for a spell, you can spend 1 sorcery point to have it instead require 1 sorcery point at the start of each round you maintain its effects without concentration. On later rounds, you can end this Metamagic at any time on your turn.</p>
@@ -144,7 +144,7 @@
 			<description>When you cast a spell that requires concentration or maintain concentration for a spell, you can spend 1 sorcery point to have it instead require 1 sorcery point at the start of each round you maintain its effects without concentration.</description>
 		</sheet>
 	</element>
-	<element name="Siphoning Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_SIPHONING_SPELL">
+	<element name="Siphoning Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_SIPHONING_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell that deals damage, you can spend 1 sorcery point to gain 3 temporary hit points for each of its levels.</p>
@@ -153,7 +153,7 @@
 			<description>When you cast a spell that deals damage, you can spend 1 sorcery point to gain 3 temporary hit points for each of its levels.</description>
 		</sheet>
 	</element>	
-	<element name="Unstable Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_UNSTABLE_SPELL">
+	<element name="Unstable Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_UNSTABLE_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_PHB_ARCHETYPE_WILD_MAGIC</requirements>
 		<description>
@@ -165,7 +165,7 @@
 			<description>When you cast a spell that goes wild, you can spend 1 sorcery point to use another Metamagic option on it as if it hadn’t; or spend 3 sorcery points to force it to go wild.</description>
 		</sheet>
 	</element>	
-	<element name="Tempestuous Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_VORTEX_SPELL">
+	<element name="Tempestuous Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_VORTEX_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_SCAG_ARCHETYPE_STORM_SORCERY</requirements>
 		<description>
@@ -177,7 +177,7 @@
 			<description>When you cast a spell with an area of affect, you can spend 2 sorcery points to cause creatures and objects to be pulled or pushed 5 feet away from the spell’s centre or fall prone. Each creature and object is affected the same way.</description>
 		</sheet>
 	</element>
-	<element name="Ruinous Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_RUIN_SPELL">
+	<element name="Ruinous Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_RUIN_SPELL">
 		<supports>Metamagic</supports>
 		<description>
 			<p>When you cast a spell with an area of affect, you can spend 1 sorcery point to cause any terrain it contacted to become difficult terrain for the spell's duration, or 1 round if it was instantaneous.</p>
@@ -186,7 +186,7 @@
 			<description>When you cast a spell with an area of affect, cause any terrain it contacted to become difficult terrain for the spell's duration, or 1 round if it was instantaneous</description>
 		</sheet>
 	</element>
-	<element name="Keen Spell" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_KEEN_SPELL">
+	<element name="Keen Spell" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_KEEN_SPELL">
 		<supports>Metamagic</supports>
 		<requirements>ID_WOTC_UA_ARCHETYPE_STONE_SORCERER</requirements>
 		<description>
@@ -197,7 +197,7 @@
 		</sheet>
 	</element>
 	<!-- Unbound Spell List -->
-	<element name="Spellcasting Unbound" type="Class Feature" source="Player’s Handbook" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
+	<element name="Spellcasting Unbound" type="Class Feature" source="Player’s Handbook" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
 		<description>
 			<p><i>What was changed here is that you also have wizard's spell list.</i></p>
 			<p>You get access to Wizard's spell list.</p>
@@ -207,7 +207,7 @@
 		</spellcasting>
 		<sheet display="false"/>
 	</element>
-	<element name="Sorcerer, LV01: Unbound Spell List (Sorcerer)" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_OCF_SORCERER_SPELLCASTING_SORCERER">
+	<element name="Sorcerer, LV01: Unbound Spell List (Sorcerer)" type="Item" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ITEM_OCF_SORCERER_SPELLCASTING_SORCERER">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -222,11 +222,11 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" requirements="[level:sorcerer:1]"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" requirements="[level:sorcerer:1]"/>
 		</rules>
 	</element>
 	<!-- Unbound Font of Magic -->
-	<element name="Partial Replenishment" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_PARTIAL_REPLENISHMENT">
+	<element name="Partial Replenishment" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_PARTIAL_REPLENISHMENT">
 		<description>
 			<p><i>2nd-level sorcerer feature.</i></p>
 			<p>When you complete a short rest, you can spend a number of hit dice to replenish a number of sorcery points equal to half the maximum value of each die.</p>
@@ -235,7 +235,7 @@
 			<description>When you complete a short rest, you can spend a number of hit dice to replenish a number of sorcery points equal to half the maximum value of each die.</description>
 		</sheet>
 	</element>
-	<element name="Sorcerer, LV02: Partial Replenishment" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_OCF_SORCERER_PARTIAL_REPLENISHMENT">
+	<element name="Sorcerer, LV02: Partial Replenishment" type="Item" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ITEM_OCF_SORCERER_PARTIAL_REPLENISHMENT">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -250,11 +250,11 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_PARTIAL_REPLENISHMENT" requirements="[level:sorcerer:2]"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_PARTIAL_REPLENISHMENT" requirements="[level:sorcerer:2]"/>
 		</rules>
 	</element>
 		<!-- Unbound Metamagic -->
-	<element name="Metamagic Unbound" type="Class Feature" source="UNBOUND" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_UNBOUND">
+	<element name="Metamagic Unbound" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_UNBOUND">
 		<description>
 			<p><i>3rd-level Sorcerer optional feature</i></p>
 			<p>You get an additional Metamagic option at 3rd level. At 10th level, you can use up to two Metamagic options on a spell unless otherwise noted.</p>
@@ -263,10 +263,10 @@
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="3" number="1"/>
-			<grant type="Class Feature" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_ADVANCED_METAMAGIC" requirements="[level:sorcerer:10]"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_ADVANCED_METAMAGIC" requirements="[level:sorcerer:10]"/>
 		</rules>
 	</element>
-	<element name="Advanced Metamagic" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_ADVANCED_METAMAGIC">
+	<element name="Advanced Metamagic" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_ADVANCED_METAMAGIC">
 		<description>
 			<p>At 10th level, your efficacy with altering the properties of your spells allows you to use two Metamagic options of a spell when you cast it, unless otherwise noted.</p>
 		</description>
@@ -274,7 +274,7 @@
 			<description>You can use an additional Metamagic options on a spell when you cast it, unless otherwise noted.</description>
 		</sheet>
 	</element>
-	<element name="Sorcerer, LV03: Metamagic Unbound" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_OCF_SORCERER_METAMAGIC_UNBOUND">
+	<element name="Sorcerer, LV03: Metamagic Unbound" type="Item" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ITEM_OCF_SORCERER_METAMAGIC_UNBOUND">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -289,7 +289,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_METAMAGIC_UNBOUND" requirements="[level:sorcerer:2]"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_METAMAGIC_UNBOUND" requirements="[level:sorcerer:2]"/>
 		</rules>
 	</element>
 	<!-- Magical Fortitude -->
@@ -307,7 +307,7 @@
 		<stat name="magical fortitude:value" value="proficiency" bonus="base"  />
 		</rules>
 	</element>
-	<element name="Sorcerer, LV05: Magical Fortitude" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_OCF_SORCERER_MAGICAL_FORTITUDE">
+	<element name="Sorcerer, LV05: Magical Fortitude" type="Item" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ITEM_OCF_SORCERER_MAGICAL_FORTITUDE">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -326,7 +326,7 @@
 		</rules>
 	</element>
 	<!-- Signature Metamagic -->
-	<element name="Signature Metamagic" type="Class Feature" source="Unbound" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_SIGNATURE_METAMAGIC">
+	<element name="Signature Metamagic" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_SIGNATURE_METAMAGIC">
 		<description>
 			<p>At 20th level, your familiarity with bending the properties of your magic spells allows you to do so with ease. Choose one metamagic option you know and reduce its cost by 2 (minimum 0), or choose two and reduce their costs by 1 each (minimum 0).</p>
 		</description>
@@ -334,7 +334,7 @@
 			<description>A chosen metamagic option has its cost reduced by 2 (minimum 0); Or two chosen metamagics have their costs reduced by 1 each (minimum 0).</description>
 		</sheet>
 	</element>
-	<element name="Sorcerer, LV20: Signature Metamagic" type="Item" source="Unbound" id="ID_UNBOUND_ITEM_OCF_SORCERER_SIGNATURE_METAMAGIC">
+	<element name="Sorcerer, LV20: Signature Metamagic" type="Item" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ITEM_OCF_SORCERER_SIGNATURE_METAMAGIC">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
@@ -349,7 +349,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_UNBOUND_CLASS_FEATURE_SORCERER_SIGNATURE_METAMAGIC" requirements="[level:sorcerer:20]"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_SIGNATURE_METAMAGIC" requirements="[level:sorcerer:20]"/>
 			<grant type="Class Feature" id="ID_INTERNAL_FEATURE_REPLACEMENT_SORCERER_SORCEROUS_RESTORATION" requirements="[level:sorcerer:20]"/>
 		</rules>
 	</element>
