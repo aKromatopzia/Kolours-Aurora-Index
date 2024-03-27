@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -1674,7 +1674,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psionic Restoration" type="Spell" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_SPELL_MYSTIC_PSIONIC_RESTORATION">
+	<element name="Psionic Restoration" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_REWORKS_SPELL_MYSTIC_PSIONIC_RESTORATION">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1906,7 +1906,7 @@
 			<description>As a bonus action, a one-handed melee weapon you hold becomes one with your hand. For the next minute, you can’t let go of the weapon nor can it be forced from your grasp.</description>
 		</sheet>
 	</element>
-	<element name="Blind Spot" type="Class Feature" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_MYSTIC_TALENTS_BLIND_SPOT">
+	<element name="Blind Spot" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_REWORKS_MYSTIC_TALENTS_BLIND_SPOT">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn. A creature that can not be charmed is immune to this effect. Additionally, the creature has advantage on the saving throw if they are in active pursuit of or thinking about you.</p>
