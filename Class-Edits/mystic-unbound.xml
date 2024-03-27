@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -42,4 +42,5 @@
 		<sheet>
 			<description>As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn. A creature that can not be charmed is immune to this effect. Additionally, the creature has advantage on the saving throw if they are in active pursuit of or thinking about you.</description>
 		</sheet>
+	</element>
 </elements>
