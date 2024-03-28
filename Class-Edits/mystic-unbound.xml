@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -189,11 +189,9 @@
 			<select type="Spell" name="Psionic Discipline" supports="Psionic Disciplines" level="1" spellcasting="Mystic" />
 			<select type="Spell" name="Psionic Discipline (3)" supports="Psionic Disciplines" level="3" spellcasting="Mystic" />
 			<select type="Spell" name="Psionic Discipline (5)" supports="Psionic Disciplines" level="5" spellcasting="Mystic" />
-			<select type="Spell" name="Psionic Discipline (7)" supports="Psionic Disciplines" level="7" spellcasting="Mystic" />
 			<select type="Spell" name="Psionic Discipline (9)" supports="Psionic Disciplines" level="9" spellcasting="Mystic" />
-			<select type="Spell" name="Psionic Discipline (12)" supports="Psionic Disciplines" level="12" spellcasting="Mystic" />
-			<select type="Spell" name="Psionic Discipline (15)" supports="Psionic Disciplines" level="15" spellcasting="Mystic" />
-			<select type="Spell" name="Psionic Discipline (18)" supports="Psionic Disciplines" level="18" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (13)" supports="Psionic Disciplines" level="13" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (17)" supports="Psionic Disciplines" level="17" spellcasting="Mystic" />
 		</rules>
 	</element>
 	<element name="Mystic Order" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER">
@@ -667,12 +665,13 @@
 	<element name="Soul Knife" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_SOUL_KNIFE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
-			<p>Starting at 1st level, you gain the ability to manifest a blade of psychic energy. As a bonus action, you create scintillating knives of energy that project from both of your fists. You can’t hold anything in your hands while manifesting these blades. You can dismiss them as a bonus action.</p>
-			<p class="indent">For you, a soul knife is a martial melee weapon with the light and finesse properties. It deals 1d8 psychic damage on a hit.</p>
-			<p class="indent">As a bonus action, you can prepare to use the blades to parry; you gain a +2 bonus to AC until the start of your next turn or until you are incapacitated.</p>
+			<p>Starting at 1st level, you gain the ability to manifest blades of psychic energy. You can create and dismiss scintillating blades of energy at-will in your free hands, and can do so as part of an attack.</p>
+			<p class="indent">A soul knife is a martial melee weapon with the light, finesse and thrown(20/60ft) properties. It deals 1d6 plus your weapon attack modifier in psychic damage on a hit. When thrown, they dissipate the moment they strike something or reach their maximum range.</p>
+			<p class="indent">At 5th level, you are considered to have mastery with your soul knives, they gain the nick mastery property, and their damage die is increased to d8.</p>
+			<p class="indent">As a bonus action, you can sharpen the edge of your soul knife. Until the end of your turn, you can use your psionic ability modifier in place of strength or dexterity for the attack and damage rolls.</p>
 		</description>
 		<sheet>
-			<description>As a bonus action, you create knives of energy that project from both of your fists. You can’t hold anything in your hands while manifesting these blades. You can dismiss them as a bonus action. For you, a soul knife is a martial melee weapon with the light and finesse properties. It deals 1d8 psychic damage on a hit. As a bonus action, you can prepare to use the blades to parry; you gain a +2 bonus to AC until the start of your next turn or until you are incapacitated.</description>
+			<description>You can create and dismiss knives of energy at-will in your free hands, and can do so as part of an attack. The soul knife is a martial melee weapon with the light, finesse and thrown(20/60ft) properties. It deals 1d6 plus your psionic ability modifier psychic damage on a hit. As a bonus action, you can sharpen the edge of your soul knife; Until the end of your turn, you can use your psionic ability modifier in place of strength or dexterity for the attack and damage rolls. At 5th level, you are considered to have mastery with your soul knives, they gain the nick mastery property, and their damage die is increased to d8.</description>
 		</sheet>
 	</element>
 	<element name="Hone the Blade" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_HONE_THE_BLADE">
@@ -695,13 +694,13 @@
 	<element name="Consumptive Knife" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_CONSUMPTIVE_KNIFE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
-			<p>Starting at 6th level, whenever you slay an enemy creature with a soul knife attack, you immediately regain 2 psi points.</p>
+			<p>Starting at 6th level, your soul knives can siphon a creature's latent psychic energy. When your attack with a soul knife causes a creature to fall to 0 hit points, or as a bonus action to an unconscious creature within the reach of your soul knife, you can drain their mind. This causes you to regain 2 psi points, and deals 2d6 psychic damage to the creature if they are not already at 0 hit points.</p>
 		</description>
 		<sheet>
-			<description>Whenever you slay an enemy creature with a soul knife attack, you immediately regain 2 psi points.</description>
+			<description>When your attack with a soul knife causes a creature to fall to 0 hit points, or as a bonus action to an unconscious creature within the reach of your soul knife, you regain 2 psi points and deal 2d6 psychic damage to the creature if they are not already at 0 hit points.</description>
 		</sheet>
 	</element>
-	<element name="Phantom Knife" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_PHANTOM_KNIFE">
+	<element name="True Edge" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_PHANTOM_KNIFE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
 			<p>Starting at 14th level, you can make an attack that phases through most defenses. As an action, you can make one attack with your soul knife. Treat the target’s AC as 10 against this attack, regardless of the target’s actual AC.</p>
