@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -105,7 +105,6 @@
 			<select type="Proficiency" name="Skill Proficiency (Mystic)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_MYSTIC"/>
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS" level="1" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER" level="1" />
-			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTICAL_RECOVERY" level="2" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY" level="2" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_ABILITY_SCORE_IMPROVEMENT_MYSTIC" level="4" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_STRENGTH_OF_MIND" level="4" />
@@ -118,10 +117,11 @@
 			<prerequisite>Intelligence 13</prerequisite>
 			<requirements>[int:13]</requirements>
 			<setters>
-				<set name="multiclass proficiencies">—</set>
+				<set name="multiclass proficiencies">Light armor</set>
 			</setters>
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
 			</rules>
 		</multiclass>
 	</element>
@@ -149,9 +149,11 @@
 			<p>Intelligence is your psionic ability for your psionic disciplines. You use your Intelligence modifier when setting the saving throw DC for a psionic discipline or when making an attack roll with one.</p>
 			<p class="indent">Discipline save DC = 8 + your proficiency bonus + your Intelligence modifier</p>
 			<p class="indent">Discipline attack modifier = your proficiency bonus + your Intelligence modifier</p>
+			<h5>LIMITATIONS</h5>
+			<p>You can not use any of your psionic talents, discipline or focus abilities while raging.</p>
 		</description>
 		<sheet display="true">
-			<description>You have an internal reservoir of {{psi-points}} Psi points that can be devoted to psionic disciplines you know. You can use no more than {{psi-limit}} psi points to activate a psionic discipline. As a bonus action, you can choose one of your psionic disciplines and gain its psychic focus benefit. The benefit lasts until you are incapacitated or until you use another bonus action to choose a different focus benefit.</description>
+			<description>You have an internal reservoir of {{psi-points}} Psi points that can be devoted to psionic disciplines you know. You can use no more than {{psi-limit}} psi points to activate a psionic discipline. As a bonus action, you can choose one of your psionic disciplines and gain its psychic focus benefit. The benefit lasts until you are incapacitated or until you use another bonus action to choose a different focus benefit. You can not use psionic powers while raging.</description>
 		</sheet>
 		<spellcasting name="Mystic" ability="Intelligence" allowReplace="true">
 			<list>Mystic</list>
@@ -205,16 +207,6 @@
 			<select type="Archetype" name="Mystic Order" supports="Mystic Order" />
 		</rules>
 	</element>
-	<element name="Mystical Recovery" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTICAL_RECOVERY">
-		<supports>Mystic</supports>
-		<description>
-			<p>Starting at 2nd level, you can draw vigor from the psi energy you use to power your psionic disciplines.</p>
-			<p class="indent">Immediately after you spend psi points on a psionic discipline, you can take a bonus action to regain hit points equal to the number of psi points you spent.</p>
-		</description>
-		<sheet>
-			<description>Immediately after you spend psi points on a psionic discipline, you can take a bonus action to regain hit points equal to the number of psi points you spent.</description>
-		</sheet>
-	</element>
 	<element name="Telepathy" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY">
 		<supports>Mystic</supports>
 		<description>
@@ -265,11 +257,11 @@
 	<element name="Consumptive Power" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_CONSUMPTIVE_POWER">
 		<supports>Mystic</supports>
 		<description>
-			<p>At 10th level, you gain the ability to sacrifice your physical durability in exchange for psionic power. When activating a psionic discipline, you can pay its psi point cost with your hit points, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest.</p>
+			<p>At 10th level, you gain the ability to sacrifice your physical durability in exchange for psionic power. When activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:4, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest.</p>
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>When activating a psionic discipline, you can pay its psi point cost with your hit points, instead of using any psi points. Your current HP and max HP are both reduced by the number of HP you spend. This reduction can’t be lessened in any way.</description>
+			<description>When activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:4, instead of using any psi points. Your current HP and max HP are both reduced by the number of HP you spend. This reduction can’t be lessened in any way.</description>
 		</sheet>
 	</element>
 	<element name="Psionic Mastery" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONIC_MASTERY">
@@ -451,7 +443,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Avatar Discipline" number="2" spellcasting="Mystic" />
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Avatar Discipline" spellcasting="Mystic" level="1"/>
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Avatar Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
 	<element name="Armor Training" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_ARMOR_TRAINING">
@@ -501,7 +494,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Awakened Discipline" number="2" spellcasting="Mystic" />
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Awakened Discipline" spellcasting="Mystic" level="1"/>
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Awakened Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
 	<element name="Awakened Talent" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_AWAKENED_TALENT">
@@ -555,7 +549,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Immortal Discipline" number="2" spellcasting="Mystic" />
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Immortal Discipline" spellcasting="Mystic" level="1"/>
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Immortal Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
 	<element name="Immortal Durability" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_IMMORTAL_DURABILITY">
@@ -616,7 +611,8 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Nomad Discipline" number="2" spellcasting="Mystic" />
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Nomad Discipline" spellcasting="Mystic" level="1"/>
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Nomad Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
 	<element name="Breadth of Knowledge" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_BREADTH_OF_KNOWLEDGE">
@@ -719,11 +715,12 @@
 	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_BONUS_DISCIPLINES">
 		<supports>Order of the Wu Jen</supports>
 		<description>
-			<p>At 1st level, you learn two additional psionic disciplines of your choice. They must be chosen from among the Wu Jen disciplines.</p>
+			<p>At 1st level, you learn one additional psionic disciplines of your choice, and another at 2nd level. They must be chosen from among the Wu Jen disciplines.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Wu Jen Discipline" number="2" spellcasting="Mystic" />
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Wu Jen Discipline" spellcasting="Mystic" level="1"/>
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Wu Jen Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
 	<element name="Hermit's Study" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_HERMITS_STUDY">
@@ -785,9 +782,9 @@
 			<p>You can alter your body to match your surroundings, allowing you to withstand punishing environments. With greater psi energy, you can extend this protection to others.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you don’t need to eat, breathe, or sleep. To gain the benefits of a long rest, you can spend 8 hours engaged in light activity, rather than sleeping during any of it.</p>
 			<p class="indent"><b>Environmental Adaptation (2 psi).</b> As an action, you or a creature you touch ignores the effects of extreme heat or cold (but not cold or fire damage) for the next hour.</p>
-			<p class="indent"><b>Adaptive Shield (3 psi).</b> When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to damage of that type—including the triggering damage— until the end of your next turn.</p>
+			<p class="indent"><b>Adaptive Shield (3 psi).</b> When you take acid, cold, fire, lightning, or thunder damage, you can use your reaction to gain resistance to damage of that type —including the triggering damage— until the end of your next turn.</p>
 			<p class="indent"><b>Energy Adaptation (5 psi; conc., 1 hr.).</b> As an  action, you can touch one creature and give it resistance to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your concentration ends.</p>
-			<p class="indent"><b>Energy Immunity (7 psi; conc., 1 hr.).</b> As an action, you can touch one creature and give it immunity to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your concentration ends.</p>
+			<p class="indent"><b>Energy Immunity (7 psi; conc., 10 mins.).</b> As an action, you can touch one creature and give it immunity to acid, cold, fire, lightning, or thunder damage (your choice), which lasts until your concentration ends.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -810,9 +807,9 @@
 		<description>
 			<p>You refocus your sight to see the energy that surrounds all creatures. You perceive auras, energy signatures that can reveal key elements of a creature’s nature.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Wisdom (Insight) checks.</p>
-			<p class="indent"><b>Assess Foe (2 psi).</b> As a bonus action, you analyze the aura of one creature you see. You learn its current hit point total and all its immunities, resistances, and vulnerabilities.</p>
+			<p class="indent"><b>Assess Foe (2+ psi).</b> As a bonus action, you attempt to analyze the aura of one creature you see. You learn one of its attributes such as, but not exhaustively, current hit point and total, immunities, resistances, or vulnerabilities. For each psi point spent over 2, you can choose an additional attribute.</p>
 			<p class="indent"><b>Read Moods (2 psi).</b> As a bonus action, you learn a one-word summary of the emotional state of up to six creatures you can see, such as happy, confused, afraid, or violent.</p>
-			<p class="indent"><b>View Aura (3 psi; conc., 1 hr.).</b> As an action, you study one creature’s aura. Until your concentration ends, while you can see the target, you learn if it’s under the effect of any magical or psionic effects, its current hit point total, and its basic emotional state. While this effect lasts, you have advantage on Wisdom (Insight) and Charisma checks you make against it.</p>
+			<p class="indent"><b>View Aura (3 psi; conc., 1 hr.).</b> As an action, you study one creature’s aura. If the creature is hostile to you, it may attempt to resist this effect with an Intelligence saving throw. Until your concentration ends, while you can see the target, you learn if it’s under the effect of any magical or psionic effects, its current hit point total, and its basic emotional state. While this effect lasts, you have advantage on Wisdom (Insight) and Charisma checks you make against it.</p>
 			<p class="indent"><b>Perceive the Unseen (5 psi; conc., 1 hr.).</b> As a bonus action, you gain the ability to see auras even of invisible or hidden creatures. Until your concentration ends, you can see all creatures, including hidden and invisible ones, regardless of lighting conditions.</p>
 		</description>
 		<setters>
@@ -836,7 +833,7 @@
 		<description>
 			<p>You transform your body, gaining traits of different beasts.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Wisdom (Animal Handling) checks.</p>
-			<p class="indent"><b>Bestial Claws (1-7 psi).</b> You manifest long claws for an instant and make a melee weapon attack against one creature within 5 feet of you. On a hit, this attack deals 1d10 slashing damage per psi point spent.</p>
+			<p class="indent"><b>Bestial Form (1+ psi).</b> You manifest long claws, horns, a tail, or similar for an instant and make a melee weapon attack against one creature within 5 feet of you. On a hit, this attack deals 1d10 of a physical damage type of your choice per psi point spent.</p>
 			<p class="indent"><b>Bestial Transformation.</b> As a bonus action, you alter your physical form to gain different characteristics. When you use this ability, you can choose one or more of the following effects. Each effect has its own psi point cost. Add them together to determine the total cost. This transformation lasts for 1 hour, until you die, or until you end it as a bonus action.</p>
 			<p class="indent"><b>Amphibious (2 psi).</b> You gain gills; you can breathe air and water.</p>
 			<p class="indent"><b>Climbing (2 psi).</b> You grow tiny hooked claws that give you gain a climbing speed equal to your walking speed.</p>
@@ -867,9 +864,9 @@
 		<description>
 			<p>You augment your natural strength with psionic energy, granting you the ability to achieve incredible feats of might.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Strength (Athletics) checks.</p>
-			<p class="indent"><b>Brute Strike (1-7 psi).</b> As a bonus action, you gain a bonus to your next damage roll against a target you hit with a melee attack during the current turn. The bonus equals +1d6 per psi point spent, and the bonus damage is the same type as the attack. If the attack has more than one damage type, you choose which one to use for the bonus damage.</p>
-			<p class="indent"><b>Knock Back (1-7 psi).</b> Wheny you hit a target with a melee attack, you can activate this ability as a reaction. The target must succeed on a Strength saving throw or be knocked 10 feet away from you per psi point spent. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes 1d6 bludgeoning damage per psi point spent.</p>
-			<p class="indent"><b>Mighty Leap (1-7 psi).</b> As part of your movement, you jump in any direction up to 20 feet per psi point spent.</p>
+			<p class="indent"><b>Brute Strike (1+ psi).</b> As a bonus action, you gain a bonus to your next damage roll against a target you hit with a melee attack during the current turn. The bonus equals +1d6 per psi point spent, and the bonus damage is the same type as the attack. If the attack has more than one damage type, you choose which one to use for the bonus damage.</p>
+			<p class="indent"><b>Knock Back (1+ psi).</b> Wheny you hit a target with a melee attack, you can activate this ability as a reaction. The target must succeed on a Strength saving throw or be knocked 10 feet away from you per psi point spent. The target moves in a straight line. If it hits an object, this movement immediately ends and the target takes 1d6 bludgeoning damage per psi point spent.</p>
+			<p class="indent"><b>Mighty Leap (1+ psi).</b> As part of your movement, you jump in any direction up to 20 feet per psi point spent.</p>
 			<p class="indent"><b>Feat of Strength (2 psi).</b> As a bonus action, you gain a +5 bonus to Strength checks until the end of your next turn.</p>
 		</description>
 		<setters>
@@ -892,10 +889,10 @@
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
 			<p>You channel psionic power into your body, honing your reflexes and agility to an incredible degree. The world seems to slow down while you continue to move as normal.</p>
-			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, your walking speed increases by 10 feet.</p>
-			<p class="indent"><b>Rapid Step (1-7 psi).</b> As a bonus action, you increase your walking speed by 10 feet per psi point spent until the end of the current turn. If you have a climbing or swimming speed, this increase applies to that speed as well.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, your walking speed increases by 5 feet.</p>
+			<p class="indent"><b>Rapid Step (1+ psi).</b> As a bonus action, you increase your walking speed by 5 feet per psi point spent until the end of the current turn. If you have a climbing or swimming speed, this increase applies to that speed as well.</p>
 			<p class="indent"><b>Agile Defense (2 psi).</b> As a bonus action, you take the Dodge action.</p>
-			<p class="indent"><b>Blur of Motion (2 psi).</b> As an action, you cause yourself to be invisible during any of your movement during the current turn.</p>
+			<p class="indent"><b>Blur of Motion (2 psi).</b> As an action, you cause yourself to be blurry during any of your movement during the current turn. Creatures have disadvantage on perception checks to look for and attack rolls against you. A creature is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.</p>
 			<p class="indent"><b>Surge of Speed (2 psi).</b> As a bonus action, you gain two benefits until the end of the current turn: you don’t provoke opportunity attacks, and you have a climbing speed equal to your walking speed.</p>
 			<p class="indent"><b>Surge of Action (5 psi).</b> As a bonus action, you can Dash or make one weapon attack.</p>
 		</description>
@@ -920,8 +917,8 @@
 		<description>
 			<p>Your control over your body allows you to deliver acid or poison attacks.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have resistance to acid and poison damage.</p>
-			<p class="indent"><b>Corrosive Touch (1-7 psi).</b> As an action, you deliver a touch of acid to one creature within your reach. The target must make a Dexterity saving throw, taking 1d10 acid damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
-			<p class="indent"><b>Venom Strike (1-7 psi).</b> As an action, you create a poison spray that targets one creature you can see within 30 feet of you. The target must make a Constitution saving throw. On a failed save, it takes 1d6 poison damage per psi point spent and is poisoned until the end of your next turn. On a successful save, the target takes half as much damage and isn’t poisoned.</p>
+			<p class="indent"><b>Corrosive Touch (1+ psi).</b> As an action, you deliver a touch of acid to one creature within your reach. The target must make a Dexterity saving throw, taking 1d10 acid damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b>Venom Strike (1+ psi).</b> As an action, you create a poison spray that targets one creature you can see within 30 feet of you. The target must make a Constitution saving throw. On a failed save, it takes 1d6 poison damage per psi point spent and is poisoned until the end of your next turn. On a successful save, the target takes half as much damage and isn’t poisoned.</p>
 			<p class="indent"><b>Acid Spray (2 psi).</b> As a reaction when you take piercing or slashing damage, you cause acid to spray from your wound; each creature within 5 feet of you takes 2d6 acid damage.</p>
 			<p class="indent"><b>Breath of the Black Dragon (5 psi).</b> You exhale a wave of acid in a 60-foot line that is 5 feet wide. Each creature in the line must make a Constitution saving throw, taking 6d6 acid damage on a failed save, or half as much on a successful one. You can increase the damage by 1d6 per additional psi point spent on it.</p>
 			<p class="indent"><b>Breath of the Green Dragon (7 psi).</b> You exhale a cloud of poison in a 90-foot cone. Each creature in the line must make a Constitution saving throw, taking 10d6 poison damage on a failed save, or half as much damage on a successful one.</p>
@@ -947,7 +944,7 @@
 		<description>
 			<p>You have learned to harvest seeds of despair in a creature’s psyche, wracking it with self-doubt and inaction.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Charisma (Intimidation) checks.</p>
-			<p class="indent"><b>Crowned in Sorrow (1-7 psi).</b> As an action, one creature you can see within 60 feet of you must make a Charisma saving throw. On a failed save, it takes 1d8 psychic damage per psi point spent, and it can’t take reactions until the start of its next turn. On a successful save, it takes half as much damage.</p>
+			<p class="indent"><b>Crowned in Sorrow (1+ psi).</b> As an action, one creature you can see within 60 feet of you must make a Charisma saving throw. On a failed save, it takes 1d8 psychic damage per psi point spent, and it can’t take reactions until the start of its next turn. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Call to Inaction (2 psi; conc., 10 min.).</b> If you spend 1 minute conversing with a creature, you can attempt to seed it with overwhelming ennui. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw. The save automatically succeeds if the target is immune to being charmed. On a failed save, it sits and is incapacitated until your concentration ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.</p>
 			<p class="indent"><b>Visions of Despair (3 psi).</b> As an action, you force one creature you can see within 60 feet of you to make a Charisma saving throw. On a failed save, it takes 3d6 psychic damage, and its speed is reduced to 0 until the end of its next turn. On a successful save, it takes half as much damage. You can increase the damage by 1d6 per additional psi point spent on it.</p>
 			<p class="indent"><b>Dolorous Mind (5 psi; conc., 1 min.).</b> As an action, you choose one creature you can see within 60 feet of you. It must succeed on a Charisma saving throw, or it is incapacitated and has a speed of 0 until your concentration ends. It can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
@@ -973,9 +970,9 @@
 		<description>
 			<p>You cause a creature to be flooded with emotions of disgust.</p>
 			<p class="indent"><b>Psychic Focus.</b> While you are focused on this discipline, the area in a 5-foot radius around you is difficult terrain for any enemy that isn’t immune to being frightened.</p>
-			<p class="indent"><b>Eye of Horror (1-7 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Charisma saving throw. On a failed save, it takes 1d6 psychic damage per psi point spent and can’t move closer to you until the end of its next turn. On a successful	save, it takes half as much damage.</p>
-			<p class="indent"><b>Wall of Repulsion (3 psi; conc., 10 min.).</b> As an action, you create an invisible, insubstantial wall of energy within 60 feet of you that is up to 30 feet long, 10 feet high, and 1 foot thick. The wall lasts until your concentration ends. Any creature attempting to move through it must make a Wisdom saving throw. On a failed save, a creature can’t move through the wall until the start of its next turn. On a successful save, the creature can pass through it. A creature must make this save whenever it attempts to pass through the wall, whether willingly or unwillingly.</p>
-			<p class="indent"><b>Visions of Disgust (5 psi; conc., 1 min.).</b> You cause a creature to regard all other beings as horrid, alien entities. As an action, choose one creature you can see within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes 5d6 psychic damage, and until your concentration ends, it takes 1d6 psychic damage per creature within 5 feet of it at the end of each of its turns. On a successful save, the target takes only half the initial damage and suffers none of the other effects.</p>
+			<p class="indent"><b>Eye of Horror (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Charisma saving throw. On a failed save, it takes 1d6 psychic damage per psi point spent and can’t move closer to you until the end of its next turn. On a successful	save, it takes half as much damage.</p>
+			<p class="indent"><b>Wall of Repulsion (3 psi; conc., 10 min.).</b> As an action, you create an invisible, insubstantial wall of energy within 60 feet of you that is up to 30 feet long, 10 feet high, and 1 foot thick. The wall lasts until your concentration ends. Any creature attempting to move through it must make a Wisdom saving throw. On a failed save, a creature can’t move through the wall until the start of its next turn. On a successful save, the creature can pass through it. A creature must make this save whenever it willingly attempts to pass through the wall. The wall can rotate 30 degrees per 5 feet.</p>
+			<p class="indent"><b>Visions of Paranoia (5 psi; conc., 1 min.).</b> You cause a creature to regard all other beings as horrid, alien entities. As an action, choose one creature you can see within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes 5d6 psychic damage, and until your concentration ends, it perceives all other creatures as hostile. On a successful save, the target takes only half the initial damage and suffers none of the other effects.</p>
 			<p class="indent"><b>World of Horror (7 psi; conc., 1 min.).</b> As an action, choose up to six creatures within 60 feet of you. Each target must make a Charisma saving throw. On a failed save, a target takes 8d6 psychic damage, and it is frightened until your concentration ends. On a successful save, a target takes half as much damage. While frightened by this effect, a target’s speed is reduced to 0, and the target can use its action, and any bonus action it might have, only to make melee attacks. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 		</description>
 		<setters>
@@ -999,36 +996,10 @@
 		<description>
 			<p>You place a mote of pure fury within a creature’s mind, causing its bloodlust to overcome its senses and for it to act as you wish it to.</p>
 			<p class="indent"><b>Psychic Focus.</b> While you are focused on this discipline, any enemy within 5 feet of you that makes a melee attack roll against creatures other than you does so with disadvantage.</p>
-			<p class="indent"><b>Primal Fury (1-7 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw or take 1d6 psychic damage per psi point spent on this ability and immediately use its reaction to move its speed in a straight line toward its nearest enemy. The save automatically succeeds if the target is immune to being charmed.</p>
+			<p class="indent"><b>Primal Fury (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Charisma saving throw or take 1d6 psychic damage per psi point spent on this ability and immediately use its reaction to move its speed in a straight line toward its nearest enemy. The save automatically succeeds if the target is immune to being charmed.</p>
 			<p class="indent"><b>Fighting Words (2 psi; conc., 10 min.).</b>  If you spend 1 minute conversing with a creature, you can attempt to leave a simmering violence in its mind. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw to resist feeling violent urges against one creature you describe to it or name. The save automatically succeeds if the target is immune to being charmed. On a failed save, the target attacks the chosen creature if it sees that creature before your concentration ends, using weapons or spells against a creature it was already hostile toward or unarmed strikes against an ally or a creature it was neutral toward. Once the fight starts, it continues to attack for 5 rounds before this effect ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage from any creature other than the one it has been incited against. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.</p>
 			<p class="indent"><b>Mindless Courage (2 psi).</b> You cause a creature's bloodlust to overcome its sense of preservation. As a bonus action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or, until the end of your next turn, it can’t willingly move unless its movement brings it closer to its nearest enemy that it can see. The save automatically succeeds if the target is immune to being charmed.</p>
 			<p class="indent"><b>Punishing Fury (5 psi; conc., 1 min.).</b> You cause a creature's rage to grow so hot that it attacks without heeding its own safety. As a bonus action, choose one creature you can see within 60 feet of you. The target must succeed on a Wisdom saving throw or, until your concentration ends, any creature within 5 feet of it can use a reaction to make a melee attack against it whenever the target makes a melee attack. The save automatically succeeds if the target is immune to being charmed.</p>
-		</description>
-		<setters>
-			<set name="keywords"></set>
-			<set name="level">0</set>
-			<set name="school">Avatar Discipline</set>
-			<set name="time">Variable</set>
-			<set name="duration">Variable</set>
-			<set name="range">Variable</set>
-			<set name="hasVerbalComponent">false</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent"></set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
-	<element name="Crown of Disgust" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_DISGUST">
-		<supports>Psionic Disciplines</supports>
-		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
-		<description>
-			<p>You cause a creature to be flooded with emotions of disgust.</p>
-			<p class="indent"><b>Psychic Focus.</b> While you are focused on this discipline, the area in a 5-foot radius around you is difficult terrain for any enemy that isn’t immune to being frightened.</p>
-			<p class="indent"><b>Eye of Horror (1-7 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Charisma saving throw. On a failed save, it takes 1d6 psychic damage per psi point spent and can’t move closer to you until the end of its next turn. On a successful	save, it takes half as much damage.</p>
-			<p class="indent"><b>Wall of Repulsion (3 psi; conc., 10 min.).</b> As an action, you create an invisible, insubstantial wall of energy within 60 feet of you that is up to 30 feet long, 10 feet high, and 1 foot thick. The wall lasts until your concentration ends. Any creature attempting to move through it must make a Wisdom saving throw. On a failed save, a creature can’t move through the wall until the start of its next turn. On a successful save, the creature can pass through it. A creature must make this save whenever it attempts to pass through the wall, whether willingly or unwillingly.</p>
-			<p class="indent"><b>Visions of Disgust (5 psi; conc., 1 min.).</b> You cause a creature to regard all other beings as horrid, alien entities. As an action, choose one creature you can see within 60 feet of you. The target must make a Wisdom saving throw. On a failed save, it takes 5d6 psychic damage, and until your concentration ends, it takes 1d6 psychic damage per creature within 5 feet of it at the end of each of its turns. On a successful save, the target takes only half the initial damage and suffers none of the other effects.</p>
-			<p class="indent"><b>World of Horror (7 psi; conc., 1 min.).</b> As an action, choose up to six creatures within 60 feet of you. Each target must make a Charisma saving throw. On a failed save, a target takes 8d6 psychic damage, and it is frightened until your concentration ends. On a successful save, a target takes half as much damage. While frightened by this effect, a target’s speed is reduced to 0, and the target can use its action, and any bonus action it might have, only to make melee attacks. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1049,12 +1020,12 @@
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
-			<p>You manipulate the matter that composes your body, drastically reducing your size without surrendering any of your might.</p>
-			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Dexterity (Stealth) checks..</p>
-			<p class="indent"><b>Miniature Form (2 psi; conc., 10 min.).</b> As a bonus action, you become Tiny until your concentration ends. While this size, you gain a +5 bonus to Dexterity (Stealth) checks and can move through gaps up to 6 inches across without squeezing..</p>
-			<p class="indent"><b>Toppling Shift (2 psi).</b> As a bonus action, you shift to an incredibly small size and then suddenly return to normal, sending an opponent flying backward. Choose one creature you can see within 5 feet of you. It must succeed on a Strength saving throw or be knocked prone..</p>
-			<p class="indent"><b>Sudden Shift (5 psi).</b> As a reaction when you are hit by an attack, you shift down to minute size to avoid the attack. The attack misses, and you move up to 5 feet without provoking opportunity attacks before returning to normal size..</p>
-			<p class="indent"><b>Microscopic Form (7 psi; conc., 10 min.).</b> As a bonus action, you become smaller than Tiny until your concentration ends. While this size, you gain a +10 bonus to Dexterity (Stealth) checks and a +5 bonus to AC, you can move through gaps up to 1 inch across without squeezing, and you can’t make weapon attacks..</p>
+			<p>You manipulate the space directly around your body, drastically reducing your size without surrendering any of your might.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Dexterity (Stealth) checks.</p>
+			<p class="indent"><b>Miniature Form (2 psi; conc., 10 min.).</b> As a bonus action, you become one size category smaller until your concentration ends. While this size, you gain a +5 bonus to Dexterity (Stealth) checks. Your equipment shrinks with you.</p>
+			<p class="indent"><b>Rebounding Shift (2 psi).</b> As a bonus action, you shift to an incredibly small size and then suddenly return to normal, sending an opponent flying backward. Choose one creature you can see within 5 feet of you. It must succeed on a Strength saving throw or be knocked prone.</p>
+			<p class="indent"><b>Sudden Shift (5 psi).</b> As a reaction when you are hit by an attack, you shift down to minute size to avoid the attack. The attack misses, and you move up to 5 feet without provoking opportunity attacks before returning to normal size.</p>
+			<p class="indent"><b>Microscopic Form (7 psi; conc., 10 min.).</b> As a bonus action, you become smaller than Tiny until your concentration ends. While this size, you gain a +10 bonus to Dexterity (Stealth) checks and a +5 bonus to AC, you can move through gaps up to 1 inch across without squeezing, and you can’t make weapon attacks. Your vision is also reduced to 30ft.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1069,16 +1040,16 @@
 			<set name="materialComponent"></set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
-		</setters>
+		</setters>+
 	</element>
 	<element name="Giant Growth" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_GIANT_GROWTH">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
-			<p>You infuse yourself with psionic energy to grow to tremendous size, bolstering your strength and durability..</p>
-			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, your reach increases by 5 feet..</p>
-			<p class="indent"><b>Ogre Form (2 psi; conc., 1 min.).</b> As a bonus action, you gain 10 temporary hit points. In addition, until your concentration ends, your melee weapon attacks deal an extra 1d4 bludgeoning damage on a hit, and your reach increases by 5 feet. If you’re smaller than Large, you also become Large for the duration..</p>
-			<p class="indent"><b>Giant Form (7 psi; conc., 1 min.).</b> As a bonus action, you gain 30 temporary hit points. In addition, until your concentration ends, your melee weapon attacks deal an extra 2d6 bludgeoning damage on a hit, and your reach increases by 10 feet. If you’re smaller than Huge, you also become Huge for the duration..</p>
+			<p>You infuse yourself with psionic energy to grow to tremendous size, bolstering your strength and durability.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, your maximum hit points is increased by 1 per level.</p>
+			<p class="indent"><b>Ogre Form (2 psi; conc., 1 min.).</b> As a bonus action, you gain 10 temporary hit points. In addition, until your concentration ends, your melee weapon attacks deal an extra 1d4 bludgeoning damage on a hit, and your reach increases by 5 feet. If you’re smaller than Large, you also become Large for the duration.</p>
+			<p class="indent"><b>Giant Form (7 psi; conc., 1 min.).</b> As a bonus action, you gain 30 temporary hit points. In addition, until your concentration ends, your melee weapon attacks deal an extra 2d6 bludgeoning damage on a hit, and your reach increases by 10 feet. If you’re smaller than Huge, you also become Huge for the duration.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1099,11 +1070,11 @@
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
-			<p>You forge an indomitable wall of psionic energy around your mind—one that allows you to launch counterattacks against your opponents..</p>
-			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain resistance to psychic damage..</p>
-			<p class="indent"><b>Psychic Backlash (2 psi).</b> As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes 2d10 psychic damage..</p>
-			<p class="indent"><b>Psychic Parry (1–7 psi).</b> As a reaction when you make an Intelligence, a Wisdom, or a Charisma saving throw, you gain a +1 bonus to that saving throw for each psi point you spend on this ability. You can use this ability after rolling the die but before suffering the results..</p>
-			<p class="indent"><b>Psychic Redoubt (5 psi; conc., 10 min.).</b> As an action, you create a field of protective psychic energy. Choose any number of creatures within 30 feet of you. Until your concentration ends, each target has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws..</p>
+			<p>You forge an indomitable wall of psionic energy around your mind—one that allows you to launch counterattacks against your opponents.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain resistance to psychic damage.</p>
+			<p class="indent"><b>Psychic Backlash (2 psi).</b> As a reaction, you can impose disadvantage on an attack roll against you if you can see the attacker. If the attack still hits you, the attacker takes 2d10 psychic damage.</p>
+			<p class="indent"><b>Psychic Parry (1+ psi).</b> As a reaction when you make an Intelligence, a Wisdom, or a Charisma saving throw, you gain a +1 bonus to that saving throw for each psi point you spend on this ability. You can use this ability after rolling the die but before suffering the results.</p>
+			<p class="indent"><b>Psychic Redoubt (5 psi; conc., 10 min.).</b> As an action, you create a field of protective psychic energy. Choose any number of creatures within 30 feet of you. Until your concentration ends, each target has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1126,7 +1097,7 @@
 		<description>
 			<p>You transform your body to become a living metal, allowing you to shrug off attacks that would cripple weaker creatures.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain a +1 bonus to AC.</p>
-			<p class="indent"><b>Iron Hide (1–7 psi).</b> As a reaction when you are hit by an attack, you gain a +1 bonus to AC for each psi point you spend on this ability. The bonus lasts until the end of your next turn. This bonus applies against the triggering attack.</p>
+			<p class="indent"><b>Iron Hide (1+ psi).</b> As a reaction when you are hit by an attack, you gain a +1 bonus to AC for each psi point you spend on this ability. The bonus lasts until the end of your next turn. This bonus applies against the triggering attack.</p>
 			<p class="indent"><b>Steel Hide (2 psi).</b> As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage until the end of your next turn.</p>
 			<p class="indent"><b>Iron Resistance (7 psi; conc., 1 hr.).</b> As an action, you gain resistance to bludgeoning, piercing, or slashing damage (your choice), which lasts until your concentration ends.</p>
 		</description>
@@ -1151,7 +1122,7 @@
 		<description>
 			<p>You learn to use psionic energy to manipulate others with a subtle combination of psi and your own, natural charm.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain a bonus to Charisma checks. The bonus equals half your Intelligence modifier (minimum of +1).</p>
-			<p class="indent"><b>Charming Presence (1–7 psi).</b> As an action, you exert an aura of sympathetic power. Roll 2d8 per psi point spent on this ability; the total is how many hit points worth of creatures this option can affect. Creatures within 30 feet of you are affected in ascending order of their hit point maximums, ignoring incapacitated creatures, creatures immune to being charmed, and creatures engaged in combat.</p>
+			<p class="indent"><b>Charming Presence (1+ psi).</b> As an action, you exert an aura of sympathetic power. Roll 2d8 per psi point spent on this ability; the total is how many hit points worth of creatures this option can affect. Creatures within 30 feet of you are affected in ascending order of their hit point maximums, ignoring incapacitated creatures, creatures immune to being charmed, and creatures engaged in combat.</p>
 			<p class="indent">Starting with the creature that has the lowest hit point maximum, each creature affected by this option is charmed by you for 10 minutes, regarding you as a friendly acquaintance. Subtract each creature’s hit point maximum from the total before moving on to the next creature. A creature’s hit point maximum must be equal to or less than the remaining total for that creature to be affected.</p>
 			<p class="indent"><b>Center of Attention (2 psi; conc., 1 min.).</b> As an action, you exert an aura of power that grabs a creature's attention. Choose one creature you can see within 60 feet of you. It must make a Charisma saving throw. On a failed save, the creature is so thoroughly distracted by you that all other creatures are invisible to it until your concentration ends. This effect ends if the creature can no longer see or hear you or if it takes damage.</p>
 			<p class="indent"><b>Invoke Awe (7 psi; conc., 10 min.).</b> As an action, you exert an aura that inspires awe in others. Choose up to 5 creatures you can see within 60 feet of you. Each target must succeed on an Intelligence saving throw or be charmed by you until your concentration ends. While charmed, the target obeys all your verbal commands to the best of its ability and without doing anything obviously self -destructive. The charmed target will attack only creatures that it has seen attack you since it was charmed or that it was already hostile toward. At the end of each of its turns, it can repeat the saving throw, ending the effect on itself on a success.</p>
@@ -1205,7 +1176,7 @@
 			<p>You focus your mind on courage, radiating confidence and bravado to your allies.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you and allies within 10 feet of you who can see you have advantage on saving throws against being frightened.</p>
 			<p class="indent"><b>Incite Courage (2 psi).</b> As a bonus action, choose up to six creatures you can see within 60 feet of you. If any of those creatures is frightened, that condition ends on that creature.</p>
-			<p class="indent"><b>Aura of Victory (1–7 psi; conc., 10 min.).</b> As a bonus action, you project psionic energy until your concentration ends. The energy fortifies you and your allies when your enemies are felled; whenever an enemy you can see is reduced to 0 hit points, you and each of your allies within 30 feet of you gain temporary hit points equal to double the psi points spent to activate this effect.</p>
+			<p class="indent"><b>Aura of Victory (1+ psi; conc., 10 min.).</b> As a bonus action, you project psionic energy until your concentration ends. The energy fortifies you and your allies when your enemies are felled; whenever an enemy you can see is reduced to 0 hit points, you and each of your allies within 30 feet of you gain temporary hit points equal to double the psi points spent to activate this effect.</p>
 			<p class="indent"><b>Pillar of Confidence (6 psi; conc., 1 rnd.).</b> As an action, you and up to five creatures you can see within 60 feet of you each gain one extra action to use on your individual turns. The action goes away if not used before the end of your next turn. the action can be used only to make one weapon attack or to take the Dash or Disengage action.</p>
 		</description>
 		<setters>
@@ -1280,7 +1251,7 @@
 		<description>
 			<p>You tap into the joy within you, radiating it outward in soothing, psychic energy that brings hope and comfort to creatures around you.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Charisma (Persuasion) checks.</p>
-			<p class="indent"><b>Soothing Presence (1–7 psi).</b> As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target gains 3 temporary hit points per psi point spent on this effect.</p>
+			<p class="indent"><b>Soothing Presence (1+ psi).</b> As a bonus action, choose up to three creatures you can see within 60 feet of you. Each target gains 3 temporary hit points per psi point spent on this effect.</p>
 			<p class="indent"><b>Comforting Aura (2 psi; conc., 1 min.).</b> As a bonus action, choose up to three allies you can see (you can choose yourself in place of one of the allies). Until your concentration ends, each target can roll a d4 when making a saving throw and add the number rolled to the total.</p>
 			<p class="indent"><b>Aura of Jubilation (3 psi; conc., 1 min.).</b> As a bonus action, you radiate a distracting mirth until your concentration ends. Each creature within 60 feet of you that can see you suffers disadvantage on any checks using the Perception and Investigation skills.</p>
 			<p class="indent"><b>Beacon of Recovery (5 psi).</b> As a bonus action, you and up to five allies you can see within 60 feet of you can immediately make saving throws against every effect they’re suffering that allows a save at the start or end of their turns.</p>
@@ -1305,11 +1276,11 @@
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
 			<p>You become one with the power of elemental air.</p>
-			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you take no falling damage, and you ignore difficult terrain when walking.</p>
-			<p class="indent"><b>Wind Step (1–7 psi).</b> As part of your move on your turn, you can fly up to 20 feet for each psi point spent. If you end this flight in the air, you fall unless something else holds you aloft.</p>
-			<p class="indent"><b>Wind Stream (1–7 psi).</b> As an action, you create a line of focused air that is 30 feet long and 5 feet wide. Each creature in that area must make a Strength saving throw, taking 1d8 bludgeoning damage per psi point spent and being knocked prone on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you take half falling damage, and you ignore difficult terrain when walking.</p>
+			<p class="indent"><b>Wind Step (1+ psi).</b> As part of your move on your turn, you can fly up to 15 feet for each psi point spent. If you end this flight in the air, you fall unless something else holds you aloft.</p>
+			<p class="indent"><b>Wind Stream (1+ psi).</b> As an action, you create a line of focused air that is 30 feet long and 5 feet wide. Each creature in that area must make a Strength saving throw, taking 1d8 bludgeoning damage per psi point spent and being knocked prone on a failed save, or half as much damage on a successful one.</p>
 			<p class="indent"><b>Cloak of Air (3 psi; conc., 10 min.).</b> As a bonus action, you seize control of the air around you to create a protective veil. Until your concentration ends, attack rolls against you have disadvantage, and when a creature you can see misses you with a melee attack, you can use your reaction to force the creature to repeat the attack roll against itself.</p>
-			<p class="indent"><b>Wind Form (5 psi; conc., 10 min.).</b> As a bonus action, you gain a flying speed of 60 feet, which lasts until your concentration ends.</p>
+			<p class="indent"><b>Wind Form (5 psi; conc., 10 min.).</b> As an action, you gain a flying speed of 60 feet, which lasts until your concentration ends.</p>
 			<p class="indent"><b>Misty Form (6 psi; conc., 1 min.).</b> As an action, your body becomes like a misty cloud until your concentration ends. In this form, you gain resistance to bludgeoning, piercing, and slashing damage, and you can’t take actions other than the Dash action. You can pass through openings that are no more than 1 inch wide without squeezing.</p>
 			<p class="indent"><b>Animate Air (7 psi; conc., 1 hr.).</b> As an action, you cause an air elemental to appear in an unoccupied space you can see within 120 feet of you. The elemental lasts until your concentration ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the Monster Manual for its stat block.</p>
 		</description>
@@ -1334,7 +1305,7 @@
 		<description>
 			<p>You align your mind with the energy of elemental fire.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain resistance to fire damage, and you gain a +2 bonus to rolls for fire damage.</p>
-			<p class="indent"><b>Combustion (1–7 psi; conc., 1 min.).</b> As an action, choose one creature or object you can see within 120 feet of you. The target must make a Constitution save. On a failed save, the target takes 1d10 fire damage per psi point spent, and it catches on fire, taking 1d6 fire damage at the end of each of its turns until your concentration ends or until it or a creature adjacent to it extinguishes the flames with an action. On a successful save, the target takes half as much damage and doesn’t catch on fire.</p>
+			<p class="indent"><b>Combustion (1+ psi; conc., 1 min.).</b> As an action, choose one creature or object you can see within 120 feet of you. The target must make a Constitution save. On a failed save, the target takes 1d10 fire damage per psi point spent, and it catches on fire, taking 1d6 fire damage at the end of each of its turns until your concentration ends or until it or a creature adjacent to it extinguishes the flames with an action. On a successful save, the target takes half as much damage and doesn’t catch on fire.</p>
 			<p class="indent"><b>Rolling Flame (3 psi; conc., 1 min.).</b> As an action, you create fire in a 20- foot -by-20-foot cube within 5 feet of you. The fire lasts until your concentration ends. Any creature in that area when you use this ability and any creature that ends its turn there takes 5 fire damage.</p>
 			<p class="indent"><b>Detonation (5 psi).</b> As an action, you create a fiery explosion at a point you can see within 120 feet of you. Each creature in a 20- foot - radius sphere centered on that point must make a Constitution saving throw, taking 7d6 fire damage and being knocked prone on a failed save, or half as much damage on a successful one.</p>
 			<p class="indent"><b>Fire Form (5 psi; conc., 1 min.).</b> As a bonus action, you become wreathed in flames until your concentration ends. Any creature that end its turn within 5 feet of you takes 3d6 fire damage.</p>
@@ -1361,9 +1332,9 @@
 		<description>
 			<p>As a student of psionic power, you perceive the potential energy that flows through all things. You reach out with your mind, transforming the potential into the actual. Objects and creatures move at your command.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Strength checks.</p>
-			<p class="indent"><b>Push (1–7 psi) .</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Strength saving throw. On a failed save, it takes 1d8 force damage per psi point spent and is pushed up to 5 feet per point spent in a straight line away from you. On a successful save, it takes half as much damage.</p>
-			<p class="indent"><b>Move (2–7 psi).</b> Choose one object you can see within 60 feet of you that isn’t being worn or carried by another creature and that isn’t secured in place. It can’t be larger than 20 feet on a side, and its maximum weight depends on the psi points spent on this ability, as shown below.</p>
-			<p class="indent">As an action, you move the object up to 60 feet, and you must keep the object within sight during this movement. If the object ends this movement in the air, it falls. If the object would fall on a creature, the creature must succeed on a DC 10 Dexterity saving throw or take damage as listed on the table below.</p>
+			<p class="indent"><b>Push (1+ psi) .</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Strength saving throw. On a failed save, it takes 1d8 force damage per psi point spent and is pushed up to 5 feet per point spent in a straight line away from you. On a successful save, it takes half as much damage.</p>
+			<p class="indent">As an action, you move the object up to 60 feet, and you must keep the object within sight during this movement. If the object ends this movement in the air, it falls. If the object would fall on a creature, the creature must succeed on a DC 10 Dexterity saving throw or take damage as listed on the table below. This movement is not of a high enough speed to cause harm on its own.</p>
+			<p class="indent"><b>Move (2+ psi).</b> Choose one object you can see within 60 feet of you that isn’t being worn or carried by another creature and that isn’t secured in place. It can’t be larger than 20 feet on a side, and its maximum weight depends on the psi points spent on this ability, as shown below.</p>
 			<table>
 				<thead>
 					<tr><td>Psi Spent</td><td>Maximum Weight</td><td>Bludgeoning Damage</td></tr>
@@ -1379,8 +1350,8 @@
 			<p class="indent"><b>Grasp (3 psi; conc., 1 min.).</b> You attempt to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Strength saving throw or be grappled by you until your concentration ends or until the target leaves your reach, which is 60 feet for this grapple.</p>
 			<p class="indent">The grappled target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your psionic ability plus your proficiency bonus. When a target attempts to escape in this way, you can spend psi points to boost your check, abiding by your psi limit. You gain a +1 bonus per psi point spent.</p>
 			<p class="indent">While a target is grappled in this manner, you create one of the following effects as an action:</p>
-			<p class="indent"><b>Crush (1–7 psi).</b> The target takes 1d6 bludgeoning damage per psi point spent.</p>
-			<p class="indent"><b>Move (1–7 psi).</b> You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends.</p>
+			<p class="indent"><b>Crush (1+ psi).</b> The target takes 1d4 bludgeoning damage per psi point spent.</p>
+			<p class="indent"><b>Move (1+ psi).</b> You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
@@ -1403,7 +1374,7 @@
 		<description>
 			<p>You master the power of ice, shaping it to meet you demands.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have resistance to cold damage.</p>
-			<p class="indent"><b>Ice Spike (1–7 psi).</b> As an action, you hurl a mote of ice at one creature you can see within 120 feet of you. The target must make a Dexterity saving throw. On a failed save, the target takes 1d8 cold damage per psi point spent and has its speed halved until the start of your next turn. On a successful save, the target takes half as much damage.</p>
+			<p class="indent"><b>Ice Spike (1+ psi).</b> As an action, you hurl a mote of ice at one creature you can see within 120 feet of you. The target must make a Dexterity saving throw. On a failed save, the target takes 1d8 cold damage per psi point spent and has its speed halved until the start of your next turn. On a successful save, the target takes half as much damage.</p>
 			<p class="indent"><b>Ice Sheet (2 psi) .</b> As an action, choose a point on the ground you can see within 60 feet of you. The ground in a 20-foot radius centered on that point becomes covered in ice for 10 minutes. It is difficult terrain, and any creature that moves more than 10 feet on it must succeed on a Dexterity saving throw or fall prone. If the surface is sloped, a creature that falls prone in the area immediately slides to the bottom of the slope.</p>
 			<p class="indent"><b>Frozen Sanctuary (3 psi).</b> As a bonus action, you sheathe yourself with icy resilience. You gain 20 temporary hit points.</p>
 			<p class="indent"><b>Frozen Rain (5 psi; conc., 1 min.).</b> As an action, choose a point you can see within 120 feet of you. The air in a 20 -foot-radius sphere centered on that point becomes deathly cold and saturated with moisture. Each creature in that area must make a Constitution saving throw. On a failed save, a target takes 6d6 cold damage, and its speed is reduced to 0 until your concentration ends. On a successful save, a target takes half as much damage.</p>
@@ -1432,9 +1403,9 @@
 		<description>
 			<p>You claim dominion over light and darkness with your mind.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.</p>
-			<p class="indent"><b>Darkness (1–7 psi).</b> As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10- foot radius per psi point spent on this ability. The light produced by spells of 2nd level or less is suppressed in this area.</p>
+			<p class="indent"><b>Darkness (1+ psi; conc., 1 min.).</b> As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10- foot radius per psi point spent on this ability. The light produced by other psionics or spells of 2nd level or less is suppressed in this area.</p>
 			<p class="indent"><b>Light (2 psi; conc., 1 min.).</b> As an action, an object you touch radiates light in a 20 -foot radius and dim light for an additional 20 feet. The light lasts until your concentration ends. Alternatively, a creature you touch radiates light in the same manner if it fails a Dexterity saving throw. While lit in this manner, it can’t hide, and attack rolls against it gain advantage.</p>
-			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 min.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your verbal commands. In combat, roll for their initiative, and choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block.</p>
+			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 min.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your verbal commands. In combat, roll for their initiative, and choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block. The conjured shadows however do not create more of themselves, and their ability drain is halved.</p>
 			<p class="indent"><b>Radiant Beam (5 psi; conc., 1 min.).</b> As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">You can increase this effect’s damage by 1d6 per each additional psi point spent on it.</p>
 		</description>
@@ -1459,7 +1430,7 @@
 		<description>
 			<p>Your mind becomes one with elemental water, attuning your thoughts to its ebb and flow.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have a swimming speed equal to your walking speed, and you can breathe underwater.</p>
-			<p class="indent"><b>Desiccate (1–7 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Constitution saving throw, taking 1d10 necrotic damage per psi point spent on this ability, or half as much damage on a successful one.</p>
+			<p class="indent"><b>Desiccate (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make a Constitution saving throw, taking 1d10 necrotic damage per psi point spent on this ability, or half as much damage on a successful one.</p>
 			<p class="indent"><b>Watery Grasp (2 psi).</b> As an action, you unleash a wave that surges forth and then retreats to you like the rising tide. You create a wave in a 20-foot-by-20- foot square. At least some portion of the square’s border must be within 5 feet of you. Any creature in that square must make a Strength saving throw. On a failed save, a target takes 2d6 bludgeoning damage, is knocked prone, and is pulled up to 10 feet closer to you. On a successful save, a target takes half as much damage. You can increase this ability’s damage by 1d6 per additional psi point spent on it.</p>
 			<p class="indent"><b>Water Whip (3 psi).</b> As an action, you unleash a jet of water in a line that is 60 feet long and 5 feet wide. Each creature in the line must make a Strength saving throw, taking 3d6 bludgeoning damage on a failed save, or half as much damage on a successful one. In addition, you can move each target that fails its saving throw to any unoccupied space touching the line. You can increase this ability’s damage by 1d6 per additional psi point spent on it.</p>
 			<p class="indent"><b>Water Breathing (5 psi).</b> As an action, you grant yourself and up to ten willing creatures you can see within 60 feet of you the ability to breathe underwater for the next 24 hours.</p>
@@ -1487,9 +1458,9 @@
 		<description>
 			<p>Your mind reaches into the sky, reshaping the stuff of storms to serve your needs.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have resistance to lightning and thunder damage.</p>
-			<p class="indent"><b>Cloud Steps (1–7 psi; conc., 10 min.).</b> As an action, you conjure forth clouds to create a solid, translucent staircase that lasts until your concentration ends. The stairs form a spiral that fills a 10-foot-by-10 -foot area and reaches upward 20 feet per psi point spent.</p>
-			<p class="indent"><b>Hungry Lightning (1–7 psi).</b> As an action, you lash out at one creature you can see within 60 feet of you with tendrils of lightning. The target must make a Dexterity saving throw, with disadvantage if it’s wearing heavy armor. The target takes 1d8 lightning damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
-			<p class="indent"><b>Wall of Clouds (2 psi; conc., 10 min.).</b> As an action, you create a wall of clouds, at least one portion of which must be within 60 feet of you. The wall is 60 feet long, 15 feet high, and 1 foot thick. The wall lasts until your concentration ends. Creatures can pass through it without hindrance, but the wall blocks vision.</p>
+			<p class="indent"><b>Cloudform (1+ psi; conc., 10 min.).</b> As an action, you conjure forth solid clouds that lasts until your concentration ends. You can place up to six segments, increasing by four for each psi point spent past the first. Each segment has an approximate volume of 5 cubic feet, and must be adjacent to at least one other segment. You can only place these segments as far as 60ft from yourself. A creature within the segments can leave the space as though it were difficult terrain.</p>
+			<p class="indent"><b>Hungry Lightning (1+ psi).</b> As an action, you lash out at one creature you can see within 60 feet of you with tendrils of lightning. The target must make a Dexterity saving throw, with disadvantage if it’s wearing heavy armor. The target takes 1d8 lightning damage per psi point spent on a failed save, or half as much damage on a successful one.</p>
+			<p class="indent"><b>Fog Bank (2 psi; conc., 10 min.).</b> As an action, you create a zone of opaque fog, at least one portion of which must be within 60 feet of you. The zone is 60 feet long, 15 feet high, and 1 foot thick; or a 30ft-radius sphere which goes around corners. The wall lasts until your concentration ends.</p>
 			<p class="indent"><b>Whirlwind (2 psi).</b> As an action, choose a point you can see within 60 feet of you. Winds howl in a 20-foot- radius sphere centered on that point. Each creature in the sphere must succeed on a Strength saving throw or take 1d6 bludgeoning damage and be moved to an unoccupied space of your choice in the sphere. Any loose object in the sphere is moved to an unoccupied space of your choice within it if the object weighs no more than 100 pounds.</p>
 			<p class="indent"><b>Lightning Leap (5 psi).</b> As an action, you let loose a line of lightning that is 60 feet long and 5 feet wide. Each creature in the line must make a Dexterity saving throw, taking 6d6 lightning damage on a failed save, or half as much damage on a successful one. You can then teleport to an unoccupied space touched by the line.</p>
 			<p class="indent">You can increase this ability’s damage by 1d6 per additional psi point spent on it.</p>
@@ -1517,10 +1488,10 @@
 		<description>
 			<p>You attune your mind to seize control of wood and earth.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have a +1 bonus to AC.</p>
-			<p class="indent"><b>Animate Weapon (1–7 psi).</b> As an action, your mind seizes control of a one -handed melee weapon you’re holding. The weapon flies toward one creature you can see within 30 feet of you and makes a one- handed melee weapon attack against it, using your discipline attack modifier for the attack and damage rolls. On a hit, the weapon deals its normal damage, plus an extra 1d10 force damage per psi point spent on this ability. The weapon returns to your grasp after it attacks.</p>
-			<p class="indent"><b>Warp Weapon (2 psi).</b> As an action, choose one nonmagical weapon held by one creature you can see within 60 feet of you. That creature must succeed on a Strength saving throw, or the chosen weapon can’t be used to attack until the end of your next turn.</p>
-			<p class="indent"><b>Warp Armor (3 psi).</b> As an action, choose a nonmagical suit of armor worn by one creature you can see within 60 feet of you. That creature must succeed on a Constitution saving throw, or the creature’s AC becomes 10 + its Dexterity modifier until the end of your next turn.</p>
-			<p class="indent"><b>Wall of Wood (3 psi; conc., 1 hr.) .</b> As an action, you create a wall of wood at least one portion of which must be within 60 feet of you. The wall is 60 feet long, 15 feet high, and 1 foot thick. The wall lasts until your concentration ends. Each 5-foot wide section of the wall has AC 12 and 100 hit points. Breaking one section creates a 5 - foot by 5-foot hole in it, but the wall otherwise remains intact.</p>
+			<p class="indent"><b>Animate Weapon (1+ psi).</b> As an action, your mind seizes control of a one -handed melee weapon you’re holding. The weapon flies toward one creature you can see within 30 feet of you and makes a one- handed melee weapon attack against it, using your discipline attack modifier for the attack and damage rolls. On a hit, the weapon deals its normal damage, plus an extra 1d8 force damage per psi point spent on this ability. The weapon returns to your grasp after it attacks.</p>
+			<p class="indent"><b>Warp Weapon (2+ psi).</b> As an action, choose one nonmagical weapon 60 feet of you. Attack rolls made using that weapon have a -1 to hit for each psi point spent on this ability, until the start of your next turn. If the weapon is magical, attempt an ability check with your psionic ability. The DC equals 12 + 2 if it is common, +3 if it is uncommon, and so on. This cannot affect items not made of either wood, stone, glass, or metals.</p>
+			<p class="indent"><b>Warp Armour (3 psi).</b> As an action, choose a nonmagical suit of armor within 60 feet of you. The AC of its wearer becomes 10 + its Dexterity modifier until the end of your next turn. If the armour is magical, attempt an ability check with your psionic ability. The DC equals 12 + 2 if it is common, +3 if it is uncommon, and so on. This cannot affect items not made of either wood, stone, glass, or metals.</p>
+			<p class="indent"><b>Wall of Wood (3 psi; conc., 1 hr.) .</b> As an action, you create a wall of wood at least one portion of which must be within 60 feet of you. The wall is 60 feet long, 15 feet high, and 1 foot thick. The wall lasts until your concentration ends. Each 5-foot wide section of the wall has AC 12 and 50 hit points. Breaking one section creates a 5 - foot by 5-foot hole in it, but the wall otherwise remains intact. The wall can rotate 30 degrees per 5 ft.</p>
 			<p class="indent"><b>Armored Form (6 psi; conc., 1 min.).</b> As a bonus action, you gain resistance to bludgeoning, piercing, and slashing damage, which lasts until your concentration ends.</p>
 			<p class="indent"><b>Animate Earth (7 psi; conc., 1 hr.).</b> As an action, you cause an earth elemental to appear in an unoccupied space you can see within 120 feet of you. The elemental lasts until your concentration ends, and it obeys your verbal commands. In combat, roll for its initiative, and choose its behavior during its turns. When this effect ends, the elemental disappears. See the Monster Manual for its stat block.</p>
 		</description>
@@ -1545,7 +1516,7 @@
 		<description>
 			<p>You imbue a ranged weapon with a strange semblance of sentience, allowing it to unerringly find its mark.</p>
 			<p class="indent"><b>Psychic Focus.</b>. While you are focused on this discipline, any attack roll you make for a ranged weapon attack ignores disadvantage. If disadvantage would normally apply to the roll, that roll also can’t benefit from advantage.</p>
-			<p class="indent"><b>Speed Dart (1–7 psi).</b> As a bonus action, you imbue one ranged weapon you hold with psionic power. The next attack you make with it that hits before the end of the current turn deals an extra 1d10 psychic damage per psi point spent.</p>
+			<p class="indent"><b>Speed Dart (1+ psi).</b> As a bonus action, you imbue one ranged weapon you hold with psionic power. The next attack you make with it that hits before the end of the current turn deals an extra 1d10 psychic damage per psi point spent.</p>
 			<p class="indent"><b>Seeking Missile (2 psi).</b> As a reaction when you miss with a ranged weapon attack, you can repeat the attack roll against the same target.</p>
 			<p class="indent"><b>Faithful Archer (5 psi; conc., 1 min.).</b> As a bonus action, you imbue a ranged weapon with a limited sentience. Until your concentration ends, you can make an extra attack with the weapon at the start of each of your turns (no action required). If it is a thrown weapon, it returns to your grasp each time you make any attack with it.</p>
 		</description>
@@ -1596,7 +1567,7 @@
 		<description>
 			<p>You dispatch part of your psyche into the noosphere, the collective vista of minds and knowledge possessed by living things.</p>
 			<p class="indent"><b>Psychic Focus.</b> Whenever you focus on this discipline, you choose one skill or tool and have proficiency with it until your focus ends. Alternatively, you gain the ability to read and write one language of your choice until your focus ends.</p>
-			<p class="indent"><b>Wandering Mind (2–6 psi; conc., 10 min.).</b> You enter a deep contemplation. If you concentrate for this option’s full duration, you then gain proficiency with up to three of the following skills (one skill for every 2 psi points spent): Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, and Survival. The benefit lasts for 1 hour, no concentration required.</p>
+			<p class="indent"><b>Wandering Mind (2+ psi; conc., 10 min.).</b> You enter a deep contemplation. If you concentrate for this option’s full duration, you then gain proficiency with up to three of the following skills (one skill for every 2 psi points spent): Animal Handling, Arcana, History, Medicine, Nature, Performance, Religion, and Survival. The benefit lasts for 1 hour, no concentration required.</p>
 			<p class="indent"><b>Find Creature (2 psi; conc., 1 hr.).</b> You cast your mind about for information about a specific creature. If you concentrate for this option’s full duration, you then gain a general understanding of the creature’s current location. You learn the region, city, town, village, or district where it is, pinpointing an area between 1 and 3 miles on a side (DM’s choice). If the creature is on another plane of existence, you instead learn which plane.</p>
 			<p class="indent"><b>Item Lore (3 psi; conc., 1 hr.).</b> You carefully study an item. If you concentrate for this option’s full duration while remaining within 5 feet of the item, you then gain the benefits of an identify spell cast on that item.</p>
 			<p class="indent"><b>Psychic Speech (5 psi).</b> As an action, you attune your mind to the psychic imprint of all language. For 1 hour, you gain the ability to understand any language you hear or attempt to read. In addition, when you speak, all creatures that can understand a language understand what you say, regardless of what language you use.</p>
@@ -1624,12 +1595,12 @@
 		<description>
 			<p>You exert your mind on the area around you, twisting the intraplanar pathways you perceive to allow instantaneous travel.</p>
 			<p class="indent"><b>Psychic Focus.</b> After you teleport on your turn while focused on this discipline, your walking speed increases by 10 feet until the end of the turn, as you are propelled by the magic of your teleportation. You can receive this increase only once per turn.</p>
-			<p class="indent"><b>Step of a Dozen Paces (1–7 psi).</b> If you haven’t moved yet on your turn, you take a bonus action to teleport up to 20 feet per psi point spent to an unoccupied space you can see, and your speed is reduced to 0 until the end of the turn.</p>
-			<p class="indent"><b>Nomadic Anchor (1 psi).</b> As an action, you create an invisible, intangible teleportation anchor in a 5-foot cube you can see within 120 feet of you. For the next 8 hours, whenever you use this psionic discipline to teleport, you can instead teleport to the anchor, even if you can’t see it, but it must be within range of the teleportation ability.</p>
+			<p class="indent"><b>Step of a Dozen Paces (1+ psi).</b> If you haven’t moved yet on your turn, you take a bonus action to teleport up to 15 feet per psi point spent to an unoccupied space you can see, and your speed is reduced to 0 until the end of the turn.</p>
+			<p class="indent"><b>Nomadic Anchor (1 psi).</b> As an action, you create an invisible, intangible teleportation anchor in a 5-foot cube you can see within 10 feet of you. For the next 8 hours, whenever you use this psionic discipline to teleport, you can instead teleport to the anchor, even if you can’t see it, but it must be within range of the teleportation ability.</p>
 			<p class="indent"><b>Defensive Step (2 psi) .</b> When you are hit by an attack, you can use your reaction to gain a +4 bonus to AC against that attack, possibly turning it into a miss. You then teleport up to 10 feet to an unoccupied space you can see.</p>
 			<p class="indent"><b>There and Back Again (2 psi).</b> As a bonus action, you teleport up to 20 feet to an unoccupied space you can see and then move up to half your speed. At the end of your turn, you can teleport back to the spot you occupied before teleporting, unless it is now occupied or on a different plane of existence.</p>
 			<p class="indent"><b>Transposition (3 psi).</b> If you haven’t moved yet on your turn, choose an ally you can see within 60 feet of you. As a bonus action, you and that creature teleport, swapping places, and your speed is reduced to 0 until the end of the turn. This ability fails and is wasted if either of you can’t fit in the destination space.</p>
-			<p class="indent"><b>Baleful Transposition (5 psi).</b> As an action, choose one creature you can see within 120 feet of you. That creature must make a Wisdom saving throw. On a failed save, you and that creature teleport, swapping places. This ability fails and is wasted if either of you can’t fit in the destination space.</p>
+			<p class="indent"><b>Nether Swap (5 psi).</b> As an action, choose one creature you can see within 120 feet of you. That creature must make a Constitution saving throw. On a failed save, you and that creature teleport, swapping places. This ability fails and is wasted if either of you can’t fit in the destination space. The creature can choose to fail.</p>
 			<p class="indent"><b>Phantom Caravan (6 psi).</b> As an action, you and up to six willing creatures of your choice that you can see within 60 feet of you teleport up to 1 mile to a spot you can see. If there isn’t an open space for all the targets to occupy at the arrival point, this ability fails and is wasted.</p>
 			<p class="indent"><b>Nomad’s Gate (7 psi; conc., 1 hr.).</b> As an action, you create a 5-foot cube of dim, gray light within 5 feet of you. You create an identical cube at any point of your choice within 1 mile that you have viewed within the past 24 hours. Until your concentration ends, anyone entering one of the cubes immediately teleports to the other one, appearing in an unoccupied space next to it. The teleportation fails if there is no space for the creature to appear in.</p>
 		</description>
@@ -1679,10 +1650,10 @@
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING</requirements>
 		<description>
 			<p>You wield psionic energy to cure wounds and restore health to yourself and others.</p>
-			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you can use a bonus action to touch a creature that has 0 hit points and stabilize it.</p>
-			<p class="indent"><b>Mend Wounds (1–7 psi).</b> As an action, you can spend psi points to restore hit points to one creature you touch. The creature regains 1d8 hit points per psi point spent.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you can use an action to touch a creature that has 0 hit points and stabilize it.</p>
+			<p class="indent"><b>Mend Wounds (1+ psi).</b> As an action, you can spend psi points to restore hit points to one creature you touch. The creature regains 1d6 hit points per psi point spent.</p>
 			<p class="indent"><b>Restore Health (3 psi).</b> As an action, you touch one creature and remove one of the following conditions from it: blinded, deafened, paralyzed, or poisoned. Alternatively, you remove one disease from the creature.</p>
-			<p class="indent"><b>Vim Pulse (5 psi).</b> As an action, you expel a psychic force to mend that which is broken. All creatures in a 20ft. of yourself heal for 4d8 hit points. This does not affect Constructs.</p>
+			<p class="indent"><b>Vim Pulse (5 psi).</b> As an action, you expel a psychic force to mend that which is broken. All creatures in a 20ft. of yourself heal for 4d6 hit points. This does not affect Constructs.</p>
 			<p class="indent"><b>Restore Vigor (7 psi) .</b> As an action, you can touch one creature and choose one of the following: remove any reductions to one of its ability scores, remove one effect that reduces its hit point maximum, or reduce its exhaustion level by one.</p>
 		</description>
 		<setters>
@@ -1707,7 +1678,7 @@
 			<p>You have learned how to channel psionic energy into your attacks, lending them devastating power.</p>
 			<p class="indent"><b>Psychic Focus.</b> Whenever you focus on this discipline, choose one weapon you’re holding or your unarmed strike. When you attack with it while focused on this discipline, its damage is psychic and magical, rather than its normal damage type. Until you reach 6th level as a mystic, you don’t add your Strength or Dexterity modifier to the psychic attack’s damage rolls.</p>
 			<p class="indent"><b>Ethereal Weapon (1 psi).</b> As a bonus action, you temporarily transform one weapon you’re holding or your unarmed strike into pure psionic energy. The next attack you make with it before the end of your turn ignores the target’s armor, requiring no attack roll. Instead, the target makes a Dexterity saving throw against this discipline. On a failed save, the target takes the attack’s normal damage and suffers its additional effects. On a successful save, the target takes half damage from the attack but suffers no additional effects that would normally be imposed on a hit.</p>
-			<p class="indent"><b>Lethal Strike (1–7 psi).</b> As a bonus action, you imbue a weapon you’re holding or your unarmed strike with psychic energy. The next time you hit with it before the end of your turn, it deals an extra 1d10 psychic damage per psi point spent.</p>
+			<p class="indent"><b>Lethal Strike (1+ psi).</b> As a bonus action, you imbue a weapon you’re holding or your unarmed strike with psychic energy. The next time you hit with it before the end of your turn, it deals an extra 1d10 psychic damage per psi point spent.</p>
 			<p class="indent"><b>Augmented Weapon (5 psi; conc., 10 min.).</b> As a bonus action, touch one simple or martial weapon. Until your concentration ends, that weapon becomes a magic weapon with a +3 bonus to its attack and damage rolls.</p>
 		</description>
 		<setters>
@@ -1731,7 +1702,7 @@
 		<description>
 			<p>You wield your mind like a weapon, unleashing salvos of psionic energy.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain a +2 bonus to damage rolls with psionic talents that deal psychic damage.</p>
-			<p class="indent"><b>Psionic Blast (1–7 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target takes 1d8 psychic damage per psi point spent on this ability.</p>
+			<p class="indent"><b>Psionic Blast (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target takes 1d8 psychic damage per psi point spent on this ability.</p>
 			<p class="indent"><b>Ego Whip (3 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 3d8 psychic damage, and it is filled with self -doubt, leaving it able to use its action on its next turn only to take the Dodge, Disengage, or Hide action. On a successful saving throw, it takes half as much damage.</p>
 			<p class="indent"><b>Id Insinuation (5 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 5d8 psychic damage, and it goes into a fury, as its id runs rampant. On its next turn, it can use its action only to take the Dodge or Attack action. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Psychic Blast (6 psi).</b> As an action, you unleash devastating psychic energy in a 60- foot cone. Each creature in that area must make an Intelligence saving throw, taking 8d8 psychic damage on a failed save, or half as much damage on a successful one. You can increase the damage by 2d8 if you spend 1 more psi point on this ability.</p>
@@ -1758,7 +1729,7 @@
 		<description>
 			<p>You create psychic static that disrupts other creatures’ ability to think clearly.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Charisma (Deception) checks.</p>
-			<p class="indent"><b>Distracting Haze (1–7 psi; conc., 1 min.).</b> As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and can’t see anything more than 10 feet from it until your concentration ends. On a successful save, it takes half as much damage.</p>
+			<p class="indent"><b>Distracting Haze (1+ psi; conc., 1 min.).</b> As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and can’t see anything more than 10 feet from it until your concentration ends. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Daze (3 psi).</b> As an action, choose one creature you can see within 60 feet of you. That creature must make an Intelligence saving throw. On a failed save, the target is incapacitated until the end of your next turn or until it takes any damage.</p>
 			<p class="indent"><b>Mind Storm (5 psi).</b> As an action, choose a point you can see within 60 feet of you. Each creature in a 20 - foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a target takes 6d8 psychic damage and suffers disadvantage on all saving throws until the end of your next turn. On a successful save, a creature takes half as much damage. You can increase the damage by 1d6 per additional psi point spent on this ability.</p>
 		</description>
@@ -1783,7 +1754,7 @@
 		<description>
 			<p>You reach into a creature’s mind to uncover information or plant ideas within it.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you know when a creature communicating with you via telepathy is lying.</p>
-			<p class="indent"><b>Hammer of Inquisition (1–7 psi) .</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and suffers disadvantage on its next Wisdom saving throw before the end of your next turn. On a successful save, it takes half as much damage.</p>
+			<p class="indent"><b>Hammer of Inquisition (1+ psi) .</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and suffers disadvantage on its next Wisdom saving throw before the end of your next turn. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Forceful Query (2 psi) .</b> As an action, you ask a question of one creature that can see and hear you within 30 feet of you. The question must be phrased so that it can be answered with a yes or no, otherwise this ability fails. The target must succeed on a Wisdom saving throw, or it replies with a truthful answer. A creature is immune to this ability if it is immune to being charmed.</p>
 			<p class="indent"><b>Ransack Mind (5 psi; conc., 1 hr.).</b> While you concentrate on this ability, you probe one creature’s mind. The creature must remain within 30 feet of you, and you must be able to see it. If you reach the ability’s full duration, the target must make three Intelligence saving throws, and you learn information from it based on the number of saving throws it fails.</p>
 			<p class="indent">With one failed saving throw, you learn its key memories from the past 12 hours.</p>
@@ -1813,7 +1784,7 @@
 		<description>
 			<p>Your power reaches into a creature’s mind and causes it false perceptions.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Charisma (Deception) checks.</p>
-			<p class="indent"><b>Distracting Figment (1–7 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and thinks it perceives a threatening creature just out of its sight; until the end of your next turn, it can’t use reactions, and melee attack rolls against it have advantage. On a successful save, it takes half as much damage.</p>
+			<p class="indent"><b>Distracting Figment (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it takes 1d10 psychic damage per psi point spent and thinks it perceives a threatening creature just out of its sight; until the end of your next turn, it can’t use reactions, and melee attack rolls against it have advantage. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Phantom Foe (3 psi; conc., 1 min.).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it until your concentration ends. During this time, the target can’t take reactions, and it takes 1d8 psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can increase the damage by 1d8 for each additional psi point spent on the ability.</p>
 			<p class="indent"><b>Phantom Betrayal (5 psi; conc., 1 min.).</b> As an action, you plant delusional paranoia in a creature’s mind. Choose one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or until your concentration ends, it must target its allies with attacks and other damaging effects. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being charmed.</p>
 			<p class="indent"><b>Phantom Riches (7 psi; conc., 1 min.).</b> As an action, you plant the phantom of a greatly desired object in a creature’s mind. Choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, you gain partial control over the target’s behavior until your concentration ends; the target moves as you wish on each of its turns, as it thinks it pursues the phantom object it desires. If it hasn’t taken damage since its last turn, it can use its action only to admire the object you created in its perception. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
@@ -1929,10 +1900,10 @@
 	<element name="Energy Beam" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_ENERGY_BEAM">
 		<supports>Psionic Talents</supports>
 		<description>
-			<p>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take 1d8 acid, cold, fire, lightning, or thunder damage (your choice). The talent’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
+			<p>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take 1d6 of the chosen damage. The talent’s damage increases by 1d8 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
 		</description>
 		<sheet>
-			<description>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take {{mystic:talents}}d8 acid, cold, fire, lightning, or thunder damage (your choice).</description>
+			<description>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take {{mystic:talents}}d6 acid, cold, fire, lightning, or thunder damage (your choice).</description>
 		</sheet>
 		<rules>
 			<stat name="mystic:talents" value="1" bonus="psionic talents" />
@@ -1995,10 +1966,10 @@
 	<element name="Mystic Charm" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MYSTIC_CHARM">
 		<supports>Psionic Talents</supports>
 		<description>
-			<p>As an action, you beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn.</p>
+			<p>As an action, you beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn. This effect ends if you or your perceived allies would hurt the target or their perceived allies.</p>
 		</description>
 		<sheet>
-			<description>As an action, you beguile one humanoid you can see within 120 ft of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn.</description>
+			<description>As an action, you beguile one humanoid you can see within 120 ft of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn. This effect ends if you or your perceived allies would hurt the target or their perceived allies.</description>
 		</sheet>
 	</element>
 	<element name="Mystic Hand" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MYSTIC_HAND">
