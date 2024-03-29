@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -1348,7 +1348,7 @@
 			<p class="indent"><b>Grasp (3 psi; conc., 1 min.).</b> You attempt to grasp a creature in telekinetic energy and hold it captive. As an action, choose one creature you can see within 60 feet of you. The target must succeed on a Strength saving throw or be grappled by you until your concentration ends or until the target leaves your reach, which is 60 feet for this grapple.</p>
 			<p class="indent">The grappled target can escape by succeeding on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your psionic ability plus your proficiency bonus. When a target attempts to escape in this way, you can spend psi points to boost your check, abiding by your psi limit. You gain a +1 bonus per psi point spent.</p>
 			<p class="indent">While a target is grappled in this manner, you create one of the following effects as an action:</p>
-			<p class="indent"><b>Crush (1+ psi).</b> The target takes 1d4 bludgeoning damage per psi point spent.</p>
+			<p class="indent"><b>Crush (1+ psi).</b> The target takes 1d6 bludgeoning damage per psi point spent.</p>
 			<p class="indent"><b>Move (1+ psi).</b> You move the target up to 5 feet per psi point spent. You can move it in the air and hold it there. It falls if the grapple ends.</p>
 		</description>
 		<setters>
@@ -1700,7 +1700,7 @@
 		<description>
 			<p>You wield your mind like a weapon, unleashing salvos of psionic energy.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain a +2 bonus to damage rolls with psionic talents that deal psychic damage.</p>
-			<p class="indent"><b>Psionic Blast (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target takes 1d8 psychic damage. This ability deals an additional 1d6 psychic damage for each extra psi point spent.</p>
+			<p class="indent"><b>Psionic Blast (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target takes 1d6 psychic damage for each psi point spent.</p>
 			<p class="indent"><b>Ego Whip (3 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 3d8 psychic damage, and it is filled with self -doubt, leaving it able to choose whether it gets two of a move, an action, or a bonus action on its turn. On a successful saving throw, it only takes half as much damage.</p>
 			<p class="indent"><b>Id Insinuation (5 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 5d8 psychic damage, and it goes into a fury, as its id runs rampant. On its next turn, it can use its action only to take the Dodge or Attack action. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Psychic Blast (6+ psi).</b> As an action, you unleash devastating psychic energy in a 60- foot cone. Each creature in that area must make an Intelligence saving throw, taking 8d8 psychic damage on a failed save, or half as much damage on a successful one. You can increase the damage by 2d8 if you spend 1 more psi point on this ability.</p>
