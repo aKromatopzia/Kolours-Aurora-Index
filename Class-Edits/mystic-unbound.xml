@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -81,7 +81,6 @@
 			<p>Alternatively, you can ignore the equipment here and in your background, and buy 5d4 × 10 gp worth of equipment from chapter 5 in the <i>Player’s Handbook.</i></p>
 			<div element="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS" />
 			<div element="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER" />
-			<div element="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTICAL_RECOVERY" />
 			<div element="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY" />
 			<div element="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_ABILITY_SCORE_IMPROVEMENT_MYSTIC" />
 			<div element="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_STRENGTH_OF_MIND" />
