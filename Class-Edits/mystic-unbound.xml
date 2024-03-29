@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.8">
+		<update version="0.1.9">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -106,7 +106,7 @@
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS" level="1" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER" level="1" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY" level="2" />
-			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_EBB_N_FLOW" level="10" />
+			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_EBB_N_FLOW" level="2" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_ABILITY_SCORE_IMPROVEMENT_MYSTIC" level="4" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_STRENGTH_OF_MIND" level="4" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_POTENT_PSIONICS" level="8" />
@@ -220,10 +220,10 @@
 		<description>
 			<p>Starting at 2nd level, you can use your vigor to power your psionic disciplines; and siphon energy from your disciplines to re-energize yourself just the same.</p>
 			<p class="indent">Immediately after you spend psi points on a psionic discipline, you can take a bonus action to regain hit points equal to the number of psi points you spent.</p>
-			<p class="indent">When activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:5, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest.</p>
+			<p class="indent">When activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:5, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest. If this ability would take you to 0 hit points, the discipline is wasted.</p>
 		</description>
 		<sheet>
-			<description>Immediately after you spend psi points on a psionic discipline, you can take a bonus action to regain hit points equal to the number of psi points you spent; And when activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:5, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest.</description>
+			<description>Immediately after you spend psi points on a psionic discipline, you can take a bonus action to regain hit points equal to the number of psi points you spent; And when activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:5, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest. If this ability would take you to 0 hit points, the discipline is wasted.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_ABILITY_SCORE_IMPROVEMENT_MYSTIC">
