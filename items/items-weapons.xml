@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -237,6 +237,7 @@
 			<set name="enhancement">1</set>
 			<set name="stackable">true</set>
 		</setters>
+	</element>
 	
 	<element name="Eound Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_HC_ROUND">
 		<description>
@@ -251,6 +252,7 @@
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
+	</element>
 		
 	<element name="Spread Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_HC_SPREAD">
 		<description>
@@ -265,4 +267,6 @@
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
+	</element>
+	
 </elements>
