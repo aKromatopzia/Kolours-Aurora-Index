@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -224,4 +224,45 @@
 		</rules>
 	</append>
 
+	<!--Ammunition-->
+	<element name="Celestial Salt Eound Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_hc_ROUND">
+		<description>
+			<p>Made of crystal salt from Mount Celestia, it splinters in a spread shot when the weapon fires and comes packaged with its own supply of smokepowder. Once fired, the crystal becomes nonmagical salt. You have +1 to hit with attacks made with this ammunition, and it deals radiant damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="stackable">true</set>
+		</setters>
+	
+	<element name="Eound Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_HC_ROUND">
+		<description>
+			<p>A half-wrapped large iron ball, comes with a packet of smokepowder. Intended for use with a handheld cannon.</p>
+			<p>Fires a single shot to deal 6d8 piercing (300/900ft.).</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+		
+	<element name="Spread Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_HC_SPREAD">
+		<description>
+			<p>A half-wrapped cylindrical container of 500 ball bearings, comes with a packet of smokepowder. Intended for use with a handheld cannon.</p>
+			<p>Fires in a cone to deal 4d8 piercing (30ft. cone).</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
 </elements>

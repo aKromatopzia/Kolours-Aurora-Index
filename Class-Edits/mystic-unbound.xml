@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.11">
+		<update version="0.1.12">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -1713,7 +1713,7 @@
 		<description>
 			<p>You wield your mind like a weapon, unleashing salvos of psionic energy.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you gain a +2 bonus to damage rolls with psionic talents that deal psychic damage.</p>
-			<p class="indent"><b>Psionic Blast (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target takes 1d6 psychic damage for each psi point spent.</p>
+			<p class="indent"><b>Psionic Blast (1+ psi).</b> As an action, choose one creature you can see within 60 feet of you. The target takes 1d8 psychic damage for each psi point spent.</p>
 			<p class="indent"><b>Ego Whip (3 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 3d8 psychic damage, and it is filled with self -doubt, leaving it able to choose whether it gets two of a move, an action, or a bonus action on its turn. On a successful saving throw, it only takes half as much damage.</p>
 			<p class="indent"><b>Id Insinuation (5 psi).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, the creature takes 5d8 psychic damage, and it goes into a fury, as its id runs rampant. On its next turn, it can use its action only to take the Dodge or Attack action. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Psychic Blast (6+ psi).</b> As an action, you unleash devastating psychic energy in a 60- foot cone. Each creature in that area must make an Intelligence saving throw, taking 8d8 psychic damage on a failed save, or half as much damage on a successful one. You can increase the damage by 2d8 if you spend 1 more psi point on this ability.</p>
