@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -129,5 +129,32 @@
 			<set name="weight" lb="0">—</set>
 			<set name="stackable">true</set>
 		</setters>
-	</element>	
+	</element>
+	<element name="Unholy Water (flask)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_UNHOLYWATER_FLASK">
+		<description>
+			<p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the unholy water as an improvised weapon. If the target is a celestial or fey, it takes 2d6 necrotic damage. A cleric or paladin may create unholy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot. A flask of unholy water can be split into 16 vials.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+	<element name="Holy Water (vial)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_HOLYWATER_VIAL">
+		<description>
+			<p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 1 radiant damage. A cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot. A flask of holy water can be split into 16 vials.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0.0625">1/16 lb.</set>
+			<set name="stackable">true</set>
+	<element name="Unholy Water (vial)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_UNHOLYWATER_VIAL">
+		<description>
+			<p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the unholy water as an improvised weapon. If the target is a celestial or fey, it takes 1 necrotic damage. A cleric or paladin may create unholy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot. A flask of unholy water can be split into 16 vials.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0.0625">1/16 lb.</set>
+			<set name="stackable">true</set>
 </elements>
