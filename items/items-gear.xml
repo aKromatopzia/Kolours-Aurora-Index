@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -147,7 +147,7 @@
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
-			<set name="cost" currency="gp">1</set>
+			<set name="cost" currency="gp">1.8</set>
 			<set name="weight" lb="0.0625">1/16 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
@@ -158,7 +158,7 @@
 		</description>
 		<setters>
 			<set name="category">Adventuring Gear</set>
-			<set name="cost" currency="gp">1</set>
+			<set name="cost" currency="gp">1.8</set>
 			<set name="weight" lb="0.0625">1/16 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
