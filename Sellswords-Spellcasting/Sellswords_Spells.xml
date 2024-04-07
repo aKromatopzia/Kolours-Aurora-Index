@@ -160,7 +160,7 @@
 			<set name="range">Touch</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">fur of a cat</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
