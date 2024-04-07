@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -139,6 +139,7 @@
 			<set name="cost" currency="gp">25</set>
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="stackable">true</set>
+		</setters>
 	</element>
 	<element name="Holy Water (vial)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_HOLYWATER_VIAL">
 		<description>
@@ -149,6 +150,7 @@
 			<set name="cost" currency="gp">1</set>
 			<set name="weight" lb="0.0625">1/16 lb.</set>
 			<set name="stackable">true</set>
+		</setters>
 	</element>
 	<element name="Unholy Water (vial)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_UNHOLYWATER_VIAL">
 		<description>
@@ -159,5 +161,6 @@
 			<set name="cost" currency="gp">1</set>
 			<set name="weight" lb="0.0625">1/16 lb.</set>
 			<set name="stackable">true</set>
+		</setters>
 	</element>
 </elements>
