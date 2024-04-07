@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
