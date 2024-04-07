@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
@@ -79,8 +79,8 @@
 		</setters>
 	</element>
 	<element name="Osiris' Reap and Sow" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REAP_N_SOW">
-		<supports>Cleric, Druid</supports>
 		<description>
+			<p><i>This is a rare spell available only to CLR and DRU after being found in the world, or taught by someone who knows it.</i></p>
 			<p>You invoke both death and life upon a 10-foot-radius sphere centred on a point within range. Each creature of your choice in that area must make a CON save, taking 2d6 necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.</p>
 			<p>In addition, any creature of your choosing in that area can spend and roll one of its unspent Hit Dice and gain a number of temporary hit points equal to the roll plus your spellcasting ability modifier.</p>
 			<p>At higher levels, the damage increases by 1d6 for each slot above the 2nd, and the number of Hit Dice that can be spent and added to the healing roll increases by one for each slot above 2nd.</p>
@@ -101,8 +101,8 @@
 		</setters>
 	</element>
 	<element name="Oghma's Thoughtseize" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REAP_N_SOW">
-		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
+			<p><i>This is a rare spell available only to BRD, SOR, WAR and WIZ after being found in the world, or taught by someone who knows it.</i></p>
 			<p>You prepare to steal the magical prowess of your foes. As part of the action to cast this spell, and as an action on each turn for the duration of this spell, you can attempt a sleight of hand (DEX) check against an opponent. The DC of this check depends on the level of the spell being stolen, being 12 + the level of the spell.</p>
 			<p>On a success, you gain a temporary spell slot with which you can cast the stolen spell, and the target takes 1d4 psychic damage per level of the spell.</p>
 			<p>You retain, and the target loses, knowledge of this spell for the remainder of the one minute, but you no longer need to concentrate on this spell. While a spell is stolen, you cannot make further attempts to steal spells.</p>
