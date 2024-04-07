@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.10">
+		<update version="0.0.11">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
@@ -18,7 +18,7 @@
 			<set name="keywords">Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, Thunder</set>
 			<set name="level">0</set>
 			<set name="school">Evocation</set>
-			<set name="time">1 action</set>
+			<set name="time">1 action or 8 hours</set>
 			<set name="duration">Instantaneous</set>
 			<set name="range">Self</set>
 			<set name="hasVerbalComponent">false</set>
@@ -34,16 +34,17 @@
 		<description>
 			<p>This spell blesses an area with positive energy. All checks made to turn undead within this area gain a +3 bonus; all saves made to resist turning made by the undead within this area have a -3 penalty.</p>
 			<p>Undead entering this area suffer minor disruption, giving them a -1 penalty on attack rolls, damage rolls, and saving throws. Undead cannot be created within or summoned into a consecrated area.</p>
-			<p>If the consecrated area contains a permanent fixture dedicated to the character's deity, pantheon, or aligned higher power, the modifiers listed above are doubled (+6 bonus to turning, -2 penalty to undead rolls). The character cannot consecrate an area with a similar fixture of a deity other than the character's own patron.</p>
+			<p>If the consecrated area contains a permanent fixture dedicated to the character's deity, pantheon, or aligned higher power, the modifiers listed above are doubled (+6 bonus to turning, -2 penalty to undead rolls). The character cannot consecrate an room or radius of 40ft. with a similar fixture of a deity other than the character's own patron.</p>
 			<p>Consecrate counters and dispels desecrate.</p>
 			<p>At higher levels, the maximum duration of this spell is increased by 1 hour for every two spell levels above 2nd.</p>
+			<p>If cast over 8 hours, this spell instead lasts until dispelled. You can designate areas of any size within the radius to be unaffected.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">2</set>
 			<set name="school">Evocation</set>
-			<set name="time">1 action</set>
-			<set name="duration">Up to 2 hours, which can be cancelled at-will</set>
+			<set name="time">1 action or 8 hours</set>
+			<set name="duration">Up to 2 hours or until dispelled; which can be cancelled at-will</set>
 			<set name="range">60ft. (30ft. radius)</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
@@ -62,13 +63,14 @@
 			<p>If the area contains a similar fixture of a deity, pantheon, or higher power other than the character's patron, the desecrate spell instead curses the area, cutting off its connection with the associated deity or power. This secondary function, if used, does not also grant the bonuses to undead as listed above.</p>
 			<p>Desecrate counters and dispels consecrate.</p>
 			<p>At higher levels, the maximum duration of this spell is increased by 1 hour for every two spell levels above 2nd.</p>
+			<p>If cast over 8 hours, this spell instead lasts until dispelled. You can designate areas of any size within the radius to be unaffected.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">2</set>
 			<set name="school">Evocation</set>
 			<set name="time">1 action</set>
-			<set name="duration">Up to 2 hours, which can be cancelled at-will</set>
+			<set name="duration">Up to 2 hours or until dispelled; which can be cancelled at-will</set>
 			<set name="range">60ft. (30ft. radius)</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
