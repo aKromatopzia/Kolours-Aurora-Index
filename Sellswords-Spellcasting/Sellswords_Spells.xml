@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.8">
+		<update version="0.0.10">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
@@ -118,7 +118,7 @@
 			<set name="range">Touch</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent"></set>
+			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
@@ -139,8 +139,29 @@
 			<set name="range">Touch</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent"></set>
+			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Battlesong of the Pride" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CATS_GRACE_GREATER">
+		<description>
+			<p><i>This is a rare spell available only to ART, BRD, CLR, RNG and PAL after being found in the world, or taught by someone who knows it.</i></p>
+			<p>The target of the spell becomes imbued with the agile aspect of cats, gaining a +2 bonus to DEX and +5 speed.</p>
+			<p>At higher levels, this spell lasts for 1 min longer for each spell level over 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 min.</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">fur of a cat</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
