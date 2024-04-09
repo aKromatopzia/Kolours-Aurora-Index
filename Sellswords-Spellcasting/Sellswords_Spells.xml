@@ -82,7 +82,7 @@
 		<description>
 			<p><i>This is a rare spell available only to CLR and DRU after being found in the world, or taught by someone who knows it.</i></p>
 			<p>You invoke both death and life upon a 10-foot-radius sphere centred on a point within range. Each creature of your choice in that area must make a CON save, taking 2d6 necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.</p>
-			<p>In addition, any creature of your choosing in that area can spend and roll one of its unspent Hit Dice and gain a number of temporary hit points equal to the roll plus your spellcasting ability modifier.</p>
+			<p>In addition, any creature of your choosing in that area can spend and roll one of its unspent Hit Dice and gain a number of temporary hit points equal to double of the roll plus your spellcasting ability modifier.</p>
 			<p>At higher levels, the damage increases by 1d6 for each slot above the 2nd, and the number of Hit Dice that can be spent and added to the healing roll increases by one for each slot above 2nd.</p>
 		</description>
 		<setters>
