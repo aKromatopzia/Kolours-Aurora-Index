@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -158,5 +158,21 @@
 			<set name="weapon">Javelin</set>
 		</setters>
 	</element>
-	
+
+	<element name="Wand of Missile" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WAND_OF_MISSILE">
+		<description>
+			<p>As an Action, you can activate the switch on this wand causes it to fly away in the direction you're aiming it and deals 1 fire damage to you.</p>
+			<p>Make a ranged [spell/weapon] attack with this wand. On a miss the wand goes wild, landing somewhere within 5 ft of your target. On a hit the target takes 2d6 bludgeoning damage, then bounces off to land within 5 ft of your target.</p>
+			<p>After an attack roll is made with this weapon, roll a d20. On a 20 the wand explodes, dealing 8d6 fire damage to any creatures within 10ft of it's current location. Creatures that make a successful DC 13 Dexterity saving throw take half damage.</p>
+			<p>This explosion destroys the wand.</p>
+		</description>
+		<setters>
+			<set name="category">Wands</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Wand</set>
+			<set name="slot">onehand</set>
+			<set name="attunement">false</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
 </elements>
