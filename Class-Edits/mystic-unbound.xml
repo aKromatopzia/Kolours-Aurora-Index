@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.13">
+		<update version="0.1.14">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -1914,7 +1914,7 @@
 			<p>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take 1d6 of the chosen damage. The talent’s damage increases by 1d8 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</p>
 		</description>
 		<sheet>
-			<description>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take {{mystic:talents}}d6 acid, cold, fire, lightning, or thunder damage (your choice).</description>
+			<description>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take {{mystic:talents}}d8 acid, cold, fire, lightning, or thunder damage (your choice).</description>
 		</sheet>
 		<rules>
 			<stat name="mystic:talents" value="1" bonus="psionic talents" />
