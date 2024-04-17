@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sorcerer, two!<name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sorcerer-two.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/sorcerer-two.xml" />
 		</update>
 	</info>
