@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -223,9 +223,9 @@
 		</setters>
 	</element>
 	
-	<element name="Buckler of Shielding" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BUCKLER_OF_SHIELDING">
+	<element name="Shield of Shielding" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SHIELD_OF_SHIELDING">
 		<description>
-			<p>The surface of this buckler has a layer of glass as tough as steel.</p>
+			<p>The surface of this buckler has a layer of glass as tough as steel. You have a +1 to AC while using this shield.</p>
 			<p class="indent">The shield's integrity can be restored by spending a long rest using Smithing Tools to tend to the shield's damage. This is reduced to a short rest if you are proficient with Smithing Tools. When the shield hits 0 AC it's properties are no longer usable until repaired.</p>
 			<p class="indent">To Me! - As a reaction, you can choose to expend the shield's integrity to cast the Shield spell. The shield loses 1 AC.</p>
 			<p class="indent">To You! - As a reaction, you can choose to expend the shield's integrity to intercept an attack on an ally within 5 feet of you when you see they are hit. Reduce the damage the target takes by 1d10 + Proficiency. The shield loses 1 AC.</p>
@@ -236,11 +236,12 @@
 			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="type" addition="shield">Armor</set>
-			<set name="armor">Shield</set>
-			<set name="armorClass">+1</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="enhancement">1</set>
+			<set name="name-format">{{parent}} of Shielding</set>
 		</setters>
 		<rules>
-			<stat name="ac:shield" value="1" bonus="shield" />
+			<stat name="ac:shield" value="2" bonus="enhancement" />
 		</rules>
 	</element>
 
