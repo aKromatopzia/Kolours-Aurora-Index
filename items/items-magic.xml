@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.10">
+		<update version="0.0.11">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -60,7 +60,7 @@
 				<strong><em>Spellscarred.</em></strong> You gain the Spellscarred subtype.</p>
 			</description>
 		<setters>
-			<set name="keywords">tattoo, force</set>
+			<set name="keywords">tattoo</set>
 			<set name="category">Wondrous Items</set>
 			<set name="attunement">true</set>
 			<set name="type">Tattoo</set>
@@ -173,6 +173,23 @@
 			<set name="slot">onehand</set>
 			<set name="attunement">false</set>
 			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+
+	<element name="Misting Censer" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_MISTING_CENSER">
+		<description>
+			<p>This bronze censer bears the reliefs of two men, one of which bears a falcon's head. The reliefs bear as indistinct mulanese style, seperate from the later Multhorand, Unther or Thay.</p>
+			<p class="indent">As an Action, the censer can be made to magically produce a heavily obscuring fog for 1 minute, or until another Action is used to extinguish it. It spreads around corners up to 20ft. away from the censer, but only ever reaches up to a foot in height. Creatures that are flying but above the fog are still affected. This fog also has either of the following properties, as chosen or depending on the offering burnt:</p>
+			<p class="indent">- [If holy water was offered,] The fog is difficult terrain for undead, fiends and abberations, and restores 1d4 hit points to any creature that isn't an undead, fiend or abberation if it would end its turn in the area.</p>
+			<p class="indent">- [If unholy water was offered,] The fog is difficult terrain for celestials, fey and abberations, curses the area as the spell Desecrate, and each creature in the area takes an additional 1d4 necrotic damage from anything.</p>
+			<p class="indent">This item can be used once before the next dawn or dusk, or whenever 1gp worth of silver dust, 1sp worth of incense, and a vial of either holy or unholy water is burnt, consuming the materials.</p> 
+			<div element="ID_SELLSWORDS_SPELL_DESECRATE" />
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">1</set>
 		</setters>
 	</element>
 </elements>
