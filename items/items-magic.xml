@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -241,7 +241,7 @@
 			<set name="name-format">{{parent}} of Shielding</set>
 		</setters>
 		<rules>
-			<stat name="ac:shield" value="2" bonus="enhancement" />
+			<stat name="ac:shield" value="1" bonus="enhancement" />
 		</rules>
 	</element>
 
