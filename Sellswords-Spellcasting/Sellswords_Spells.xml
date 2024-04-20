@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.1">
+		<update version="0.0.14">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
 
-	<element name="Arcane Spellblade" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SSBMC_SPELL_TRUE_STRIKE">
+	<element name="Arcane Spellblade" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ARCANE_SPELLBLADE">
 		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
 		<description>
 			<p>When you learn this spell, you select one damage type from: Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, or Thunder.</p>
@@ -29,6 +29,141 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	
-
+	<element name="Consecrate" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CONSECRATE">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>This spell blesses an area with positive energy. All checks made to turn undead within this area gain a +3 bonus; all saves made to resist turning made by the undead within this area have a -3 penalty.</p>
+			<p>Undead entering this area suffer minor disruption, giving them a -1 penalty on attack rolls, damage rolls, and saving throws. Undead cannot be created within or summoned into a consecrated area.</p>
+			<p>If the consecrated area contains a permanent fixture dedicated to the character's deity, pantheon, or aligned higher power, the modifiers listed above are doubled (+6 bonus to turning, -2 penalty to undead rolls). The character cannot consecrate an room or radius of 40ft. with a similar fixture of a deity other than the character's own patron.</p>
+			<p>Consecrate counters and dispels desecrate.</p>
+			<p>At higher levels, the maximum duration of this spell is increased by 1 hour for every two spell levels above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Up to 2 hours; which can be cancelled at-will</set>
+			<set name="range">60ft. (30ft. radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of holy water and 25 gp worth (5 pounds) of silver dust which must be sprinkled into the area.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Desecrate" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DESECRATE">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<p>This spell imbues an area with negative energy. All checks made to turn undead within this area suffer a -3 penalty; all saves made to resist turning made by the undead within this area have a +3 bonus.</p>
+			<p>Undead entering this area gain a +1 bonus to attack rolls, damage rolls, and saving throws. Undead created within or summoned into a desecrated area gain +1 hit points per HD.</p>
+			<p>If the desecrated area contains an altar, shrine, or other permanent fixture dedicated to the character's deity, pantheon, or aligned higher power, the effects are doubled (turning at -6, +2 bonuses to undead rolls, +2 hit points per HD).</p>
+			<p>If the area contains a similar fixture of a deity, pantheon, or higher power other than the character's patron, the desecrate spell instead curses the area, cutting off its connection with the associated deity or power. This secondary function, if used, does not also grant the bonuses to undead as listed above.</p>
+			<p>Desecrate counters and dispels consecrate.</p>
+			<p>At higher levels, the maximum duration of this spell is increased by 1 hour for every two spell levels above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Up to 2 hours; which can be cancelled at-will</set>
+			<set name="range">60ft. (30ft. radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of unholy water and 25 gp worth (5 pounds) of silver dust which must be sprinkled into the area.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Osiris' Reap and Sow" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REAP_N_SOW">
+		<description>
+			<p><i>This is a rare spell available only to CLR and DRU after being found in the world, or taught by someone who knows it.</i></p>
+			<p>You invoke both death and life upon a 10-foot-radius sphere centred on a point within range. Each creature of your choice in that area must make a CON save, taking 2d6 necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.</p>
+			<p>In addition, any creature of your choosing in that area can spend and roll one of its unspent Hit Dice and gain a number of temporary hit points equal to double of the roll plus your spellcasting ability modifier.</p>
+			<p>At higher levels, the damage increases by 1d6 for each slot above the 2nd, and the number of Hit Dice that can be spent and added to the healing roll increases by one for each slot above 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords">Necrotic</set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60ft. (10ft. radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shepherd’s crook</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Oghma's Thoughtseize" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_THOUGHTSEIZE">
+		<description>
+			<p><i>This is a rare spell available only to BRD, SOR, WAR and WIZ after being found in the world, or taught by someone who knows it.</i></p>
+			<p>You prepare to steal the magical prowess of your foes. As part of the action to cast this spell, and as an action on each turn for the duration of this spell, you can attempt a sleight of hand (DEX) check against an opponent. The DC of this check depends on the level of the spell being stolen, being 12 + the level of the spell.</p>
+			<p>On a success, you gain a temporary spell slot with which you can cast the stolen spell, and the target takes 1d4 psychic damage per level of the spell.</p>
+			<p>You retain, and the target loses, knowledge of this spell for the remainder of the one minute, but you no longer need to concentrate on this spell. While a spell is stolen, you cannot make further attempts to steal spells.</p>
+			<p>The spell being stolen is determined at random among spells of the level of the slot used to cast this spell; If there are no spells of that level, the next-lower level of spells is subject. If the target knows no spells, this spell fails but you remain able to attempt to steal spells.</p>
+			<p>At higher levels, you can steal spells of higher spell slots. You also gain a +1 bonus to the sleight of hand (DEX) check for each level of the slot used to cast this spell, over the spell being stolen.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">conc, up to 1 min; see text</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death Knell" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DEATH_KNELL">
+		<supports>Artificer, Cleric, Druid, Ranger, Paladin, Sorcerer, Warlock, Bard</supports>
+		<description>
+			<p>You draw forth the ebbing life force of a creature and use it to fuel your own power. Upon casting this spell, you touch a living creature that has died within 1 round or is at 0 hit points. If the subject has not died, it rolls a WIS save against your spell DC. If it fails, it automatically fails a death saving throw.</p>
+			<p>Regardless, you gain 1d8 temporary hit points and a +2 bonus to Strength. Additionally, your spell attack rolls and saving throw modifiers have a +1 bonus. These effects last for 10 minute per HD of the subject creature.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Battlesong of the Pride" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CATS_GRACE_GREATER">
+		<description>
+			<p><i>This is a rare spell available only to ART, BRD, CLR, RNG and PAL after being found in the world, or taught by someone who knows it.</i></p>
+			<p>The target of the spell becomes imbued with the agile aspect of cats, gaining a +2 bonus to DEX and +5 speed.</p>
+			<p>At higher levels, this spell lasts for 1 min longer for each spell level over 2nd.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">2</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 min.</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">fur of a cat</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 </elements>

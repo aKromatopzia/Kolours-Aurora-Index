@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.13">
+		<update version="0.1.15">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -98,11 +98,11 @@
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_MYSTIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_MYSTIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB_MULTICLASS_MYSTIC"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_WOTC_PHB_MULTICLASS_MYSTIC"/>
-			<select type="Proficiency" name="Skill Proficiency (Mystic)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_MYSTIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_SELLSWORD_REWORKS_MULTICLASS_MYSTIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_SELLSWORD_REWORKS_MULTICLASS_MYSTIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_SELLSWORD_REWORKS_MULTICLASS_MYSTIC"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_SELLSWORD_REWORKS_MULTICLASS_MYSTIC"/>
+			<select type="Proficiency" name="Skill Proficiency (Mystic)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_SELLSWORD_REWORKS_MULTICLASS_MYSTIC"/>
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS" level="1" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER" level="1" />
 			<grant type="Class Feature" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY" level="2" />
@@ -123,6 +123,7 @@
 			<rules>
 				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
 				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
 			</rules>
 		</multiclass>
 	</element>

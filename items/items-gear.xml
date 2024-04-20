@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.9">
+		<update version="0.0.16">
 			<file name="items-gear.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-gear.xml" />
 		</update>
 	</info>
@@ -83,7 +83,7 @@
 			<p><i>You gain this feat after spending 100 or more in-game days fishing. </i>You roll one additional d6 when you fish (total of 7d6). In addition, you can choose to gain a + 10 bonus to your overall fishing score (after any multipliers) whenever you fish. This ability can be used along with the bonus granted from Angler.</p>
 		</description>
 	</element>
-	<element name="Incense Paper (Sheet)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_SHEET">
+	<element name="Incense Paper (Sheet)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_ITEM_INCENSE_SHEET">
 		<description>
 			<p>A sheet of incense paper, usually bundled in cotton strings. Although the quality of these parchments aren't very high in regards to their longevity, depending on the ritual they may have been treated with perfumes or have metals embedded into them.</p>
 			<p>Sheets of these are used in Kara-Turan traditions which regard the dead. Most oftenly they are burnt, but they may also be dissolved in water.</p>
@@ -95,7 +95,7 @@
 			<set name="stackable">true</set>
 		</setters>
 	</element>
-	<element name="Incense Paper (Stack)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_BLOCK">
+	<element name="Incense Paper (Stack)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_ITEM_INCENSE_STACK">
 		<description>
 			<p>A stack of 60 sheets of incense papers, usually bundled in cotton strings. Although the quality of these parchments aren't very high in regards to their longevity, depending on the ritual they may have been treated with perfumes or have metals embedded into them.</p>
 			<p>Sheets of these are used in Kara-Turan traditions which regard the dead. Most oftenly they are burnt, but they may also be dissolved in water.</p>
@@ -106,8 +106,11 @@
 			<set name="weight" lb="1">1 lbs.</set>
 			<set name="stackable">true</set>
 		</setters>
+		<extract>
+			<item amount="60">ID_SELLSWORDS_ITEM_INCENSE_SHEET</item>
+		</extract>
 	</element>	
-	<element name="Incense Cloth (50ft.)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_CLOTH">
+	<element name="Incense Cloth (50ft.)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_ITEM_INCENSE_CLOTH">
 		<description>
 			<p>A bolt of perfumed incense cloth. These fabrics are typically 6in in diameter and made of of cotton or other absorbent materials to better soak the perfume it is treated in. Oftentimes, text is inked into the cloth right before use or before it is sold.</p>
 			<p>These are typically used in Multhorandi funerary rites to prepare bodies for burial, but find use as apparel by warriors, nobles and spellweavers alike.</p>
@@ -118,9 +121,9 @@
 			<set name="weight" lb="1">1 lbs.</set>
 		</setters>
 	</element>
-	<element name="Incense Stick" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_INSTRUMENT_INCENSE_STICK">
+	<element name="Incense Stick" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_ITEM_INCENSE_STICK">
 		<description>
-			<p>A stick treated with fragrant oils. They are usually made from dense woods which burn slowly.</p>
+			<p>A stick treated with fragrant oils. They are usually made from dense woods which burn slowly. Often sold in boxes, rather than individually.</p>
 			<p>These are burnt in religious rites and come in a variety of fragrances depending on the culture and occasion.</p>
 		</description>
 		<setters>
@@ -129,5 +132,65 @@
 			<set name="weight" lb="0">—</set>
 			<set name="stackable">true</set>
 		</setters>
-	</element>	
+	</element>
+	<element name="Incense Stick (Box)" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_ITEM_INCENSE_BOX">
+		<description>
+			<p>Wooden sticks treated with fragrant oils. They are usually made from dense woods which burn slowly. Often sold in boxes of 30, rather than individually.</p>
+			<p>These are burnt in religious rites and come in a variety of fragrances depending on the culture and occasion.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="sp">5</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">true</set>
+		</setters>
+		<extract>
+			<item amount="30">ID_SELLSWORDS_ITEM_INCENSE_BOX</item>
+		</extract>
+	</element>
+	<element name="Incense Block" type="Item" source="Sellswords Stuff: Custom Items" id="ID_SELLSWORDS_ITEM_INCENSE_BLOCK">
+		<description>
+			<p>These can take on many shapes: Usually either a whole wooden block of fragrant wood saturated with oils, or sawdust and wax formed into some shape.</p>
+			<p>These are burnt in religious rites and come in a variety of fragrances depending on the culture and occasion.</p>
+		</description>
+		<setters>
+			<set name="category">Treasure</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="0">—</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Unholy Water (flask)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_UNHOLYWATER_FLASK">
+		<description>
+			<p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the unholy water as an improvised weapon. If the target is a celestial or fey, it takes 2d6 necrotic damage. A cleric or paladin may create unholy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot. A flask of unholy water can be split into 16 vials.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Holy Water (vial)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_HOLYWATER_VIAL">
+		<description>
+			<p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the holy water as an improvised weapon. If the target is a fiend or undead, it takes 1 radiant damage. A cleric or paladin may create holy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot. A flask of holy water can be split into 16 vials.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1.8</set>
+			<set name="weight" lb="0.0625">1/16 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Unholy Water (vial)" type="Item" source="Player’s Handbook" id="ID_SELLSWORDS_ITEM_UNHOLYWATER_VIAL">
+		<description>
+			<p>As an action, you can splash the contents of this flask onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the unholy water as an improvised weapon. If the target is a celestial or fey, it takes 1 necrotic damage. A cleric or paladin may create unholy water by performing a special ritual. The ritual takes 1 hour to perform, uses 25 gp worth of powdered silver, and requires the caster to expend a 1st-level spell slot. A flask of unholy water can be split into 16 vials.</p>
+		</description>
+		<setters>
+			<set name="category">Adventuring Gear</set>
+			<set name="cost" currency="gp">1.8</set>
+			<set name="weight" lb="0.0625">1/16 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 </elements>
