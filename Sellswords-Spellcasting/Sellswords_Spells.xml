@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
@@ -165,5 +165,28 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
+	</element>
+	<element name="Presley's Floating Disk" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_PRESLEYS_FLOATING_DISK">
+		<description>
+			<p><i>This is a rare spell available only to WIZ after being found in the world, or taught by someone who knows it.</i></p>
+			<p>This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground underneath yourself, with you atop. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.</p>
+			<p class="indent">The disk can move up to 10ft. every round. It can more across uneven terrain, up or down stairs, slopes and the like, but it can’t cross an elevation change of 10 feet or more. For example, the disk can’t move across a 10-foot-deep pit, nor could it leave such a pit if it was created at the bottom.</p>
+			<p class="indent">If it would ever be farther than 10ft away from you, the spell ends.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of mercury</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
 	</element>
 </elements>
