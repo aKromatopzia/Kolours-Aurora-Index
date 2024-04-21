@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
@@ -187,6 +187,5 @@
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
 		</setters>
-	</element>
 	</element>
 </elements>
