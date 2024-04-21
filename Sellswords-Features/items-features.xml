@@ -3,13 +3,15 @@
 	<info>
 		<name>Sellswords Features</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="items-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
-	<element name="Psionic Awakening" type="Feat" source="Sellswords Stuff: Features" id="ID_SELLSWORD_FEATURES_PSIONIC_AWAKENING">
+	<element name="Psionic Awakening" type="Feat" source="Sellswords Stuff: Features" id="ID_SELLSWORD_FEAT_PSIONIC_AWAKENING">
 		<prerequisite>???, You do not have the Psionics feature.</prerequisite>
+		<requirements>!ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS</requirements>
 		<description>
+			<p><i>???, You do not have the Psionics feature</i></p>
 			<p>You have learnt to manifest your will with a thought.</p>
 			<ul>
 				<li>You learn one psionic talent and one psionic discipline from the mystic's class.</li>
