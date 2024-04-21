@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Features</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="items-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -14,13 +14,13 @@
 			<p><i>???, You do not have the Psionics feature</i></p>
 			<p>You have learnt to manifest your will with a thought.</p>
 			<ul>
-				<li>You learn one psionic talent and one psionic discipline from the mystic's class.</li>
-				<li>You gain 5 psi points to spend on psionic disciplines, and have a psi limit of 2. You regain all spent psi points when you finish a long rest.</li>
+				<li>You learn one psionic talent and one psionic discipline from the mystic's class, and you are capable of focusing on that discipline.</li>
+				<li>You gain 4 psi points to spend on psionic disciplines, and have a psi limit of 2. You regain all spent psi points when you finish a long rest.</li>
 				<li>Your psionic ability modifier is Intelligence.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>You gain 5 psi points to spend on psionic disciplines, and have a psi limit of 2. You regain all spent psi points when you finish a long rest. Your psionic ability modifier is Intelligence.</description>
+			<description>You gain 4 psi points to spend on psionic disciplines, are capable of focusing on that discipline, and have a psi limit of 2. You regain all spent psi points when you finish a long rest. Your psionic ability modifier is Intelligence.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Psionic Talents (Psionic Awakening)" supports="Psionic Talents" />
