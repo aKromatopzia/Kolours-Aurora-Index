@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.17">
+		<update version="0.1.18">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -958,7 +958,7 @@
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you have advantage on Charisma (Intimidation) checks.</p>
 			<p class="indent"><b>Crowned in Sorrow (1+ psi).</b> As an action, one creature you can see within 60 feet of you must make a Charisma saving throw. On a failed save, it takes 1d8 psychic damage per psi point spent, and it can’t take reactions until the start of its next turn. On a successful save, it takes half as much damage.</p>
 			<p class="indent"><b>Call to Inaction (2 psi; conc., 10 min.).</b> If you spend 1 minute conversing with a creature, you can attempt to seed it with overwhelming ennui. At the end of the minute, you can use an action to force the creature to make a Wisdom saving throw. The save automatically succeeds if the target is immune to being charmed. On a failed save, it sits and is incapacitated until your concentration ends. This effect immediately ends if the target or any ally it can see is attacked or takes damage. On a successful save, the creature is unaffected and has no inkling of your attempt to bend its will.</p>
-			<p class="indent"><b>Visions of Despair (3 psi).</b> As an action, you force one creature you can see within 60 feet of you to make a Charisma saving throw. On a failed save, it takes 3d6 psychic damage, and its speed is reduced to 0 until the end of its next turn. On a successful save, it takes half as much damage. You can increase the damage by 1d6 per additional psi point spent on it.</p>
+			<p class="indent"><b>Visions of Despair (3+ psi).</b> As an action, you force one creature you can see within 60 feet of you to make a Charisma saving throw. On a failed save, it takes 3d6 psychic damage, and its speed is reduced to 0 until the end of its next turn. On a successful save, it takes half as much damage. You can increase the damage by 1d6 per additional psi point spent on it.</p>
 			<p class="indent"><b>Dolorous Mind (5 psi; conc., 1 min.).</b> As an action, you choose one creature you can see within 60 feet of you. It must succeed on a Charisma saving throw, or it is incapacitated and has a speed of 0 until your concentration ends. It can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 		</description>
 		<setters>
@@ -1417,7 +1417,7 @@
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.</p>
 			<p class="indent"><b>Darkness (1+ psi; conc., 1 min.).</b> As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10- foot radius per psi point spent on this ability. The light produced by other psionics or spells of 2nd level or less is suppressed in this area.</p>
 			<p class="indent"><b>Light (2 psi; conc., 1 min.).</b> As an action, an object you touch radiates light in a 20 -foot radius and dim light for an additional 20 feet. The light lasts until your concentration ends. Alternatively, a creature you touch radiates light in the same manner if it fails a Dexterity saving throw. While lit in this manner, it can’t hide, and attack rolls against it gain advantage.</p>
-			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 min.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your verbal commands. In combat, roll for their initiative, and choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block. The conjured shadows however do not create more of themselves, and their ability drain is halved.</p>
+			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 min.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your commands so long as you can communicate with them. In combat, they take their turns directly after yours, and you choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block. The conjured shadows however do not create more of themselves.</p>
 			<p class="indent"><b>Radiant Beam (5 psi; conc., 1 min.).</b> As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">You can increase this effect’s damage by 1d6 per each additional psi point spent on it.</p>
 		</description>
