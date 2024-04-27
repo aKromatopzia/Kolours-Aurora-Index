@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="UA_2023_fht-brawler.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_fht-brawler.xml" />
+		</update>
+	</info>
+
+	<element name="Brawler" type="Archetype" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FIGHTER_BRAWLER">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>Brawlers focus their training and study not on swordplay and battle tactics, but on the skills needed to turn a punch or kick into a brutal strike and any innocuous object into a deadly weapon. Some Brawlers thrive in tavern scuffles and street rumbles, while others excel in espionage, wielding ordinary objects with the deadliness of an assassin’s knife.</p>
+			<div element="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_UNARMED_EXPERT"/>
+			<div element="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVISED_EXPERT"/>
+			<div element="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_GRAPPLING_EXPERT"/>
+			<div element="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_DIRTY_FIGHTING"/>
+			<div element="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVED_SPECIALIST"/>
+			<div element="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_UNARMED_SPECIALIST"/>
+		</description>
+		<rules>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_UNARMED_EXPERT" level="3"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVISED_EXPERT" level="3"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_GRAPPLING_EXPERT" level="7"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_DIRTY_FIGHTING" level="10"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVED_SPECIALIST" level="15"/>
+			<grant type="Archetype Feature" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_UNARMED_SPECIALIST" level="18"/>
+		</rules>
+	</element>
+	<element name="Unarmed Expert" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_UNARMED_EXPERT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_UNARMED_EXPERT</requirements>
+		<description>
+			<p>You can roll 1d6 plus your Strength modifier in place of the normal damage of your Unarmed Strike. If you aren’t holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8.</p>
+		</description>
+		<sheet>
+			<description>You can roll 1d6 plus your Strength modifier in place of the normal damage of your Unarmed Strike. If you aren’t holding any weapons or a Shield when you make the attack roll, the d6 becomes a d8.</description>
+		</sheet>
+	</element>
+	<element name="Improvised Expert" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVISED_EXPERT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_IMPROVISED_EXPERT</requirements>
+		<description>
+			<p>You are proficient with Improvised Weapons.</p>
+			<p class="indent">Whenever you finish a Long Rest, choose one weapon property from the One-Handed list and one from the Two-Handed list:</p>
+			<center>
+			<p><strong>One-Handed:</strong> Light or Thrown (Range 20/60)</p>
+			<p><strong>Two-Handed:</strong> Reach or Thrown (Range 10/30)</p>
+			</center>
+			<p>Until the end of your next Long Rest, the One- Handed choice applies to the one-handed Improvised Weapons you wield, and the Two- Handed choice applies to the two-handed ones.</p>
+			<p class="indent">In addition, whenever you attack with an Improvised Weapon, you can give it one of the following Mastery properties for that attack, depending on whether it can be wielded in one hand or two:</p>
+			<center>
+			<p><strong>One-Handed:</strong> Sap, Slow or Vex</p>
+			<p><strong>Two-Handed:</strong> Cleave, Push, or Topple</p>
+			</center>
+		</description>
+		<sheet>
+			<description>You are proficient with Improvised Weapons. Whenever you finish a Long Rest, choose one weapon property from the One-Handed list (Light or Thrown (Range 20/60)) and one from the Two-Handed list (Reach or Thrown (Range 10/30)). Until the end of your next Long Rest, the One- Handed choice applies to the one-handed Improvised Weapons you wield, and the Two- Handed choice applies to the two-handed ones. In addition, whenever you attack with an Improvised Weapon, you can give it one of the following Mastery properties for that attack, depending on whether it can be wielded in one hand (Sap, Slow or Vex) or two (Cleave, Push, or Topple).</description>
+		</sheet>
+	</element>
+	<element name="Grappling Expert" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_GRAPPLING_EXPERT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_GRAPPLING_EXPERT</requirements>
+		<description>
+			<p>You can make one Unarmed Strike as a Bonus Action. When you use Unarmed Strike in this way, you must choose the Grapple or Shove option.</p>
+			<p>In addition, at the start of each of your turns, you can deal 1d6 Bludgeoning damage to one creature Grappled by you.</p>
+		</description>
+		<sheet>
+			<description>You can make one Unarmed Strike as a Bonus Action. When you use Unarmed Strike in this way, you must choose the Grapple or Shove option. In addition, at the start of each of your turns, you can deal 1d6 Bludgeoning damage to one creature Grappled by you.</description>
+		</sheet>
+	</element>
+	<element name="Dirty Fighting" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_DIRTY_FIGHTING">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_DIRTY_FIGHTING</requirements>
+		<description>
+			<p>You have Advantage on attack rolls made with Improvised Weapons and Unarmed Strikes against a creature Grappled by you.</p>
+		</description>
+		<sheet>
+			<description>You have Advantage on attack rolls made with Improvised Weapons and Unarmed Strikes against a creature Grappled by you.</description>
+		</sheet>
+		<rules>
+	</element>
+	<element name="Improved Specialist" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVED_SPECIALIST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_IMPROVED_SPECIALIST</requirements>
+		<description>
+			<p>You are a master at making the ordinary deadly. Whenever you hit a creature with an Improvised Weapon, you can add your Proficiency Bonus to the damage roll, and the damage die of your two- handed Improvised Weapons becomes 1d12.</p>
+			<p>In addition, whenever you attack with an Improvised Weapon, you can use two Mastery properties from Improvised Expert, instead of one.</p>
+		</description>
+		<sheet>
+			<description>You are a master at making the ordinary deadly. Whenever you hit a creature with an Improvised Weapon, you can add your Proficiency Bonus to the damage roll, and the damage die of your two- handed Improvised Weapons becomes 1d12. In addition, whenever you attack with an Improvised Weapon, you can use two Mastery properties from Improvised Expert, instead of one.</description>
+		</sheet>
+	</element>
+	
+	<!--Feature Replacement Grants-->
+	<element name="Unarmed Expert Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_UNARMED_EXPERT" />
+	<element name="Improvised Expert Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_IMPROVISED_EXPERT" />
+	<element name="Grappling Expert Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_GRAPPLING_EXPERT" />
+	<element name="Dirty Fighting Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_DIRTY_FIGHTING" />
+	<element name="Improved Specialist Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_IMPROVED_SPECIALIST" />
+	<element name="Unarmed Specialist Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_UNARMED_SPECIALIST" />
+</elements>
