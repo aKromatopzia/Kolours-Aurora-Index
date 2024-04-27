@@ -1,0 +1,96 @@
+<elements>
+	<info>
+		<name>Ancestries</name>
+		<description>Various revised and new ancestries for Sellswords' Basin</description>
+		<update version="0.0.1">
+			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
+		</update>
+	</info>
+
+	<element name="Yuan-Ti (Serpent Lower Body)" type="Race" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACE_YUAN_TI_SERPENT">
+		<description>
+			<p>Yuan-ti were originally humans who transformed themselves into serpent folk through ancient rituals. Most yuan-ti were corrupted into monsters by those rites, but some yuan-ti instead became a new people who mix characteristics of humans and snakes.</p>
+			<h4>YUAN-TI TRAITS</h4>
+			<p>All nagas share the following traits.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Constitution score increases by 2, and your Intelligence score increases by 1.</p>
+			<p class="indent"><b><i>Alignment. </i></b>Most naga are either neutral or neutral evil in alignment.</p>
+			<p class="indent"><b><i>Size. </i></b>Yuan-Ti with serpentine lower halves typically stand about 5 feet tall when upright, but the total length of their bodies, head to tail, ranges from 10 to as much as 20 feet. Your size is Medium.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Natural Weapons. </i></b>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage. If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and you can attempt to grapple the target.</p>
+			<p class="indent"><b><i>Binding Coils.</i></b>Creatures you grapple are restrained,</p>
+			<p class="indent"><b><i>Speed Burst. </i></b>By lowering your body to the ground and propelling yourself with your arms, you can move more quickly for a time. As a bonus action on your turn, if you have both hands free, you can Dash.</p>
+			<p class="indent"><b><i>Poison Immunity. </i></b>You are immune to poison damage and can’t be poisoned.</p>
+			<p class="indent"><b><i>Poison Affinity. </i></b>You gain proficiency with the poisoner’s kit.</p>
+			<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and one other language that you and your DM agree is appropriate for your character.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Naga)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Naga)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_NATURAL_WEAPONS" />
+			<grant type="Racial Trait" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_SPEED_BURST" />
+			<grant type="Racial Trait" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_IMMUNITY" />
+			<grant type="Racial Trait" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_AFFINITY" />
+			<grant type="Racial Trait" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_BINDING_COILS" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Yuan-ti)" supports="Custom Race Language"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Yuan-ti)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Natural Weapons" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_NATURAL_WEAPONS">
+		<description>
+			<p>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage. If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and you can attempt to grapple the target.</p>
+		</description>
+		<sheet>
+			<description>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + {{strength:modifier}}, and your target must make a Constitution saving throw (DC {{naga-poison:dc}}). On a failed save, the target takes 1d4 poison damage. If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + {{strength:modifier}}, and you can attempt to grapple the target.</description>
+		</sheet>
+		<rules>
+			<stat name="naga-poison:dc" value="8" />
+			<stat name="naga-poison:dc" value="proficiency" />
+			<stat name="naga-poison:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Poison Immunity" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_IMMUNITY">
+		<description>
+			<p>You are immune to poison damage and the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>You are immune to the poisoned condition.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+	<element name="Poison Affinity" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_AFFINITY">
+		<description>
+			<p>You gain proficiency with the poisoner’s kit.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency with the poisoner’s kit.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Simple Weapon or Tool" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Speed Burst" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_SPEED_BURST">
+		<description>
+			<p>By lowering your body to the ground and propelling yourself with your arms, you can move more quickly for a time. As a bonus action on your turn, if you have both hands free, you can Dash.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>On your turn, if you have both hands free, you can Dash.</description>
+		</sheet>
+	</element>
+	<element name="Binding Coils" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_BINDING_COILS">
+		<description>
+			<p>Creatures you have grappled are restrained.</p>
+		</description>
+		<sheet>
+			<description>Creatures you have grappled are restrained.</description>
+		</sheet>
+	</element>
+	

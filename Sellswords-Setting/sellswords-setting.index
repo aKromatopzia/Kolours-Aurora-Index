@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>sellswords-setting.index</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sellswords-setting.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/sellswords-setting.index" />
 		</update>
 	</info>
 	<files>
 		<file name="deities.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/deities.xml" />
 		<file name="languages.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/languages.xml" />
+		<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 	</files>
 </index>
