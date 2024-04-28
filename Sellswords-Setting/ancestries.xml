@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -93,4 +93,5 @@
 			<description>Creatures you have grappled are restrained.</description>
 		</sheet>
 	</element>
-	
+
+</elements>
