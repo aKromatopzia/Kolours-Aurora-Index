@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -171,7 +171,7 @@
 	</append>
 	
 	<!-- Hand Cannon-->
-	<element name="Hand Cannon, light" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
+	<element name="Light Hand Cannon" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
@@ -190,7 +190,7 @@
 			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
 	</element>
-	<element name="Hand Cannon, heavy" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
+	<element name="Heavy Hand Cannon" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
