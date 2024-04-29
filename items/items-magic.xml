@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.17">
+		<update version="0.0.18">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -97,7 +97,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="light hammer">Weapon</set>
 			<set name="attunement">true</set>
-			<set name="rarity">uncommon</set>
+			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Light Hammer</set>
 		</setters>
@@ -115,7 +115,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="battleaxe">Weapon</set>
 			<set name="attunement">false</set>
-			<set name="rarity">uncommon</set>
+			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Battleaxe</set>
 		</setters>
@@ -134,7 +134,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="morningstar">Weapon</set>
 			<set name="attunement">false</set>
-			<set name="rarity">uncommon</set>
+			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Morningstar</set>
 		</setters>
@@ -153,7 +153,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="javelin">Weapon</set>
 			<set name="attunement">true</set>
-			<set name="rarity">uncommon</set>
+			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
 			<set name="weapon">Javelin</set>
 		</setters>
@@ -172,7 +172,7 @@
 			<set name="type">Wand</set>
 			<set name="slot">onehand</set>
 			<set name="attunement">false</set>
-			<set name="rarity">uncommon</set>
+			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
 
@@ -257,7 +257,98 @@
 			<set name="type">Staff</set>
 			<set name="slot">onehand</set>
 			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
+	
+		
+	<!-- <! Bottomless Belt > -->			
+		<element name="Bottomless Thunder-Bolt Belt" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BOLT_BELT_THUNDER">
+		<description>
+			<p>This case of bolts straps nicely along the waist, and has a leather bandolier attached to it. It hums quietly.</p>
+			<p>This bandolier can be fed into any crossbow, and when it is, that crossbow no longer has the Loading property, and deals an extra 2 Thunder damage on a hit.</p>
+			</description>
+		<setters>
+			<set name="keywords">belt, thunder</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">belt</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<!-- <! Cloak of Daggers > -->		
+		<element name="Cloak of Daggers" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_CLOAK_OF_DAGGERS">
+		<description>
+			<p>This black cloak has several sharp blades running around the bottom ring of it.</p>
+			<p>While you are wearing it, you may use your bonus action to spin with it, causing it to cast the Sword Burst cantrip.</p>
+			<p>The spell uses your level to determine its strength, and your dexterity score as its spellcasting ability modifier.</p>
+			</description>
+		<setters>
+			<set name="keywords">cloak, force</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">cloak</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<!-- <! Aurixoths Rapier > -->	
+	<element name="Aurixoth's Lost Rapier" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_AURIS_LOST_RAPIER">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>You can sense that most of the magic seems to have faded from it, but the item retains a hint of what it used to be capable of. The handle is made with iridescent draconic scales, and the blade has a perfect silver sheen.</p>
+			<p>Whenever you are holding this weapon, you may use it as a Bardic or Sorcerous spell focus, and are able to perform somatic components as if you had a free hand.</p>
+			<p>You may also add your charisma modifier to the damage dealt by your cantrips that you cast while using it as a focus.</p>
+		</description>
+		<setters>
+			<set name="keywords">rapier, sellswords, sorcerer, bard</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="rapier">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="attunement" addition="A bard or sorcerer">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Rapier</set>
+		</setters>
+	</element>
+	
+	<!-- <! Greataxe of Waylaying > -->	
+	<element name="Greataxe of Waylaying" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WAYLAYING_GREATAXE">
+		<description>
+			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>This enchantment on this greataxe is focused on the black leather grips that are attached to its dark wood frame, while it possesses a wicked golden blade.</p>
+			<p>Hostile creatures that enter your threat range provoke an opportunity attack. If this attack hits, the creature's speed is set to 0 until the start of their next turn.</p>
+			<p>This effect has a chance to recharge each round. At the end of each of your turns after this effect has been used, roll a d6, on a 6, you may use this effect again.</p>
+		</description>
+		<setters>
+			<set name="keywords">greataxe, sellswords</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greataxe">Weapon</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Greataxe</set>
+		</setters>
+	</element>
+	
+		<!-- <! Tattered Phoenix Cloak > -->		
+		<element name="Tattered Phoenix Cloak" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_TATTERED_PHOENIX_CLOAK">
+		<description>
+			<p>This is the cloak you retrieved from the two strange bandits out on Snowflake mountains. It would look like any ordinary feather cloak, but the enchantment was placed on it when it was already torn and damaged.</p>
+			<p>The feathers now softly glow like embers, providing bright light out to five feet, and dim light out to ten feet. The light can be dismissed as a free action.</p>
+			<p>While you wear this cloak, a fiery warmth surges through you. You have resistance to fire and cold damage.</p>
+			<p>As an action, you can draw upon the cloak to kindle a healing flame. A blaze begins to surround you, and you take 1d4 fire damage.</p>
+			<p>After the damage is taken, you cast the Aura Of Vitality spell. Once this item is used this way, it cannot be used in the same way until the next dawn.</p>
+			</description>
+		<setters>
+			<set name="keywords">cloak, fire, healing</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">cloak</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	
 </elements>
