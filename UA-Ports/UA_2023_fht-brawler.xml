@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="UA_2023_fht-brawler.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_fht-brawler.xml" />
 		</update>
 	</info>
@@ -73,7 +73,6 @@
 		<sheet>
 			<description>You have Advantage on attack rolls made with Improvised Weapons and Unarmed Strikes against a creature Grappled by you.</description>
 		</sheet>
-		<rules>
 	</element>
 	<element name="Improved Specialist" type="Archetype Feature" source="UA 2023: One DND" id="ID_UA2023ODND_ARCHETYPE_FEATURE_BRAWLER_IMPROVED_SPECIALIST">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_FIGHTER_BRAWLER_IMPROVED_SPECIALIST</requirements>
