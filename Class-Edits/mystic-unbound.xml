@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.21">
+		<update version="0.1.22">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -268,11 +268,11 @@
 	<element name="Consumptive Power" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_CONSUMPTIVE_POWER">
 		<supports>Mystic</supports>
 		<description>
-			<p>At 10th level, you gain the ability to more efficiently sacrifice your physical durability in exchange for psionic power. You can use Ebb and Flow's second ability at a ratio of 1:2.</p>
+			<p>At 10th level, you gain the ability to more efficiently sacrifice your physical durability in exchange for psionic power. You can use Ebb and Flow's second ability at a ratio of 1:1.</p>
 			<p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
-			<description>You can use Ebb and Flow's second ability at a ratio of 1:2. This reduction can’t be lessened in any way.</description>
+			<description>You can use Ebb and Flow's second ability at a ratio of 1:1. This reduction can’t be lessened in any way.</description>
 		</sheet>
 	</element>
 	<element name="Psionic Mastery" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONIC_MASTERY">
