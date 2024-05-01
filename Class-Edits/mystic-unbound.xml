@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.20">
+		<update version="0.1.21">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -143,7 +143,7 @@
 			<p>You have an internal reservoir of energy that can be devoted to psionic disciplines you know. This energy is represented by psi points. Each psionic discipline describes effects you can create with it by spending a certain number of psi points. A psionic talent requires no psi points.</p>
 			<p class="indent">The number of psi points you have is based on your mystic level, as shown in the Psi Points column of the Mystic table. The number shown for your level is your psi point maximum. Your psi point total returns to its maximum when you finish a long rest. The number of psi points you have can’t go below 0 or over your maximum.</p>
 			<h5>PSI LIMIT</h5>
-			<p>Though you have access to a potent amount of psionic energy, it takes training	and practice to channel that energy. There is a limit on the number of psi points you can spend to activate a psionic discipline. The limit is based on your mystic level, as shown in the Psi Limit column of the Mystic table. For example, as a 3rd-level mystic, you can spend no more than 3 psi points on a discipline each time you use it, no matter how many psi points you have.</p>
+			<p>Though you have access to a potent amount of psionic energy, it takes training and practice to channel that energy. There is a limit on the number of psi points you can spend to activate a psionic discipline. The limit is based on your mystic level, as shown in the Psi Limit column of the Mystic table. For example, as a 3rd-level mystic, you can spend no more than 3 psi points on a discipline each time you use it, no matter how many psi points you have.</p>
 			<h5>PSYCHIC FOCUS</h5>
 			<p>You can focus psionic energy on one of your psionic disciplines to draw ongoing benefits from it. As a bonus action, you can choose one of your psionic disciplines and gain its psychic focus benefit, which is detailed in that discipline’s description. The benefit lasts until you are incapacitated or until you use another bonus action to choose a different focus benefit.</p>
 			<p class="indent">You can have only one psychic focus benefit at a time, and using the psychic focus of one discipline doesn’t limit your ability to use other disciplines.</p>
@@ -1443,7 +1443,7 @@
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.</p>
 			<p class="indent"><b>Darkness (1+ psi; conc., 1 min.).</b> As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10- foot radius per psi point spent on this ability. The light produced by other psionics or spells of 2nd level or less is suppressed in this area.</p>
 			<p class="indent"><b>Light (2 psi; conc., 1 min.).</b> As an action, an object you touch radiates light in a 20 -foot radius and dim light for an additional 20 feet. The light lasts until your concentration ends. Alternatively, a creature you touch radiates light in the same manner if it fails a Dexterity saving throw. While lit in this manner, it can’t hide, and attack rolls against it gain advantage.</p>
-			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 min.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your commands so long as you can communicate with them. In combat, they take their turns directly after yours, and you choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block. The conjured shadows however do not create more of themselves.</p>
+			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 hour.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your commands so long as you can communicate with them. In combat, they take their turns directly after yours, and you choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block. The conjured shadows however do not create more of themselves.</p>
 			<p class="indent"><b>Radiant Beam (5 psi; conc., 1 min.).</b> As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
 			<p class="indent">You can increase this effect’s damage by 1d6 per each additional psi point spent on it.</p>
 		</description>
