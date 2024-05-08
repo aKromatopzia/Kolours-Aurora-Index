@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.26">
+		<update version="0.1.27">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -776,7 +776,7 @@
 			<description>As a bonus action, you can spend psi points to create spell slots: 2 points for a 1st level, 3 for a 2nd, 5 for a 3rd, 6 for a 4th, and 7 for a 5th level spell slot. The spell slot remains until you use it or finish a long rest. You must observe your psi limit when spending psi points to create a spell slot.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Arcane Dabbler" supports="Wizard, 3, 2, 1" number="3" spellcasting="Arcane Dabbler" />
+			<select type="Spell" name="Arcane Dabbler" supports="Wizard, (1||2||3)" number="3" level = "6" spellcasting="Arcane Dabbler" />
 		</rules>
 	</element>
 	<element name="Elemental Mastery" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ELEMENTAL_MASTERY">
