@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.28">
+		<update version="0.1.29">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
@@ -191,9 +191,11 @@
 			<select type="Spell" name="Psionic Discipline" supports="Psionic Disciplines" level="1" spellcasting="Mystic" />
 			<select type="Spell" name="Psionic Discipline (3)" supports="Psionic Disciplines" level="3" spellcasting="Mystic" />
 			<select type="Spell" name="Psionic Discipline (5)" supports="Psionic Disciplines" level="5" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (7)" supports="Psionic Disciplines" level="7" spellcasting="Mystic" />
 			<select type="Spell" name="Psionic Discipline (9)" supports="Psionic Disciplines" level="9" spellcasting="Mystic" />
-			<select type="Spell" name="Psionic Discipline (13)" supports="Psionic Disciplines" level="13" spellcasting="Mystic" />
-			<select type="Spell" name="Psionic Discipline (17)" supports="Psionic Disciplines" level="17" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (12)" supports="Psionic Disciplines" level="12" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (15)" supports="Psionic Disciplines" level="15" spellcasting="Mystic" />
+			<select type="Spell" name="Psionic Discipline (18)" supports="Psionic Disciplines" level="18" spellcasting="Mystic" />
 		</rules>
 	</element>
 	<element name="Mystic Order" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER">
