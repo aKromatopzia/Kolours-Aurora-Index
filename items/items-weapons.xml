@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.10">
+		<update version="0.0.11">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -170,7 +170,7 @@
 		</rules>
 	</append>
 	
-	<!-- Hand Cannon-->
+	<!-- Firearms -->
 	<element name="Light Hand Cannon" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE</supports>
 		<description>
@@ -178,14 +178,14 @@
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
 			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod - STR mod (max 0) negative while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod - STR mod (max 0). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
 			<p class="indent">It takes an Action to deploy or retrieve a hand cannon.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_HAND_CANNON" />
+			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">–</set>
 			<set name="weight" lb="8">8 lbs.</set>
 			<set name="slot">twohand</set>
-			<set name="range">30ft. cone or 80/320ft.</set>
+			<set name="range">30ft. cone or 80/320ft. ranged</set>
 			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single)">4d8</set>
 			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
@@ -197,33 +197,71 @@
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
 			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod - STR mod (max 0) negative while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod - STR mod (max 0). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
 			<p class="indent">It takes an Action to deploy or retrieve a hand cannon.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_HAND_CANNON" />
+			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">–</set>
 			<set name="weight" lb="12">12 lbs.</set>
 			<set name="slot">twohand</set>
-			<set name="range">30ft. cone or 80/320ft.</set>
+			<set name="range">30ft. cone or 80/320ft. ranged</set>
 			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single)">4d8</set>
 			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
 	</element>
-	<element name="Special (Hand Cannon)" type="Weapon Property" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_HAND_CANNON">
+	
+	<element name="Fire Lance" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_FIRE_LANCE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER</supports>
+		<description>
+			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
+			<p>A portable version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A fire lance can be shot while held in both hands.</p>
+			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod negative while held. creatures take half as much damage on a success. If you are proficient, add your proficiency to all DCs and Attacks made with this weapon.</p>
+			<p class="indent">You can also make melee attacks with the fire lance. It is a reach weapon which does 1d8 bludgeoning damage on a strike.</p>
+			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">–</set>
+			<set name="weight" lb="12">12 lbs.</set>
+			<set name="slot">twohand</set>
+			<set name="range">30ft. cone or 80/320ft. ranged, or 10ft. melee</set>
+			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single) or 1d8 bludgeoning (melee)">1d10</set>
+			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
+		</setters>
+	</element>
+	
+	<element name="Special (Smokepowder)" type="Weapon Property" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER">
 		<description>
 		<p>After this weapon is fired, an Action is required to load it with ammunition and smokepowder. The hand cannon can be loaded by somebody other than its wielder. Damage and range is based on the loaded ammunition. A packet of smokepowder is good for two shots and its ammunition is usually a 1lbs iron ball or pouch of 500 ball bearings.</p>
 		</description>
 	</element>
 	<element name="Weapon Proficiency (Hand Cannon)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON">
-		<supports>Weapon, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_HANDCANNON, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_HAND_CANNON</supports>
+		<supports>Weapon, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_HAND_CANNON, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER</supports>
+	</element>
+
+		<element name="Weapon Proficiency (Fire Lance)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE">
+		<supports>Weapon, Melee, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_FIRE_LANCE, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
 	</element>
 	
 	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
 		<rules>
 			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON" />
+			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
 		</rules>
 	</append>
 
+	<!-- Not finished 
+	
+	<element id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+		<rules>
+			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON" />
+			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
+		</rules>
+	</element>
+	
+	-->
+	
 	<!--Ammunition-->
 	<element name="Celestial Salt Round Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_hc_ROUND">
 		<description>
