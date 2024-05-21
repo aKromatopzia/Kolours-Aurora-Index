@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -215,8 +215,8 @@
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A portable version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A fire lance can be shot while held in both hands.</p>
-			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod negative while held. creatures take half as much damage on a success. If you are proficient, add your proficiency to all DCs and Attacks made with this weapon.</p>
-			<p class="indent">You can also make melee attacks with the fire lance. It is a reach weapon which does 1d8 bludgeoning damage on a strike.</p>
+			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod negative while held. creatures take half as much damage on a success. If you are proficient in siege weapons, add your proficiency to all DCs and Attacks made with these attacks.</p>
+			<p class="indent">You can also make melee attacks with the fire lance. It is a reach weapon which does 1d8 bludgeoning damage on a strike. If you are proficient with martial weapons or the lance, add your proficiency to all DCs and Attacks made with this attack.</p>
 			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE" />
 		</description>
@@ -243,6 +243,12 @@
 		<element name="Weapon Proficiency (Fire Lance)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE">
 		<supports>Weapon, Melee, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_FIRE_LANCE, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
 	</element>
+
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE">
+		<rules>
+			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
+		</rules>
+	</append>
 	
 	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
 		<rules>
