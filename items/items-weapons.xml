@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -226,8 +226,8 @@
 			<set name="weight" lb="12">12 lbs.</set>
 			<set name="slot">twohand</set>
 			<set name="range">30ft. cone or 80/320ft. ranged, or 10ft. melee</set>
-			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single) or 1d8 bludgeoning (melee)">1d10</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
+			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single) or 1d10 bludgeoning (melee)">4d8</set>
+			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE</set>
 		</setters>
 	</element>
 	
