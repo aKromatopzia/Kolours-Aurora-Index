@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -169,6 +169,224 @@
 			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_BATTLE_STAFF" />
 		</rules>
 	</append>
+	
+	<!-- Sabre -->
+	<element
+		name="Sabre"
+		type="Weapon"
+		source="Sellsword Stuff: Custom Weaponry"
+		id="ID_DIRTBAG_ITEMS_WEAPON_SABRE"
+	>
+		
+		<!--For internal ID labeling representing different weapon properties, like ranged, light, martial, reach etc.-->
+		<!--Instructions: pick one or more from each group to keep. Be sure to put commas in properly!-->
+		<supports>
+			<!--Weapon classification-->
+			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
+
+			ID_INTERNAL_DAMAGE_TYPE_SLASHING,
+			<!--I'm too lazy to type everything else out, so just make an educated guess: force, necrotic, radiant, fire, cold, acid, poison, lighting, thunder, psychic-->
+			
+			<!--Weapon properties-->
+			ID_INTERNAL_WEAPON_PROPERTY_FINESSE
+			
+			<!--Since this is a list, make sure there is a comma separating every entry, and there is no comma at the end.-->
+		</supports>
+		
+		<description>
+			<!--This is where the item's description goes. It will show up on Aurora. Format it like any other html diarrhea-->
+			<p>
+				Mastery: Vex
+			</p>
+			
+			<p>
+				You are proficient with this weapon if you are proficient with rapiers. 
+			</p>
+			
+		</description>
+		
+		<!--Various settings regarding the weapon.-->
+		<setters>
+			<set name="category">Weapons</set>
+			
+			<!--Currency is merely the type of currency, not necessarily the amount.-->
+			<set name="cost" currency="gp">
+				<!--Amount of currency. If there is no cost, use a single hyphen -   -->
+				25
+			</set>
+			
+			<!--Weight of the weapon. Has both an internal and a display value.-->
+			<set name="weight" lb="2">
+				<!--Text display for its weight.-->
+				2 lbs.
+			</set>
+			
+			<!--Which slot(s) this weapon takes up. Use onehand or twohand-->
+			<set name="slot">
+				onehand
+			</set>
+			
+			<!--Damage type and base damage roll. Suggested: piercing, bludgeoning, slashing, radiant, force, psychic, thunder, necrotic, acid, lightning, cold, fire, poison-->
+			<set name="damage" type="slashing">
+				1d8
+			</set>
+			
+			<!--Internal ID for its proficiency. Can be custom or directly linked to a proficiency.-->
+			<set name="proficiency">
+				ID_DIRTBAG_PROFICIENCY_WEAPON_SABRE
+			</set>
+		</setters>
+	</element>
+	
+	<element
+		name="Weapon Proficiency (Sabre)"
+		type="Proficiency"
+		source="Sellsword Stuff: Custom Weaponry"
+		id="ID_DIRTBAG_PROFICIENCY_WEAPON_SABRE"
+	>
+		<supports>
+			<!--This IS for a weapon, right?-->
+			Weapon,
+			
+			Melee,
+			
+			<!--Weapon classification-->
+			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
+			<!--Damage type-->
+			ID_INTERNAL_DAMAGE_TYPE_SLASHING,
+			<!--I'm too lazy to type everything else out, so just make an educated guess: force, necrotic, radiant, fire, cold, acid, poison, lighting, thunder, psychic-->
+			
+			<!--Weapon properties-->
+			ID_INTERNAL_WEAPON_PROPERTY_FINESSE
+			
+			<!--Just like last time, make sure the commas are in the right place...-->
+		</supports>
+	</element>
+	
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER">
+		<rules>
+			<grant type="Proficiency" id="ID_DIRTBAG_PROFICIENCY_WEAPON_SABRE" />
+		</rules>
+	</append>
+	
+	<element
+		name="Parrying Dagger"
+		type="Weapon"
+		source="Sellsword Stuff: Custom Weaponry"
+		id="ID_DIRTBAG_ITEMS_WEAPON_PARRYING_DAGGER"
+	>
+		
+		<!--For internal ID labeling representing different weapon properties, like ranged, light, martial, reach etc.-->
+		<!--Instructions: pick one or more from each group to keep. Be sure to put commas in properly!-->
+		<supports>
+			<!--Weapon classification-->
+			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
+
+			ID_INTERNAL_DAMAGE_TYPE_PIERCING,
+			<!--I'm too lazy to type everything else out, so just make an educated guess: force, necrotic, radiant, fire, cold, acid, poison, lighting, thunder, psychic-->
+			
+			<!--Weapon properties-->
+			ID_INTERNAL_WEAPON_PROPERTY_FINESSE,
+			ID_INTERNAL_WEAPON_PROPERTY_LIGHT
+			
+			<!--Since this is a list, make sure there is a comma separating every entry, and there is no comma at the end.-->
+		</supports>
+		
+		<description>
+			<!--This is where the item's description goes. It will show up on Aurora. Format it like any other html diarrhea-->
+			<p>
+				Mastery: Vex
+			</p>
+			<p>
+				You are proficient with this weapon if you are proficient with shortswords.
+			</p>
+			
+			
+			<!--Optional: This is a weapon property entry for the description. For Special properties and suchlike. If this is not necessary, remove these two lines.-->
+			<div element="ID_DIRTBAG_WEAPON_PROPERTY_PARRYING_DAGGER" />
+			
+		</description>
+		
+		<!--Various settings regarding the weapon.-->
+		<setters>
+			<set name="category">Weapons</set>
+			
+			<!--Currency is merely the type of currency, not necessarily the amount.-->
+			<set name="cost" currency="gp">
+				<!--Amount of currency. If there is no cost, use a single hyphen -   -->
+				2
+			</set>
+			
+			<!--Weight of the weapon. Has both an internal and a display value.-->
+			<set name="weight" lb="1">
+				<!--Text display for its weight.-->
+				1 lb.
+			</set>
+			
+			<!--Which slot(s) this weapon takes up. Use onehand or twohand-->
+			<set name="slot">
+				onehand
+			</set>
+			
+			<!--Damage type and base damage roll. Suggested: piercing, bludgeoning, slashing, radiant, force, psychic, thunder, necrotic, acid, lightning, cold, fire, poison-->
+			<set name="damage" type="piercing">
+				1d4
+			</set>
+			
+			
+			<!--Internal ID for its proficiency. Can be custom or directly linked to a proficiency.-->
+			<set name="proficiency">
+				ID_DIRTBAG_PROFICIENCY_WEAPON_PARRYING_DAGGER
+			</set>
+		</setters>
+	</element>
+	
+	<!--Template for weapon proficiency (of the above weapon)-->
+	<element
+		name="Weapon Proficiency (Parrying Dagger)"
+		type="Proficiency"
+		source="Sellsword Stuff: Custom Weaponry"
+		id="ID_DIRTBAG_PROFICIENCY_WEAPON_PARRYING_DAGGER"
+	>
+		<supports>
+			<!--This IS for a weapon, right?-->
+			Weapon,
+			
+			Melee,
+			
+			<!--Weapon classification-->
+			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
+			<!--Damage type-->
+			ID_INTERNAL_DAMAGE_TYPE_PIERCING,
+			<!--I'm too lazy to type everything else out, so just make an educated guess: force, necrotic, radiant, fire, cold, acid, poison, lighting, thunder, psychic-->
+			
+			<!--Weapon properties-->
+			ID_INTERNAL_WEAPON_PROPERTY_FINESSE,
+			ID_INTERNAL_WEAPON_PROPERTY_LIGHT
+			
+			<!--Just like last time, make sure the commas are in the right place...-->
+		</supports>
+	</element>
+	
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD">
+		<rules>
+			<grant type="Proficiency" id="ID_DIRTBAG_PROFICIENCY_WEAPON_PARRYING_DAGGER" />
+		</rules>
+	</append>
+	
+	<element
+		name="Special Property (Parrying Dagger)"
+		type="Weapon Property"
+		source="Sellsword Stuff: Custom Weaponry"
+		id="ID_DIRTBAG_WEAPON_PROPERTY_PARRYING_DAGGER"
+	>
+		<description>
+			<p>
+				If you have proficiency with this weapon, and a creature misses you with a melee attack by 3 or more while you have a parrying dagger equipped, you can use your reaction to make a melee weapon attack against that creature with another equipped weapon other than the parrying dagger.
+			</p>
+		</description>
+	</element>
+	
 	
 	<!-- Firearms -->
 	<element name="Light Hand Cannon" type="Weapon" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
