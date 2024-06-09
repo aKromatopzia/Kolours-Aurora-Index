@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
