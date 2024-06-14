@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.18">
+		<update version="0.0.19">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -274,6 +274,7 @@
 			<set name="attunement">false</set>
 			<set name="type">belt</set>
 			<set name="rarity">Uncommon</set>
+			<set name="slot">waist</set>
 		</setters>
 	</element>
 	
@@ -290,6 +291,7 @@
 			<set name="attunement">false</set>
 			<set name="type">cloak</set>
 			<set name="rarity">Uncommon</set>
+			<set name="slot">shoulders</set>
 		</setters>
 	</element>
 	
@@ -334,7 +336,7 @@
 	</element>
 	
 		<!-- <! Tattered Phoenix Cloak > -->		
-		<element name="Tattered Phoenix Cloak" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_TATTERED_PHOENIX_CLOAK">
+	<element name="Tattered Phoenix Cloak" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_TATTERED_PHOENIX_CLOAK">
 		<description>
 			<p>This is the cloak you retrieved from the two strange bandits out on Snowflake mountains. It would look like any ordinary feather cloak, but the enchantment was placed on it when it was already torn and damaged.</p>
 			<p>The feathers now softly glow like embers, providing bright light out to five feet, and dim light out to ten feet. The light can be dismissed as a free action.</p>
@@ -348,6 +350,291 @@
 			<set name="attunement">true</set>
 			<set name="type">cloak</set>
 			<set name="rarity">Rare</set>
+			<set name="slot">shoulders</set>
+		</setters>
+	</element>
+	
+	<!-- <! Ævor's Patch Kit > -->
+	<element name="Ævor's Patch Kit" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_AEVORS_PATCH_KIT">
+		<description>
+			<p>This item resembles a painter's palette paired with a an oversized palette knife.</p>
+			<p class="indent">The item has 6 charges and restores all of it's charges up to once per day by washing off built up residue of use from the item in magically created water This process takes a short rest.</p>
+			<p class="indent">While you are attuned to this item, you can coat the palette knife on the palette with a pink crystal substance. This substance can be spread onto objects or air as you wish and hardens as soon as it's left behind into a rose tinted sturdy crystal.</p>
+			
+			<p class="indent"><b>Sealant</b> - You can expend 1 charge as an action to apply a coating to seal any seam in an object (a door or chest for example.) The initial coating forces disadvantage on any checks to force a door open. Additional coatings will increase the HP of the door by 15 to ward off breaking it down.</p>
+			<p class="indent"><b>Barrier</b> - For 3 charges you can create a flat barrier that covers a 5x5 area in front of you. Possible uses could be to create cover in an empty space, create a barrier over an archway, or any others you may think of. The barrier has an AC of 19 and 20 HP. Bludgeoning attacks have advantage against the barrier. Sealant can be used to patch up the barrier as well.</p>
+		</description>
+		<setters>
+			<set name="keywords">barrier, sealant</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+
+	
+	<!-- <! Lobster Brooch > -->
+	<element name="Lobster Brooch" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LOBSTER_BROOCH">
+		<description>
+			<p>A lobster shaped brass brooch. Two small red gems are inlaid in the brooch to look like the creature's eyes.</p>
+			
+			<p class="indent">The item holds 3 charges and regains 1d4-1 charges each dawn.</p>
+			<p class="indent"><b>Carcinization</b> - As a bonus action, you can spend one charge to speak the brooch's command word. Doing so causes your hands to become large lobster claws for 1 minute. These give you advantage on any check in which you are "holding" something (ex. grapple, holding onto a ledge). The claws can also be used cut things. While your hands have been transformed, they cannot be used to hold items or equipment. Any items or weapons you are holding when you speak the command word fall to the ground. Your claws are natural weapons you are proficient in, with a d8 slashing damage dice.</p>
+			<p class="indent"><b>Command Crab</b> - While your claws are out, you can opt to use your attack to make an attempt to restrain an enemy. Use the grapple rules for this attack.</p>
+		</description>
+		<setters>
+			<set name="keywords">lobster, polymorphism, claws</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">neck</set>
+		</setters>
+	</element>
+	
+	<!-- <! The Weaver's Glove > -->
+	<element name="The Weaver's Glove" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WEAVERS_GLOVE">
+		<description>
+			<p>This delicate black glove is crafted of magically treated spidersilk. The holy symbol of Lolth, a spider as seen from above, is visible on the back of the hand.</p>
+			
+			<p class="indent"><b>Chaos' Claim</b> - The wearer gains the ability to cast the mage hand cantrip. Your mage hand appears as a swarm of half-translucent spiders, crawling on spectral webs to reach their destination.</p>
+			<p class="indent"><b>Nest</b> - Once per day, you can cast the Web spell. The spell has a DC of 13. Your spiders create the web in the spot you choose. </p>
+			<p class="indent"><b>Swarm</b> - Once per day, you can cast the Cause Fear spell. The spell has a DC of 13. Your spiders swarm up the creature's body. On a successful save your target will see through them for the pseudo illusions they are.</p>
+		</description>
+		<setters>
+			<set name="keywords">gloves, arachnid</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">hands</set>
+		</setters>
+	</element>
+	
+	<!-- <! Amulet of Jarad > -->
+	<element name="Amulet of Jarad" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_JARAD_AMULET">
+		<description>
+			<p>While you wear this amulet, your name is Jarad Bakerson. You are a human man in his late 30's. Your great grandfather was a baker. Your grandfather was a baker. Your father was a lich. You never met him though. You are a failed baker.</p>
+			<p>Your current hobbies include walking around, sitting down unobtrusively, and having people walk away from you out of boredom when you speak. Your aunt died once, you didn't find out until a year later that they forgot to invite you to the funeral. You have an 8 in each of your stats. The only things you're proficient in are brooms.</p>
+			<p>You've kept the same daily journal since you were 6. Most sections are written as follows: "(Year, Day, Month) Nothing interesting today".</p>
+			<p>Your base movement speed is 25ft. You have a bad habit of dragging your feet, tripping because of it.</p>
+			<p>The last words your mother said to you before she died was that she'd be happy to try your most recent pastry. Your brother is a famed and incredibly powerful sorcerer.</p>
+			<p>Your spellcasting modifier is Charisma. The only magic you manifested was the On/Off cantrip. Due to a lack of any electronics in this century, you never realized it.</p>
+			<p>When you were 4 you tripped in the cobblestone street, during this fall a shard of a Stone of Ill Luck managed to get lodged into your skin and healed over. You are attuned to it.</p>
+			<p>Your current wardrobe consists of 2 stained shirts and a pair of pants with a hole in the knee.</p>
+			<p>You own a Viol, it's the most expensive item you own. It belonged to your grandmother. She left it to her daughter, your mother, and she left it to you because she wanted you out of the house and was hoping you could do something with it. You've been trying to learn it for 12 years, you do not have proficiency in the Viol.</p>
+			<p>You have disadvantage on persuasion checks to convince people to meet you again at a later date. You have an allergy to grains. This effect ends when you take off the amulet.</p>
+		</description>
+		<setters>
+			<set name="keywords">amulet, jarad, what</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">neck</set>
+		</setters>
+	</element>
+	
+	<!-- <! Oprase-Lens Glasses > -->
+	<element name="Oprase-Lens Glasses" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_OPRASE_LENS_GLASSES">
+		<description>
+			<p>Forged by a cleric of Tymora, these glasses allow the wearer to make their own luck, at a cost befitting her lady of course. What reward is not sweeter without risk after all? And what risk is better than as an offering to the Lady?</p>
+			
+			<p class="indent"><b>Press Your Luck</b> - You can choose to turn any attack roll that you've already hit, before damage is dealt, into a Natural 20. If you do, reduce your proficiency bonus by 1. This effect cannot be used if your proficiency bonus is already 0.</p>
+			<p class="indent"><b>Reap What You Sow</b> - When you roll a Natural 20 on a d20, you can choose to instead treat that roll as a Natural 0. If you do, your proficiency bonus increases by 1, up to your maximum.</p>
+			<p class="indent"><b>Nothing Ventured, Nothing Gained</b> - As punishment for a perceived folding in one of her games, the glasses cause a dependence to the user after they've been unattuned. For 1d4 weeks after using the glasses, your Critical Hits will be treated as Critical Failures. Once the curse has passed naturally, your proficiency bonus returns to it's maximum, excepting outstanding other effects.</p>
+		</description>
+		<setters>
+			<set name="keywords">glasses, luck</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">head</set>
+		</setters>
+	</element>
+	
+	<!-- <! Shower Rod > -->
+	<element name="Shower Rod" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SHOWER_ROD">
+		<description>
+			<p>This item appears to be a plain aluminum rod with a knob at each end and a two hooks, one at each end. A sign at the top appears reading, "Leave your (extradimensional) bags at the door.", with an arrow pointing to either hook.</p>
+			<p class="indent">Light and about 3 feet long. When you speak it's command word, the rod will attempt to drop an opaque white vinyl curtain with a blue floral pattern beneath it. If there isn't enough room to do so, it will find the closest viable space.</p>
+			<p class="indent">Behind the curtain lies a luxurious shower in an extra dimensional space. 5ft x 5ft heated stone floors, Four showerheads, and it's own stock of soaps, shampoos, and other needs. To the side is a section of wall that can be opened, any clothes placed inside of it will be freshly laundered after 10 minutes inside.</p>
+			
+			<p class="indent"><b>Shower Thoughts</b> - While any creature is making use of the item's facilities, that creature has advantage on any Intelligence or Wisdom checks.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- <! White Dragon's Scales Tattoo > -->
+	<element name="White Dragon's Scales Tattoo" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WHITE_DRAGON_TATTOO">
+		<description>
+			<p class="indent">Tattoo Attunement - To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+		
+			<p class="indent"><b>Scaled Protection</b> - While you're attuned to this item, white scales manifest on your body in addition to the tattoo. You may have your AC be equal to 13+ Dex Mod. Additionally, you gain a resistance to cold damage and a vulnerability to fire damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, armor, cold</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- <! Fantastical Fanny Pack > -->
+	<element name="Fantastical Fanny Pack" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_FANNY_PACK">
+		<description>
+			<p>This Fanny Pack contains an extradimensional space.</p>
+			<p class="indent">It can hold up to 8 cubic feet or 80 pounds of material. The pack always weighs 2 pounds, regardless of its contents.</p>
+			<p class="indent">Placing an object in the Fanny Pack follows the normal rules for interacting with objects. Retrieving an item from the pack requires you to use an action. When you reach into the pack for a specific item, the item is always magically on top. </p>
+			<p class="indent">If overloaded, pierced, or torn, the pack ruptures and is destroyed. If the pack is destroyed, its contents are lost forever, although an artifact always turns up again somewhere. If the pack is turned inside out, its contents spill forth, unharmed, and the pack must be put right before it can be used again. If a breathing creature is placed within the pack, the creature can survive up to 10 minutes, after which time it begins to suffocate.</p>
+			<p class="indent">Placing the pack inside an extradimensional space created by a bag of holding, portable hole, or similar item instantly destroys both items and opens a gate to the Astral Plane. The gate originates where the one item was placed inside the other. Any creature within 10 feet of the gate is sucked through it and deposited in a random location on the Astral Plane. The gate then closes. The gate is one-way only and can't be reopened.</p>
+		</description>
+		<setters>
+			<set name="keywords">bag, holding, hideous</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">waist</set>
+		</setters>
+	</element>
+	
+	<!-- <! Combo Bracers > -->
+	<element name="Combo Bracers" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_COMBO_BRACERS">
+		<description>
+			<p>A matching set of four bracers for wrists and ankles.</p>
+			<p class="indent">When you hit a melee weapon attack on your turn, if this is the first melee weapon attack you've hit against this enemy this turn, gain an extra 10ft of movement this turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">gloves, movement, combo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">hands</set>
+		</setters>
+	</element>
+	
+	<!-- <! Binding Stone > -->
+	<element name="Binding Stone" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BINDING_STONE">
+		<description>
+			<p>Despite appearing to be a normal cobblestone, it reflects the image of creatures in it's surface.</p>
+		</description>
+		<setters>
+			<set name="keywords">stone, rock, mineral, something</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- <! Adamantine Hot Plate > -->
+	<element name="Adamantine Hot Plate" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ADAMANTINE_HOT_PLATE">
+		<description>
+			<p>This hot plate, enchanted with a toggleable Heat Metal, can be used for all your cooking needs! It's large size makes it perfect for just about any pan or pot you can find for it. Huh? The straps on the underside of it? We used an old shield to make it.</p>
+		</description>
+		<setters>
+			<set name="keywords">cooking, tools</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- <! Cordio's Portable Spicerack > -->
+	<element name="Cordio's Portable Spicerack" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_PORTABLE_SPICERACK">
+		<description>
+			<p>This small wooden box with a lid can visibly hold up to three spice bottles inside of it. When you close the lid, you can speak the name of up to 3 known commonly used spices for cooking. </p>
+			
+			<p class="indent"><b>Well Stocked</b> - When the lid is next opened, the requested spices will be available.</p>
+			<p class="indent"><b>Well Seasoned</b> - When you use this item while making an ability check involving cooking tools, treat the roll as if you have proficiency. If you already have proficiency, treat the roll as if you have expertise.</p>
+			<p class="indent"><b>Well Fed</b> - As part of a short rest, you can cook special food with this item provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.</p>
+		</description>
+		<setters>
+			<set name="keywords">cooking</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- <! Poisoner's Bracers > -->
+	<element name="Poisoner's Bracers" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_POISONERS_BRACERS">
+		<description>
+			<p>These enchanted bracers seem to disappear once attuned, blending into the color and texture of your wrists beneath them. Notable small hidden pouches and slots allow you to store your poisons for easy use.</p>
+			
+			<p class="indent"><b>Efficacy</b> - When you make a damage roll that deals poison damage, it ignores resistance to poison damage.</p>
+			<p class="indent"><b>Efficiency</b> - You can apply poison to a weapon or piece of ammunition as a bonus action instead of an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">gloves, poison</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">hands</set>
+		</setters>
+	</element>
+	
+	<!-- <! Lightning Rod > -->
+	<element name="Lightning Rod" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LIGHTNING_ROD">
+		<description>
+			<p>This Copper quarterstaff hums gently with it's own magical current. This staff can act as a spellcasting focus.</p>
+			
+			<p class="indent"><b>Conductor</b> - While you're holding this weapon, you have disadvantage on any saving throws to prevent or reduce lightning damage and attacks that deal lightning damage have advantage against you. The weapon will block lightning damage equal to the number of empty charges it has up to a maximum of 6, converting it into charges. The weapon cannot be used to charge itself. </p>
+			<p class="indent"><b>Shock</b> - Pay 2 charges on a weapon attack hit: add 2d6 lightning to your damage dice.</p>
+			<p class="indent"><b>Bolt</b> - Recharge 5-6 - Pay 6 charges as an action: Cast a 3rd level lightning bolt. The staff's overheat deals 1d6 fire damage to you.</p>
+		</description>
+		<setters>
+			<set name="keywords">staff, lightning, magic</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Unique</set>
+			<set name="slot">shoulders</set>
+			<set name="category">Staffs</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="type">Staff</set>
+			<set name="slot">onehand</set>
+		</setters>
+	</element>
+	
+	<!-- <! Portable Puddle > -->
+	<element name="Portable Puddle" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_PORTABLE_PUDDLE">
+		<description>
+			<p>This Portable Hole is always filled with water when you lay it out.</p>
+			<p class="indent">When you lay this item out, roll 1d4. That many frogs live in the puddle at this time.</p>
+		</description>
+		<setters>
+			<set name="keywords">water, puddle, frogs</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
+		</setters>
+	</element>
+	
+	<!-- <! Upgrade Voucher > -->
+	<element name="Upgrade Voucher" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_UPGRADE_VOUCHER">
+		<description>
+			<p>Present at the Kriv Shop to upgrade your fishing rod with a <b>Lightning Lure</b></p>
+		</description>
+		<setters>
+			<set name="keywords">shop, voucher, kriv</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">false</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Unique</set>
 		</setters>
 	</element>
 	
