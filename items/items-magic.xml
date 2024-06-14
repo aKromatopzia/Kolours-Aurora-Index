@@ -541,7 +541,8 @@
 	<!-- <! Adamantine Hot Plate > -->
 	<element name="Adamantine Hot Plate" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ADAMANTINE_HOT_PLATE">
 		<description>
-			<p>This hot plate, enchanted with a toggleable Heat Metal, can be used for all your cooking needs! It's large size makes it perfect for just about any pan or pot you can find for it. Huh? The straps on the underside of it? We used an old shield to make it.</p>
+			<p>This hot plate, enchanted with a toggleable Heat Metal, can be used for all your cooking needs! It's large size makes it perfect for just about any pan or pot you can find for it.</p>
+			<p>Huh? The straps on the underside of it? We used an old shield to make it.</p>
 		</description>
 		<setters>
 			<set name="keywords">cooking, tools</set>
