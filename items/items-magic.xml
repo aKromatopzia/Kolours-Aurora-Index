@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.19">
+		<update version="0.0.20">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -618,20 +618,6 @@
 		</description>
 		<setters>
 			<set name="keywords">water, puddle, frogs</set>
-			<set name="category">Wondrous Items</set>
-			<set name="attunement">false</set>
-			<set name="type">Wondrous Item</set>
-			<set name="rarity">Unique</set>
-		</setters>
-	</element>
-	
-	<!-- <! Upgrade Voucher > -->
-	<element name="Upgrade Voucher" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_UPGRADE_VOUCHER">
-		<description>
-			<p>Present at the Kriv Shop to upgrade your fishing rod with a <b>Lightning Lure</b></p>
-		</description>
-		<setters>
-			<set name="keywords">shop, voucher, kriv</set>
 			<set name="category">Wondrous Items</set>
 			<set name="attunement">false</set>
 			<set name="type">Wondrous Item</set>
