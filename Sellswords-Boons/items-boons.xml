@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.10">
+		<update version="0.0.11">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -102,7 +102,7 @@
 	<element name="Spellmark Property: Immutable" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMUTABLE">
 		<description>
 			<p class="indent">
-				<strong><em>Immutable.</em></strong> The spellscar can no longer be removed by any means short of a Wish spell, but also no longer requires attunement. No, you can not use this with Deep Etchings.
+				<strong><em>Immutable.</em></strong> The spellscar can no longer be removed by any means short of a Wish spell, but also no longer requires attunement. Consequences for any who take this. No, you can not use this with Deep Etchings.
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
