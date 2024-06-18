@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.4">
+		<update version="0.0.7">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -22,11 +22,10 @@
 	
 	<element name="Spellmark Property: Magical Strikes" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_MAGIC_STRIKES">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent">
 				<strong><em>Magical Strikes.</em></strong> While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
 			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -37,13 +36,10 @@
 	
 	<element name="Spellmark Property: Blue Flame Strike" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BLUE_FLAME_STRIKE">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent">
-				<strong>
-					<em>Blue-Flame Strike.</em>
-				</strong> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
+				<strong><em>Blue-Flame Strike.</em></strong> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
 			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -51,13 +47,12 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Bolster, minor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BOLSTER_MINOR">
+	<element name="Spellmark Property: Bolstering, minor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BOLSTER_MINOR">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent">
 				<strong><em>Bolster, Minor.</em></strong> Whenever you roll a skill check, you may expend a Hit Dice as a free action to grant yourself expertise in a skill you are aready proficient in for a number of seconds equal to the number rolled (with a minimum of 1 round).
 			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -67,11 +62,10 @@
 	</element>
 	<element name="Spellmark Property: Withered" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_WITHERED">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent">
 				<strong><em>Withered.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. Rolls involving your Hit Die have a -1.
 			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -81,11 +75,10 @@
 	</element>
 	<element name="Spellmark Property: Burgeoning" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BURGEONING">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent">
 				<strong><em>Burgeoning.</em></strong>Rolls involving your Hit Die have a +1.
 			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -95,11 +88,23 @@
 	</element>
 	<element name="Spellmark Property: Deep Etchings" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DEEP_ETCH">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent">
 				<strong><em>Deep Etchings.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification.
 			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	<element name="Spellmark Property: Immutable" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMUTABLE">
+		<description>
+			<p class="indent">
+				<strong><em>Immutable.</em></strong> The spellscar can no longer be removed by any means short of a Wish spell. No, you can not use this with Deep Etchings.
+			</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -109,9 +114,8 @@
 	</element>
 	<element name="Spellmark Property: Torpor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_TORPOR">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
 			<p class="indent"><strong><em>Torpor.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. Your walking, flying, climbing or swimming speeds, if you have them, are reduced by 5ft.</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -121,9 +125,8 @@
 	</element>
 	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
+			<p class="indent"><strong><em>Alacrity.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
-			<p class="indent"><strong><em>Alacrity.</em></strong>Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -133,9 +136,9 @@
 	</element>
 	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /><div element="ID_SELLSWORDS_INFO_STATUS_HARROWED" /></div>
-			
-			<p class="indent"><strong><em>Harrowing Brand.</em></strong>When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, and a curse.</p>
+			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, and a curse.</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_STATUS_HARROWED" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
@@ -143,11 +146,10 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Disrupt Magic, Self" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DISRUPT_MAGIC_SELF">
+	<element name="Spellmark Property: Disrupt Magic, self" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DISRUPT_MAGIC_SELF">
 		<description>
+			<p class="indent"><strong><em>Disrupt Magic, Self.</em></strong> As an action you can expend a Hit Dice to suspend a single magical or psionic effect on yourself for up to 1 minute. Its duration is suspended while disrupted. You can cause it to resume as a free action on your turns. Attempt an Arcana(CON) check against its DC to determine if you succeed. An effect with no DC instead uses the following formula: 8 + 2/3/5/7 if it is from common, uncommon, rare, or legendary or an artifact source.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			
-			<p class="indent"><strong><em>Disrupt Magic, Self.</em></strong>As an action you can expend a Hit Dice to suspend a single magical or psionic effect on yourself for up to 1 minute. Its duration is suspended while disrupted. You can cause it to resume as a free action on your turns. Attempt an Arcana(CON) check against its DC to determine if you succeed, using your Hit Dice rather than a d20. An effect with no DC instead uses the following formula: 8 + 2/3/5/7 if it is common, uncommon, rare, or legendary or an artifact.</p>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
