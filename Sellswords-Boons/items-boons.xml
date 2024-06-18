@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -50,7 +50,7 @@
 	<element name="Spellmark Property: Bolstering, minor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BOLSTER_MINOR">
 		<description>
 			<p class="indent">
-				<strong><em>Bolster, Minor.</em></strong> Whenever you roll a skill check, you may expend a Hit Dice as a free action to grant yourself expertise in a skill you are aready proficient in for a number of seconds equal to the number rolled (with a minimum of 1 round).
+				<strong><em>Bolster, Minor.</em></strong> Whenever you roll a skill check, you may expend a Hit Dice as a free action to gain a bonus for that roll equal to the check's relevant ability modifier, and the result of your Hit Dice.
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
@@ -86,10 +86,10 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Deep Etchings" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DEEP_ETCH">
+	<element name="Spellmark Property: Deeply Etched" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DEEP_ETCH">
 		<description>
 			<p class="indent">
-				<strong><em>Deep Etchings.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification.
+				<strong><em>Deep Etchings.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification. This requires the dispelling of its enchantment, regeneration of the the etched scars, and a ritual to purge its transformative aspects. (There is more to the process than written, and takes time.) 
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
@@ -123,9 +123,9 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
+	<element name="Spellmark Property: Zeal" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ZEAL">
 		<description>
-			<p class="indent"><strong><em>Alacrity.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
+			<p class="indent"><strong><em>Zeal.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
@@ -136,7 +136,7 @@
 	</element>
 	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
-			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, and a curse.</p>
+			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, a curse, and its relevant ability score is CON.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_STATUS_HARROWED" /></div>
 		</description>
@@ -159,7 +159,7 @@
 	</element>
 	<element name="Spellmark Property: Critical Luck, lesser" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_CRIT_LUCK_LESSER">
 		<description>
-			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> When you roll an Attack or ability check, before you roll, you can expend a Hit Dice to augment that test. That roll is considered critical on a 19 or 20.</p>
+			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> As a Bonus Action, you can expend a Hit Dice to augment your attacks for a number of rounds equal to the result. Your Attacks are considered critical on a 19 or 20.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
