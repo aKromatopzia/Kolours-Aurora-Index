@@ -148,7 +148,18 @@
 	</element>
 	<element name="Spellmark Property: Disrupt Magic, self" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DISRUPT_MAGIC_SELF">
 		<description>
-			<p class="indent"><strong><em>Disrupt Magic, Self.</em></strong> As an action you can expend a Hit Dice to suspend a single magical or psionic effect on yourself for up to 1 minute. Its duration is suspended while disrupted. You can cause it to resume as a free action on your turns. Attempt an Arcana(CON) check against its DC to determine if you succeed. An effect with no DC instead uses the following formula: 8 + 2/3/5/7 if it is from common, uncommon, rare, or legendary or an artifact source.</p>
+			<p class="indent"><strong><em>Disrupt Magic, lesser.</em></strong> As an action you can expend a Hit Dice to suspend a single magical or psionic effect on yourself for up to 1 minute. Its duration is suspended while disrupted. You can cause it to resume as a free action on your turns. Attempt an Arcana(CON) check against its DC to determine if you succeed. An effect with no DC instead uses the following formula: 8 + 2/3/5/7 if it is from common, uncommon, rare, or legendary or an artifact source.</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	<element name="Spellmark Property: Critical Luck, lesser" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_CRIT_LUCK_LESSER">
+		<description>
+			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> When you roll an Attack or ability check, before you roll, you can expend a Hit Dice to augment that test. That roll is considered critical on a 19 or 20.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
