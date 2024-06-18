@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.11">
+		<update version="0.0.12">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -126,9 +126,9 @@
 			<stat name="speed" value="-5" />
 		</rules>
 	</element>
-	<element name="Spellmark Property: Zeal" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ZEAL">
+	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
-			<p class="indent"><strong><em>Zeal.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
+			<p class="indent"><strong><em>Alacrity.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
@@ -140,7 +140,7 @@
 			<stat name="speed" value="5" />
 		</rules>
 	</element>
-	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
+	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_HARROW_BRAND">
 		<description>
 			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, a curse, and its relevant ability score is CON.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
