@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -333,7 +333,7 @@
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
-			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod - STR mod (max 0) negative while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod + STR mod (max 0 (add only if negative)). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
+			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod + STR mod (max 0 (add only if negative)) while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod + STR mod (max 0 (add only if negative)). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
 			<p class="indent">It takes an Action to deploy or retrieve a hand cannon.</p>
 			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 		</description>
@@ -353,7 +353,7 @@
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A portable version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A fire lance can be shot while held in both hands.</p>
-			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod negative while held. creatures take half as much damage on a success. If you are proficient in siege weapons, add your proficiency to all DCs and Attacks made with these attacks.</p>
+			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod (max 0 (add only if negative)) while held. creatures take half as much damage on a success. The Attack modifier of single shot is DEX mod + STR mod (max 0 (add only if negative)). If you are proficient in siege weapons, add your proficiency to all DCs and Attacks made with these attacks.</p>
 			<p class="indent">You can also make melee attacks with the fire lance. It is a reach weapon which does 1d8 bludgeoning damage on a strike. If you are proficient with martial weapons or the lance, add your proficiency to all DCs and Attacks made with this attack.</p>
 			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE" />
@@ -407,9 +407,23 @@
 	-->
 	
 	<!--Ammunition-->
-	<element name="Celestial Salt Round Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_hc_ROUND">
+	<element name="Celestial Salt Round Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_HC_ROUND">
 		<description>
 			<p>Made of crystal salt from Mount Celestia, it fires a full projectile which shatters on impact when the weapon fires and comes packaged with its own supply of smokepowder. Once fired, the crystal becomes nonmagical salt. You have +1 to hit with attacks made with this ammunition, and it deals radiant damage.</p>
+		</description>
+		<setters>
+			<set name="keywords">ammunition</set>
+			<set name="category">Ammunition</set>
+			<set name="type" addition="any ammunition">Weapon</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">1</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Celestial Salt Spread Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_HC_SPREAD">
+		<description>
+			<p>Made of crystal salt from Mount Celestia, it fires a full projectile which shatters on impact when the weapon fires and comes packaged with its own supply of smokepowder. Once fired, the crystal becomes nonmagical salt. You have +1 to the DC of attacks made with this ammunition, and it deals radiant damage.</p>
 		</description>
 		<setters>
 			<set name="keywords">ammunition</set>
