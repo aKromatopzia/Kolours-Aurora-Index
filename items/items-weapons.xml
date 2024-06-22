@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.17">
+		<update version="0.0.18">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -387,6 +387,8 @@
 			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
 		</rules>
 	</append>
+
+	<!-- Not finished 
 	
 	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
 		<rules>
@@ -395,16 +397,14 @@
 		</rules>
 	</append>
 
-	<!-- Not finished 
+	-->
 	
-	<element id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+	<element name="Weapon Proficiency (Siege Weapons)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_SIEGE">
 		<rules>
 			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON" />
 			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
 		</rules>
 	</element>
-	
-	-->
 	
 	<!--Ammunition-->
 	<element name="Celestial Salt Round Shot" type="Magic Item" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_HC_ROUND">
