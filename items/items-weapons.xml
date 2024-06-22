@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.18">
+		<update version="0.0.19">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -378,7 +378,7 @@
 		<supports>Weapon, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_HAND_CANNON, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER</supports>
 	</element>
 
-		<element name="Weapon Proficiency (Fire Lance)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE">
+	<element name="Weapon Proficiency (Fire Lance)" type="Proficiency" source="Sellsword Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE">
 		<supports>Weapon, Melee, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_FIRE_LANCE, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
 	</element>
 
