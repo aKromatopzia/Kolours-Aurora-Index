@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Weapon Masteries</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="UA_2023_Mastery.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Mastery.xml" />
 		</update>
 	</info>
@@ -172,7 +172,7 @@
 			<p>If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw with a DC equal to 8 + your Proficiency Bonus + the ability modifier used to make the attack roll. On a failed save, the creature has the Prone condition.</p>
 		</description>
 	</element>
-		<element name="Weapon Mastery: Vex" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_VEX">
+	<element name="Weapon Mastery: Vex" type="Weapon Property" source="UA 2023: One DND" id="ID_UA2023_MASTERY_TRAIT_VEX">
 		<description>
 			<p><i>Prerequisites: Ammunition, Finesse, or Light</i></p>
 			<p>If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll against that creature before the end of your next turn</p>
