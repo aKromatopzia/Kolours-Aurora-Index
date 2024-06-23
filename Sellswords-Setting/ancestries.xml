@@ -361,7 +361,7 @@
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Athletics.</p>
 		</description>
 		<sheet>
-			<p>You have a canine aspect, and your animal form is a Tiny fish.</p>
+			<p>You have a piscine aspect, and your animal form is a Tiny fish.</p>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
@@ -387,11 +387,11 @@
 	<element name="Simian Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_SIMIAN">
 		<supports>Hengeyokai</supports>
 		<description>
-			<p>You have a simian aspect, and your animal form is a Tiny monkey. Your humanoid appearance might have a monkey's nose, be strangely hairy, or such.</p>
+			<p>You have a simian aspect, and your animal form is a Tiny monkey. (Yes I know they aint real.) Your humanoid appearance might have a monkey's nose, be strangely hairy, or such.</p>
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Athletics.</p>
 		</description>
 		<sheet>
-			<p>You have a simian aspect, and your animal form is a Tiny badger.</p>
+			<p>You have a simian aspect, and your animal form is a Tiny monkey.</p>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
@@ -406,7 +406,7 @@
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Perception.</p>
 		</description>
 		<sheet>
-			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon.</p>
+			<p>You have an avian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon.</p>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -421,7 +421,7 @@
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Stealth.</p>
 		</description>
 		<sheet>
-			<p>You have a simian aspect, and your animal form is a Tiny rat.</p>
+			<p>You have a rodent aspect, and your animal form is a Tiny rat.</p>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
@@ -429,14 +429,14 @@
 	</element>
 
 	<!--Bnnuy-->
-	<element name="Leporine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_LEPORINE">
+	<element name="Leporine Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_LEPORINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a leporine aspect, and your animal form is a Tiny hare. Your humanoid appearance might have hare ears, hare's tail, or such.</p>
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Acrobatics.</p>
 		</description>
 		<sheet>
-			<p>You have a simian aspect, and your animal form is a Tiny hare.</p>
+			<p>You have a leporine aspect, and your animal form is a Tiny hare.</p>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
@@ -444,14 +444,14 @@
 	</element>
 
 	<!--Vulpine-->
-	<element name="Vulpine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_VULPINE">
+	<element name="Vulpine Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_VULPINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a leporine aspect, and your animal form is a Tiny fox. Your humanoid appearance might have fox ears, a fox's tails, or such.</p>
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Stealth.</p>
 		</description>
 		<sheet>
-			<p>You have a simian aspect, and your animal form is a Tiny fox.</p>
+			<p>You have a vulpine aspect, and your animal form is a Tiny fox.</p>
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
