@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -293,7 +293,7 @@
 	</element>
 
 	<!-- Nature's Mask -->
-	<element name="Wild Tongue" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_WILD_TONGUE">
+	<element name="Nature's Mask" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_NATURES_MASK">
 		<description>
 			<p>As an Action, a hengeyokai can shift between their various forms. This transformation is as the <i>Polymorph</i> spell, with the following caveats:</p>
 			<ul>
@@ -323,7 +323,7 @@
 	</element>
 
 	<!--Cat-->
-	<element name="Feline" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RAITS_HENGEYOKAI_ASPECT_FELINE">
+	<element name="Feline Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RAITS_HENGEYOKAI_ASPECT_FELINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a feline aspect, and your animal form is a Tiny cat. Your humanoid form might have cat ears, a cleft lip, a cat's tail, or such.</p>
@@ -339,7 +339,7 @@
 	</element>
 
 	<!--Canine-->
-	<element name="Canine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_CANINE">
+	<element name="Canine Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_CANINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a feline aspect, and your animal form is a Tiny dog. (Yes, I know there isn't actually one.) Your humanoid form might have dog ears, pronounced canines, a dog's tail, or such.</p>
@@ -369,7 +369,7 @@
 	</element>
 
 	<!--Melinae-->
-	<element name="Melinae" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_MELINAE">
+	<element name="Melinae Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_MELINAE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a melinae aspect, and your animal form is a Tiny badger. Your humanoid appearance might have melanized eyespots, badger ears, or such.</p>
@@ -384,7 +384,7 @@
 	</element>
 
 	<!--Monke-->
-	<element name="Simian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_SIMIAN">
+	<element name="Simian Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_SIMIAN">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a simian aspect, and your animal form is a Tiny monkey. Your humanoid appearance might have a monkey's nose, be strangely hairy, or such.</p>
@@ -399,10 +399,10 @@
 	</element>
 
 	<!--Avian-->
-	<element name="Avian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_AVIAN">
+	<element name="Avian Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_AVIAN">
 		<supports>Hengeyokai</supports>
 		<description>
-			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon. Your humanoid appearance might have a patches of feathers, a bird's fan oof tails, or such.</p>
+			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon. Your humanoid appearance might have a patches of feathers, a bird's fan oof tails, a long nose, or such.</p>
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Perception.</p>
 		</description>
 		<sheet>
@@ -414,7 +414,7 @@
 	</element>
 	
 	<!--Rodent-->
-	<element name="Rodent" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_RODENT">
+	<element name="Rodent Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_RODENT">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a simian aspect, and your animal form is a Tiny rat. Your humanoid appearance might have mice ears, rat's tail, or such.</p>
