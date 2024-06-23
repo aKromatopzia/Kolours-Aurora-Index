@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.7">
+		<update version="0.0.9">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -236,6 +236,7 @@
 			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
 			<p class="indent"><strong><em>Age.</em></strong> Being Fey, hengeyokai are extremely long-lived, being up to about 100 years old, and reach maturity at 15.</p>
 			<p class="indent"><strong><em>Darkvision.</em></strong> Their Fey heritage allows hengeyokai to see in the dark to a limited capacity. You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You have proficiency in Deception.</p>
 			<p class="indent"><strong><em>Wild Tongue.</em></strong> Hengeyokai in animal or hybrid form can communicate simple commands and concepts to natural beasts and fey beasts with the same form or a closely related form, for example, dogs to wolves. Beasts will not necessarily obey hengeyokai or even be friendly, however. Hengeyokai in humanoid form cannot communicate with such beasts but can understand them.</p>
 			<p class="indent"><strong><em>Nature's Mask.</em></strong> As an Action, a hengeyokai can shift between their various forms. This transformation is as the <i>Polymorph</i> spell, with the following caveats:</p>
 			<ul>
@@ -260,7 +261,7 @@
 			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Kara-Tur" />
 			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Exotic||KAra-Tur" />
 		
-			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_WILD_TONGUE" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_NATURES_MASK" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT" />
@@ -310,7 +311,7 @@
 	</element>
 
 	<!-- Animal aspect choice -->
-	<element name="hengeyokai Aspect" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT">
+	<element name="Hengeyokai Aspect" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>Hengeyokai come in various animal aspects, each with their own affinities.</p>
@@ -322,7 +323,7 @@
 	</element>
 
 	<!--Cat-->
-	<element name="Feline" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_FELINE">
+	<element name="Feline" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RAITS_HENGEYOKAI_ASPECT_FELINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a feline aspect, and your animal form is a Tiny cat. Your humanoid form might have cat ears, a cleft lip, a cat's tail, or such.</p>
@@ -338,7 +339,7 @@
 	</element>
 
 	<!--Canine-->
-	<element name="Canine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_CANINE">
+	<element name="Canine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_CANINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a feline aspect, and your animal form is a Tiny dog. (Yes, I know there isn't actually one.) Your humanoid form might have dog ears, pronounced canines, a dog's tail, or such.</p>
@@ -353,7 +354,7 @@
 	</element>
 
 	<!--Piscine-->
-	<element name="Piscine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_PISCINE">
+	<element name="Piscine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_PISCINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a piscine aspect, and your animal form is a Tiny fish. Your humanoid appearance might have vestigial fins, scaly patches, or such.</p>
@@ -368,7 +369,7 @@
 	</element>
 
 	<!--Melinae-->
-	<element name="Melinae" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_MELINAE">
+	<element name="Melinae" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_MELINAE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a melinae aspect, and your animal form is a Tiny badger. Your humanoid appearance might have melanized eyespots, badger ears, or such.</p>
@@ -383,7 +384,7 @@
 	</element>
 
 	<!--Monke-->
-	<element name="Simian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_SIMIAN">
+	<element name="Simian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_SIMIAN">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a simian aspect, and your animal form is a Tiny monkey. Your humanoid appearance might have a monkey's nose, be strangely hairy, or such.</p>
@@ -398,7 +399,7 @@
 	</element>
 
 	<!--Avian-->
-	<element name="Avian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_AVIAN">
+	<element name="Avian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_AVIAN">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon. Your humanoid appearance might have a patches of feathers, a bird's fan oof tails, or such.</p>
@@ -413,7 +414,7 @@
 	</element>
 	
 	<!--Rodent-->
-	<element name="Rodent" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_RODENT">
+	<element name="Rodent" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_RODENT">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a simian aspect, and your animal form is a Tiny rat. Your humanoid appearance might have mice ears, rat's tail, or such.</p>
@@ -428,7 +429,7 @@
 	</element>
 
 	<!--Bnnuy-->
-	<element name="Leporine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_LEPORINE">
+	<element name="Leporine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_LEPORINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a leporine aspect, and your animal form is a Tiny hare. Your humanoid appearance might have hare ears, hare's tail, or such.</p>
@@ -443,7 +444,7 @@
 	</element>
 
 	<!--Vulpine-->
-	<element name="Vulpine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_VULPINE">
+	<element name="Vulpine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_VULPINE">
 		<supports>Hengeyokai</supports>
 		<description>
 			<p>You have a leporine aspect, and your animal form is a Tiny fox. Your humanoid appearance might have fox ears, a fox's tails, or such.</p>
