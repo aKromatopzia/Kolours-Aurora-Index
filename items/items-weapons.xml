@@ -8,32 +8,32 @@
 		</update>
 	</info>
 	<!--Universal Specials-->
-	<element name="Special (Free Hand)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND">
+	<element name="Special (Free Hand)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_FREEHAND">
 		<description>
 			<p>The hand this weapon is equipped on still counts as a free hand, with the exception of the use of a shield or another weapon in the same hand.</p>
 		</description>
 	</element>
 		
-	<element name="Special (Smokepowder)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER">
+	<element name="Special (Smokepowder)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER">
 		<description>
 		<p>After this weapon is fired, an Action is required to load it with ammunition and smokepowder. The hand cannon can be loaded by somebody other than its wielder. Damage and range is based on the loaded ammunition. A packet of smokepowder is good for two shots and its ammunition is usually a 1lbs iron ball or pouch of 500 ball bearings.</p>
 		</description>
 	</element>
 
-	<element name="Special (Recoil)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL">
+	<element name="Special (Recoil)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL">
 		<description>
 		<p>Ranged attacks with this weapon have a cumulative -2 penalty for each time it has been fired each Action/Bonus Action/Reaction.</p>
 		</description>
 	</element>
 
-	<element name="Special (Slow Loader)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SLOW_LOAD">
+	<element name="Special (Slow Loader)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SLOW_LOAD">
 		<description>
 		<p>If this weapon has the Reload or Loading property, it instead requires a Bonus Action or Action to load them.</p>
 		</description>
 	</element>
 	
 	<!--Simple-->
-	<element name="Claw" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_CLAW">
+	<element name="Claw" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_CLAW">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_UA2023_MASTERY_TRAIT_NICK</supports>
 		<description>
 			<p>
@@ -41,7 +41,7 @@
 			</p>
 			<p>Most oftenly simply a leather strap with blades attached to its top, the simplicity of the weapon belies its effectiveness.</p>
 			<p>On a hit, it deals 1d4 slashing damage.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_FREEHAND" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -49,19 +49,19 @@
 			<set name="weight" lb="1">1 lbs.</set>
 			<set name="slot"></set>
 			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_CLAW</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_CLAW</set>
 		</setters>
 	</element>
-	<element name="Weapon Proficiency (Claw)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_CLAW">
+	<element name="Weapon Proficiency (Claw)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_CLAW">
 		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_UA2023_MASTERY_TRAIT_NICK</supports>
 	</element>
 		<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
 			<rules>
-				<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_CLAW" />
+				<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_CLAW" />
 			</rules>
 		</append>
 
-	<element name="Studded Knuckles" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_KNUCKLES">
+	<element name="Studded Knuckles" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_KNUCKLES">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_UA2023_MASTERY_TRAIT_NICK</supports>
 		<description>
 			<p>
@@ -69,7 +69,7 @@
 			</p>
 			<p>Most oftenly simply a leather strap with studs attached to its top, the simplicity of the weapon belies its effectiveness.</p>
 			<p>On a hit, it deals 1d4 piercing damage.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_FREEHAND" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_FREEHAND" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -77,15 +77,15 @@
 			<set name="weight" lb="1">1 lbs.</set>
 			<set name="slot"></set>
 			<set name="damage" type="slashing">1d4</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_KNUCKLES</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_KNUCKLES</set>
 		</setters>
 	</element>
-	<element name="Weapon Proficiency (Knuckles)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_KNUCKLES">
+	<element name="Weapon Proficiency (Knuckles)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_KNUCKLES">
 		<supports>Weapon, Melee, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_UA2023_MASTERY_TRAIT_NICK</supports>
 	</element>
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
 		<rules>
-			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_KNUCKLES" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_KNUCKLES" />
 		</rules>
 	</append>
 	<!--Martial-->
@@ -108,7 +108,7 @@
 		</setters>
 	</element>
 	<element name="Weapon Proficiency (Avelyn)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_AVELYN">
-		<supports>Weapon, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_HAND_CANNON, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
+		<supports>Weapon, Ranged, ID_SELLSWORDS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_SELLSWORDS_WEAPON_GROUP_HAND_CANNON, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 	</element>
 	
 	<!--Special-->
@@ -216,7 +216,7 @@
 		name="Sabre"
 		type="Weapon"
 		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_DIRTBAG_ITEMS_WEAPON_SABRE"
+		id="ID_SELLSWORDS_ITEMS_WEAPON_SABRE"
 	>
 		<supports>
 			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
@@ -240,7 +240,7 @@
 			<set name="weight" lb="2">2 lbs.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="slashing">1d8</set>
-			<set name="proficiency">ID_DIRTBAG_PROFICIENCY_WEAPON_SABRE</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_SABRE</set>
 		</setters>
 	</element>
 	
@@ -248,7 +248,7 @@
 		name="Weapon Proficiency (Sabre)"
 		type="Proficiency"
 		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_DIRTBAG_PROFICIENCY_WEAPON_SABRE"
+		id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SABRE"
 	>
 		<supports>
 			Weapon,
@@ -262,7 +262,7 @@
 	
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER">
 		<rules>
-			<grant type="Proficiency" id="ID_DIRTBAG_PROFICIENCY_WEAPON_SABRE" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SABRE" />
 		</rules>
 	</append>
 
@@ -272,7 +272,7 @@
 		name="Parrying Dagger"
 		type="Weapon"
 		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_DIRTBAG_ITEMS_WEAPON_PARRYING_DAGGER"
+		id="ID_SELLSWORDS_ITEMS_WEAPON_PARRYING_DAGGER"
 	>
 		
 		<!--For internal ID labeling representing different weapon properties, like ranged, light, martial, reach etc.-->
@@ -287,7 +287,7 @@
 			<!--Weapon properties-->
 			ID_INTERNAL_WEAPON_PROPERTY_FINESSE,
 			ID_INTERNAL_WEAPON_PROPERTY_LIGHT,
-			ID_DIRTBAG_WEAPON_PROPERTY_PARRYING_DAGGER,
+			ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER,
 			ID_UA2023_MASTERY_TRAIT_NICK
 			
 			<!--Since this is a list, make sure there is a comma separating every entry, and there is no comma at the end.-->
@@ -297,7 +297,7 @@
 			<!--This is where the item's description goes. It will show up on Aurora. Format it like any other html diarrhea-->
 			<p>Mastery: Nick</p>
 			<p>You are proficient with this weapon if you are proficient with shortswords.</p>
-			<div element="ID_DIRTBAG_WEAPON_PROPERTY_PARRYING_DAGGER" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER" />
 			
 		</description>
 		
@@ -308,7 +308,7 @@
 			<set name="weight" lb="1">1 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="piercing">1d4</set>
-			<set name="proficiency">ID_DIRTBAG_PROFICIENCY_WEAPON_PARRYING_DAGGER</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_PARRYING_DAGGER</set>
 		</setters>
 	</element>
 	
@@ -317,7 +317,7 @@
 		name="Weapon Proficiency (Parrying Dagger)"
 		type="Proficiency"
 		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_DIRTBAG_PROFICIENCY_WEAPON_PARRYING_DAGGER"
+		id="ID_SELLSWORDS_PROFICIENCY_WEAPON_PARRYING_DAGGER"
 	>
 		<supports>
 			Weapon,
@@ -332,7 +332,7 @@
 	
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD">
 		<rules>
-			<grant type="Proficiency" id="ID_DIRTBAG_PROFICIENCY_WEAPON_PARRYING_DAGGER" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_PARRYING_DAGGER" />
 		</rules>
 	</append>
 	
@@ -340,7 +340,7 @@
 		name="Special Property (Parrying Dagger)"
 		type="Weapon Property"
 		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_DIRTBAG_WEAPON_PROPERTY_PARRYING_DAGGER"
+		id="ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER"
 	>
 		<description>
 			<p>If you have proficiency with this weapon, and a creature misses you with a melee attack by 3 or more while you have a parrying dagger equipped, you can use your reaction to make a melee weapon attack against that creature with another equipped weapon other than the parrying dagger.</p>
@@ -349,15 +349,15 @@
 	
 	
 	<!-- Siege Weapons -->
-	<element name="Light Hand Cannon" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
+	<element name="Light Hand Cannon" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_SELLSWORDS_WEAPON_GROUP_SIEGE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
 			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod + STR mod (max 0 (add only if negative)) while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod + STR mod (max 0 (add only if negative)). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
 			<p class="indent">It takes an Action to deploy or retrieve a hand cannon.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -366,18 +366,18 @@
 			<set name="slot">twohand</set>
 			<set name="range">30ft. cone or 80/320ft. ranged</set>
 			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single)">4d8</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
 	</element>
-	<element name="Heavy Hand Cannon" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
+	<element name="Heavy Hand Cannon" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_SELLSWORDS_WEAPON_GROUP_SIEGE, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A handheld version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A light hand cannon can be shot while held, but a heavy hand cannon must be first deployed.</p>
 			<p class="indent">The DC of the spread shot is DC 15 while deployed and DC 8 + DEX mod + STR mod (max 0 (add only if negative)) while held. creatures take half as much damage on a success. The Attack modifier of single shot is +6 if deployed and DEX mod + STR mod (max 0 (add only if negative)). If you are proficient, add your proficiency to all DCs and Attacks made with this weapon while it is held.</p>
 			<p class="indent">It takes an Action to deploy or retrieve a hand cannon.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -386,19 +386,19 @@
 			<set name="slot">twohand</set>
 			<set name="range">30ft. cone or 80/320ft. ranged</set>
 			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single)">4d8</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_HAND_CANNON</set>
 		</setters>
 	</element>
 	
-	<element name="Fire Lance" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_ITEMS_WEAPON_FIRE_LANCE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_KOLOURS_WEAPON_GROUP_SIEGE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
+	<element name="Fire Lance" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_FIRE_LANCE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_SELLSWORDS_WEAPON_GROUP_SIEGE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<p><i>Sorry, there's no way for me to make a weapon that automatically adds all its attacks to your character sheet.</i></p>
 			<p>A portable version of the siege cannon. Even though most are mundane items on their own, the requirement of smokepowder to operate makes their construction quite a rare occurrence. A fire lance can be shot while held in both hands.</p>
 			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod (max 0 (add only if negative)) while held. creatures take half as much damage on a success. The Attack modifier of single shot is DEX mod + STR mod (max 0 (add only if negative)). If you are proficient in siege weapons, add your proficiency to all DCs and Attacks made with these attacks.</p>
 			<p class="indent">You can also make melee attacks with the fire lance. It is a reach weapon which does 1d8 bludgeoning damage on a strike. If you are proficient with martial weapons or the lance, add your proficiency to all DCs and Attacks made with this attack.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
 			<div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE" />
 		</description>
 		<setters>
@@ -408,29 +408,29 @@
 			<set name="slot">twohand</set>
 			<set name="range">30ft. cone or 80/320ft. ranged, or 10ft. melee</set>
 			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single) or 1d10 bludgeoning (melee)">4d8</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_FIRE_LANCE</set>
 		</setters>
 	</element>
 
-	<element name="Weapon Proficiency (Hand Cannon)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON">
-		<supports>Weapon, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_HAND_CANNON, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
+	<element name="Weapon Proficiency (Hand Cannon)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_HAND_CANNON">
+		<supports>Weapon, Ranged, ID_SELLSWORDS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_SELLSWORDS_WEAPON_GROUP_HAND_CANNON, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 	</element>
 
-	<element name="Weapon Proficiency (Fire Lance)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE">
-		<supports>Weapon, Melee, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_FIRE_LANCE, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
+	<element name="Weapon Proficiency (Fire Lance)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_FIRE_LANCE">
+		<supports>Weapon, Melee, Ranged, ID_SELLSWORDS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_SELLSWORDS_WEAPON_GROUP_FIRE_LANCE, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 	</element>
 
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE">
 		<rules>
-			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_FIRE_LANCE" />
 		</rules>
 	</append>
 
 	
-	<element name="Weapon Proficiency (Siege Weapons)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_SIEGE">
+	<element name="Weapon Proficiency (Siege Weapons)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SIEGE">
 		<rules>
-			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON" />
-			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_HAND_CANNON" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_FIRE_LANCE" />
 		</rules>
 	</element>
 
@@ -440,8 +440,8 @@
 	
 	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
 		<rules>
-			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON" />
-			<grant type="Proficiency" id="ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_HAND_CANNON" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_FIRE_LANCE" />
 		</rules>
 	</append>
 
@@ -512,11 +512,11 @@
 
 	<!-- Shaaran Six-Shooter-->
 	<element name="Shaaran Six-Shooter" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
 		<description>
 			<p><i>This is a generic pistol meant to be used as a baseline to design other proper weapons. </i></p>
 			<p>You know what this is. Commonly used in the wastelands of the Shaar, among the rare ones who can afford such a weapon. Known to be reliable and effient under the hot wasteland sun.</p>
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6" />
 		</description>
@@ -528,12 +528,12 @@
 			<set name="range">ammunition</set>
 			<set name="damage" type="piercing">1d8</set>
 			<set name="reload">6</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_SHAAR_REVOLVER</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER</set>
 		</setters>
 	</element>
 	
 	<!--Ammunition-->
-	<element name="Celestial Salt Round Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_HC_ROUND">
+	<element name="Celestial Salt Round Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MAGIC_ITEM_CELESTIAL_SALT_HC_ROUND">
 		<description>
 			<p>Made of crystal salt from Mount Celestia, it fires a full projectile which shatters on impact when the weapon fires and comes packaged with its own supply of smokepowder. Once fired, the crystal becomes nonmagical salt. You have +1 to hit with attacks made with this ammunition, and it deals radiant damage.</p>
 		</description>
@@ -547,7 +547,7 @@
 		</setters>
 	</element>
 
-	<element name="Celestial Salt Spread Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_CELESTIAL_SALT_HC_SPREAD">
+	<element name="Celestial Salt Spread Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MAGIC_ITEM_CELESTIAL_SALT_HC_SPREAD">
 		<description>
 			<p>Made of crystal salt from Mount Celestia, it fires a full projectile which shatters on impact when the weapon fires and comes packaged with its own supply of smokepowder. Once fired, the crystal becomes nonmagical salt. You have +1 to the DC of attacks made with this ammunition, and it deals radiant damage.</p>
 		</description>
@@ -561,7 +561,7 @@
 		</setters>
 	</element>
 	
-	<element name="Round Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_HC_ROUND">
+	<element name="Round Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MAGIC_ITEM_HC_ROUND">
 		<description>
 			<p>A half-wrapped large iron ball, comes with a packet of smokepowder. Intended for use with a handheld cannon.</p>
 			<p>Fires a single shot to deal 6d8 piercing (300/900ft.).</p>
@@ -576,7 +576,7 @@
 		</setters>
 	</element>
 		
-	<element name="Spread Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_MAGIC_ITEM_HC_SPREAD">
+	<element name="Spread Shot" type="Magic Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MAGIC_ITEM_HC_SPREAD">
 		<description>
 			<p>A half-wrapped cylindrical container of 500 ball bearings, comes with a packet of smokepowder. Intended for use with a handheld cannon.</p>
 			<p>Fires in a cone to deal 4d8 piercing (30ft. cone).</p>

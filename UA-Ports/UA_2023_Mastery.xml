@@ -204,13 +204,13 @@
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 	</append>
-	<append id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
+	<append id="ID_SELLSWORDS_ITEMS_WEAPON_HAND_CANNON_LIGHT">
 		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
 		</description>
 	</append>
-	<append id="ID_KOLOURS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
+	<append id="ID_SELLSWORDS_ITEMS_WEAPON_HAND_CANNON_HEAVY">
 		<supports>ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
 		<description>
 			<div element="ID_UA2023_MASTERY_TRAIT_TOPPLE" />
