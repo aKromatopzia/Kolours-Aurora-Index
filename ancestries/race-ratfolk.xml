@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Ratfolk</name>
+		<description>Stolen from dandwiki.com</description>
+		<update version="0.0.1">
+			<file name="race-ratfolk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/ancestries/race-ratfolk.xml" />
+		</update>
+	</info>
+
+	<element name="Ratfolk" type="Race" source="Sellsword's Stuff: Custom Races" id="ID_UA_ODND_RACE_ARDLING">
+		<description>
+			<p>Celestial animals roam the Beastlands, a plane of untamed beauty and wild nature. Many of those otherworldly animals serve the Beast Lords, and in the early days of the multiverse, some of the animals evolved into bipedal forms. Among their number are Ardlings, people with beastlike heads, keen senses, and an innate connection to divine magic. Long ago, the ancestors of Ardlings migrated to the Material Plane, and Ardlings can now be found on many worlds.</p>
+			<p class="indent">An Ardling has a head resembling that of an animal. Depending on the animal, the Ardlingmight also have fur, feathers, or scales. Some little and others hulking, Ardlings are as varied as the animals they resemble.</p>
+			<h4>ARDLING TRAITS</h4>
+			<p>As an ardling, you have the following racial traits.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 4–7 feet tall) or Small (about 3–4 feet tall), chosen when you select this Species</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Animal Ancestry.</em></strong> You are descended from a Celestial animal. Choose one of the ancestry types below, then choose one of the example animals listed for that ancestry (or a similar animal); you gain the benefits of that ancestry, and your head resembles the head of the chosen animal:</p>
+			<li style="margin-left:1em;text-indent:-1em;"><strong>Climber (Bear, Cat, Lizard, Squirrel).</strong> You have hooked claws, sharp nails, or a serpentine tail. As a result, you have a Climb Speed equal to your Speed, and once per turn when you deal damage with your Unarmed Strike to a target, you can increase the damage to that target by an amount equal to your Proficiency Bonus.</li>
+			<li style="margin-left:1em;text-indent:-1em;"><strong>Flyer (Bat, Eagle, Owl, Raven).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
+			<li style="margin-left:1em;text-indent:-1em;"><strong>Racer (Deer, Dog, Horse, Triceratops).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
+			<li style="margin-left:1em;text-indent:-1em;"><strong>Swimmer (Crocodile, Dolphin, Frog, Shark).</strong> You can hold your breath for up to an hour at a time, and you have a Swim Speed equal to your Speed. In addition, you have Resistance to Cold Damage.</li>
+			<p class="indent"><strong><em>Divine Magic.</em></strong> You can innately channel minor divine magic; you know the Thaumaturgy Spell. Whenever you finish a Long Rest, you can replace that Spell with a different 0-level Spell from the Divine Spell list.</p>
+			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for any Spell you cast with this trait (choose the ability when you select the Species).</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have Proficiency in the Perception Skill.</p>
+		</description>
+		
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ardling)" supports="Custom Ability Score Improvement Option" />
+			<select type="Racial Trait" name="Size (Ardling)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<stat name="innate speed" value="30" bonus="base" />  
+
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language (Ardling)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Ardling)" supports="Standard||Exotic" />
+			
+			<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC" />
+			<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES" />
+		</rules>
+	
+
+</elements>

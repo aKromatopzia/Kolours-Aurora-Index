@@ -8,7 +8,7 @@
 		</update>
 	</info>
 	
-	<element name="Abyssal Huo-Chong" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_INFERNAL_HUO_CHONG">
+	<element name="Abyssal Huo-Chong" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_INFERNAL_HUO_CHONG">
 		<description>
 			<p>This hand cannon was constructed using materials from the plane of Abyss. In addition to its normal functions, the huo-chong has been modified to both act as a spellcasting focus and create its own ammunition when needed.</p>
 			<p class="indent">Add your spellcasting ability modifier to Attack rolls and DCs of Attacks made with this weapon.</p>
@@ -25,7 +25,7 @@
 			<set name="charges">1d3</set>
 		</setters>
 	</element>
-	<element name="Blue Flame Lancet" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET">
+	<element name="Blue Flame Lancet" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET">
 		<description>
 			<p>A small razor with an a blade that is faintly wreathed in heatless blue flame. It has the potential to house 1 additional property.</p>
 			<p class="indent">
@@ -50,7 +50,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name="Blue Flame Lancet [Blank]" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET_BLANK">
+	<element name="Blue Flame Lancet [Blank]" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BLUE_FLAME_LANCET_BLANK">
 		<description>
 			<p>A small razor with an a blade that is faintly wreathed in heatless blue flame. It has the potential to house 2 additional properties.</p>
 			<p class="indent">
@@ -67,7 +67,7 @@
 			<set name="rarity">Rare</set>
 		</setters>
 	</element>
-	<element name="Vigil's Claw" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_VIGILS_CLAW">
+	<element name="Vigil's Claw" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_VIGILS_CLAW">
 		<description>
 			<p>The back of this wooden claw bears Bastet’s holy symbol. Due to its enchantments, divine and primal magics can be casted through it as a focus. Once used by members of the Lioness’ Vigil, one has been gifted to the guild.</p>
 			<p class="indent">
@@ -86,7 +86,7 @@
 		</setters>
 	</element>
 	<!-- <! Gavel of Martial Symmetry > -->
-	<element name="Gavel of Martial Symmetry" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_2WF_LIGHTHAMMER">
+	<element name="Gavel of Martial Symmetry" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_2WF_LIGHTHAMMER">
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p>While you are attuned to this weapon, whenever you attack with it as an off-hand weapon, it benefits from the Extra Attack feat, or similar feats.</p>
@@ -103,7 +103,7 @@
 		</setters>
 	</element>
 	<!-- <! Wax & Wane > -->	
-	<element name="Wax And Wane" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LUNACY_AX">
+	<element name="Wax And Wane" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LUNACY_AX">
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p>Whenever wielded with one hand, or when wielded under the light of the moon, the wielder gains +1 to AC.</p>
@@ -122,7 +122,7 @@
 	</element>
 	
 	<!-- <! Sweetgum Shillelagh > -->	
-	<element name="Sweetgum Shillelagh" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SWEETGUM_SHILLELAGH">
+	<element name="Sweetgum Shillelagh" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SWEETGUM_SHILLELAGH">
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon, and a character that has been hit by this weapon has its speed reduced by 5 feet until the end of its next turn.</p>
 			<p>You can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using this weapon.</p>
@@ -141,7 +141,7 @@
 	</element>
 	
 	<!-- <! Bolt of Light > -->	
-	<element name="Bolt of Light" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ARM_OF_LIGHT">
+	<element name="Bolt of Light" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ARM_OF_LIGHT">
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p>When you hurl it, its range changes to 120/120. The javelin forms a streak of light to its target, and on a hit, deals its weapon damage as radiant damage, and an additional 1d4 as radiant damage.</p>
@@ -159,7 +159,7 @@
 		</setters>
 	</element>
 
-	<element name="Wand of Missile" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WAND_OF_MISSILE">
+	<element name="Wand of Missile" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WAND_OF_MISSILE">
 		<description>
 			<p>As an Action, you can activate the switch on this wand causes it to fly away in the direction you're aiming it and deals 1 fire damage to you.</p>
 			<p>Make a ranged [spell/weapon] attack with this wand. On a miss the wand goes wild, landing somewhere within 5 ft of your target. On a hit the target takes 2d6 bludgeoning damage, then bounces off to land within 5 ft of your target.</p>
@@ -176,7 +176,7 @@
 		</setters>
 	</element>
 
-	<element name="Misting Censer" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_MISTING_CENSER">
+	<element name="Misting Censer" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_MISTING_CENSER">
 		<description>
 			<p>This bronze censer bears the reliefs of two men, one of which bears a falcon's head. The reliefs bear as indistinct mulanese style, seperate from the later Multhorand, Unther or Thay.</p>
 			<p class="indent">As an Action, the censer can be made to magically produce a heavily obscuring fog for 1 minute, or until another Action is used to extinguish it. It spreads around corners up to 20ft. away from the censer, but only ever reaches up to a foot in height. Creatures that are flying but above the fog are still affected. This fog also has either of the following properties, as chosen or depending on the offering burnt:</p>
@@ -193,7 +193,7 @@
 		</setters>
 	</element>
 	
-	<element name="Helm of the Ram" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_RAM_HELM">
+	<element name="Helm of the Ram" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_RAM_HELM">
 		<description>
 			<p>This helmet magically changes its size and form to fit the wearer.</p>
 			<p class="indent">As an Action, you can speak the command word to sprout ram horns. They last for 1 minute and can be used as a battering ram, granting a +5 bonus to Strength checks made to break through doors, barricades, and other barriers.</p>
@@ -209,7 +209,7 @@
 		</setters>
 	</element>
 
-	<element name="Dragon's Horn" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_DRAGONS_HORN">
+	<element name="Dragon's Horn" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_DRAGONS_HORN">
 		<description>
 			<p>This polished, natural horn claims to be an instrument made of a hollowed out dragon's horn. Scrimshaw on the outside of the horn seems to tell the story of how the creature was slain. This horn comes in various damage types</p>
 			<p class="indent"> As an action, you can play this instrument to create the 15 ft. cone or 30ft. line of a dragon breath weapon to the horn's colour. Each creature in the range makes a save where the DC is equal to 8 + Performance Modifier. Anyone who fails takes 3d10 damage, anyone who passes takes half that amount. The damage type, range and DC depend on the dragon-of-colour's breath weapon.</p>
@@ -223,7 +223,7 @@
 		</setters>
 	</element>
 	
-	<element name="Shield of Shielding" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SHIELD_OF_SHIELDING">
+	<element name="Shield of Shielding" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SHIELD_OF_SHIELDING">
 		<description>
 			<p>The surface of this buckler has a layer of glass as tough as steel. You have a +1 to AC while using this shield.</p>
 			<p class="indent">The shield's integrity can be restored by spending a long rest using Smithing Tools to tend to the shield's damage. This is reduced to a short rest if you are proficient with Smithing Tools. When the shield hits 0 AC it's properties are no longer usable until repaired.</p>
@@ -245,7 +245,7 @@
 		</rules>
 	</element>
 
-	<element name="Mordenkainen's Missile Storm Staff" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_MISSILE_STORM_STAFF">
+	<element name="Mordenkainen's Missile Storm Staff" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_MISSILE_STORM_STAFF">
 		<description>
 			<p>This wizard's staff has an array of nine small gemstones surrounding one large gemstone embedded into the head of the staff. This staff can be used as a wizard's focus. </p>
 			<p>Flickering Starlight - When a spell is cast within 100 feet of you, one of the small gemstones lights up. At round initiative 0, all of the staff's gemstones flicker out.</p>
@@ -263,7 +263,7 @@
 	
 		
 	<!-- <! Bottomless Belt > -->			
-		<element name="Bottomless Thunder-Bolt Belt" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BOLT_BELT_THUNDER">
+		<element name="Bottomless Thunder-Bolt Belt" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BOLT_BELT_THUNDER">
 		<description>
 			<p>This case of bolts straps nicely along the waist, and has a leather bandolier attached to it. It hums quietly.</p>
 			<p>This bandolier can be fed into any crossbow, and when it is, that crossbow no longer has the Loading property, and deals an extra 2 Thunder damage on a hit.</p>
@@ -279,7 +279,7 @@
 	</element>
 	
 	<!-- <! Cloak of Daggers > -->		
-		<element name="Cloak of Daggers" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_CLOAK_OF_DAGGERS">
+		<element name="Cloak of Daggers" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_CLOAK_OF_DAGGERS">
 		<description>
 			<p>This black cloak has several sharp blades running around the bottom ring of it.</p>
 			<p>While you are wearing it, you may use your bonus action to spin with it, causing it to cast the Sword Burst cantrip.</p>
@@ -296,7 +296,7 @@
 	</element>
 	
 	<!-- <! Aurixoths Rapier > -->	
-	<element name="Aurixoth's Lost Rapier" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_AURIS_LOST_RAPIER">
+	<element name="Aurixoth's Lost Rapier" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_AURIS_LOST_RAPIER">
 		<description>
 			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p>You can sense that most of the magic seems to have faded from it, but the item retains a hint of what it used to be capable of. The handle is made with iridescent draconic scales, and the blade has a perfect silver sheen.</p>
@@ -317,7 +317,7 @@
 	</element>
 	
 	<!-- <! Greataxe of Waylaying > -->	
-	<element name="Greataxe of Waylaying" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WAYLAYING_GREATAXE">
+	<element name="Greataxe of Waylaying" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WAYLAYING_GREATAXE">
 		<description>
 			<p>You have a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p>This enchantment on this greataxe is focused on the black leather grips that are attached to its dark wood frame, while it possesses a wicked golden blade.</p>
@@ -336,7 +336,7 @@
 	</element>
 	
 		<!-- <! Tattered Phoenix Cloak > -->		
-	<element name="Tattered Phoenix Cloak" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_TATTERED_PHOENIX_CLOAK">
+	<element name="Tattered Phoenix Cloak" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_TATTERED_PHOENIX_CLOAK">
 		<description>
 			<p>This is the cloak you retrieved from the two strange bandits out on Snowflake mountains. It would look like any ordinary feather cloak, but the enchantment was placed on it when it was already torn and damaged.</p>
 			<p>The feathers now softly glow like embers, providing bright light out to five feet, and dim light out to ten feet. The light can be dismissed as a free action.</p>
@@ -355,7 +355,7 @@
 	</element>
 	
 	<!-- <! Ævor's Patch Kit > -->
-	<element name="Ævor's Patch Kit" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_AEVORS_PATCH_KIT">
+	<element name="Ævor's Patch Kit" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_AEVORS_PATCH_KIT">
 		<description>
 			<p>This item resembles a painter's palette paired with a an oversized palette knife.</p>
 			<p class="indent">The item has 6 charges and restores all of it's charges up to once per day by washing off built up residue of use from the item in magically created water This process takes a short rest.</p>
@@ -375,7 +375,7 @@
 
 	
 	<!-- <! Lobster Brooch > -->
-	<element name="Lobster Brooch" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LOBSTER_BROOCH">
+	<element name="Lobster Brooch" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LOBSTER_BROOCH">
 		<description>
 			<p>A lobster shaped brass brooch. Two small red gems are inlaid in the brooch to look like the creature's eyes.</p>
 			
@@ -394,7 +394,7 @@
 	</element>
 	
 	<!-- <! The Weaver's Glove > -->
-	<element name="The Weaver's Glove" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WEAVERS_GLOVE">
+	<element name="The Weaver's Glove" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WEAVERS_GLOVE">
 		<description>
 			<p>This delicate black glove is crafted of magically treated spidersilk. The holy symbol of Lolth, a spider as seen from above, is visible on the back of the hand.</p>
 			
@@ -413,7 +413,7 @@
 	</element>
 	
 	<!-- <! Amulet of Jarad > -->
-	<element name="Amulet of Jarad" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_JARAD_AMULET">
+	<element name="Amulet of Jarad" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_JARAD_AMULET">
 		<description>
 			<p>While you wear this amulet, your name is Jarad Bakerson. You are a human man in his late 30's. Your great grandfather was a baker. Your grandfather was a baker. Your father was a lich. You never met him though. You are a failed baker.</p>
 			<p>Your current hobbies include walking around, sitting down unobtrusively, and having people walk away from you out of boredom when you speak. Your aunt died once, you didn't find out until a year later that they forgot to invite you to the funeral. You have an 8 in each of your stats. The only things you're proficient in are brooms.</p>
@@ -437,7 +437,7 @@
 	</element>
 	
 	<!-- <! Oprase-Lens Glasses > -->
-	<element name="Oprase-Lens Glasses" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_OPRASE_LENS_GLASSES">
+	<element name="Oprase-Lens Glasses" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_OPRASE_LENS_GLASSES">
 		<description>
 			<p>Forged by a cleric of Tymora, these glasses allow the wearer to make their own luck, at a cost befitting her lady of course. What reward is not sweeter without risk after all? And what risk is better than as an offering to the Lady?</p>
 			
@@ -456,7 +456,7 @@
 	</element>
 	
 	<!-- <! Shower Rod > -->
-	<element name="Shower Rod" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SHOWER_ROD">
+	<element name="Shower Rod" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SHOWER_ROD">
 		<description>
 			<p>This item appears to be a plain aluminum rod with a knob at each end and a two hooks, one at each end. A sign at the top appears reading, "Leave your (extradimensional) bags at the door.", with an arrow pointing to either hook.</p>
 			<p class="indent">Light and about 3 feet long. When you speak it's command word, the rod will attempt to drop an opaque white vinyl curtain with a blue floral pattern beneath it. If there isn't enough room to do so, it will find the closest viable space.</p>
@@ -474,7 +474,7 @@
 	</element>
 	
 	<!-- <! White Dragon's Scales Tattoo > -->
-	<element name="White Dragon's Scales Tattoo" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WHITE_DRAGON_TATTOO">
+	<element name="White Dragon's Scales Tattoo" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_WHITE_DRAGON_TATTOO">
 		<description>
 			<p class="indent">Tattoo Attunement - To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
 		
@@ -490,7 +490,7 @@
 	</element>
 	
 	<!-- <! Fantastical Fanny Pack > -->
-	<element name="Fantastical Fanny Pack" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_FANNY_PACK">
+	<element name="Fantastical Fanny Pack" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_FANNY_PACK">
 		<description>
 			<p>This Fanny Pack contains an extradimensional space.</p>
 			<p class="indent">It can hold up to 8 cubic feet or 80 pounds of material. The pack always weighs 2 pounds, regardless of its contents.</p>
@@ -509,7 +509,7 @@
 	</element>
 	
 	<!-- <! Combo Bracers > -->
-	<element name="Combo Bracers" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_COMBO_BRACERS">
+	<element name="Combo Bracers" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_COMBO_BRACERS">
 		<description>
 			<p>A matching set of four bracers for wrists and ankles.</p>
 			<p class="indent">When you hit a melee weapon attack on your turn, if this is the first melee weapon attack you've hit against this enemy this turn, gain an extra 10ft of movement this turn.</p>
@@ -525,7 +525,7 @@
 	</element>
 	
 	<!-- <! Binding Stone > -->
-	<element name="Binding Stone" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BINDING_STONE">
+	<element name="Binding Stone" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_BINDING_STONE">
 		<description>
 			<p>Despite appearing to be a normal cobblestone, it reflects the image of creatures in it's surface.</p>
 		</description>
@@ -539,7 +539,7 @@
 	</element>
 	
 	<!-- <! Adamantine Hot Plate > -->
-	<element name="Adamantine Hot Plate" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ADAMANTINE_HOT_PLATE">
+	<element name="Adamantine Hot Plate" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_ADAMANTINE_HOT_PLATE">
 		<description>
 			<p>This hot plate, enchanted with a toggleable Heat Metal, can be used for all your cooking needs! It's large size makes it perfect for just about any pan or pot you can find for it.</p>
 			<p>Huh? The straps on the underside of it? We used an old shield to make it.</p>
@@ -554,7 +554,7 @@
 	</element>
 	
 	<!-- <! Cordio's Portable Spicerack > -->
-	<element name="Cordio's Portable Spicerack" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_PORTABLE_SPICERACK">
+	<element name="Cordio's Portable Spicerack" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_PORTABLE_SPICERACK">
 		<description>
 			<p>This small wooden box with a lid can visibly hold up to three spice bottles inside of it. When you close the lid, you can speak the name of up to 3 known commonly used spices for cooking. </p>
 			
@@ -572,7 +572,7 @@
 	</element>
 	
 	<!-- <! Poisoner's Bracers > -->
-	<element name="Poisoner's Bracers" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_POISONERS_BRACERS">
+	<element name="Poisoner's Bracers" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_POISONERS_BRACERS">
 		<description>
 			<p>These enchanted bracers seem to disappear once attuned, blending into the color and texture of your wrists beneath them. Notable small hidden pouches and slots allow you to store your poisons for easy use.</p>
 			
@@ -590,7 +590,7 @@
 	</element>
 	
 	<!-- <! Lightning Rod > -->
-	<element name="Lightning Rod" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LIGHTNING_ROD">
+	<element name="Lightning Rod" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LIGHTNING_ROD">
 		<description>
 			<p>This Copper quarterstaff hums gently with it's own magical current. This staff can act as a spellcasting focus.</p>
 			
@@ -611,7 +611,7 @@
 	</element>
 	
 	<!-- <! Portable Puddle > -->
-	<element name="Portable Puddle" type="Magic Item" source="Sellsword Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_PORTABLE_PUDDLE">
+	<element name="Portable Puddle" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_PORTABLE_PUDDLE">
 		<description>
 			<p>This Portable Hole is always filled with water when you lay it out.</p>
 			<p class="indent">When you lay this item out, roll 1d4. That many frogs live in the puddle at this time.</p>
