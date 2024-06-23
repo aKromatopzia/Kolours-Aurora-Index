@@ -2,44 +2,191 @@
 <elements>
 	<info>
 		<name>Ratfolk</name>
-		<description>Stolen from dandwiki.com</description>
+		<description>Shamelessly stolen from dandwiki.com -Dirt</description>
 		<update version="0.0.1">
 			<file name="race-ratfolk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/ancestries/race-ratfolk.xml" />
 		</update>
 	</info>
 
-	<element name="Ratfolk" type="Race" source="Sellsword's Stuff: Custom Races" id="ID_UA_ODND_RACE_ARDLING">
+	<!--Ratfolk Race-->
+	<element name="Ratfolk" type="Race" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RATFOLK">
 		<description>
-			<p>Celestial animals roam the Beastlands, a plane of untamed beauty and wild nature. Many of those otherworldly animals serve the Beast Lords, and in the early days of the multiverse, some of the animals evolved into bipedal forms. Among their number are Ardlings, people with beastlike heads, keen senses, and an innate connection to divine magic. Long ago, the ancestors of Ardlings migrated to the Material Plane, and Ardlings can now be found on many worlds.</p>
-			<p class="indent">An Ardling has a head resembling that of an animal. Depending on the animal, the Ardlingmight also have fur, feathers, or scales. Some little and others hulking, Ardlings are as varied as the animals they resemble.</p>
-			<h4>ARDLING TRAITS</h4>
-			<p>As an ardling, you have the following racial traits.</p>
+			<p>To the people at large, ratfolk find the most difficulty with life in Korrik. They are deft of foot and are sometimes drawn to a criminal lifestyle. Though this is true of some ratfolk, they are no more violent or larcenous than others, but old stereotypes linger, especially with them. Called the nenajaa, or “we who live” in Rat Speech, many fail to understand the tough lives ratfolk lead are not entirely of their making.</p>
+			
+			<h4>Wiry and Lanky</h4>
+			<p>Ratfolk look like a hybrid of a thin human and a rat. They are shorter than humans, and appear almost frail. They have heads shaped like rats, with an elongated skull, thin lips, a Rat's snout, and black, or red orbs for eyes, but no cleft in the mouth. The fur that grows on their bodies is thin, but dark, giving them an obscured appearance in dark conditions, though ratfolk commonly have fur colors ranging from light browns to dark gray and black. Unlike all beastfolk, ratfolk walk on rat-shaped feet, not human-like feet. They have short, thin tails.</p>
+			<p>Ratfolk prefer simple clothing with dark hues, preferring black with dark blues, greens, and browns. Most of their clothing is a bit loose fitting for comfort with little in the way of elaborate features or ornamentation. They especially try to keep anything metal covered so nothing shines.</p>
+			<p>Ratfolk feel little disposition towards any clan, but see the usefulness of them, and are mostly found within their own clans such as war clans and tribes and, by extension, in Ryohan, though the Tides of Aquilian can count some ratfolk among them. Some additional ratfolk may be found throughout the island nation's forests and caves.</p>
+			
+			<h4>Life in the Shadow</h4>
+			<p>Ratfolk have become accustomed to hard lives since they moved to the island nation. Though they come from a warrior culture with little inclination towards magic, the ratfolk were known more for guerilla methods, scare tactics, and stealth compared to the honorable combat favored by lionfolk. This gave ratfolk difficulty assimilating into the island nation because many of their methods lend themselves to crime. Though many ratfolk found themselves in such lives, specializing as pickpockets, infiltrators, and bandits, just as many made honest lives as trappers, guides, hunters, and scouts. With the exception of the Raven Blade, however, this stigma still sticks today.</p>
+			<p>Ratfolk are naturally introverted and inwardly drawn. They prefer to spend their time on their own and, even in large crowds, try to make it clear they wish to be on their own. This gives them an insightful attitude and they will always speak carefully, with few words and cautious thought. This, by extension, give ratfolk a disdain for authority figures and those in high standing. Many ratfolk have little respect for such people as they believe in protecting themselves and righting wrongs done to them on their own.</p>
+			
+			<h4>A Place in the World</h4>
+			<p>A ratfolk adventurer is one that seeks a place in a world where acceptance and acknowledgement for their kind doesn't come easy. Though ratfolk are cautious, they are neither fearful nor stupid, and the opportunity to face enemies and beat traps give ratfolk a sense of challenge. For ratfolk, the chance to complete a task no one else can give them the best chance to earn their keep with a group, if not the world. Ratfolk dislike the norms placed on them, but while they don't seek to affect such change in attitude on a large scale, they place great value on the opinions of those few they come to trust. This trust comes with time and much effort, and can be lost easily if abused.</p>
+			
+			<h4>Ratfolk Names</h4>
+			<p>Ratfolk might use human names, but much prefer names more closely in line with their beast heritage, derived from the Beast Speech language.</p>
+			<p class="indent"><strong><em>Common Names:</em></strong> Human names, as well as Neyanaat (We Are Hiding), Regranaas (You Don't See), Venaaj (I Wander), Venaat (I Hide)</p>
+
+			<h4>RATFOLK TRAITS</h4>
+			<p>The ratfolk character is a race that focuses on several traits, holding these to be common ground among the vast majority of their race.</p>
+			<p>Quick and silent, ratfolk exist as outsiders no matter where they are, but they let nothing get in their way.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Intelligence score increases by 1.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
-			<p class="indent"><strong><em>Size.</em></strong> You are Medium (about 4–7 feet tall) or Small (about 3–4 feet tall), chosen when you select this Species</p>
-			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 30 feet.</p>
-			<p class="indent"><strong><em>Animal Ancestry.</em></strong> You are descended from a Celestial animal. Choose one of the ancestry types below, then choose one of the example animals listed for that ancestry (or a similar animal); you gain the benefits of that ancestry, and your head resembles the head of the chosen animal:</p>
-			<li style="margin-left:1em;text-indent:-1em;"><strong>Climber (Bear, Cat, Lizard, Squirrel).</strong> You have hooked claws, sharp nails, or a serpentine tail. As a result, you have a Climb Speed equal to your Speed, and once per turn when you deal damage with your Unarmed Strike to a target, you can increase the damage to that target by an amount equal to your Proficiency Bonus.</li>
-			<li style="margin-left:1em;text-indent:-1em;"><strong>Flyer (Bat, Eagle, Owl, Raven).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
-			<li style="margin-left:1em;text-indent:-1em;"><strong>Racer (Deer, Dog, Horse, Triceratops).</strong> When you take the Dash Action, your Speed increases for that Action. The increase equals ten times your Proficiency Bonus.</li>
-			<li style="margin-left:1em;text-indent:-1em;"><strong>Swimmer (Crocodile, Dolphin, Frog, Shark).</strong> You can hold your breath for up to an hour at a time, and you have a Swim Speed equal to your Speed. In addition, you have Resistance to Cold Damage.</li>
-			<p class="indent"><strong><em>Divine Magic.</em></strong> You can innately channel minor divine magic; you know the Thaumaturgy Spell. Whenever you finish a Long Rest, you can replace that Spell with a different 0-level Spell from the Divine Spell list.</p>
-			<p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for any Spell you cast with this trait (choose the ability when you select the Species).</p>
-			<p class="indent"><strong><em>Keen Senses.</em></strong> You have Proficiency in the Perception Skill.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ratfolk look thin and frail, standing about 5'3” and 5'6”, and weighing around 110–120 lbs. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet. Ratfolk are quick on their feet.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Ratfolk are strongly inclined to follow their own path, preferring freedom over all else, which makes them strongly chaotic. Ratfolk are rarely evil, but most are morally neutral.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ratfolk commonly live a due to quick reproduction and harsh environment and social practices little over 50 years, maintaining good vitality and longevity toward the end. Ratfolk reach adulthood at age 15, with the fur on their bodies turning grey once they've lived about 30 years.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You are used to dark areas, and your eyes have adjusted to such. You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
+			<p class="indent"><strong><em>Sneaky.</em></strong> You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> ou can speak, read, and write Common and rat Speech.</p>
+			
+			<h4>Prestigious Ratfolk</h4>
+			<p>Prestigious ratfolk are cynical like their Plagued, and regular counterparts, and just as introverted, but they have a knack for blending into society. They prefer to live on the fringes of the island nation's cities. Many disdain authority, but simply attempt to keep away from law enforcement, believing they will be left alone if they leave others alone. The dark hair on their bodies gives them an advantage in dark environments.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Duplicity.</em></strong> You have proficiency in the Deception skill.</p>
+			<p class="indent"><strong><em>Dark Fur.</em></strong> When in darkness or dim lighting, you have advantage on stealth checks.</p>
+			
+			<h4>Plagued Ratfolk</h4>
+			<p>Plagued ratfolk fit well the rebellious nature of their race; they have no love for civilization and laws, preferring the freedom and unpredictability of the wilderness. Most windfoot ratfolk are cautious and untrusting of others who come near their territory, but they have keen eyes and quick feet, giving them a distinct advantage when they they have to stay moving in a hostile environment.</p>
+		
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Plagued Celerity.</em></strong> You don't get stopped easily. During your first turn in combat, opportunity attacks against you have disadvantage, and difficult terrain doesn't cost you extra movement..</p>
 		</description>
 		
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ardling)" supports="Custom Ability Score Improvement Option" />
-			<select type="Racial Trait" name="Size (Ardling)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
-			<stat name="innate speed" value="30" bonus="base" />  
-
-			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Customized Language (Ardling)" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Language (Ardling)" supports="Standard||Exotic" />
-			
-			<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_ANIMAL_ANCESTRY" />
-			<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_DIVINE_MAGIC" />
-			<grant type="Racial Trait" id="ID_UA_ODND_RACE_ARDLING_KEEN_SENSES" />
+			<stat name="dexterity" value="2" />
+			<stat name="intelligence" value="1" />
+			<stat name="innate speed" value="35" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_SELLSWORDS_RACES_LANGUAGES_RAT" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
 		</rules>
+	</element>
+	<!--Rat Language-->
+	<element name="Rat" type="Language" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_LANGUAGES_RAT">
+		<supports>Rat</supports>
+		<description>
+			<p>Rats rats we are the rats.</p>
+		</description>
+	</element>
 	
+	<!--Sneaky-->
+	<element name="Sneaky" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SNEAKY">
+		<description>
+			<p>You have proficiency in the Stealth skill.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency in the Stealth skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	
+	<!--Prestigious or Plagued-->
+	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>Ratfolk are separated into two subraces, Prestigious and Plagued, which come with different benefits. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Ratfolk Subrace" supports="Ratfolk" />
+		</rules>
+	</element>
+	
+	<!--Prestigious Ratfolk Subrace-->
+	<element name="Prestigious Ratfolk" type="Sub Race" source="ID_SELLSWORDS_RACES_SUBRACES_PRESTIGIOUS_RATFOLK">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>Prestigious ratfolk are cynical like their Plagued, and regular counterparts, and just as introverted, but they have a knack for blending into society. They prefer to live on the fringes of the island nation's cities. Many disdain authority, but simply attempt to keep away from law enforcement, believing they will be left alone if they leave others alone. The dark hair on their bodies gives them an advantage in dark environments.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Duplicity.</em></strong> You have proficiency in the Deception skill.</p>
+			<p class="indent"><strong><em>Dark Fur.</em></strong> When in darkness or dim lighting, you have advantage on stealth checks.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+		
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DUPLICITY" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DARK_FUR" />
+		</rules>
+	</element>
+	
+	<!--Duplicity-->
+	<element name="Duplicity" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DUPLICITY">
+		<description>
+			<p>You have proficiency in the Deception skill.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency in the Deception skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+		</rules>
+	</element>
+	
+	<!--Dark Fur-->
+	<element name="Dark Fur" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DARK_FUR">
+		<description>
+			<p>When in darkness or dim lighting, you have advantage on stealth checks.</p>
+		</description>
+		<sheet>
+			<description>When in darkness or dim lighting, you have advantage on stealth checks.</description>
+		</sheet>
+	</element>
+	
+	<!--Plagued Ratfolk Subrace-->
+	<element name="Plagued Ratfolk" type="Sub Race" source="ID_SELLSWORDS_RACES_SUBRACES_PLAGUED_RATFOLK">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>Plagued ratfolk fit well the rebellious nature of their race; they have no love for civilization and laws, preferring the freedom and unpredictability of the wilderness. Most windfoot ratfolk are cautious and untrusting of others who come near their territory, but they have keen eyes and quick feet, giving them a distinct advantage when they they have to stay moving in a hostile environment.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Plagued Celerity.</em></strong> You don't get stopped easily. During your first turn in combat, opportunity attacks against you have disadvantage, and difficult terrain doesn't cost you extra movement.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+		
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_KEEN_SENSES />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_PLAGUED_CELERITY" />
+		</rules>
+	</element>
+	
+	<!--Keen Senses-->
+	<element name="Keen Senses" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_KEEN_SENSES">
+		<description>
+			<p>You have proficiency in the Perception skill.</p>
+		</description>
+		<sheet>
+			<description>You have proficiency in the Perception skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	
+	<!--Plagued Celerity-->
+	<element name="Plagued Celerity" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_PLAGUED_CELERITY">
+		<description>
+			<p>You don't get stopped easily. During your first turn in combat, opportunity attacks against you have disadvantage, and difficult terrain doesn't cost you extra movement.</p>
+		</description>
+		<sheet>
+			<description>You don't get stopped easily. During your first turn in combat, opportunity attacks against you have disadvantage, and difficult terrain doesn't cost you extra movement.</description>
+		</sheet>
+	</element>
 
 </elements>
