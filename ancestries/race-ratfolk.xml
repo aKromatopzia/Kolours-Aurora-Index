@@ -77,7 +77,7 @@
 	</element>
 	
 	<!--Sneaky-->
-	<element name="Sneaky" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SNEAKY">
+	<element name="Sneaky" type="Racial Trait" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SNEAKY">
 		<description>
 			<p>You have proficiency in the Stealth skill.</p>
 		</description>
@@ -102,7 +102,7 @@
 	</element>
 	
 	<!--Prestigious Ratfolk Subrace-->
-	<element name="Prestigious Ratfolk" type="Sub Race" source="ID_SELLSWORDS_RACES_SUBRACES_PRESTIGIOUS_RATFOLK">
+	<element name="Prestigious Ratfolk" type="Sub Race" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_SUBRACES_PRESTIGIOUS_RATFOLK">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>Prestigious ratfolk are cynical like their Plagued, and regular counterparts, and just as introverted, but they have a knack for blending into society. They prefer to live on the fringes of the island nation's cities. Many disdain authority, but simply attempt to keep away from law enforcement, believing they will be left alone if they leave others alone. The dark hair on their bodies gives them an advantage in dark environments.</p>
@@ -123,7 +123,7 @@
 	</element>
 	
 	<!--Duplicity-->
-	<element name="Duplicity" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DUPLICITY">
+	<element name="Duplicity" type="Racial Trait" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DUPLICITY">
 		<description>
 			<p>You have proficiency in the Deception skill.</p>
 		</description>
@@ -136,7 +136,7 @@
 	</element>
 	
 	<!--Dark Fur-->
-	<element name="Dark Fur" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DARK_FUR">
+	<element name="Dark Fur" type="Racial Trait" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_DARK_FUR">
 		<description>
 			<p>When in darkness or dim lighting, you have advantage on stealth checks.</p>
 		</description>
@@ -146,7 +146,7 @@
 	</element>
 	
 	<!--Plagued Ratfolk Subrace-->
-	<element name="Plagued Ratfolk" type="Sub Race" source="ID_SELLSWORDS_RACES_SUBRACES_PLAGUED_RATFOLK">
+	<element name="Plagued Ratfolk" type="Sub Race" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_SUBRACES_PLAGUED_RATFOLK">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>Plagued ratfolk fit well the rebellious nature of their race; they have no love for civilization and laws, preferring the freedom and unpredictability of the wilderness. Most windfoot ratfolk are cautious and untrusting of others who come near their territory, but they have keen eyes and quick feet, giving them a distinct advantage when they they have to stay moving in a hostile environment.</p>
@@ -161,13 +161,13 @@
 		</setters>
 		<rules>
 			<stat name="wisdom" value="1" />
-			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_KEEN_SENSES />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_KEEN_SENSES" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_PLAGUED_CELERITY" />
 		</rules>
 	</element>
 	
 	<!--Keen Senses-->
-	<element name="Keen Senses" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_KEEN_SENSES">
+	<element name="Keen Senses" type="Racial Trait" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_KEEN_SENSES">
 		<description>
 			<p>You have proficiency in the Perception skill.</p>
 		</description>
@@ -180,7 +180,7 @@
 	</element>
 	
 	<!--Plagued Celerity-->
-	<element name="Plagued Celerity" type="Racial Trait" source="ID_SELLSWORDS_RACES_RACIAL_TRAITS_PLAGUED_CELERITY">
+	<element name="Plagued Celerity" type="Racial Trait" source="Sellsword's Stuff: Custom Races" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_PLAGUED_CELERITY">
 		<description>
 			<p>You don't get stopped easily. During your first turn in combat, opportunity attacks against you have disadvantage, and difficult terrain doesn't cost you extra movement.</p>
 		</description>
