@@ -139,7 +139,7 @@
 		</rules>
 	</element>
 
-	<element name="Thin Frame" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME"">
+	<element name="Thin Frame" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>You can squeeze through spaces as if you were one size smaller, and you have advantage on the Tumble action against creatures larger than yourself.</p>
