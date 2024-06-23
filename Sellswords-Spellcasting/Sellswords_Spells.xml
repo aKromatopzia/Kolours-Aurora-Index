@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.16">
+		<update version="0.0.17">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
 
-	<element name="Arcane Spellblade" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ARCANE_SPELLBLADE">
+	<element name="Arcane Spellblade" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ARCANE_SPELLBLADE">
 		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
 		<description>
 			<p>When you learn this spell, you select one damage type from: Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, or Thunder.</p>
@@ -29,7 +29,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Consecrate" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CONSECRATE">
+	<element name="Consecrate" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CONSECRATE">
 		<supports>Cleric, Paladin</supports>
 		<description>
 			<p>This spell blesses an area with positive energy. All checks made to turn undead within this area gain a +3 bonus; all saves made to resist turning made by the undead within this area have a -3 penalty.</p>
@@ -53,7 +53,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Desecrate" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DESECRATE">
+	<element name="Desecrate" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DESECRATE">
 		<supports>Cleric, Paladin</supports>
 		<description>
 			<p>This spell imbues an area with negative energy. All checks made to turn undead within this area suffer a -3 penalty; all saves made to resist turning made by the undead within this area have a +3 bonus.</p>
@@ -78,7 +78,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Osiris' Reap and Sow" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REAP_N_SOW">
+	<element name="Osiris' Reap and Sow" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REAP_N_SOW">
 		<description>
 			<p><i>This is a rare spell available only to CLR and DRU after being found in the world, or taught by someone who knows it.</i></p>
 			<p>You invoke both death and life upon a 10-foot-radius sphere centred on a point within range. Each creature of your choice in that area must make a CON save, taking 2d6 necrotic damage on a failed save, or half as much damage on a successful one. Nonmagical vegetation in that area withers.</p>
@@ -100,7 +100,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Oghma's Thoughtseize" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_THOUGHTSEIZE">
+	<element name="Oghma's Thoughtseize" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_THOUGHTSEIZE">
 		<description>
 			<p><i>This is a rare spell available only to BRD, SOR, WAR and WIZ after being found in the world, or taught by someone who knows it.</i></p>
 			<p>You prepare to steal the magical prowess of your foes. As part of the action to cast this spell, and as an action on each turn for the duration of this spell, you can attempt a sleight of hand (DEX) check against an opponent. The DC of this check depends on the level of the spell being stolen, being 12 + the level of the spell.</p>
@@ -124,7 +124,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Death Knell" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DEATH_KNELL">
+	<element name="Death Knell" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DEATH_KNELL">
 		<supports>Artificer, Cleric, Druid, Ranger, Paladin, Sorcerer, Warlock, Bard</supports>
 		<description>
 			<p>You draw forth the ebbing life force of a creature and use it to fuel your own power. Upon casting this spell, you touch a living creature that has died within 1 round or is at 0 hit points. If the subject has not died, it rolls a WIS save against your spell DC. If it fails, it automatically fails a death saving throw.</p>
@@ -145,7 +145,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Battlesong of the Pride" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CATS_GRACE_GREATER">
+	<element name="Battlesong of the Pride" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CATS_GRACE_GREATER">
 		<description>
 			<p><i>This is a rare spell available only to ART, BRD, CLR, RNG and PAL after being found in the world, or taught by someone who knows it.</i></p>
 			<p>The target of the spell becomes imbued with the agile aspect of cats, gaining a +2 bonus to DEX and +5 speed.</p>
@@ -166,7 +166,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Presley's Floating Disk" type="Spell" source="Sellsword's Basin: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_PRESLEYS_FLOATING_DISK">
+	<element name="Presley's Floating Disk" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_PRESLEYS_FLOATING_DISK">
 		<description>
 			<p><i>This is a rare spell available only to WIZ after being found in the world, or taught by someone who knows it.</i></p>
 			<p>This spell creates a circular, horizontal plane of force, 3 feet in diameter and 1 inch thick, that floats 3 feet above the ground underneath yourself, with you atop. The disk remains for the duration, and can hold up to 500 pounds. If more weight is placed on it, the spell ends, and everything on the disk falls to the ground.</p>

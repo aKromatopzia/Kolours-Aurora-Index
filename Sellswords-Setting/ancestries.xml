@@ -2,12 +2,12 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
 
-	<element name="Yuan-Ti (Serpent Lower Body)" type="Race" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACE_YUAN_TI_SERPENT">
+	<element name="Yuan-Ti (Serpent Lower Body)" type="Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORD_RACE_YUAN_TI_SERPENT">
 		<description>
 			<p>Yuan-ti were originally humans who transformed themselves into serpent folk through ancient rituals. Most yuan-ti were corrupted into monsters by those rites, but some yuan-ti instead became a new people who mix characteristics of humans and snakes.</p>
 			<h4>YUAN-TI TRAITS</h4>
@@ -41,7 +41,7 @@
 			<select type="Language" name="Language (Yuan-ti)" supports="Standard||Exotic" />
 		</rules>
 	</element>
-	<element name="Natural Weapons" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_NATURAL_WEAPONS">
+	<element name="Natural Weapons" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_NATURAL_WEAPONS">
 		<description>
 			<p>Your fanged maw and constricting serpentine body are natural weapons, which you can use to make unarmed strikes. If you hit with your bite, you deal piercing damage equal to 1d4 + your Strength modifier, and your target must make a Constitution saving throw (DC 8 + your proficiency bonus + your Constitution modifier). On a failed save, the target takes 1d4 poison damage. If you hit with your constrict attack, you deal bludgeoning damage equal to 1d6 + your Strength modifier, and you can attempt to grapple the target.</p>
 		</description>
@@ -54,7 +54,7 @@
 			<stat name="naga-poison:dc" value="constitution:modifier" />
 		</rules>
 	</element>
-	<element name="Poison Immunity" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_IMMUNITY">
+	<element name="Poison Immunity" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_IMMUNITY">
 		<description>
 			<p>You are immune to poison damage and the poisoned condition.</p>
 		</description>
@@ -65,7 +65,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
 		</rules>
 	</element>
-	<element name="Poison Affinity" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_AFFINITY">
+	<element name="Poison Affinity" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_POISON_AFFINITY">
 		<description>
 			<p>You gain proficiency with the poisoner’s kit.</p>
 		</description>
@@ -77,7 +77,7 @@
 			<select type="Proficiency" name="Simple Weapon or Tool" supports="Simple||Tool" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 		</rules>
 	</element>
-	<element name="Speed Burst" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_SPEED_BURST">
+	<element name="Speed Burst" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_SPEED_BURST">
 		<description>
 			<p>By lowering your body to the ground and propelling yourself with your arms, you can move more quickly for a time. As a bonus action on your turn, if you have both hands free, you can Dash.</p>
 		</description>
@@ -85,12 +85,142 @@
 			<description>On your turn, if you have both hands free, you can Dash.</description>
 		</sheet>
 	</element>
-	<element name="Binding Coils" type="Racial Trait" source="Sellswords Basin: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_BINDING_COILS">
+	<element name="Binding Coils" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORD_RACIAL_TRAIT_YUAN_TI_BINDING_COILS">
 		<description>
 			<p>Creatures you have grappled are restrained.</p>
 		</description>
 		<sheet>
 			<description>Creatures you have grappled are restrained.</description>
+		</sheet>
+	</element>
+	
+	<!--Ratfolk Race (by Dirt)-->
+	<element name="Ratfolk" type="Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RATFOLK">
+		<description>
+			<p>To the people at large, ratfolk find the most difficulty with life in Korrik. They are deft of foot and are sometimes drawn to a criminal lifestyle. Though this is true of some ratfolk, they are no more violent or larcenous than others, but old stereotypes linger, especially with them. Called the nenajaa, or “we who live” in Rat Speech, many fail to understand the tough lives ratfolk lead are not entirely of their making.</p>
+			
+			<h4>Wiry and Lanky</h4>
+			<p>Ratfolks are a rodent-like humanoids. They are shorter than humans, and appear almost frail. They have heads shaped like rats, with an elongated skull, thin lips, a rat's snout, and monocoloured beads for eyes. The fur that grows on their bodies is usually thin, and commonly comes in a range from light browns to dark gray and black. Despite their origins in the Feywild, they are not themselves fey.</p>
+			
+			<h4>Life in the Shadow</h4>
+			<p>Due to their association with rats, they are generally avoided by the aristocracies of human settlements, but can find places amongst the elves and dwarves for example. They are usually a nocturnal folk but, contrary to popular beliefs, are not sensitive to light.</p>
+			
+			<h4>A Place in the World</h4>
+			<p>Although not a people with great history, only having made a presence after the Era of Upheavals, there are a decent number of ratfolk communities. They tend to stay with each other in great families, both for cultural reasons, and the societal one that they have poor reputations. Many ratfolk families end up in the protective of Cormyr, but just as many work with the seedy underbellies of cities such as Westgate and Neverwinter.</p>
+			<h4>RATFOLK TRAITS</h4>
+			<p>The ratfolk character is a race that focuses on several traits, holding these to be common ground among the vast majority of their race.</p>
+			<p>Quick and silent, ratfolk exist as outsiders no matter where they are, but they let nothing get in their way.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Ratfolk look thin and frail, standing about 5'3” and 5'6”, and weighing around 110–120 lbs. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet. Ratfolk are quick on their feet.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Ratfolk are strongly inclined to follow their own path, preferring freedom over all else, which makes them strongly chaotic. Ratfolk are rarely evil, but most are morally neutral.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Ratfolk commonly live a due to quick reproduction and harsh environment and social practices little over 50 years, maintaining good vitality and longevity toward the end. Ratfolk reach adulthood at age 15, with the fur on their bodies turning grey once they've lived about 30 years.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You are used to dark areas, and your eyes have adjusted to such. You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
+			<p class="indent"><strong><em>Sneaky.</em></strong> You have proficiency in the Stealth skill.</p>
+			<p class="indent"><strong><em>Thin Frame.</em></strong> You can squeeze through spaces as if you were one size smaller.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Sylvan.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Ratfolk are a varied lot, and tend to adapt to their environment. Choose a subrace from between urban and wild.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" />
+			<stat name="intelligence" value="1" />
+			<stat name="innate speed" value="35" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SNEAKY" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE" />
+		</rules>
+	</element>
+
+	<element name="Thin Frame" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME"">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>You can squeeze through spaces as if you were one size smaller, and you have advantage on the Tumble action against creatures larger than yourself.</p>
+		</description>
+		<sheet>
+			<description>You can squeeze through spaces as if you were one size smaller, and you have advantage on the Tumble action against creatures larger than yourself.</description>
+		</sheet>
+	</element>
+	
+	<!--Urban or wild Choice-->
+	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>Ratfolk are separated into two subraces, colloquially described as sneaks and n, which come with different benefits. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Ratfolk Subrace" supports="Ratfolk" />
+		</rules>
+	</element>
+	
+	<!--Urban Ratfolk Subrace-->
+	<element name="Urban Ratfolk" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_SUBRACES_PRESTIGIOUS_RATFOLK">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>Ratfolk communities in cities tend to become notorious for their role as thieves and informants. Leveraging their cunning and speed to avoid danger as it comes.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>Duplicity.</em></strong> You have proficiency in the Deception skill.</p>
+			<p class="indent"><strong><em>Skulker.</em></strong> While you are in darkness or dim lighting, you have advantage on stealth checks to remain hidden.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+		
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SKULKER" />
+		</rules>
+	</element>
+	
+	<!--Skulker-->
+	<element name="Skulker" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SKULKER">
+		<description>
+			<p>While you are in darkness or dim lighting, you have advantage on stealth checks to remain hidden.</p>
+		</description>
+		<sheet>
+			<description>While you are in darkness or dim lighting, you have advantage on stealth checks to remain hidden.</description>
+		</sheet>
+	</element>
+	
+	<!--Wild Ratfolk Subrace-->
+	<element name="Wild Ratfolk" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_SUBRACES_PLAGUED_RATFOLK">
+		<supports>Ratfolk</supports>
+		<description>
+			<p>Wild ratfolk live in nature, keeping to their feywild origins. They are not averse to society - as many do end up assisting and joining druidic covens, but may find prejudice due to the reputation of their other kind regardless. They may also take up nomadic lives of traders and scavengers.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+			<p class="indent"><strong><em>Sure-Footed.</em></strong> When you take the Dash action, and on your first turn of combat encounters, opportunity attacks against you have disadvantage and natural difficult terrain doesn't require extra movement.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+		
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SURE_FOOTED" />
+		</rules>
+	</element>
+	
+	
+	<!--Sure-Footed-->
+	<element name="Sure-Footed" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SURE_FOOTED">
+		<description>
+			<p>You don't get stopped easily. When you take the Dash action, and on your first turn of combat encounters, opportunity attacks against you have disadvantage and natural difficult terrain doesn't require extra movement.</p>
+		</description>
+		<sheet>
+			<description>When you take the Dash action, and on your first turn of combat encounters, opportunity attacks against you have disadvantage and natural difficult terrain doesn't require extra movement.</description>
 		</sheet>
 	</element>
 

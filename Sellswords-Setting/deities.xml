@@ -3,11 +3,11 @@
 	<info>
 		<name>Deities</name>
 		<description>Deities from the Player’s Handbook.</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="deities.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/deities.xml" />
 		</update>
 	</info>
-	<element name="Ai-Ching" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_AI_CHING">
+	<element name="Ai-Ching" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_AI_CHING">
 		<description>
 			<p class="flavor">bureaucrat of love and marriage</p>
 		</description>
@@ -22,7 +22,7 @@
 			<description>bureaucrat of love</description>
 		</sheet>
 	</element>
-	<element name="Chan-Zheng" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_CHAN-ZHENG">
+	<element name="Chan-Zheng" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_CHAN-ZHENG">
 		<description>
 			<p class="flavor">bureaucrat of valor</p>
 		</description>
@@ -37,7 +37,7 @@
 			<description>bureaucrat of valor</description>
 		</sheet>
 	</element>
-	<element name="Chen-Hsiang" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_CHEN_HSIANG">
+	<element name="Chen-Hsiang" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_CHEN_HSIANG">
 		<description>
 			<p class="flavor">bureaucrat of the arts</p>
 		</description>
@@ -52,7 +52,7 @@
 			<description>bureaucrat of the arts</description>
 		</sheet>
 	</element>
-	<element name="Chi-Shen" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_CHI_SHEN">
+	<element name="Chi-Shen" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_CHI_SHEN">
 		<description>
 			<p class="flavor">bureaucrat of lore</p>
 		</description>
@@ -67,7 +67,7 @@
 			<description>bureaucrat of love</description>
 		</sheet>
 	</element>
-	<element name="Fa-Guan" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_FA_GUAN">
+	<element name="Fa-Guan" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_FA_GUAN">
 		<description>
 			<p class="flavor">bureaucrat of arbitration</p>
 		</description>
@@ -82,7 +82,7 @@
 			<description>bureaucrat of law</description>
 		</sheet>
 	</element>
-	<element name="Hsing-Yong" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_HSING-YONG">
+	<element name="Hsing-Yong" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_HSING-YONG">
 		<description>
 			<p class="flavor">bureaucrat of fortune and prosperity</p>
 		</description>
@@ -97,7 +97,7 @@
 			<description>bureaucrat of fortune</description>
 		</sheet>
 	</element>
-	<element name="Gua-Ying" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_GUA_YING">
+	<element name="Gua-Ying" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_GUA_YING">
 		<description>
 			<p class="flavor">bureaucrat of compassion and mercy</p>
 		</description>
@@ -112,7 +112,7 @@
 			<description>bureaucrat of mercy</description>
 		</sheet>
 	</element>
-	<element name="Neng-Chiang" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NENG_CHIANG">
+	<element name="Neng-Chiang" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NENG_CHIANG">
 		<description>
 			<p class="flavor">bureaucrat of agriculture and fertility</p>
 		</description>
@@ -127,7 +127,7 @@
 			<description>bureaucrat of agriculture and fertility</description>
 		</sheet>
 	</element>
-	<element name="Shu-Chia" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_SHU_CHIA">
+	<element name="Shu-Chia" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_SHU_CHIA">
 		<description>
 			<p class="flavor">bureaucrat of artifice and craft</p>
 		</description>
@@ -142,7 +142,7 @@
 			<description>bureaucrat of artifice and craft</description>
 		</sheet>
 	</element>
-	<element name="Nobanion" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NOBANION">
+	<element name="Nobanion" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NOBANION">
 		<description>
 			<p class="flavor">King of the pride</p>
 		</description>
@@ -157,7 +157,7 @@
 			<description>king of the pride</description>
 		</sheet>
 	</element>
-	<element name="Anubis" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ANUBIS">
+	<element name="Anubis" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ANUBIS">
 		<description>
 			<p class="flavor">Guardian of the Dead</p>
 		</description>
@@ -172,7 +172,7 @@
 			<description>Guardian of the Dead</description>
 		</sheet>
 	</element>
-	<element name="Bastet" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_BASTET">
+	<element name="Bastet" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_BASTET">
 		<description>
 			<p class="flavor">The Dancing Lady</p>
 		</description>
@@ -187,7 +187,7 @@
 			<description>The Dancing Lady</description>
 		</sheet>
 	</element>
-	<element name="Asgorath" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ASGPORATH">
+	<element name="Asgorath" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ASGPORATH">
 		<description>
 			<p class="flavor">The World Shaper</p>
 		</description>
@@ -202,7 +202,7 @@
 			<description>The World Shaper</description>
 		</sheet>
 	</element>
-	<element name="Kereska" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_KERESKA">
+	<element name="Kereska" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_KERESKA">
 		<description>
 			<p class="flavor">Wonderbringer</p>
 		</description>
@@ -217,7 +217,7 @@
 			<description>Wonderbringer</description>
 		</sheet>
 	</element>
-	<element name="Sardior" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_SARDIOR">
+	<element name="Sardior" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_SARDIOR">
 		<description>
 			<p class="flavor">Master of the Gemdrakes</p>
 		</description>
@@ -232,7 +232,7 @@
 			<description>Master of the Gemdrakes</description>
 		</sheet>
 	</element>
-	<element name="Astilabor" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ASTILABOR">
+	<element name="Astilabor" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_ASTILABOR">
 		<description>
 			<p class="flavor">The Acquisitor</p>
 		</description>
@@ -247,7 +247,7 @@
 			<description>The Acquisitor</description>
 		</sheet>
 	</element>
-	<element name="Null" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NULL">
+	<element name="Null" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_NULL">
 		<description>
 			<p class="flavor">Guardian of the Lost</p>
 		</description>
@@ -262,7 +262,7 @@
 			<description>Guardian of the Lost</description>
 		</sheet>
 	</element>
-	<element name="Task" type="Deity" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_TASK">
+	<element name="Task" type="Deity" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_DEITY_TASK">
 		<description>
 			<p class="flavor">The Taker and Holder</p>
 		</description>

@@ -7,20 +7,20 @@
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
-	<element name="Spellmark Properties" type="Info" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY">
+	<element name="Spellmark Properties" type="Info" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY">
 		<description>
 			<p>Spellmarks and spellscars are commonly regarded as curses or arcane infections, but they can confer beneficial effects and abilities onto their bearers.</p>
 			<p>Such properties may be selected by or bestowed upon their bearers, but each scar or mark may only be so diverse. The ones created by Gui-Ji have limited potential.</p>
 		</description>
 	</element>
-	<element name="Status Effect: Harrowed" type="Info" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_STATUS_HARROWED">
+	<element name="Status Effect: Harrowed" type="Info" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_STATUS_HARROWED">
 		<description>
 			<p>Harrowed indicates that a creature’s ability to defend themself is currently compromised. AoOs can be made against the creature without it counting as a reaction, even if one has already expended their reaction that round. Harrowed is normally applied “by” someone – This indicates that the benefits of harrowing can only be used by that someone. In the case that it is not, the creature is harrowed by everyone.</p>
 			<p>This effect always ends at the end of combat, or when the creature causing the effect harrows somebody else, unless stated otherwise</p>
 		</description>
 	</element>
 	
-	<element name="Spellmark Property: Magical Strikes" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_MAGIC_STRIKES">
+	<element name="Spellmark Property: Magical Strikes" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_MAGIC_STRIKES">
 		<description>
 			<p class="indent">
 				<strong><em>Magical Strikes.</em></strong> While scarred, your weapon strikes are considered magical, and you gain a +1 bonus to attack and damage rolls with melee strikes.
@@ -34,7 +34,7 @@
 		</setters>
 	</element>
 	
-	<element name="Spellmark Property: Blue Flame Strike" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BLUE_FLAME_STRIKE">
+	<element name="Spellmark Property: Blue Flame Strike" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BLUE_FLAME_STRIKE">
 		<description>
 			<p class="indent">
 				<strong><em>Blue-Flame Strike.</em></strong> When you make a melee attack (whether for the Attack action, Attack of Opportunity or similar), you can expend one Hit Dice to replace it with a spellfire-empowered strike. The target must make a DEX saving throw. They suffer the attack’s normal effects and take additional force damage equal to your Hit Dice on a failure, or only the force damage on a success. The DC of the save is equal to 8 + the bonuses you would have had to the attack. So long as the target takes damage from this attack, it counts as having hit.
@@ -47,7 +47,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Bolstering, minor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BOLSTER_MINOR">
+	<element name="Spellmark Property: Bolstering, minor" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BOLSTER_MINOR">
 		<description>
 			<p class="indent">
 				<strong><em>Bolster, Minor.</em></strong> Whenever you roll a skill check, you may expend a Hit Dice as a free action to gain a bonus for that roll equal to the check's relevant ability modifier, and the result of your Hit Dice.
@@ -60,7 +60,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Withered" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_WITHERED">
+	<element name="Spellmark Property: Withered" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_WITHERED">
 		<description>
 			<p class="indent">
 				<strong><em>Withered.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. Rolls involving your Hit Die have a -1.
@@ -73,7 +73,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Burgeoning" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BURGEONING">
+	<element name="Spellmark Property: Burgeoning" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BURGEONING">
 		<description>
 			<p class="indent">
 				<strong><em>Burgeoning.</em></strong>Rolls involving your Hit Die have a +1.
@@ -86,7 +86,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Deeply Etched" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DEEP_ETCH">
+	<element name="Spellmark Property: Deeply Etched" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DEEP_ETCH">
 		<description>
 			<p class="indent">
 				<strong><em>Deep Etchings.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. The source of a spellmark or spellscar loses the ability to be unattuned at-will without magical nullification. This requires the dispelling of its enchantment, regeneration of the the etched scars, and a ritual to purge its transformative aspects. (There is more to the process than written, and takes time.) 
@@ -99,7 +99,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Immutable" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMUTABLE">
+	<element name="Spellmark Property: Immutable" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMUTABLE">
 		<description>
 			<p class="indent">
 				<strong><em>Immutable.</em></strong> The spellscar can no longer be removed by any means short of a Wish spell, but also no longer requires attunement. Consequences for any who take this. No, you can not use this with Deep Etchings.
@@ -112,7 +112,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Torpor" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_TORPOR">
+	<element name="Spellmark Property: Torpor" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_TORPOR">
 		<description>
 			<p class="indent"><strong><em>Torpor.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. Your walking, flying, climbing or swimming speeds, if you have them, are reduced by 5ft.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
@@ -126,7 +126,7 @@
 			<stat name="speed" value="-5" />
 		</rules>
 	</element>
-	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
+	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
 			<p class="indent"><strong><em>Alacrity.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
@@ -140,7 +140,7 @@
 			<stat name="speed" value="5" />
 		</rules>
 	</element>
-	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_HARROW_BRAND">
+	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_HARROW_BRAND">
 		<description>
 			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, a curse, and its relevant ability score is CON.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
@@ -152,7 +152,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Disrupt Magic, self" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DISRUPT_MAGIC_SELF">
+	<element name="Spellmark Property: Disrupt Magic, self" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_DISRUPT_MAGIC_SELF">
 		<description>
 			<p class="indent"><strong><em>Disrupt Magic, lesser.</em></strong> As an action you can expend a Hit Dice to suspend a single magical or psionic effect on yourself for up to 1 minute. Its duration is suspended while disrupted. You can cause it to resume as a free action on your turns. Attempt an Arcana(CON) check against its DC to determine if you succeed. An effect with no DC instead uses the following formula: 8 + 2/3/5/7 if it is from common, uncommon, rare, or legendary or an artifact source.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
@@ -163,7 +163,7 @@
 			<set name="slot">gift</set>
 		</setters>
 	</element>
-	<element name="Spellmark Property: Critical Luck, lesser" type="Magic Item" source="Sellswords Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_CRIT_LUCK_LESSER">
+	<element name="Spellmark Property: Critical Luck, lesser" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_CRIT_LUCK_LESSER">
 		<description>
 			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> As a Bonus Action, you can expend a Hit Dice to augment your attacks for a number of rounds equal to the result. Your Attacks are considered critical on a 19 or 20.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
