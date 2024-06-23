@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -125,15 +125,15 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<stat name="dexterity" value="2" />
-			<stat name="intelligence" value="1" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ardling)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="35" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
-			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
-			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SNEAKY" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE" />
 		</rules>
