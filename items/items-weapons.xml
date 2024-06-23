@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.21">
+		<update version="0.0.22">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -447,16 +447,78 @@
 
 	-->
 
-	<element name="Pistol" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_PISTOL">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_UA2023_MASTERY_TRAIT_TOPPLE</supports>
+	<!-- Various reload values -->
+	
+	<element name="Reload [1]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_1">
 		<description>
-			<p><i>This is a generic pistol meant to be used as a baseline to design other proper weapons. Firearms differentiate themselves from bows </i></p>
-			<p>A arguably an advancement on the hand cannon; Although these weapons come in mundane varieties, the precision required to craft one of these usually was the work of magery. Not to mention the requirement of smokepowder, a wondrous item.</p>
-			<p class="indent">The DC of the spread shot is DC 8 + DEX mod + STR mod (max 0 (add only if negative)) while held. creatures take half as much damage on a success. The Attack modifier of single shot is DEX mod + STR mod (max 0 (add only if negative)). If you are proficient in siege weapons, add your proficiency to all DCs and Attacks made with these attacks.</p>
-			<p class="indent">You can also make melee attacks with the fire lance. It is a reach weapon which does 1d8 bludgeoning damage on a strike. If you are proficient with martial weapons or the lance, add your proficiency to all DCs and Attacks made with this attack.</p>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [2]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [3]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_3">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [4]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_4">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [5]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [6]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [7]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_7">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [8]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_8">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [9]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_9">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+	<element name="Reload [10]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_10">
+		<description>
+			<p><i>Prerequisites: Ammunition</i></p>
+			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
+		</description>
+	</element>
+
+	<!-- Shaaran Six-Shooter-->
+	<element name="Shaaran Six-Shooter" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
+		<description>
+			<p><i>This is a generic pistol meant to be used as a baseline to design other proper weapons. </i></p>
+			<p>You know what this is. Commonly used in the wastelands of the Shaar, among the rare ones who can afford such a weapon. Known to be reliable and effient under the hot wasteland sun.</p>
 			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
-			<div element="ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL" />
-			<div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE" />
+			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
+			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -464,13 +526,10 @@
 			<set name="weight" lb="2">2 lbs.</set>
 			<set name="slot">onehand</set>
 			<set name="range">ammunition</set>
-			<set name="damage" type="piercing (cone) or 6d8 bludgeoning (single) or 1d10 bludgeoning (melee)">4d8</set>
-			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_FIRE_LANCE</set>
+			<set name="damage" type="piercing">1d8</set>
+			<set name="reload">6</set>
+			<set name="proficiency">ID_KOLOURS_PROFICIENCY_WEAPON_SHAAR_REVOLVER</set>
 		</setters>
-	</element>
-
-	<element name="Weapon Proficiency (Hand Cannon)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_KOLOURS_PROFICIENCY_WEAPON_HAND_CANNON">
-		<supports>Weapon, Ranged, ID_KOLOURS_ITEMS_WEAPON_CATEGORY_SIEGE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_KOLOURS_WEAPON_GROUP_HAND_CANNON, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_KOLOURS_WEAPON_PROPERTY_SPECIAL_RECOIL, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 	</element>
 	
 	<!--Ammunition-->
