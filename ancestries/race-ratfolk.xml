@@ -41,7 +41,8 @@
 			<p class="indent"><strong><em>Age.</em></strong> Ratfolk commonly live a due to quick reproduction and harsh environment and social practices little over 50 years, maintaining good vitality and longevity toward the end. Ratfolk reach adulthood at age 15, with the fur on their bodies turning grey once they've lived about 30 years.</p>
 			<p class="indent"><strong><em>Darkvision.</em></strong> You are used to dark areas, and your eyes have adjusted to such. You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
 			<p class="indent"><strong><em>Sneaky.</em></strong> You have proficiency in the Stealth skill.</p>
-			<p class="indent"><strong><em>Languages.</em></strong> ou can speak, read, and write Common and rat Speech.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and rat Speech.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> Ratfolk are separated into two subraces, Prestigious and Plagued, which come with different benefits. Choose one of these subraces..</p>
 			
 			<h4>Prestigious Ratfolk</h4>
 			<p>Prestigious ratfolk are cynical like their Plagued, and regular counterparts, and just as introverted, but they have a knack for blending into society. They prefer to live on the fringes of the island nation's cities. Many disdain authority, but simply attempt to keep away from law enforcement, believing they will be left alone if they leave others alone. The dark hair on their bodies gives them an advantage in dark environments.</p>
@@ -57,7 +58,7 @@
 			<p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
 			<p class="indent"><strong><em>Plagued Celerity.</em></strong> You don't get stopped easily. During your first turn in combat, opportunity attacks against you have disadvantage, and difficult terrain doesn't cost you extra movement..</p>
 		</description>
-		
+		<sheet display="false" />
 		<rules>
 			<stat name="dexterity" value="2" />
 			<stat name="intelligence" value="1" />
@@ -66,6 +67,8 @@
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<grant type="Language" id="ID_SELLSWORDS_RACES_LANGUAGES_RAT" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SNEAKY" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE" />
 		</rules>
 	</element>
 	<!--Rat Language-->
