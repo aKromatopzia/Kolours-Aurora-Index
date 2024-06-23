@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -123,7 +123,11 @@
 			<set name="slot">gift</set>
 		</setters>
 		<rules>
-			<stat name="speed" value="-5" />
+			<stat name="innate speed:misc" value="-5" bonus="Torpor" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="-5" bonus="Torpor" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="-5" bonus="Torpor" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="-5" bonus="Torpor" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="-5" bonus="Torpor" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
 	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
@@ -137,7 +141,11 @@
 			<set name="slot">gift</set>
 		</setters>
 		<rules>
-			<stat name="speed" value="5" />
+			<stat name="innate speed:misc" value="5" bonus="Torpor" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="5" bonus="Torpor" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="5" bonus="Torpor" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="5" bonus="Torpor" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="5" bonus="Torpor" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
 	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_HARROW_BRAND">
