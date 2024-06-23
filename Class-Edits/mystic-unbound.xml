@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Mystic "Unbound"</name>
-		<update version="0.1.29">
+		<update version="0.1.30">
 			<file name="mystic-unbound.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Class-Edits/mystic-unbound.xml" />
 		</update>
 	</info>
 
-	<element name="Mystic" type="Class" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_MYSTIC">
+	<element name="Mystic" type="Class" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_MYSTIC">
 		<description>
 			<p>A human clad in simple robes walks along a forest path. A gang of goblins emerges from the brush, arrows trained on him, their smiles wide at their good fortune of finding such easy prey for the legion’s slave pens. Their smiles turn to shrieks of terror as the traveler grows to giant size and leaps at them, his staff now a deadly cudgel.</p>
 			<p class="indent">The militia forms in ranks to prepare for the orcs’ charge. The growling brutes howl their battle cries and surge forward. To their surprise, the human rabble holds its ground and fights with surprising ferocity. Suddenly, mindless fear clings to the orcs’ minds and they, despite facing a far inferior foe, turn and run, never noticing the calm half-elf standing amid the militia and directing its efforts.</p>
@@ -129,7 +129,7 @@
 	</element>
 
 	<!-- Mystic Class Features -->
-	<element name="Psionics" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS">
+	<element name="Psionics" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONICS">
 		<supports>Mystic</supports>
 		<description>
 			<p>As a student of psionics, you can master and use psionic talents and disciplines, the rules for which appear at the end of the is document. Psionics is a special form of magic use, distinct from spellcasting.</p>
@@ -198,7 +198,7 @@
 			<select type="Spell" name="Psionic Discipline (18)" supports="Psionic Disciplines" level="18" spellcasting="Mystic" />
 		</rules>
 	</element>
-	<element name="Mystic Order" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER">
+	<element name="Mystic Order" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_MYSTIC_ORDER">
 		<supports>Mystic</supports>
 		<description>
 			<p>At 1st level, you choose a Mystic Order: the Order of the Avatar, the Order of the Awakened, the Order of the Immortal, the Order of the Nomad, the Order of the Soul Knife, or the Order of the Wu Jen, each of which is detailed at the end of the class description. Each order specializes in a specific approach to psionics.</p>
@@ -209,7 +209,7 @@
 			<select type="Archetype" name="Mystic Order" supports="Mystic Order" />
 		</rules>
 	</element>
-	<element name="Telepathy" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY">
+	<element name="Telepathy" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_TELEPATHY">
 		<supports>Mystic</supports>
 		<description>
 			<p>At 2nd level, your mind awakens to the ability to communicate via telepathy. You can telepathically speak to any creature you can see within 120 feet of you in this manner. You don’t need to share a language with the creature for it to understand your telepathic messages, but the creature must be able to understand at least one language or be telepathic itself.</p>
@@ -218,7 +218,7 @@
 			<description>You can telepathically speak to any creature you can see within 120 ft. of you. You don’t need to share a language with the creature for it to understand your telepathic messages, but the creature must be able to understand at least one language or be telepathic itself.</description>
 		</sheet>
 	</element>
-	<element name="Ebb and Flow" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_EBB_N_FLOW">
+	<element name="Ebb and Flow" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_EBB_N_FLOW">
 		<supports>Mystic</supports>
 		<description>
 			<p>Starting at 2nd level, you can use your vigor to power your psionic disciplines; and siphon energy from your disciplines to re-energize yourself just the same. You can the following abilities and may use either of them a number of times equal to your proficiency bonus. and regain any expended uses when you finish a long rest.</p>
@@ -229,7 +229,7 @@
 			<description>Immediately after you spend psi points on a psionic discipline, you can take a bonus action to regain hit points equal to the number of psi points you spent; And when activating a psionic discipline, you can pay its psi point cost with your hit points at a ratio of 1:3, instead of using any psi points. Your current hit points and hit point maximum are both reduced by the number of hit points you spend. This reduction can’t be lessened in any way, and the reduction to your hit point maximum lasts until you finish a long rest. If this ability would take you to 0 hit points, the discipline is wasted.</description>
 		</sheet>
 	</element>
-	<element name="Ability Score Improvement" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_ABILITY_SCORE_IMPROVEMENT_MYSTIC">
+	<element name="Ability Score Improvement" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_ABILITY_SCORE_IMPROVEMENT_MYSTIC">
 		<compendium display="false" />
 		<description>
 			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
@@ -243,7 +243,7 @@
 			<select type="Class Feature" name="Improvement Option (Mystic 19)" supports="Improvement Option,Mystic,19" level="19" />
 		</rules>
 	</element>
-	<element name="Strength of Mind" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_STRENGTH_OF_MIND">
+	<element name="Strength of Mind" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_STRENGTH_OF_MIND">
 		<supports>Mystic</supports>
 		<description>
 			<p>Even the simplest psionic technique requires a deep understanding of how psionic energy can augment mind and body. This understanding allows you to alter your defenses to better deal with threats.</p>
@@ -253,7 +253,7 @@
 			<description>You can replace your proficiency in Wisdom saving throws whenever you finish a short or long rest. This change lasts until you finish your next short or long rest.</description>
 		</sheet>
 	</element>
-	<element name="Potent Psionics" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_POTENT_PSIONICS">
+	<element name="Potent Psionics" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_POTENT_PSIONICS">
 		<supports>Mystic</supports>
 		<description>
 			<p>At 8th level, you gain the ability to infuse your weapon attacks with psychic energy. Once on each of your turns when you hit a creature with a weapon, you can deal an extra 1d8 psychic damage to that target. When you reach 14th level, this extra damage increases to 2d8.</p>
@@ -267,7 +267,7 @@
 			<stat name="potent psionics:dice" value="2" bonus="potent psionics" level="14" />
 		</rules>
 	</element>
-	<element name="Consumptive Power" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_CONSUMPTIVE_POWER">
+	<element name="Consumptive Power" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_CONSUMPTIVE_POWER">
 		<supports>Mystic</supports>
 		<description>
 			<p>At 10th level, you gain the ability to more efficiently sacrifice your physical durability in exchange for psionic power. You can use Ebb and Flow's second ability at a ratio of 1:1.</p>
@@ -277,7 +277,7 @@
 			<description>You can use Ebb and Flow's second ability at a ratio of 1:1. This reduction can’t be lessened in any way.</description>
 		</sheet>
 	</element>
-	<element name="Psionic Mastery" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONIC_MASTERY">
+	<element name="Psionic Mastery" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONIC_MASTERY">
 		<supports>Mystic</supports>
 		<description>
 			<p>Beginning at 11th level, your mastery of psionic energy allows you to push your mind beyond its normal limits. As an action, you gain 9 special psi points that you can spend only on disciplines that require an action or a bonus action to use. You can use all 9 points on one discipline, or you can spread them across multiple disciplines. You can’t also spend your normal psi points on these disciplines; you can spend only the special points gained from this feature. When you finish a long rest, you lose any of these special points that you haven’t spent.</p>
@@ -298,7 +298,7 @@
 			<stat name="psi mastery:uses" value="4" bonus="psi mastery" level="17" />
 		</rules>
 	</element>
-	<element name="Psionic Body" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONIC_BODY">
+	<element name="Psionic Body" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_CLASS_FEATURE_MYSTIC_PSIONIC_BODY">
 		<supports>Mystic</supports>
 		<description>
 			<p>At 20th level, your mastery of psionic power causes your mind to transcend the body. Your physical form is infused with psionic energy. You gain the following benefits:</p>
@@ -315,7 +315,7 @@
 	</element>
 
 	<!-- Mystic Order Options -->
-	<element name="Order of the Avatar" type="Archetype" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_AVATAR">
+	<element name="Order of the Avatar" type="Archetype" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_AVATAR">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>Mystics of the Order of the Avatar delve into the world of emotion, mastering their inner life to such an extent that they can manipulate and amplify the emotions of others with the same ease that an artist shapes clay. Known as Avatars, these mystics vary from tyrants to inspiring leaders who are loved by their followers.</p>
@@ -337,7 +337,7 @@
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_SPEED" level="14" />
 		</rules>
 	</element>
-	<element name="Order of the Awakened" type="Archetype" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_AWAKENED">
+	<element name="Order of the Awakened" type="Archetype" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_AWAKENED">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>Mystics dedicated to the Order of the Awakened seek to unlock the full potential of the mind. By transcending the physical, the Awakened hope to attain a state of being focused on pure intellect and mental energy.</p>
@@ -359,7 +359,7 @@
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_SPECTRAL_FORM" level="14" />
 		</rules>
 	</element>
-	<element name="Order of the Immortal" type="Archetype" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_IMMORTAL">
+	<element name="Order of the Immortal" type="Archetype" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_IMMORTAL">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>The Order of the Immortal uses psionic energy to augment and modify the physical form. Followers of this order are known as Immortals. They use psionic energy to modify their bodies, strengthening them against attack and turning themselves into living weapons.</p>
@@ -381,7 +381,7 @@
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_IMMORTAL_WILL" level="14" />
 		</rules>
 	</element>
-	<element name="Order of the Nomad" type="Archetype" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_NOMAD">
+	<element name="Order of the Nomad" type="Archetype" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_NOMAD">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>Mystics of the Order of the Nomad keep their minds in a strange, rarified state. They seek to accumulate as much knowledge as possible, as they quest to unravel the mysteries of the multiverse and seek the underlying structure of all things. At the same time, they perceive a bizarre, living web of knowledge they call the noosphere.</p>
@@ -403,7 +403,7 @@
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_EFFORTLESS_JOURNEY" level="14" />
 		</rules>
 	</element>
-	<element name="Order of the Soul Knife" type="Archetype" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_SOULKNIFE">
+	<element name="Order of the Soul Knife" type="Archetype" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_SOULKNIFE">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>The Order of the Soul Knife sacrifices the breadth of knowledge other mystics gain to focus on a specific psionic technique. These mystics learn to manifest a deadly weapon of pure psychic energy that they can use to cleave through foes.</p>
@@ -425,7 +425,7 @@
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_PHANTOM_KNIFE" level="14" />
 		</rules>
 	</element>
-	<element name="Order of the Wu Jen" type="Archetype" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_WUJEN">
+	<element name="Order of the Wu Jen" type="Archetype" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_MYSTIC_WUJEN">
 		<supports>Mystic Order</supports>
 		<description>
 			<p>The Order of the Wu Jen features some of the most devoted mystics. These mystics seek to lock themselves away from the world, denying the limits of the physical world and replacing it with a reality that they create for themselves. Known as wu jens, these mystics cast their minds into the world, seize control of its fundamental principles, and rebuild it.</p>
@@ -449,7 +449,7 @@
 	</element>
 		
 	<!-- Order of the Avatar Features -->
-	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_BONUS_DISCIPLINES">
+	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_BONUS_DISCIPLINES">
 		<supports>Order of the Avatar</supports>
 		<description>
 			<p>At 1st level, and again at 2nd level, you learn one additional psionic discipline of your choice. They must be chosen from among the Avatar disciplines.</p>
@@ -460,7 +460,7 @@
 			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Avatar Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
-	<element name="Armor Training" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_ARMOR_TRAINING">
+	<element name="Armor Training" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_ARMOR_TRAINING">
 		<supports>Order of the Avatar</supports>
 		<description>
 			<p>At 1st level, you gain proficiency with medium armor and shields.</p>
@@ -471,7 +471,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
 		</rules>
 	</element>
-	<element name="Avatar of Battle" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_BATTLE">
+	<element name="Avatar of Battle" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_BATTLE">
 		<supports>Order of the Avatar</supports>
 		<description>
 			<p>Starting at 3rd level, you project an inspiring aura. While you aren’t incapacitated, each ally within 30 feet of you who can see you gains a +2 bonus to initiative rolls.</p>
@@ -480,7 +480,7 @@
 			<description>While you aren’t incapacitated, each ally within 30 ft. of you who can see you gains a +2 bonus to initiative rolls.</description>
 		</sheet>
 	</element>
-	<element name="Avatar of Healing" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_HEALING">
+	<element name="Avatar of Healing" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_HEALING">
 		<supports>Order of the Avatar</supports>
 		<description>
 			<p>Beginning at 6th level, you project an aura of resilience. While you aren’t incapacitated, each ally within 30 feet of you who can see you regains additional hit points equal to your Intelligence modifier (minimum of 0) whenever they regain hit points from a psionic discipline.</p>
@@ -489,7 +489,7 @@
 			<description>While you aren’t incapacitated, each ally within 30 ft. of you who can see you regains additional HP equal to your Intelligence modifier ({{intelligence:modifier}}) whenever they regain hit points from a psionic discipline.</description>
 		</sheet>
 	</element>
-	<element name="Avatar of Speed" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_SPEED">
+	<element name="Avatar of Speed" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AVATAR_AVATAR_OF_SPEED">
 		<supports>Order of the Avatar</supports>
 		<description>
 			<p>Starting at 14th level, you project an aura of speed. While you aren’t incapacitated, any ally within 30 feet of you who can see you can take the Dash action as a bonus action.</p>
@@ -500,7 +500,7 @@
 	</element>
 
 	<!-- Order of the Awakened Features -->
-	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_BONUS_DISCIPLINES">
+	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_BONUS_DISCIPLINES">
 		<supports>Order of the Awakened</supports>
 		<description>
 			<p>At 1st level, and again at 2nd level, you learn one additional psionic discipline of your choice. They must be chosen from among the Awakened disciplines.</p>
@@ -511,7 +511,7 @@
 			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Awakened Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
-	<element name="Awakened Talent" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_AWAKENED_TALENT">
+	<element name="Awakened Talent" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_AWAKENED_TALENT">
 		<supports>Order of the Awakened</supports>
 		<description>
 			<p>At 1st level, you gain proficiency with two of the following skills of your choice: Animal Handling, Deception, Insight, Intimidation, Investigation, Perception, and Persuasion.</p>
@@ -521,7 +521,7 @@
 			<select type="Proficiency" name="Awakened Talent (Mystic)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_PERSUASION" number="2" />
 		</rules>
 	</element>
-	<element name="Psionic Investigation" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_PSIONIC_INVESTIGATION">
+	<element name="Psionic Investigation" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_PSIONIC_INVESTIGATION">
 		<supports>Order of the Awakened</supports>
 		<description>
 			<p>Starting at 3rd level, you can focus your mind to read the psionic imprint left on an object. If you hold an object and concentrate on it for 10 minutes (as if concentrating on a psionic discipline), you learn a few basic facts about it. You gain a mental image from the object’s point of view, showing the last creature to hold the object within the past 24 hours.</p>
@@ -533,7 +533,7 @@
 			<description>If you hold an object and concentrate on it for 10 minutes, you learn a few basic facts about it. You gain a mental image from the object’s point of view, showing the last creature to hold the object within the past 24 hours, and any events that have occurred within 20 feet of the object within the past hour. You can only see and hear these events. Additionally, you can embed a psionic sensor within the object. For the next 24 hours, you can use an action to learn the object’s distance and direction from you, and to look at the object’s surroundings from its point of view. This perception lasts until the start of your next turn.</description>
 		</sheet>
 	</element>
-	<element name="Psionic Surge" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_PSIONIC_SURGE">
+	<element name="Psionic Surge" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_PSIONIC_SURGE">
 		<supports>Order of the Awakened</supports>
 		<description>
 			<p>Starting at 6th level, you can overload your psychic focus to batter down an opponent’s defenses. You can impose disadvantage on a target’s saving throw against a discipline or talent you use, but at the cost of using your psychic focus. Your psychic focus immediately ends if it’s active, and you can’t use it until you finish a short or long rest.</p>
@@ -543,7 +543,7 @@
 			<description>You can impose disadvantage on a target’s saving throw against a discipline or talent you use. Your psychic focus immediately ends, and you can’t use it until you finish a short or long rest. You can’t use this feature if you can’t use your psychic focus.</description>
 		</sheet>
 	</element>
-	<element name="Spectral Form" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_SPECTRAL_FORM">
+	<element name="Spectral Form" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_AWAKENED_SPECTRAL_FORM">
 		<supports>Order of the Awakened</supports>
 		<description>
 			<p>At 14th level, you gain the ability to become a ghostly figure of psionic energy. As an action, you can transform into a transparent, ghostly version of yourself. While in this form, you have resistance to all damage, move at half speed, and can pass through objects and creatures while moving but can’t willingly end your movement in their spaces. The form lasts for 10 minutes or until you use an action to end it.</p>
@@ -555,7 +555,7 @@
 	</element>
 
 	<!-- Order of the Immortal Features -->
-	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_BONUS_DISCIPLINES">
+	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_BONUS_DISCIPLINES">
 		<supports>Order of the Immortal</supports>
 		<description>
 			<p>At 1st level, and again at 2nd level, you learn one additional psionic discipline of your choice. They must be chosen from among the Immortal disciplines.</p>
@@ -566,7 +566,7 @@
 			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Immortal Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
-	<element name="Immortal Durability" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_IMMORTAL_DURABILITY">
+	<element name="Immortal Durability" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_IMMORTAL_DURABILITY">
 		<supports>Order of the Immortal</supports>
 		<description>
 			<p>Starting at 1st level, your hit point maximum increases by 1 per mystic level.</p>
@@ -583,7 +583,7 @@
 			<stat name="ac:calculation" value="mystic:immortal durability" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Immortal Durability (Mystic)" />
 		</rules>
 	</element>
-	<element name="Psionic Resilience" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_PSIONIC_RESILIENCE">
+	<element name="Psionic Resilience" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_PSIONIC_RESILIENCE">
 		<supports>Order of the Immortal</supports>
 		<description>
 			<p>Starting at 3rd level, your psionic energy grants you extraordinary fortitude. At the start of each of your turns, you gain temporary hit points equal to your Intelligence modifier (minimum of 0) if you have at least 1 hit point.</p>
@@ -592,7 +592,7 @@
 			<description>At the start of each of your turns, you gain temporary hit points equal to your Intelligence modifier ({{intelligence:modifier}}) if you have at least 1 HP.</description>
 		</sheet>
 	</element>
-	<element name="Surge of Health" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_SURGE_OF_HEALTH">
+	<element name="Surge of Health" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_SURGE_OF_HEALTH">
 		<supports>Order of the Immortal</supports>
 		<description>
 			<p>Starting at 6th level, you can draw on your psychic focus to escape death’s grasp. As a reaction when you take damage, you can halve that damage against you. Your psychic focus immediately ends if it’s active, and you can’t use it until you finish a short or long rest.</p>
@@ -602,7 +602,7 @@
 			<description>As a reaction when you take damage, you can halve that damage against you. Your psychic focus immediately ends, and you can’t use it until you finish a short or long rest. You can’t use this feature if you can’t use your psychic focus.</description>
 		</sheet>
 	</element>
-	<element name="Immortal Will" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_IMMORTAL_WILL">
+	<element name="Immortal Will" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_IMMORTAL_IMMORTAL_WILL">
 		<supports>Order of the Immortal</supports>
 		<description>
 			<p>Starting at 14th level, you can draw on your reserves of psionic power to survive beyond death. At the end of your turn while at 0 hit points, you can spend 5 psi points to immediately regain a number of hit points equal to your mystic level + your Constitution modifier.</p>
@@ -617,7 +617,7 @@
 	</element>
 
 	<!-- Order of the Nomad Features -->
-	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_BONUS_DISCIPLINES">
+	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_BONUS_DISCIPLINES">
 		<supports>Order of the Nomad</supports>
 		<description>
 			<p>At 1st level, and again at 2nd level, you learn one additional psionic discipline of your choice. They must be chosen from among the Nomad disciplines.</p>
@@ -628,7 +628,7 @@
 			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Nomad Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
-	<element name="Breadth of Knowledge" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_BREADTH_OF_KNOWLEDGE">
+	<element name="Breadth of Knowledge" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_BREADTH_OF_KNOWLEDGE">
 		<supports>Order of the Nomad</supports>
 		<description>
 			<p>At 1st level, you gain the ability to extend your knowledge. When you finish a long rest, you gain two proficiencies of your choice: two tools, two skills, or one of each. You can replace one or both of these selections with languages. This benefit lasts until you finish a long rest.</p>
@@ -637,7 +637,7 @@
 			<description>When you finish a long rest, you gain two proficiencies of your choice: 2 tools, 2 skills, or 2 languages. This benefit lasts until you finish a long rest.</description>
 		</sheet>
 	</element>
-	<element name="Memory of One Thousand Steps" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_MEMORY_OF_ONE_THOUSAND_STEPS">
+	<element name="Memory of One Thousand Steps" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_MEMORY_OF_ONE_THOUSAND_STEPS">
 		<supports>Order of the Nomad</supports>
 		<description>
 			<p>At 3rd level, you gain the ability to use psionics to recall your steps. As a reaction when you are hit by an attack, you can teleport to an unoccupied space that you occupied since the start of your last turn, and the attack misses you. Once you use this feature, you can’t use it again until you finish a short or long rest.</p>
@@ -646,7 +646,7 @@
 			<description>As a reaction when you are hit by an attack, you can teleport to an unoccupied space that you occupied since the start of your last turn, and the attack misses you.</description>
 		</sheet>
 	</element>
-	<element name="Superior Teleportation" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_SUPERIOR_TELEPORTATION">
+	<element name="Superior Teleportation" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_SUPERIOR_TELEPORTATION">
 		<supports>Order of the Nomad</supports>
 		<description>
 			<p>At	6th level, you gain a superior talent for teleportation. When you use a psionic discipline to teleport any distance, you can increase that distance by up to 10 feet.</p>
@@ -655,7 +655,7 @@
 			<description>When you use a psionic discipline to teleport any distance, you can increase that distance by up to 10 ft.</description>
 		</sheet>
 	</element>
-	<element name="Effortless Journey" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_EFFORTLESS_JOURNEY">
+	<element name="Effortless Journey" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_NOMAD_EFFORTLESS_JOURNEY">
 		<supports>Order of the Nomad</supports>
 		<description>
 			<p>Starting at 14th level, your mind can mystically move your body. Once on each of your turns, you can forfeit up to 30 feet of your movement to teleport the distance you forfeited. You must teleport to an unoccupied space you can see.</p>
@@ -666,7 +666,7 @@
 	</element>
 
 	<!-- Order of the Soul Knife Features -->
-	<element name="Martial Training" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_MARTIAL_TRAINING">
+	<element name="Martial Training" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_MARTIAL_TRAINING">
 		<supports>Order of the Soul Knife</supports>
 		<description>
 			<p>At 1st level, you gain proficiency with medium armor and martial weapons</p>
@@ -677,7 +677,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
 		</rules>  
 	</element>
-	<element name="Soul Knife" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_SOUL_KNIFE">
+	<element name="Soul Knife" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_SOUL_KNIFE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
 			<p>Starting at 1st level, you gain the ability to manifest blades of psychic energy. You can create and dismiss scintillating blades of energy at-will in your free hands, and can do so as part of an attack.</p>
@@ -689,7 +689,7 @@
 			<description>You can create and dismiss knives of energy at-will in your free hands, and can do so as part of an attack. The soul knife is a martial melee weapon with the light, finesse and thrown(20/60ft) properties. It deals 1d6 plus your psionic ability modifier psychic damage on a hit. As a bonus action, you can sharpen the edge of your soul knife; Until the end of your turn, you can use your psionic ability modifier in place of strength or dexterity for the attack and damage rolls. At 5th level, you are considered to have mastery with your soul knives, they gain the nick mastery property, and their damage die is increased to d8.</description>
 		</sheet>
 	</element>
-	<element name="Hone the Blade" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_HONE_THE_BLADE">
+	<element name="Hone the Blade" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_HONE_THE_BLADE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
 			<p>Starting at 3rd level, you can spend psi points to augment your soul knife’s attack rolls and damage. You gain a bonus to attack and damage rolls with your soul knives depending on the number of psi points spent, as shown on the table below. This bonus lasts for 10 minutes.</p>
@@ -706,7 +706,7 @@
 			<description>You gain a bonus to attack and damage rolls with your soul knives by spending psi points. 2 for +1, 5 for +2, or 7 for +4. This bonus lasts for 10 minutes.</description>
 		</sheet>
 	</element>
-	<element name="Consumptive Knife" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_CONSUMPTIVE_KNIFE">
+	<element name="Consumptive Knife" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_CONSUMPTIVE_KNIFE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
 			<p>Starting at 6th level, your soul knives can siphon a creature's latent psychic energy. When your attack with a soul knife causes a creature to fall to 0 hit points, or as a bonus action to an unconscious creature within the reach of your soul knife, you can drain their mind. This causes you to regain 2 psi points, and deals 2d6 psychic damage to the creature if they are not already at 0 hit points.</p>
@@ -715,7 +715,7 @@
 			<description>When your attack with a soul knife causes a creature to fall to 0 hit points, or as a bonus action to an unconscious creature within the reach of your soul knife, you regain 2 psi points and deal 2d6 psychic damage to the creature if they are not already at 0 hit points.</description>
 		</sheet>
 	</element>
-	<element name="True Edge" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_PHANTOM_KNIFE">
+	<element name="True Edge" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_PHANTOM_KNIFE">
 		<supports>Order of the Soul Knife</supports>
 		<description>
 			<p>Starting at 14th level, you can make an attack that phases through most defenses. As an action, you can make one attack with your soul knife. Treat the target’s AC as 10 against this attack, regardless of the target’s actual AC.</p>
@@ -726,7 +726,7 @@
 	</element>
 
 	<!-- Order of the Wu Jen Features -->
-	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_BONUS_DISCIPLINES">
+	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_BONUS_DISCIPLINES">
 		<supports>Order of the Wu Jen</supports>
 		<description>
 			<p>At 1st level, you learn one additional psionic disciplines of your choice, and another at 2nd level. They must be chosen from among the Wu Jen disciplines.</p>
@@ -737,7 +737,7 @@
 			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0,Wu Jen Discipline" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
-	<element name="Hermit's Study" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_HERMITS_STUDY">
+	<element name="Hermit's Study" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_HERMITS_STUDY">
 		<supports>Order of the Wu Jen</supports>
 		<description>
 			<p>At 1st level, you gain proficiency with two of the following skills of your choice: Animal Handling, Arcana, History, Insight, Medicine, Nature, Perception, Religion, or Survival.</p>
@@ -747,7 +747,7 @@
 			<select type="Proficiency" name="Awakened Talent (Mystic)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" />
 		</rules>
 	</element>
-	<element name="Elemental Attunement" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ELEMENTAL_ATTUNEMENT">
+	<element name="Elemental Attunement" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ELEMENTAL_ATTUNEMENT">
 		<supports>Order of the Wu Jen</supports>
 		<description>
 			<p>Starting at 3rd level, when a creature’s resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 psi point to cause that use of the discipline to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your psi limit.</p>
@@ -756,7 +756,7 @@
 			<description>When a creature’s resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 psi point to cause it to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your psi limit.</description>
 		</sheet>
 	</element>
-	<element name="Arcane Dabbler" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ARCANE_DABBLER">
+	<element name="Arcane Dabbler" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ARCANE_DABBLER">
 		<supports>Order of the Wu Jen</supports>
 		<description>
 			<p>At 6th level, you learn three wizard spells of your choice and always have them prepared. The spells must be of 1st through 3rd level.</p>
@@ -781,7 +781,7 @@
 			<select type="Spell" name="Arcane Dabbler" supports="Wizard, (1||2||3)" number="3" level = "6" spellcasting="Arcane Dabbler" />
 		</rules>
 	</element>
-	<element name="Elemental Mastery" type="Archetype Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ELEMENTAL_MASTERY">
+	<element name="Elemental Mastery" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_WUJEN_ELEMENTAL_MASTERY">
 		<supports>Order of the Wu Jen</supports>
 		<description>
 			<p>Starting at 14th level, if you have resistance to a type of damage, you can spend 2 psi points as a reaction when you take damage of that type to ignore that damage; you gain immunity to that damage type until the end of your next turn.</p>
@@ -792,7 +792,7 @@
 	</element>
     
 	<!-- Psionic Disciplines -->
-	<element name="Adaptive Body" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_ADAPTIVE_BODY">
+	<element name="Adaptive Body" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_ADAPTIVE_BODY">
 		<supports>Psionic Disciplines, Order of the Immortal Discipline</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -818,7 +818,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Aura Sight" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_AURA_SIGHT">
+	<element name="Aura Sight" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_AURA_SIGHT">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -844,7 +844,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Bestial Form" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_BESTIAL_FORM">
+	<element name="Bestial Form" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_BESTIAL_FORM">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -875,7 +875,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Brute Force" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_BRUTE_FORCE">
+	<element name="Brute Force" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_BRUTE_FORCE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -901,7 +901,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Celerity" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CELERITY">
+	<element name="Celerity" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CELERITY">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -928,7 +928,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Corrosive Metabolism" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CORROSIVE_METABOLISM">
+	<element name="Corrosive Metabolism" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CORROSIVE_METABOLISM">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -955,7 +955,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Crown of Despair" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_DESPAIR">
+	<element name="Crown of Despair" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_DESPAIR">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -981,7 +981,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Crown of Disgust" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_DISGUST">
+	<element name="Crown of Disgust" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_DISGUST">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1007,7 +1007,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Crown of Rage" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_RAGE">
+	<element name="Crown of Rage" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_CROWN_OF_RAGE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1033,7 +1033,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Diminution" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_DIMINUTION">
+	<element name="Diminution" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_DIMINUTION">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1059,7 +1059,7 @@
 			<set name="isRitual">false</set>
 		</setters>+
 	</element>
-	<element name="Giant Growth" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_GIANT_GROWTH">
+	<element name="Giant Growth" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_GIANT_GROWTH">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1083,7 +1083,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Intellect Fortress" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_INTELLECT_FORTRESS">
+	<element name="Intellect Fortress" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_INTELLECT_FORTRESS">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1108,7 +1108,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Iron Durability" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_IRON_DURABILITY">
+	<element name="Iron Durability" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_IRON_DURABILITY">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1133,7 +1133,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mantle of Awe" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_AWE">
+	<element name="Mantle of Awe" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_AWE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1159,7 +1159,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mantle of Command" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_COMMAND">
+	<element name="Mantle of Command" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_COMMAND">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1186,7 +1186,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mantle of Courage" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_COURAGE">
+	<element name="Mantle of Courage" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_COURAGE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1211,7 +1211,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mantle of Fear" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_FEAR">
+	<element name="Mantle of Fear" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_FEAR">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1236,7 +1236,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mantle of Fury" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_FURY">
+	<element name="Mantle of Fury" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_FURY">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1262,7 +1262,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mantle of Joy" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_JOY">
+	<element name="Mantle of Joy" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MANTLE_OF_JOY">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1288,7 +1288,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Air" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_AIR">
+	<element name="Mastery of Air" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_AIR">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1316,7 +1316,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Fire" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_FIRE">
+	<element name="Mastery of Fire" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_FIRE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1343,7 +1343,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Force" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_FORCE">
+	<element name="Mastery of Force" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_FORCE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1385,7 +1385,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Space" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_SPACE">
+	<element name="Mastery of Space" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_SPACE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1411,7 +1411,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Ice" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_ICE">
+	<element name="Mastery of Ice" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_ICE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1440,7 +1440,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Light and Darkness" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_LIGHT_AND_DARKNESS">
+	<element name="Mastery of Light and Darkness" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_LIGHT_AND_DARKNESS">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1467,7 +1467,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Water" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_WATER">
+	<element name="Mastery of Water" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_WATER">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1495,7 +1495,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Weather" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_WEATHER">
+	<element name="Mastery of Weather" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_WEATHER">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1525,7 +1525,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Mastery of Wood and Earth" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_WOOD_AND_EARTH">
+	<element name="Mastery of Wood and Earth" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_MASTERY_OF_WOOD_AND_EARTH">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1553,7 +1553,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Nomadic Arrow" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_ARROW">
+	<element name="Nomadic Arrow" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_ARROW">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1578,7 +1578,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Nomadic Chameleon" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_CHAMELEON">
+	<element name="Nomadic Chameleon" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_CHAMELEON">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1604,7 +1604,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Nomadic Mind" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_MIND">
+	<element name="Nomadic Mind" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_MIND">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1632,7 +1632,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Nomadic Step" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_STEP">
+	<element name="Nomadic Step" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_NOMADIC_STEP">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1662,7 +1662,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Precognition" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PRECOGNITION">
+	<element name="Precognition" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PRECOGNITION">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1688,7 +1688,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psionic Restoration" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSIONIC_RESTORATION">
+	<element name="Psionic Restoration" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSIONIC_RESTORATION">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1714,7 +1714,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psionic Weapon" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSIONIC_WEAPON">
+	<element name="Psionic Weapon" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSIONIC_WEAPON">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1739,7 +1739,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psychic Assault" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_ASSAULT">
+	<element name="Psychic Assault" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_ASSAULT">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1766,7 +1766,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psychic Disruption" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_DISRUPTION">
+	<element name="Psychic Disruption" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_DISRUPTION">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1791,7 +1791,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psychic Inquisition" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_INQUISITION">
+	<element name="Psychic Inquisition" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_INQUISITION">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1821,7 +1821,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Psychic Phantoms" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_PHANTOMS">
+	<element name="Psychic Phantoms" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_PSYCHIC_PHANTOMS">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1847,7 +1847,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Telepathic Contact" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_TELEPATHIC_CONTACT">
+	<element name="Telepathic Contact" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_TELEPATHIC_CONTACT">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1874,7 +1874,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Third Eye" type="Spell" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_THIRD_EYE">
+	<element name="Third Eye" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_THIRD_EYE">
 		<supports>Psionic Disciplines</supports>
 		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
 		<description>
@@ -1902,7 +1902,7 @@
 	</element>
     
     <!-- Psionic Talents -->
-	<element name="Beacon" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_BEACON">
+	<element name="Beacon" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_BEACON">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As a bonus action, you cause bright light to radiate from your body in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. The light lasts for 1 hour, and you can extinguish it earlier as a bonus action.</p>
@@ -1911,7 +1911,7 @@
 			<description>As a bonus action, you cause bright light to radiate from your body in a 20-ft radius and dim light for an additional 20 ft. The light can be colored as you like. The light lasts for 1 hour, and you can extinguish it earlier as a bonus action.</description>
 		</sheet>
 	</element>
-	<element name="Blade Meld" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_BLADE_MELD">
+	<element name="Blade Meld" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_BLADE_MELD">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As a bonus action, a one-handed melee weapon you hold becomes one with your hand. For the next minute, you can’t let go of the weapon nor can it be forced from your grasp.</p>
@@ -1920,7 +1920,7 @@
 			<description>As a bonus action, a one-handed melee weapon you hold becomes one with your hand. For the next minute, you can’t let go of the weapon nor can it be forced from your grasp.</description>
 		</sheet>
 	</element>
-	<element name="Blind Spot" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_BLIND_SPOT">
+	<element name="Blind Spot" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_BLIND_SPOT">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn. A creature that can not be charmed is immune to this effect. Additionally, the creature has advantage on the saving throw if they are in active pursuit of or thinking about you.</p>
@@ -1929,7 +1929,7 @@
 			<description>As an action, you erase your image from the mind of one creature you can see within 120 feet of you; the target must succeed on a Wisdom saving throw, or you are invisible to it until the end of your next turn. A creature that can not be charmed is immune to this effect. Additionally, the creature has advantage on the saving throw if they are in active pursuit of or thinking about you.</description>
 		</sheet>
 	</element>
-	<element name="Delusion" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_DELUSION">
+	<element name="Delusion" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_DELUSION">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you plant a false belief in the mind of one creature that you can see within 60 feet of you. You can create a sound or an image. Only the target of this talent perceives the sound or image you create.</p>
@@ -1940,7 +1940,7 @@
 			<description>As an action, you plant a false belief in the mind of one creature that you can see within 60 feet of you. You can create a sound or an image. Only the target of this talent perceives the sound or 5-ft cube image you create.</description>
 		</sheet>
 	</element>
-	<element name="Energy Beam" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_ENERGY_BEAM">
+	<element name="Energy Beam" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_ENERGY_BEAM">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you target one creature you can see within 90 feet of you. The target must succeed on a Dexterity saving throw or take 1d8 of the chosen damage. The talent’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>
@@ -1955,7 +1955,7 @@
 			<stat name="mystic:talents" value="4" bonus="psionic talents" level="17" />
 		</rules>
 	</element>
-	<element name="Light Step" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_LIGHT_STEP">
+	<element name="Light Step" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_LIGHT_STEP">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As a bonus action, you alter your density and weight to improve your mobility. For the rest of your turn, your walking speed increases by 10 feet, and the first time you stand up this turn, you do so without expending any of your movement if your speed is greater than 0.</p>
@@ -1964,7 +1964,7 @@
 			<description>As a bonus action, you alter your density and weight to improve your mobility. For the rest of your turn, your walking speed increases by 10 feet, and the first time you stand up this turn, you do so without expending any of your movement if your speed is greater than 0.</description>
 		</sheet>
 	</element>
-	<element name="Mind Meld" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MIND_MELD">
+	<element name="Mind Meld" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MIND_MELD">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As a bonus action, you can communicate telepathically with one willing creature you can see within 120 feet of you. The target must have an Intelligence of at least 2, otherwise this talent fails and the action is wasted.</p>
@@ -1974,7 +1974,7 @@
 			<description>As a bonus action, you can communicate telepathically with one willing creature you can see within 120 ft of you. The target must have an Intelligence of at least 2, otherwise the action is wasted. This communication can occur until the end of the current turn. You don’t need to share a language with the target for it to understand you. You also gain access to one memory of the target’s choice, gaining perfect recall of one thing it saw or did.</description>
 		</sheet>
 	</element>
-	<element name="Mind Slam" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MIND_SLAM">
+	<element name="Mind Slam" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MIND_SLAM">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you target one creature you can see within 60 feet of you. The target must succeed on a Constitution saving throw or take 1d6 force damage. If it takes any of this damage and is Large or smaller, it is knocked prone.</p>
@@ -1990,7 +1990,7 @@
 			<stat name="mystic:talents" value="4" bonus="psionic talents" level="17" />
 		</rules>
 	</element>
-	<element name="Mind Thrust" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MIND_THRUST">
+	<element name="Mind Thrust" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MIND_THRUST">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you target one creature you can see within 120 feet of you. The target must succeed on an Intelligence saving throw or take 1d10 psychic damage.</p>
@@ -2006,7 +2006,7 @@
 			<stat name="mystic:talents" value="4" bonus="psionic talents" level="17" />
 		</rules>
 	</element>
-	<element name="Mystic Charm" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MYSTIC_CHARM">
+	<element name="Mystic Charm" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MYSTIC_CHARM">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you beguile one humanoid you can see within 120 feet of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn. This effect ends if you or your perceived allies would hurt the target or their perceived allies.</p>
@@ -2015,7 +2015,7 @@
 			<description>As an action, you beguile one humanoid you can see within 120 ft of you. The target must succeed on a Charisma saving throw or be charmed by you until the end of your next turn. This effect ends if you or your perceived allies would hurt the target or their perceived allies.</description>
 		</sheet>
 	</element>
-	<element name="Mystic Hand" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MYSTIC_HAND">
+	<element name="Mystic Hand" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_MYSTIC_HAND">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>You can use your action to manipulate or move one object within 30 feet of you. The object can’t weigh more than 10 pounds, and you can’t affect an object being worn or carried by another creature. If the object is loose, you can move it up to 30 feet in any direction.</p>
@@ -2025,7 +2025,7 @@
 			<description>You can use your action to manipulate or move one object within 30 ft of you. The object can’t weigh more than 10 pounds, and you can’t affect an object being worn or carried by another creature. If the object is loose, you can move it up to 30 ft in any direction.</description>
 		</sheet>
 	</element>
-	<element name="Psychic Hammer" type="Class Feature" source="Sellswords Basin: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_PSYCHIC_HAMMER">
+	<element name="Psychic Hammer" type="Class Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_MYSTIC_TALENTS_PSYCHIC_HAMMER">
 		<supports>Psionic Talents</supports>
 		<description>
 			<p>As an action, you try to grasp one creature you can see within 120 feet of you, with a hand crafted from telekinetic energy. The target must succeed on a Strength saving throw or take 1d6 force damage. If it takes any of this damage and is Large or smaller, you can move it up to 10 feet in a straight line in a direction of your choice. You can’t lift the target off the ground unless it is already airborne or underwater.</p>

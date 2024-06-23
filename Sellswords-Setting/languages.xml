@@ -2,12 +2,12 @@
 <elements>
 	<info>
 		<name>Languages</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="languages.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/languages.xml" />
 		</update>
 	</info>
 
-	<element name="Kao-te-Shou" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KT_SHOU">
+	<element name="Kao-te-Shou" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KT_SHOU">
 		<supports>Kara-Tur, Exotic</supports>
 		<description>
 			<p>Spoken by Shou. It has roots in draconic, so anybody who knows draconic would have advantage on interpreting KTS.</p>
@@ -17,7 +17,7 @@
 			<set name="script">Draconic</set>
 		</setters>
 	</element>
-	<element name="Kara-Tur Tradespeak" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KT_TRADE">
+	<element name="Kara-Tur Tradespeak" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KT_TRADE">
 		<supports>Kara-Tur, Exotic</supports>
 		<description>
 			<p>Spoken by those from Kara-Tur who intend to trade with Faerunians. The language is a coarse mix of commonspeak - which is itself a mix of elvish and dwarvish - and KTS, and is only seriously used by merchants and privateers. It has roots in draconic, so anybody who knows draconic would have advantage on interpreting KTT</p>
@@ -27,7 +27,7 @@
 			<set name="script">Dwarvish, Draconic, and Elvish</set>
 		</setters>
 	</element>
-	<element name="Han" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_HAN">
+	<element name="Han" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_HAN">
 		<supports>Kara-Tur, Exotic</supports>
 		<description>
 			<p>Spoken sages and arcanists of Kara-Tur. Although historically known as the language of the gods, it has fallen out of popular use.</p>
@@ -37,7 +37,7 @@
 			<set name="script">Celestial</set>
 		</setters>
 	</element>
-	<element name="Kozakuran" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KOZUKORAN">
+	<element name="Kozakuran" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KOZUKORAN">
 		<supports>Kara-Tur, Exotic</supports>
 		<description>
 			<p>Spoken those of Kozakura. The language is a derivative of Han.</p>
@@ -47,7 +47,7 @@
 			<set name="script">Celestial</set>
 		</setters>
 	</element>
-	<element name="Wa-anese" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_WAAN">
+	<element name="Wa-anese" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_WAAN">
 		<supports>Kara-Tur, Exotic</supports>
 		<description>
 			<p>Spoken those of Wa-an. Despite it being a derivative of Han, it uses its own script.</p>
@@ -57,7 +57,7 @@
 			<set name="script">Wa-anese</set>
 		</setters>
 	</element>
-	<element name="Koryo" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KORYO">
+	<element name="Koryo" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_KORYO">
 		<supports>Kara-Tur, Exotic</supports>
 		<description>
 			<p>Spoken those of Koryo. The language is a derivative of Han.</p>
@@ -67,7 +67,7 @@
 			<set name="script">Celestial</set>
 		</setters>
 	</element>
-	<element name="Roushoum" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ROUSHOUM">
+	<element name="Roushoum" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ROUSHOUM">
 		<supports>Exotic</supports>
 		<description>
 			<p>Once spoken by inhabitants of Imaskar; Now a rare language in Multhorand.</p>
@@ -78,7 +78,7 @@
 			<set name="script">Imaskari</set>
 		</setters>
 	</element>
-	<element name="Lantan" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_LANTAN">
+	<element name="Lantan" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_LANTAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Typically spoken by those of the isolated Lantan peninsula.</p>
@@ -89,7 +89,7 @@
 			<set name="script">Draconic</set>
 		</setters>
 	</element>
-	<element name="Untheric" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_UNTHERIC">
+	<element name="Untheric" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_UNTHERIC">
 		<supports>Exotic</supports>
 		<description>
 			<p>Typically spoken by those of the Untheric empire.</p>
@@ -100,7 +100,7 @@
 			<set name="script">Imaskari</set>
 		</setters>
 	</element>
-	<element name="Rouran" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ROURAN">
+	<element name="Rouran" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ROURAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Once spoken by those of the Imask empire of ages long past.</p>
@@ -111,7 +111,7 @@
 			<set name="script">Primordial</set>
 		</setters>
 	</element>
-	<element name="Reian" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_REIAN">
+	<element name="Reian" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_REIAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Once spoken by those of the Imask empire of ages long past.</p>
@@ -122,7 +122,7 @@
 			<set name="script">Primordial</set>
 		</setters>
 	</element>
-	<element name="Mulani" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_MULAN">
+	<element name="Mulani" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_MULAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Once spoken by those of mulanese descent. Currently a secondary language even by its primary demographic. Shares a history with multhorandi and thayan.</p>
@@ -133,7 +133,7 @@
 			<set name="script">Actual fucking ancient egyptian, plus some celestial</set>
 		</setters>
 	</element>
-	<element name="Zakharan" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ZAKHARAN">
+	<element name="Zakharan" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ZAKHARAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Spoken by those of the continent far-south of Faerun.</p>
@@ -144,7 +144,7 @@
 			<set name="script">Primordial</set>
 		</setters>
 	</element>
-	<element name="Multhorandi" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_MULTHORANDI">
+	<element name="Multhorandi" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_MULTHORANDI">
 		<supports>Exotic</supports>
 		<description>
 			<p>Spoken by those of Multhorandi empire. Shares a history with mulani and thayan.</p>
@@ -155,7 +155,7 @@
 			<set name="script">Celestial</set>
 		</setters>
 	</element>
-	<element name="Thayan" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_THAYAN">
+	<element name="Thayan" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_THAYAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Spoken by those of Thayan empire. Shares a history with mulani and multhorandi.</p>
@@ -166,7 +166,7 @@
 			<set name="script">Infernal</set>
 		</setters>
 	</element>
-	<element name="Algarondan" type="Language" source="Sellswords Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ALGARONDAN">
+	<element name="Algarondan" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_ALGARONDAN">
 		<supports>Exotic</supports>
 		<description>
 			<p>Spoken by those of Algorand.</p>
