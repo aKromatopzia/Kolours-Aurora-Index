@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -97,10 +97,10 @@
 	<!--Ratfolk Race (by Dirt)-->
 	<element name="Ratfolk" type="Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RATFOLK">
 		<description>
-			<p>To the people at large, ratfolk find the most difficulty with life in Korrik. They are deft of foot and are sometimes drawn to a criminal lifestyle. Though this is true of some ratfolk, they are no more violent or larcenous than others, but old stereotypes linger, especially with them. Called the nenajaa, or “we who live” in Rat Speech, many fail to understand the tough lives ratfolk lead are not entirely of their making.</p>
+			<p>A colloquial term for rat-like humanoids from the Feywild. Despite their origins, they are not themselves fey nor magically-attuned. As with other beastkin, their culture is partially defined by their animalistic aspects, and how others may see them.</p>
 			
 			<h4>Wiry and Lanky</h4>
-			<p>Ratfolks are a rodent-like humanoids. They are shorter than humans, and appear almost frail. They have heads shaped like rats, with an elongated skull, thin lips, a rat's snout, and monocoloured beads for eyes. The fur that grows on their bodies is usually thin, and commonly comes in a range from light browns to dark gray and black. Despite their origins in the Feywild, they are not themselves fey.</p>
+			<p>Ratfolks are a rodent-like humanoids. They are shorter than humans, and appear almost frail. They have heads shaped like rats, with an elongated skull, thin lips, a rat's snout, and monocoloured beads for eyes. The fur that grows on their bodies is usually thin, and commonly comes in a range from light browns to dark gray and black. </p>
 			
 			<h4>Life in the Shadow</h4>
 			<p>Due to their association with rats, they are generally avoided by the aristocracies of human settlements, but can find places amongst the elves and dwarves for example. They are usually a nocturnal folk but, contrary to popular beliefs, are not sensitive to light.</p>
@@ -125,7 +125,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ardling)" supports="Custom Ability Score Improvement Option" />
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Ratfolk)" supports="Custom Ability Score Improvement Option" />
 			<stat name="innate speed" value="35" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -134,12 +134,12 @@
 			<grant type="Language" id="ID_LANGUAGE_SYLVAN" />
 		
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
-			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_THIN_FRAME" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE" />
 		</rules>
 	</element>
 
-	<element name="Thin Frame" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_THIN_FRAME">
+	<element name="Thin Frame" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_THIN_FRAME">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>You can squeeze through spaces as if you were one size smaller, and you have advantage on the Tumble action against creatures larger than yourself.</p>
@@ -150,7 +150,7 @@
 	</element>
 	
 	<!--Urban or wild Choice-->
-	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE">
+	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_RATFOLK_SUBRACE">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>Ratfolk are separated into two subraces, colloquially described as sneaks and n, which come with different benefits. Choose one of these subraces.</p>
@@ -162,7 +162,7 @@
 	</element>
 	
 	<!--Urban Ratfolk Subrace-->
-	<element name="Urban Ratfolk" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_SUBRACES_PRESTIGIOUS_RATFOLK">
+	<element name="Urban Ratfolk" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_SUBRACES_URBAN_RATFOLK">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>Ratfolk communities in cities tend to become notorious for their role as thieves and informants. Leveraging their cunning and speed to avoid danger as it comes.</p>
@@ -172,9 +172,6 @@
 			<p class="indent"><strong><em>Skulker.</em></strong> While you are in darkness or dim lighting, you have advantage on stealth checks to remain hidden.</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-		
-		</setters>
 		<rules>
 			<stat name="charisma" value="1" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
@@ -183,7 +180,7 @@
 	</element>
 	
 	<!--Skulker-->
-	<element name="Skulker" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SKULKER">
+	<element name="Skulker" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SKULKER">
 		<description>
 			<p>While you are in darkness or dim lighting, you have advantage on stealth checks to remain hidden.</p>
 		</description>
@@ -193,7 +190,7 @@
 	</element>
 	
 	<!--Wild Ratfolk Subrace-->
-	<element name="Wild Ratfolk" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_SUBRACES_PLAGUED_RATFOLK">
+	<element name="Wild Ratfolk" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_SUBRACES_WILD_RATFOLK">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>Wild ratfolk live in nature, keeping to their feywild origins. They are not averse to society - as many do end up assisting and joining druidic covens, but may find prejudice due to the reputation of their other kind regardless. They may also take up nomadic lives of traders and scavengers.</p>
@@ -203,9 +200,6 @@
 			<p class="indent"><strong><em>Sure-Footed.</em></strong> When you take the Dash action, and on your first turn of combat encounters, opportunity attacks against you have disadvantage and natural difficult terrain doesn't require extra movement.</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-		
-		</setters>
 		<rules>
 			<stat name="wisdom" value="1" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
@@ -215,7 +209,7 @@
 	
 	
 	<!--Sure-Footed-->
-	<element name="Sure-Footed" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SURE_FOOTED">
+	<element name="Sure-Footed" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SURE_FOOTED">
 		<description>
 			<p>You don't get stopped easily. When you take the Dash action, and on your first turn of combat encounters, opportunity attacks against you have disadvantage and natural difficult terrain doesn't require extra movement.</p>
 		</description>
@@ -224,4 +218,242 @@
 		</sheet>
 	</element>
 
+	<!--Hengeyokai-->
+	<element name="Hengeyokai" type="Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_HENGEYOKAI">
+		<description>
+			<p>Myths from Kara-Tur, travellers to the Feywild, and rarely in the Forgotten Realms, speak of people who lure them into deep forests to be killed by forest spirits. Although many of those may be true on their own, hengeyokai ne'er-do-wells tend to be responsible for those stories.</p>
+			<p>Despite being fey, they are not native to the Feywilds. Rather, they came from a blending of deific and fey influence on the eastern continent.</p>
+			
+			<h4>Elusive Shapechangers</h4>
+			<p>As fey, they have habits against presenting as their 'true', hybrid, selves. And although they can seamlessly shift between their formes, hengeyokai may have a 'preferred' appearance other than their hybrid self.</p>
+			<p>For their abilities however, they are ever-scrutinized in their homeland of Kara-Tur.</p>
+			
+			<h4>HENGEYOKAI TRAITS</h4>
+			<p>Hengeyokai are varied and specialized as they come, with the following racial traits in their hybrid and humanoid forms.</p>
+			
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Intelligence score increases by 1.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong> You are a Fey and Humanoid, with the shapechanger subtype.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Being Fey, hengeyokai are extremely long-lived, being up to about 100 years old, and reach maturity at 15.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> Their Fey heritage allows hengeyokai to see in the dark to a limited capacity. You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
+			<p class="indent"><strong><em>Wild Tongue.</em></strong> Hengeyokai in animal or hybrid form can communicate simple commands and concepts to natural beasts and fey beasts with the same form or a closely related form, for example, dogs to wolves. Beasts will not necessarily obey hengeyokai or even be friendly, however. Hengeyokai in humanoid form cannot communicate with such beasts but can understand them.</p>
+			<p class="indent"><strong><em>Nature's Mask.</em></strong> As an Action, a hengeyokai can shift between their various forms. This transformation is as the <i>Polymorph</i> spell, with the following caveats:</p>
+			<ul>
+			<li> Your hybrid and humanoid forms are Medium in size, while your animal form is a Tiny beast. You retain the shapechanger subtype.</li>
+			<li> Each of your forms are the same when you shift to them; Your animal form is a Tiny beast and your humanoid form is a human who has one or two bestial features, while your hybrid form sesembles an anthropomorphic animal; You choose the appearance of all three forms as you create this character</li>
+			<li> You retain identifying physical features such as a notch in your ear, or a scar on your face;</li>
+			<li> Clothing and equipment are not subsumed into each transformation's forms, although may shift in position (but not size) for each of your forms;</li>
+			<li> You mental ability scores are your own, while your physical ability scores are that of the animal's plus any modifiers you may have from other features. (Note: Pure ASI is a feature.);</li>
+			<li> You retain your racial features and proficencies while in your animal form, and if it has Darkvision increase its ranges by 15ft.</li>
+			</ul>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write standard or kara-turan language, and one other language.</p>
+			<p class="indent"><strong><em>Aspect.</em></strong> The affinities of hengeyokai vary based on their animal aspect Choose one.</p>
+			
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Improvement Option (Hengeyokai)" supports="Custom Ability Score Improvement Option" />
+			<stat name="innate speed" value="30" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			
+			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Kara-Tur" />
+			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Exotic||KAra-Tur" />
+		
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_WILD_TONGUE" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_NATURES_MASK" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT" />
+		</rules>
+	</element>
+
+	<!-- Wild Tongue -->
+	<element name="Wild Tongue" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_WILD_TONGUE">
+		<description>
+			<p>Hengeyokai in animal or hybrid form can communicate simple commands and concepts to natural beasts and fey beasts with the same form or a closely related form, for example, dogs to wolves. Beasts will not necessarily obey hengeyokai or even be friendly, however. Hengeyokai in humanoid form cannot communicate with such beasts but can understand them.</p>
+		</description>
+		<sheet>
+			<description>Hengeyokai in animal or hybrid form can communicate simple commands and concepts to natural beasts and fey beasts with the same form or a closely related form, for example, dogs to wolves. Beasts will not necessarily obey hengeyokai or even be friendly, however. Hengeyokai in humanoid form cannot communicate with such beasts but can understand them..</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_SELLSWORDS_LANGUAGE_WILD_TONGUE" />
+		</rules>
+	</element>
+
+	<element name="Wild Tongue" type="Language" source="Sellsword's Stuff: Set Dressing" id="ID_SELLSWORDS_LANGUAGE_WILD_TONGUE">
+		<supports>SPECIAL</supports>
+		<description>
+			<p>Hengeyokai in animal or hybrid form and Zakhara can communicate simple commands and concepts to natural beasts and fey beasts with the same form or a closely related form, for example, dogs to wolves. Beasts will not necessarily obey hengeyokai or even be friendly, however. Hengeyokai in humanoid form cannot communicate with such beasts but can understand them.</p>
+		</description>
+		<setters>
+			<set name="exotic">true</set>
+			<set name="script">-</set>
+		</setters>
+	</element>
+
+	<!-- Nature's Mask -->
+	<element name="Wild Tongue" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_WILD_TONGUE">
+		<description>
+			<p>As an Action, a hengeyokai can shift between their various forms. This transformation is as the <i>Polymorph</i> spell, with the following caveats:</p>
+			<ul>
+			<li> Your hybrid and humanoid forms are Medium in size, while your animal form is Tiny. You retain the shapechanger subtype.</li>
+			<li> Each of your forms are the same when you shift to them; Your animal form is a Tiny beast and your humanoid form is a human who has one or two bestial features, while your hybrid form sesembles an anthropomorphic animal; You choose the appearance of all three forms as you create this character</li>
+			<li> You retain identifying physical features such as a notch in your ear, or a scar on your face;</li>
+			<li> Clothing and equipment are not subsumed into each transformation's forms, although may shift in position (but not size) for each of your forms;</li>
+			<li> You mental ability scores are your own, while your physical ability scores are that of the animal's plus any modifiers you may have from other features. (Note: Pure ASI is a feature.);</li>
+			<li> You retain your racial features and proficencies while in your animal form, and if it has Darkvision increase its ranges by 15ft.</li>
+			</ul>
+		</description>
+		<sheet action="Action" usage="At-Will">
+			<description>As an Action, a hengeyokai can shift between their various forms. This transformation is as the <i>Polymorph</i> spell, except your equipment do not shift with you; your beast form's mental ability scores do not change; your beast form's physical ability scores are your form's scores in addition to ASIs from your class features or similar; If your beast form would have darkvision, it has an additional 15ft.</description>
+		</sheet>
+	</element>
+
+	<!-- Animal aspect choice -->
+	<element name="hengeyokai Aspect" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>Hengeyokai come in various animal aspects, each with their own affinities.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Hengeyokai Aspect" supports="Hengeyokai" />
+		</rules>
+	</element>
+
+	<!--Cat-->
+	<element name="Feline" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_FELINE">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a feline aspect, and your animal form is a Tiny cat. Your humanoid form might have cat ears, a cleft lip, a cat's tail, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Acrobatics.</p>
+		</description>
+		<sheet>
+			<p>You have a feline aspect, and your animal form is a Tiny cat.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<stat name="innate speed:misc" value="5" bonus="Aspect" requirements="[innate speed:1]" />
+		</rules>
+	</element>
+
+	<!--Canine-->
+	<element name="Canine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_CANINE">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a feline aspect, and your animal form is a Tiny dog. (Yes, I know there isn't actually one.) Your humanoid form might have dog ears, pronounced canines, a dog's tail, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Insight.</p>
+		</description>
+		<sheet>
+			<p>You have a canine aspect, and your animal form is a Tiny dog.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+		</rules>
+	</element>
+
+	<!--Piscine-->
+	<element name="Piscine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_PISCINE">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a piscine aspect, and your animal form is a Tiny fish. Your humanoid appearance might have vestigial fins, scaly patches, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Athletics.</p>
+		</description>
+		<sheet>
+			<p>You have a canine aspect, and your animal form is a Tiny fish.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+
+	<!--Melinae-->
+	<element name="Melinae" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_MELINAE">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a melinae aspect, and your animal form is a Tiny badger. Your humanoid appearance might have melanized eyespots, badger ears, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Athletics.</p>
+		</description>
+		<sheet>
+			<p>You have a melinae aspect, and your animal form is a Tiny badger.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+
+	<!--Monke-->
+	<element name="Simian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_SIMIAN">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a simian aspect, and your animal form is a Tiny monkey. Your humanoid appearance might have a monkey's nose, be strangely hairy, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Athletics.</p>
+		</description>
+		<sheet>
+			<p>You have a simian aspect, and your animal form is a Tiny badger.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+		</rules>
+	</element>
+
+	<!--Avian-->
+	<element name="Avian" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_AVIAN">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon. Your humanoid appearance might have a patches of feathers, a bird's fan oof tails, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Perception.</p>
+		</description>
+		<sheet>
+			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	
+	<!--Rodent-->
+	<element name="Rodent" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_RODENT">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a simian aspect, and your animal form is a Tiny rat. Your humanoid appearance might have mice ears, rat's tail, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Stealth.</p>
+		</description>
+		<sheet>
+			<p>You have a simian aspect, and your animal form is a Tiny rat.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+
+	<!--Bnnuy-->
+	<element name="Leporine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_LEPORINE">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a leporine aspect, and your animal form is a Tiny hare. Your humanoid appearance might have hare ears, hare's tail, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Acrobatics.</p>
+		</description>
+		<sheet>
+			<p>You have a simian aspect, and your animal form is a Tiny hare.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+		</rules>
+	</element>
+
+	<!--Vulpine-->
+	<element name="Vulpine" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_HENGEYOKAI_ASPECT_VULPINE">
+		<supports>Hengeyokai</supports>
+		<description>
+			<p>You have a leporine aspect, and your animal form is a Tiny fox. Your humanoid appearance might have fox ears, a fox's tails, or such.</p>
+			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Stealth.</p>
+		</description>
+		<sheet>
+			<p>You have a simian aspect, and your animal form is a Tiny fox.</p>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
 </elements>
