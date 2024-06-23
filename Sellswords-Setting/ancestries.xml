@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -119,7 +119,7 @@
 			<p class="indent"><strong><em>Age.</em></strong> Ratfolk commonly live a due to quick reproduction and harsh environment and social practices little over 50 years, maintaining good vitality and longevity toward the end. Ratfolk reach adulthood at age 15, with the fur on their bodies turning grey once they've lived about 30 years.</p>
 			<p class="indent"><strong><em>Darkvision.</em></strong> You are used to dark areas, and your eyes have adjusted to such. You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey.</p>
 			<p class="indent"><strong><em>Sneaky.</em></strong> You have proficiency in the Stealth skill.</p>
-			<p class="indent"><strong><em>Thin Frame.</em></strong> You can squeeze through spaces as if you were one size smaller.</p>
+			<p class="indent"><strong><em>Thin Frame.</em></strong> You can squeeze through spaces as if you were one size smaller, and you have advantage on the Tumble action against creatures larger than yourself.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Sylvan.</p>
 			<p class="indent"><strong><em>Subrace.</em></strong> Ratfolk are a varied lot, and tend to adapt to their environment. Choose a subrace from between urban and wild.</p>
 		</description>
