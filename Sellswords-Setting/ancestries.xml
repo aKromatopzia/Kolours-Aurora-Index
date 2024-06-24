@@ -175,7 +175,7 @@
 		<rules>
 			<stat name="charisma" value="1" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
-			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SKULKER" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SKULKER" />
 		</rules>
 	</element>
 	
@@ -203,7 +203,7 @@
 		<rules>
 			<stat name="wisdom" value="1" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
-			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_SURE_FOOTED" />
+			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SURE_FOOTED" />
 		</rules>
 	</element>
 	
@@ -402,7 +402,7 @@
 	<element name="Avian Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_AVIAN">
 		<supports>Hengeyokai</supports>
 		<description>
-			<p>You have a simian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon. Your humanoid appearance might have a patches of feathers, a bird's fan oof tails, a long nose, or such.</p>
+			<p>You have an avian aspect, and your animal form is a Tiny crow, owl, hawk, or falcon. Your humanoid appearance might have a patches of feathers, a bird's fan oof tails, a long nose, or such.</p>
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Perception.</p>
 		</description>
 		<sheet>
@@ -417,7 +417,7 @@
 	<element name="Rodent Hengeyokai" type="Sub Race" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_ASPECT_RODENT">
 		<supports>Hengeyokai</supports>
 		<description>
-			<p>You have a simian aspect, and your animal form is a Tiny rat. Your humanoid appearance might have mice ears, rat's tail, or such.</p>
+			<p>You have a rodent aspect, and your animal form is a Tiny rat. Your humanoid appearance might have mice ears, rat's tail, or such.</p>
 			<p class="indent"><strong><em>Skill Affinity.</em></strong> You have proficiency in Stealth.</p>
 		</description>
 		<sheet>
