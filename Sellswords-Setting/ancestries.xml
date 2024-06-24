@@ -150,7 +150,7 @@
 	</element>
 	
 	<!--Urban or wild Choice-->
-	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_RATFOLK_TRAITS_RATFOLK_SUBRACE">
+	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE">
 		<supports>Ratfolk</supports>
 		<description>
 			<p>Ratfolk are separated into two subraces, colloquially described as sneaks and n, which come with different benefits. Choose one of these subraces.</p>
