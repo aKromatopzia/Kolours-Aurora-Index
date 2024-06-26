@@ -2,7 +2,7 @@
 	<info>
 		<name>Ancestries</name>
 		<description>Various revised and new ancestries for Sellswords' Basin</description>
-		<update version="0.0.12">
+		<update version="0.0.13">
 			<file name="ancestries.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Setting/ancestries.xml" />
 		</update>
 	</info>
@@ -153,7 +153,7 @@
 	<element name="Ratfolk Subrace" type="Racial Trait" source="Sellsword's Stuff: Ancestries" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_RATFOLK_SUBRACE">
 		<supports>Ratfolk</supports>
 		<description>
-			<p>Ratfolk are separated into two subraces, colloquially described as sneaks and n, which come with different benefits. Choose one of these subraces.</p>
+			<p>Ratfolk are separated into two subraces, colloquially described as urban and wild, which come with different benefits. Choose one of these subraces.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -259,7 +259,7 @@
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			
 			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Kara-Tur" />
-			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Exotic||KAra-Tur" />
+			<select type="Language" name="Language (Kara-Tur)" supports="Standard||Exotic||Kara-Tur" />
 		
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
 			<grant type="Racial Trait" id="ID_SELLSWORDS_RACES_RACIAL_TRAITS_HENGEYOKAI_WILD_TONGUE" />
