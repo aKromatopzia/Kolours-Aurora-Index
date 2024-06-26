@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.13">
+		<update version="0.0.14">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -76,7 +76,7 @@
 	<element name="Spellmark Property: Burgeoning" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BURGEONING">
 		<description>
 			<p class="indent">
-				<strong><em>Burgeoning.</em></strong>Rolls involving your Hit Die have a +1.
+				<strong><em>Burgeoning.</em></strong>Rolls involving your Hit Die have a +1. Once per short or long rest, you can expend a roll of your Hit Die to gain that much temporary Hit Points which last for up to 1 minute.
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
@@ -102,7 +102,7 @@
 	<element name="Spellmark Property: Immutable" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMUTABLE">
 		<description>
 			<p class="indent">
-				<strong><em>Immutable.</em></strong> The spellscar can no longer be removed by any means short of a Wish spell, but also no longer requires attunement. Consequences for any who take this. No, you can not use this with Deep Etchings.
+				<strong><em>Immutable.</em></strong> The spellscar can no longer be removed by any means short of a Wish spell, and some additional steps, but also no longer requires attunement. Consequences for any who take this. No, you can not use this with Deep Etchings.
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
@@ -132,7 +132,7 @@
 	</element>
 	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
-			<p class="indent"><strong><em>Alacrity.</em></strong> Your walking, flying, climbing or swimming speeds, if you have them, are increased by 5ft.</p>
+			<p class="indent"><strong><em>Alacrity.</em></strong> As a Bonus Action, you can increase all your speeds, if you have them by 10 for up to 1 minute.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
@@ -140,13 +140,6 @@
 			<set name="type">Spellmark Property</set>
 			<set name="slot">gift</set>
 		</setters>
-		<rules>
-			<stat name="innate speed:misc" value="5" bonus="Torpor" requirements="[innate speed:1]" />
-			<stat name="innate speed:climb:misc" value="5" bonus="Torpor" requirements="[innate speed:climb:1]" />
-			<stat name="innate speed:fly:misc" value="5" bonus="Torpor" requirements="[innate speed:fly:1]" />
-			<stat name="innate speed:swim:misc" value="5" bonus="Torpor" requirements="[innate speed:swim:1]" />
-			<stat name="innate speed:burrow:misc" value="5" bonus="Torpor" requirements="[innate speed:burrow:1]" />
-		</rules>
 	</element>
 	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_HARROW_BRAND">
 		<description>
@@ -175,6 +168,18 @@
 		<description>
 			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> As a Bonus Action, you can expend a Hit Dice to augment your attacks for a number of rounds equal to the result. Your Attacks are considered critical on a 19 or 20.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Spellmark Property</set>
+			<set name="slot">gift</set>
+		</setters>
+	</element>
+	<element name="Spellmark Property: Immolating" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMOLATING">
+		<description>
+			<p class="indent"><strong><em>Immolating.</em></strong> When you use an ability of a spellmark property, your scar itches and festers. You become Harrowed until its effect ends, for a minimum of 1 round.</p>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
+			<div class="reference"><div element="ID_SELLSWORDS_INFO_STATUS_HARROWED" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
