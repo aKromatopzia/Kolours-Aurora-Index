@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -514,7 +514,6 @@
 	<element name="Shaaran Six-Shooter" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
 		<description>
-			<p><i>This is a generic pistol meant to be used as a baseline to design other proper weapons. </i></p>
 			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
 			<p>This weapon takes small ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
@@ -572,8 +571,7 @@
 	<element name="Long-gonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_LONGGONNE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
 		<description>
-			<p><i>This is a generic pistol meant to be used as a baseline to design other proper weapons. </i></p>
-			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
+			<p>Supposedly a common make amongst wildspacers, this is a long-rifle with an internal chamber. Known for its characteristic chime when reloading.</p>
 			<p>This weapon takes large ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
@@ -586,6 +584,34 @@
 			<set name="slot">twohand</set>
 			<set name="range">ammunition</set>
 			<set name="damage" type="piercing">2d10</set>
+			<set name="range">80/320</set>
+			<set name="reload">5</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_LONGGONNE</set>
+			<set name="ammunition">ID_SELLSWORDS_ITEM_BULLET_LARGE</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Long-Gonne)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_LONGGONNE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
+	</element>
+
+	<!-- Long-Gonne -->
+	<element name="Thunder-gonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_THUNDERGONNE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
+		<description>
+			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
+			<p>This weapon takes large ammunition.</p>
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
+			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">–</set>
+			<set name="weight" lb="2">2 lbs.</set>
+			<set name="slot">twohand</set>
+			<set name="range">ammunition</set>
+			<set name="damage" type="piercing">2d6</set>
 			<set name="range">80/320</set>
 			<set name="reload">5</set>
 			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_LONGGONNE</set>
