@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.23">
+		<update version="0.0.24">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -14,6 +14,7 @@
 			<p class="indent">Add your spellcasting ability modifier to Attack rolls and DCs of Attacks made with this weapon.</p>
 			<p class="indent">As a Bonus Action, the abyssal huo-chong can extend or retract a wooden rod with which to enable firing while held, or be deployed or retrieved.</p>
 			<p class="indent">The weapon can be made to fire while it lacks a projectile and/or smokepowder by consuming the item’s charges or user’s spell slots. It has 1d3 charges, recharging each dusk. When used in this way, its damage dice is instead 2d8 for spread shots and 3d8 for single shots, increasing by 1d8 for each spell level over 1st or each additional charge used.</p> 
+			<div element="ID_SELLSWORDS_ITEMS_WEAPON_HAND_CANNON_LIGHT" />
 		</description>
 		<setters>
 			<set name="keywords">hand cannon</set>
@@ -626,12 +627,13 @@
 	</element>
 
 	<!--Vayemniri Enforcer's Gonne-->
-	<element name="Vayemniri Enforcer's Gonne" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_VAYEMNIRI_ENFORCER">
+	<element name="Vayemniri Enforcer's Bigonne" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_VAYEMNIRI_ENFORCER">
 		<description>
 			<p>The pistol has ornamental iron plates on each side, both with an engraving depicting a serpent coiled and prepared to strike, resting upon a fountain pen as if it were on a branch. Within the firearm's handle is a hatch that holds up to two small bullets. Upon the handle is another metal plate, upon which "Korygh" is engraved phonetically in Abeiran Draconic.</p>
 			<p class="indent">This firearm can be used as an arcane focus, and you have a +2 to the DC of spells cast using this weapon.</p>
 			<p class="indent">This item has 2 charges which manifest as bullets in its handle's cavity. It regenerates these bullets daily at dusk.</p>
 			<p class="indent">When fired, the magical bullets cause a beam of arcane energy to streak towards a creature you can see within 60ft. The target must succeed on a DC 15 Constitution saving throw or be paralyzed for 1 minute. At the end of each of the target's turns, it can repeat the saving throw, ending the effect on itself on a success.</p> 
+			<div element="ID_SELLSWORDS_ITEMS_WEAPON_POCKET_BIGONNE" />
 		</description>
 		<setters>
 			<set name="keywords">Pocket Bigonne</set>
