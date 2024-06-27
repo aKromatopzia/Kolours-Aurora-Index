@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.23">
+		<update version="0.0.24">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -445,32 +445,6 @@
 		</rules>
 	</append>
 
-	<!-- Ammunition -->
-	
-	<element name="Bullet, large" type="Item" source="Dungeon Master’s Guide" id="ID_SELLSWORDS_ITEM_BULLET_LARGE">
-		<description>
-			<p>The ammunition of a firearm is destroyed upon use. This one fits a large-barreled weapon.</p>
-		</description>
-		<setters>
-			<set name="category">Ammunition</set>
-			<set name="cost" currency="sp">-</set>
-			<set name="weight" lb="0.2">1/5 lb.</set>
-			<set name="stackable">true</set>
-		</setters>
-	</element>
-
-	<element name="Bullet, small" type="Item" source="Dungeon Master’s Guide" id="ID_SELLSWORDS_ITEM_BULLET_SMALL">
-		<description>
-			<p>The ammunition of a firearm is destroyed upon use. This one fits a small-barreled weapon.</p>
-		</description>
-		<setters>
-			<set name="category">Ammunition</set>
-			<set name="cost" currency="sp">-</set>
-			<set name="weight" lb="0.2">1/10 lb.</set>
-			<set name="stackable">true</set>
-		</setters>
-	</element>
-
 
 	<!-- Various reload values -->
 	
@@ -646,6 +620,30 @@
 			<set name="type" addition="any ammunition">Weapon</set>
 			<set name="cost" currency="gp">1</set>
 			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bullet, large" type="Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEM_BULLET_LARGE">
+		<description>
+			<p>The ammunition of a firearm is destroyed upon use. This one fits a large-barreled weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">-</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bullet, small" type="Item" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEM_BULLET_SMALL">
+		<description>
+			<p>The ammunition of a firearm is destroyed upon use. This one fits a small-barreled weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">-</set>
+			<set name="weight" lb="0.2">1/10 lb.</set>
 			<set name="stackable">true</set>
 		</setters>
 	</element>
