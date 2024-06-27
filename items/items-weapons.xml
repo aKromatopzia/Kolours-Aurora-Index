@@ -449,61 +449,61 @@
 
 	<!-- Various reload values -->
 	
-	<element name="Reload [1]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_1">
+	<element name="Reload [1]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_1">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [2]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2">
+	<element name="Reload [2]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_2">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [3]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_3">
+	<element name="Reload [3]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_3">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [4]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_4">
+	<element name="Reload [4]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_4">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [5]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5">
+	<element name="Reload [5]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_5">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [6]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6">
+	<element name="Reload [6]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_6">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [7]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_7">
+	<element name="Reload [7]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_7">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [8]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_8">
+	<element name="Reload [8]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_8">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [9]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_9">
+	<element name="Reload [9]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_9">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-	<element name="Reload [10]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_10">
+	<element name="Reload [10]" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_10">
 		<description>
 			<p><i>Prerequisites: Ammunition</i></p>
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
@@ -512,13 +512,13 @@
 	
 	<!-- Shaaran Six-Shooter -->
 	<element name="Shaaran Six-Shooter" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_6</supports>
 		<description>
 			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
 			<p>This weapon takes small ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
-			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_6" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -535,19 +535,19 @@
 	</element>
 
 	<element name="Weapon Proficiency (Shaaran Six-Shooter)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER">
-		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_6</supports>
 	</element>
 
 	<!-- Pocket Bigonne -->
 	<element name="Pocket Bigonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_POCKET_BIGONNE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_NICK, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_NICK, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_2</supports>
 		<description>
 			<p><i>A curious-looking gonne. It has a latch to release the hinge from which the two barrels pivot down, allowing it to be loaded from the breech.</i></p>
 			<p>An uncommon model of firearm, given the increased fabrication and maintenance requirements for a lack of range or power; not just for the item but for its ammunition. In Tymanther where these models originate, they are kept as heirloom and statement pieces rather than ever being fired.</p>
 			<p>This weapon takes small ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
-			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_2" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -564,46 +564,18 @@
 	</element>
 
 	<element name="Weapon Proficiency (Pocket Bigonne)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_POCKET_BIGONNE">
-		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_NICK, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2</supports>
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_NICK, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_2</supports>
 	</element>
 
 	<!-- Long-Gonne -->
 	<element name="Long-gonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_LONGGONNE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_5</supports>
 		<description>
 			<p>Supposedly a common make amongst wildspacers, this is a long-rifle with an internal chamber. Known for its characteristic chime when reloading.</p>
 			<p>This weapon takes large ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
-			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5" />
-		</description>
-		<setters>
-			<set name="category">Weapons</set>
-			<set name="cost" currency="gp">–</set>
-			<set name="weight" lb="2">2 lbs.</set>
-			<set name="slot">twohand</set>
-			<set name="range">ammunition</set>
-			<set name="damage" type="piercing">2d10</set>
-			<set name="range">80/320</set>
-			<set name="reload">5</set>
-			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_LONGGONNE</set>
-			<set name="ammunition">ID_SELLSWORDS_ITEM_BULLET_LARGE</set>
-		</setters>
-	</element>
-
-	<element name="Weapon Proficiency (Long-Gonne)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_LONGGONNE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
-	</element>
-
-	<!-- Long-Gonne -->
-	<element name="Thunder-gonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_THUNDERGONNE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_TOPPLE, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
-		<description>
-			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
-			<p>This weapon takes large ammunition.</p>
-			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
-			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
-			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_5" />
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -620,7 +592,35 @@
 	</element>
 
 	<element name="Weapon Proficiency (Long-Gonne)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_LONGGONNE">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_5</supports>
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_5</supports>
+	</element>
+
+	<!-- Long-Gonne -->
+	<element name="Thunder-gonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_THUNDERGONNE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_PUSH, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_1</supports>
+		<description>
+			<p>A cannon-like weapon used primarily by artificers from Halruund. Named for its extremely loud shots.</p>
+			<p>This weapon takes large ammunition.</p>
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_UA2023_MASTERY_TRAIT_PUSH" />
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_1" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">–</set>
+			<set name="weight" lb="2">2 lbs.</set>
+			<set name="slot">twohand</set>
+			<set name="range">ammunition</set>
+			<set name="damage" type="bludgeoning">2d10</set>
+			<set name="range">120/480</set>
+			<set name="reload">1</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_THUNDERGONNE</set>
+			<set name="ammunition">ID_SELLSWORDS_ITEM_BULLET_LARGE</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Thunder-Gonne)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_THUNDERGONNE">
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_PUSH, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_1</supports>
 	</element>
 	
 	<!--Ammunition-->
