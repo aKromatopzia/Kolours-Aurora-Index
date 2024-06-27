@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.22">
+		<update version="0.0.23">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -436,16 +436,41 @@
 
 	<!-- Firearms Revised -->
 
-	<!-- reworked 
+	<!-- proficiency --> 
 	
-	<append id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS">
+	<append id="ID_SELLSWORDS_PROFICIENCY_WEAPON_FIREARMS">
 		<rules>
-			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_HAND_CANNON" />
-			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_FIRE_LANCE" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER" />
+			<grant type="Proficiency" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_POCKET_BIGONNE" />
 		</rules>
 	</append>
 
-	-->
+	<!-- Ammunition -->
+	
+	<element name="Bullet, large" type="Item" source="Dungeon Master’s Guide" id="ID_SELLSWORDS_ITEM_BULLET_LARGE">
+		<description>
+			<p>The ammunition of a firearm is destroyed upon use. This one fits a large-barreled weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">-</set>
+			<set name="weight" lb="0.2">1/5 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+	<element name="Bullet, small" type="Item" source="Dungeon Master’s Guide" id="ID_SELLSWORDS_ITEM_BULLET_SMALL">
+		<description>
+			<p>The ammunition of a firearm is destroyed upon use. This one fits a small-barreled weapon.</p>
+		</description>
+		<setters>
+			<set name="category">Ammunition</set>
+			<set name="cost" currency="sp">-</set>
+			<set name="weight" lb="0.2">1/10 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
 
 	<!-- Various reload values -->
 	
@@ -509,13 +534,14 @@
 			<p>A limited number of attacks can be made with a weapon that has the reload property. A character must then reload it using an Action or a Bonus Action (the character's choice). You require a free hand when reloading.</p>
 		</description>
 	</element>
-
+	
 	<!-- Shaaran Six-Shooter-->
 	<element name="Shaaran Six-Shooter" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
 		<description>
 			<p><i>This is a generic pistol meant to be used as a baseline to design other proper weapons. </i></p>
-			<p>You know what this is. Commonly used in the wastelands of the Shaar, among the rare ones who can afford such a weapon. Known to be reliable and effient under the hot wasteland sun.</p>
+			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
+			<p>This weapon takes small ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6" />
@@ -529,7 +555,40 @@
 			<set name="damage" type="piercing">1d8</set>
 			<set name="reload">6</set>
 			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER</set>
+			<set name="ammunition">ID_SELLSWORDS_ITEM_BULLET_SMALL</set>
 		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Shaaran Six-Shooter)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER">
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_6</supports>
+	</element>
+
+	<!-- Pocket Bigonne -->
+	<element name="Pocket Bigonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_POCKET_BIGONNE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_NICK, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2</supports>
+		<description>
+			<p><i>A curious-looking gonne. It has a latch to release the hinge from which the two barrels pivot down, allowing it to be loaded from the breech.</i></p>
+			<p>An uncommon model of firearm, given the increased fabrication and maintenance requirements for a lack of range or power; not just for the item but for its ammunition. In Tymanther where these models originate, they are kept as heirloom and statement pieces rather than ever being fired.</p>
+			<p>This weapon takes small ammunition.</p>
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
+			<div element="ID_UA2023_MASTERY_TRAIT_NICK" />
+			<div element="ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2" />
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">–</set>
+			<set name="weight" lb="2">2 lbs.</set>
+			<set name="slot">onehand</set>
+			<set name="range">ammunition</set>
+			<set name="damage" type="piercing">1d6</set>
+			<set name="reload">2</set>
+			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_WEAPON_POCKET_BIGONNE</set>
+			<set name="ammunition">ID_SELLSWORDS_ITEM_BULLET_SMALL</set>
+		</setters>
+	</element>
+
+	<element name="Weapon Proficiency (Pocket Bigonne)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_POCKET_BIGONNE">
+		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_NICK, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_MASTERY_TRAIT_RELOAD_2</supports>
 	</element>
 	
 	<!--Ammunition-->
