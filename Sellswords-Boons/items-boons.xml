@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.14">
+		<update version="0.0.15">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
@@ -63,7 +63,7 @@
 	<element name="Spellmark Property: Withered" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_WITHERED">
 		<description>
 			<p class="indent">
-				<strong><em>Withered.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. Rolls involving your Hit Die have a -1.
+				<strong><em>Withered.</em></strong> The spellmark or spellscar gains the potential to house one additional property, including this one. Rolls involving your Hit Die have a -1 penaly.
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
@@ -76,7 +76,7 @@
 	<element name="Spellmark Property: Burgeoning" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_BURGEONING">
 		<description>
 			<p class="indent">
-				<strong><em>Burgeoning.</em></strong>Rolls involving your Hit Die have a +1. Once per short or long rest, you can expend a roll of your Hit Die to gain that much temporary Hit Points which last for up to 1 minute.
+				<strong><em>Burgeoning.</em></strong>Rolls involving your Hit Die have a +1 bonus.
 			</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
@@ -132,7 +132,7 @@
 	</element>
 	<element name="Spellmark Property: Alacrity" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_ALACRITY">
 		<description>
-			<p class="indent"><strong><em>Alacrity.</em></strong> As a Bonus Action, you can increase all your speeds, if you have them by 10 for up to 1 minute.</p>
+			<p class="indent"><strong><em>Alacrity.</em></strong> Your Speeds, if you have them, increase by 5ft.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
@@ -140,10 +140,17 @@
 			<set name="type">Spellmark Property</set>
 			<set name="slot">gift</set>
 		</setters>
+		<rules>
+			<stat name="innate speed:misc" value="5" bonus="Alacrity" requirements="[innate speed:1]" />
+			<stat name="innate speed:climb:misc" value="5" bonus="Alacrity" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="5" bonus="Alacrity" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="5" bonus="Alacrity" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="5" bonus="Alacrity" requirements="[innate speed:burrow:1]" />
+		</rules>
 	</element>
 	<element name="Spellmark Property: Harrowing Brand" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_HARROW_BRAND">
 		<description>
-			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes harrowed by yourself until you harrow someone else, or up to 1 hour. On a critical hit, the target is instead harrowed until you harrow someone else or up to 1 hour. This is considered a 1st-level enchantment, a curse, and its relevant ability score is CON.</p>
+			<p class="indent"><strong><em>Harrowing Brand.</em></strong> When you successfully hit a creature with a melee attack you can expend a Hit Dice to mark them with spellfire. The target becomes Harrowed by yourself and takes additional fire damage equal to the Hit Dice. On a critical hit, the target is instead Harrowed and takes double the additional fire damage. This is considered a 1st-level enchantment, a curse, and its relevant ability score is CON.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_STATUS_HARROWED" /></div>
 		</description>
@@ -166,7 +173,7 @@
 	</element>
 	<element name="Spellmark Property: Critical Luck, lesser" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_CRIT_LUCK_LESSER">
 		<description>
-			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> As a Bonus Action, you can expend a Hit Dice to augment your attacks for a number of rounds equal to the result. Your Attacks are considered critical on a 19 or 20.</p>
+			<p class="indent"><strong><em>Critical Luck, lesser.</em></strong> As a Bonus Action, you can expend a Hit Dice to augment your attacks for a number of rounds equal to the result. Your Attacks are considered critical on a 18, 19 or 20; compounding with similar effects.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
 		</description>
 		<setters>
@@ -177,9 +184,8 @@
 	</element>
 	<element name="Spellmark Property: Immolating" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_SPELLMARK_IMMOLATING">
 		<description>
-			<p class="indent"><strong><em>Immolating.</em></strong> When you use an ability of a spellmark property, your scar itches and festers. You become Harrowed until its effect ends, for a minimum of 1 round.</p>
+			<p class="indent"><strong><em>Immolating.</em></strong> Your scar itches and festers. Checks and saves which require your focus, such as spell concentration and holding your breath, have a -1 penalty.</p>
 			<div class="reference"><div element="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY" /></div>
-			<div class="reference"><div element="ID_SELLSWORDS_INFO_STATUS_HARROWED" /></div>
 		</description>
 		<setters>
 			<set name="category">Supernatural Gifts</set>
