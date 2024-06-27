@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.22">
+		<update version="0.0.23">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -636,12 +636,15 @@
 		<setters>
 			<set name="keywords">Pocket Bigonne</set>
 			<set name="category">Magic Weapons</set>
-			<set name="attunement">true</set>
+			<set name="attunement" addition="by someone with the Spellcasting or Pact Magic features">true</set>
 			<set name="type" addition="pocket bigonne">Weapon</set>
 			<set name="rarity">Rare</set>
 			<set name="weapon">Pocket Bigonne</set>
 			<set name="charges">2</set>
 		</setters>
+		<rules>
+			<stat name="spellcasting:dc" value="2" bonus="vayemniri enforcer's gonne"/>
+		</rules>
 	</element>
 	
 </elements>
