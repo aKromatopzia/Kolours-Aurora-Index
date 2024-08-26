@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -148,7 +148,7 @@
 	</element>
 	
 	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
-	
+<!-- BAIT N SWITCH -->	
 	<element name="Vigilant Bait and Switch" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BAIT_AND_SWITCH">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -215,7 +215,7 @@
 	</element>
 	
 	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
-	
+<!-- BRACE -->	
 	<element name="Improved Brace" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BRACE">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -277,8 +277,8 @@
 		</rules>
 	</element>
 	
-		<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
-	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- COMMANDER -->	
 	<element name="Improved Commander's Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_COMMANDERS_STRIKE">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -341,8 +341,8 @@
 		</rules>
 	</element>
 	
-		<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
-	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- PRESENCE -->	
 	<element name="Great Commanding Presence" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_COMMANDING_PRESENCE">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -388,7 +388,7 @@
 	
 	<!-- THIS one is selected to upgrade-->
 	
-	<element name="Improved Commanding Presence" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_COMMANDING_PRESENCE">
+	<element name="Great Commanding Presence" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_COMMANDING_PRESENCE">
 		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_COMMANDING_PRESENCE</requirements>
 		<supports>Discipline</supports>
 		<description>
@@ -403,8 +403,8 @@
 		</rules>
 	</element>	
 	
-		<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
-	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- DISARMING -->	
 	<element name="Improved Disarming Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_DISARMING_ATTACK">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -468,8 +468,8 @@
 		</rules>
 	</element>		
 	
-		<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
-	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- EXPOSING -->
 	<element name="Improved Exposing Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_EXPOSING_STRIKE">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -531,14 +531,88 @@
 			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_EXPOSING_STRIKE"/>
 			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_EXPOSING_STRIKE"/>
 		</rules>
-	</element>			
+	</element>
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
 	
-		<!--Feature Replacement Grants-->
+<!-- WINDMILL -->
+	<element name="Swift Windmill" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_WINDMILL">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you move after taking the attack action on your turn, you may replace one attack; or use your Bonus Action to roll the damage die of that weapon; adding the number rolled to your AC until you stop moving.</p>
+		</description>
+		<sheet action="1/Attack or 1 Bonus Action">
+		
+			<description>For as long as you are moving, gain a bonus to your AC equal to the damage die of your weapon.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Windmill" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_WINDMILL">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_WINDMILL</requirements>
+		<description>
+			<p>When you move after taking the attack action on your turn, you may replace one attack to roll the damage die of that weapon, adding the number rolled to your AC until you stop moving.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>For as long as you are moving, gain a bonus to your AC equal to the damage die of your weapon.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Windmill" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_WINDMILL">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you move after taking the attack action on your turn, you may replace one attack to roll the damage die of that weapon, adding the number rolled to your AC until you stop moving.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_WINDMILL"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Swift Windmill" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_WINDMILL">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_WINDMILL</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_WINDMILL" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_WINDMILL"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_WINDMILL"/>
+		</rules>
+	</element>	
+
+	
+	
+<!--Feature Replacement Grants-->
 	<element name="Bait and Switch Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BAIT_AND_SWITCH" />
 	<element name="Brace Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BRACE" />
 	<element name="Commander's Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_COMMANDERS_STRIKE" />
 	<element name="Commanding Presence Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_COMMANDING_PRESENCE" />
 	<element name="Disarming Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_DISARMING_ATTACK" />
 	<element name="Exposing Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_EXPOSING_STRIKE" />
-
+	<element name="Feint Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_FEINT" />
+	<element name="Goading Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GOAD_STRIKE" />
+	<element name="Grappling Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GRAPPLE_STRIKE" />
+	<element name="Spring Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_SPRING_ATTACK" />
+	<element name="Maneuverng Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MANEUVERING_ATTACK" />
+	<element name="Menacing Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MENACING_ATTACK" />
+	<element name="Power Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_POWER_ATTACK" />
+	<element name="Pushing Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_PUSH_ATTACK" />
+	<element name="Quick Toss Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_QUICK_TOSS" />
+	<element name="Rally Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_RALLY" />
+	<element name="Riposte Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_RIPOSTE" />
+	<element name="Cleave Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_CLEAVE" />
+	<element name="Tactical Assessment Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_TACTICAL_ASSESSMENT" />
+	<element name="Trip Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_TRIP_ATTACK" />
 </elements>
