@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Discipline</name>
+		<description>Discipline features for martial classes</description>
+		<update version="1.0.0">
+			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-ranger.xml" />
+		</update>
+	</info>
+	
+	
+	<element name="Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You learn martial disciplines based on your class and level.</p>
+		</description>
+		<sheet display="false">
+
+			<description>You know the following Disciplines:</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Disciplines (Level 1)" supports="ImpDiscipline" number="2" requirements="[level:fighter:1]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 2)" supports="ImpDiscipline" requirements="[level:fighter:2]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 4)" supports="ImpDiscipline" requirements="[level:fighter:4]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 6)" supports="ImpDiscipline" requirements="[level:fighter:6]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 8)" supports="ImpDiscipline" requirements="[level:fighter:8]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 10)" supports="ImpDiscipline" requirements="[level:fighter:10]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 12)" supports="ImpDiscipline" requirements="[level:fighter:12]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 14)" supports="ImpDiscipline" requirements="[level:fighter:14]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 16)" supports="ImpDiscipline" requirements="[level:fighter:16]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 18)" supports="ImpDiscipline" requirements="[level:fighter:18]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 20)" supports="ImpDiscipline" requirements="[level:fighter:20]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:rogue:2]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:rogue:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:rogue:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:rogue:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 10)" supports="Discipline" requirements="[level:rogue:10]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:rogue:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:rogue:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:rogue:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 18)" supports="Discipline" requirements="[level:rogue:18]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:rogue:20]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:monk:2]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:monk:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:monk:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:monk:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 10)" supports="Discipline" requirements="[level:monk:10]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:monk:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:monk:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:monk:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 18)" supports="Discipline" requirements="[level:monk:18]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:monk:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:barbarian:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:barbarian:2]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:barbarian:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:barbarian:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:barbarian:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 10)" supports="Discipline" requirements="[level:barbarian:10]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:barbarian:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:barbarian:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:barbarian:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 18)" supports="Discipline" requirements="[level:barbarian:18]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:barbarian:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:ranger:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:ranger:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:ranger:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:ranger:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:ranger:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:ranger:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:ranger:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:ranger:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:paladin:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:paladin:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:paladin:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:paladin:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:paladin:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:paladin:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:paladin:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:paladin:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:bard:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:bard:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:bard:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:bard:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:bard:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:bard:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:cleric:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:cleric:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:cleric:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:cleric:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:cleric:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:cleric:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:artificer:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:artificer:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:artificer:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:artificer:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:artificer:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:artificer:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:wizard:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:wizard:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:wizard:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:wizard:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:wizard:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:wizard:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:warlock:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:warlock:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:warlock:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:warlock:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:warlock:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:warlock:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:druid:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:druid:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:druid:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:druid:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:druid:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:druid:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:mystic:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:mystic:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:mystic:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:mystic:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:mystic:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:mystic:20]"/>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:sorcerer:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:sorcerer:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:sorcerer:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:sorcerer:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:sorcerer:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:sorcerer:20]"/>
+		</rules>
+	</element>
+	
+	<element name="Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_FIGHTER_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE"/>
+		</rules>
+	</element>
+	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	
+	<element name="Vigilant Bait and Switch" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BAIT_AND_SWITCH">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you take the attack action on your turn, and you're within 5 feet of a creature, you can switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. </p>
+			<p>This movement doesn't provoke opportunity attacks. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to your proficiency bonus. </p>
+		</description>
+		<sheet usage="1/Attack">
+		
+			<description>You can spend 5 movement to switch places with a willing creature that isn't incapacitated within 5 feet. You or the creature gains a bonus of {{Bait AC}} AC until the start of your next turn.</description>
+			
+		</sheet>
+		<rules>
+		<stat name="Bait AC" value="proficiency" bonus="base"/>
+		</rules>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Bait and Switch" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_BAIT_AND_SWITCH">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BAIT_AND_SWITCH</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you take the attack action on your turn, and you're within 5 feet of a creature, you can switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. </p>
+			<p>This movement doesn't provoke opportunity attacks.</p>
+		</description>
+		<sheet usage="1/Attack">
+		
+			<description>You can spend 5 movement to switch places with a willing creature that isn't incapacitated within 5 feet.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Bait and Switch" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_BAIT_AND_SWITCH">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you take the attack action on your turn, and you're within 5 feet of a creature, you can switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. </p>
+			<p>This movement doesn't provoke opportunity attacks.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_BAIT_AND_SWITCH"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Vigilant Bait and Switch" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_BAIT_AND_SWITCH">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_BAIT_AND_SWITCH</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BAIT_AND_SWITCH" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BAIT_AND_SWITCH"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BAIT_AND_SWITCH"/>
+		</rules>
+	</element>
+	
+		<!--Feature Replacement Grants-->
+	<element name="Bait and Switch Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BAIT_AND_SWITCH" />
+	
+</elements>
