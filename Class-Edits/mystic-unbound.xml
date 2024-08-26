@@ -793,7 +793,72 @@
 			<description>If you have resistance to a type of damage, you can spend 2 psi points as a reaction when you take damage of that type to gain immunity to that damage type until the end of your next turn.</description>
 		</sheet>
 	</element>
-    
+  
+	<!-- Order of the Sage Features -->
+	<element name="Manifest Thoughtform" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_MANIFEST_THOUGHTFORM">
+		<supports>Order of the Sage</supports>
+		<description>
+			<p>Starting at 1st level, you gain the ability to manifest or demanifest a fragment of your mind as a psicrystal over the course of a minute of meditation. As you grow in power, so does the complexity of your thoughtform. Choose a property for your psicrystal. It gains new properties each time you learn a discipline, and you may replace up to one property as well.</p>
+			<p class="indent">A psicrystal is a physical extension of your mind. If it ever goes up to a mile away from yourself, is no longer on the same plane as you, or would be destroyed, you immediately lose half your maximum hit points as psychic damage and it demanifests.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Psicrystal Property" supports="Psicrystal" level="1" />
+			<select type="Archetype Feature" name="Psicrystal Property (3)" supports="Psicrystal" level="3" />
+			<select type="Archetype Feature" name="Psicrystal Property (5)" supports="Psicrystal" level="5" />
+			<select type="Archetype Feature" name="Psicrystal Property (7)" supports="Psicrystal" level="7" />
+			<select type="Archetype Feature" name="Psicrystal Property (9)" supports="Psicrystal" level="9" />
+			<select type="Archetype Feature" name="Psicrystal Property (12)" supports="Psicrystal" level="12" />
+			<select type="Archetype Feature" name="Psicrystal Property (15)" supports="Psicrystal" level="15" />
+			<select type="Archetype Feature" name="Psicrystal Property (18)" supports="Psicrystal" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Disciplines" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_BONUS_DISCIPLINES">
+		<supports>Order of the Sage</supports>
+		<description>
+			<p>At 2nd level, you learn one additional psionic discipline of your choice</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0" spellcasting="Mystic" level="2"/>
+		</rules>
+	</element>
+	<element name="Elemental Attunement" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_ELEMENTAL_ATTUNEMENT">
+		<supports>Order of the Sage</supports>
+		<description>
+			<p>Starting at 3rd level, when a creature’s resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 psi point to cause that use of the discipline to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your psi limit.</p>
+		</description>
+		<sheet>
+			<description>When a creature’s resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 psi point to cause it to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your psi limit.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Dabbler" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_ARCANE_DABBLER">
+		<supports>Order of the Sage</supports>
+		<description>
+			<p>At 6th level, you learn three wizard spells of your choice and always have them prepared. The spells must be of 1st through 3rd level.</p>
+			<p class="indent">As a bonus action, you can spend psi points to create spell slots that you can use to cast these spells, as well as other spells you are capable of casting. The psi-point cost of each spell slot is detailed on the table below.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Slot Level</td><td>Psi Cost</td></tr>
+				</thead>
+				<tr><td>1st</td><td>2</td></tr>
+				<tr><td>2nd</td><td>3</td></tr>
+				<tr><td>3rd</td><td>5</td></tr>
+				<tr><td>4th</td><td>6</td></tr>
+				<tr><td>5th</td><td>7</td></tr>
+			</table>
+			<p>The spell slot remains until you use it or finish a long rest. You must observe your psi limit when spending psi points to create a spell slot.</p>
+			<p class="indent">Whenever you gain a level in this class, you can replace one of the chosen wizard spells with a different wizard spell of 1st through 3rd level.</p>
+		</description>
+		<sheet>
+			<description>As a bonus action, you can spend psi points to create spell slots: 2 points for a 1st level, 3 for a 2nd, 5 for a 3rd, 6 for a 4th, and 7 for a 5th level spell slot. The spell slot remains until you use it or finish a long rest. You must observe your psi limit when spending psi points to create a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Arcane Dabbler" supports="Wizard, (1||2||3)" number="3" level = "6" spellcasting="Arcane Dabbler" />
+		</rules>
+	</element>
+	<element name="Elemental Mastery" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_ELEMENTAL_MASTERY">
+  
 	<!-- Psionic Disciplines -->
 	<element name="Adaptive Body" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_ADAPTIVE_BODY">
 		<supports>Psionic Disciplines, Order of the Immortal Discipline</supports>
