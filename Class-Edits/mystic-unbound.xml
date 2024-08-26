@@ -712,7 +712,10 @@
 			<p>Starting at 6th level, your soul knives can siphon a creature's latent psychic energy. When your attack with a soul knife causes a creature to fall to 0 hit points, or as a bonus action to an unconscious creature within the reach of your soul knife, you can drain their mind. This causes you to regain 2 psi points, and deals 2d6 psychic damage to the creature if they are not already at 0 hit points.</p>
 		</description>
 		<sheet>
-			<description>When your attack with a soul knife causes a creature to fall to 0 hit points, or as a bonus action to an unconscious creature within the reach of your soul knife, you regain 2 psi points and deal 2d6 psychic damage to the creature if they are not already at 0 hit points.</description>
+			<description>
+			<p>When your attack with a soul knife causes a creature to fall to 0 hit points you regain 2 psi points; Or as a bonus action to an unconscious creature within the reach of your soul knife, you regain 2 psi points.</p>
+			<p>You can make attacks against unconscious creatures as a Bonus Action if they are within reach of your soul knives. You regain 2 psi points on a successful strike.</p>
+			</description>
 		</sheet>
 	</element>
 	<element name="True Edge" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SOULKNIFE_PHANTOM_KNIFE">
@@ -720,8 +723,8 @@
 		<description>
 			<p>Starting at 14th level, you can make an attack that phases through most defenses. As an action, you can make one attack with your soul knife. Treat the target’s AC as 10 against this attack, regardless of the target’s actual AC.</p>
 		</description>
-		<sheet>
-			<description>As an action, you can make one attack with your soul knife. Treat the target’s AC as 10 against this attack.</description>
+		<sheet action="1 Action">
+			<description>Make one attack with your soul knife. Treat the target’s AC as 10 against this attack.</description>
 		</sheet>
 	</element>
 
@@ -1393,7 +1396,7 @@
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you take half as much damage from falls.</p>
 			<p class="indent"><b>Reduce Mass (1+ psi; conc., 1 min).</b> As an action, you can grant a creature or object you touch the following effects: Its weight is halved, it can jump or be thrown twice as far, it can float and walk on water (or similar fluids); while in dense fog (or similar gases) acts as if they were under water, but can still breathe as per normal; They have disadvantage on attacks and ability checks using STR and DEX. If 4 psi points were used, their weight is nullified instead, causing them to have quintupled jump and thrown distance; treating dense fog (and clouds or similar) difficult terrain (on top of having to swim); and have a further -2 to attacks and ability checks using STR or DEX. The target can attempt a WIS saving throw to avoid this effect when they are targetted, and as an action on each of their turns.</p>
 			<p class="indent"><b>Impulsion/Expulsion (1+ psi).</b> As an action, you can create a 10ft.-radius sphere within 30ft. of yourself where space briefly shrinks or expands. Each creature and object in the area takes 1d6 force damage and is pushed 10ft. toward or away from the origin, and can make a STR saving throw to resist this effect and take half the damage. For each additional psi point spent, the damage increases by 1d6 and the push-force increases by 2.5ft.</p>
-			<p class="indent"><b>Gravity Shift (3+ psi; conc., 1 min.).</b> As an action, you create a 30ft.-radius sphere where light seems to shimmer as gravity is slightly increased, or decreased. If increased, creatures jump half as far and must attempt a Athletics(STR) check against your DC to fly by non-magical means. Additionally, they (and their inventories) are considered to have doubled in weight. If decreased, creatures jump twice as far take half as much damage on a fall. Additionally, they (and their inventories) are considered to have halved in weight. If 6 psi points were expended on this ability, instead creatures and objects can not leave the ground by non-magical means and weighs six times as much, or can move as if there were no relative gravity in the sphere and weighs almost nothing.</p>
+			<p class="indent"><b>Gravity Shift (3+ psi; conc., 1 min.).</b> As an action, you create a 30ft.-radius sphere where light shifts in hue as gravity is slightly increased, or decreased. If increased, creatures jump half as far and must attempt a Athletics(STR) check against your psionics DC to fly by non-magical means. Additionally, they (and their inventories) are considered to have doubled in weight. If decreased, creatures jump twice as far take half as much damage on a fall. Additionally, they (and their inventories) are considered to have halved in weight. If 6 psi points were expended on this ability, instead creatures and objects can not leave the ground by non-magical means and weighs six times as much, or can move as if there were no relative gravity in the sphere and weighs almost nothing.</p>
 			<p class="indent"><b>Contract/Expand (6 psi; conc., 1 min).</b> As an action, you can spatially contract or expand an area within a 15ft.-radius sphere. If contracted, treat that area as if distances within it were negligible, and quadrupled if expanded. Creatures and magical objects in this space are unaffected as space harmlessly adjusts around them. They can choose a position adjacent to the contracted space or within the expanded space if it is created in a space they occupy.</p>
 		</description>
 		<setters>
@@ -1831,6 +1834,32 @@
 			<p class="indent"><b>Phantom Foe (3 psi; conc., 1 min.).</b> As an action, choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, it perceives a horrid creature adjacent to it until your concentration ends. During this time, the target can’t take reactions, and it takes 1d8 psychic damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. You can increase the damage by 1d8 for each additional psi point spent on the ability.</p>
 			<p class="indent"><b>Phantom Betrayal (5 psi; conc., 1 min.).</b> As an action, you plant delusional paranoia in a creature’s mind. Choose one creature you can see within 60 feet of you. The target must succeed on an Intelligence saving throw, or until your concentration ends, it must target its allies with attacks and other damaging effects. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. A creature is immune to this ability if it is immune to being charmed.</p>
 			<p class="indent"><b>Phantom Riches (7 psi; conc., 1 min.).</b> As an action, you plant the phantom of a greatly desired object in a creature’s mind. Choose one creature you can see within 60 feet of you. The target must make an Intelligence saving throw. On a failed save, you gain partial control over the target’s behavior until your concentration ends; the target moves as you wish on each of its turns, as it thinks it pursues the phantom object it desires. If it hasn’t taken damage since its last turn, it can use its action only to admire the object you created in its perception. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">0</set>
+			<set name="school">Awakened Discipline</set>
+			<set name="time">Variable</set>
+			<set name="duration">Variable</set>
+			<set name="range">Variable</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sensory Disruption" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_SENSORY_DISRUPTION">
+		<supports>Psionic Disciplines</supports>
+		<requirements>ID_SELLSWORD_CLASS_MYSTIC||ID_SELLSWORD_MULTICLASS_MYSTIC||ID_SELLSWORD_FEAT_PSIONIC_AWAKENING</requirements>
+		<description>
+			<p>Your power hinders a creature's ability to understand themselves or the world around them.</p>
+			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, you psychic talents which alter a creature's perception of reality have a +2 to their DCs, and you gain a +2 to checks using them.</p>
+			<p class="indent"><b>Mind Fog (1 psi; conc., 1 min.).</b>As an action, you cancel the ability of a creature within 60 feet to rationalize complex ideas. The target must make an Intelligence saving throw. On a failure, they cannot use Magic and have disadvantage to Study. They can repeat the saving throw at the end of of its turns.</p>
+			<p class="indent"><b>Anterograde Lapse (2+ psi).</b> As an action, choose one creature you can see within 10 feet of you. The target must make an Intelligence saving throw. On a failed save, it becomes stunned, blind and deaf until the end of your turn or is dealt damage; It also is unaware to having been affected in this manner. For each additional psi point spent, the range increases by 5ft. This effect counts as a charm.</p>
+			<p class="indent"><b>Retrograde Lapse (3+ psi).</b> As an action, choose one creature you can see within 10 feet of you. The target must make an Intelligence saving throw. On a failed save, it loses memory of events which had taken place within 5 seconds (1 round); It also is unaware to having been affected in this manner. For each additional psi point spent, the range increases by 5ft. This effect counts as a charm.</p>
+			<p class="indent"><b>Stupefy (4+ psi; conc., 1 min.).</b> As an action, you cancel the ability of a creature within 60 feet to recognize their surroundings. The target must make an Intelligence saving throw. On a failed save, it loses the ability to recognize any one of the following: Voices and tones, exact appearance of individual creatures, distances, sizes, different types of sounds, gradients of colour, numeric values and counting. It can repeat the saving throw as an Action on each of its turns. If 6 psi points are used, choose two instead.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
