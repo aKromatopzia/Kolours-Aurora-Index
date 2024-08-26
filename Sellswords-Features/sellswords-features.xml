@@ -3,8 +3,8 @@
 	<info>
 		<name>Sellswords Features</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.9">
-			<file name="items-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
+		<update version="0.1.1">
+			<file name="sellsword-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/sellsword-features.xml" />
 		</update>
 	</info>
 	<element name="Psionic Awakening" type="Feat" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_FEAT_PSIONIC_AWAKENING">
