@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<name>Unbound: Arcane Trickster</name>
-		<update version="0.0.9">
+		<update version="0.0.10">
 			<file name="UA_2023_Arcane_Trickster.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Arcane_Trickster.xml" />
 		</update>
 	</info>
-	<element name="Arcane Trickster" type="Archetype" source="UA2023:ODND" id="ID_SELLSWORD_REWORKS_ARCHETYPE_ARCANE_TRICKSTER">
+	<element name="Arcane Trickster" type="Archetype" source="Sellsword Reworks" id="ID_SELLSWORD_REWORKS_ARCHETYPE_ARCANE_TRICKSTER">
 		<supports>Roguish Archetype</supports>
 		<description>
 			<p>Some rogues enhance their fine-honed skills of stealth and agility with magic, learning tricks of enchantment and illusion. These rogues include pickpockets and burglars, but also pranksters, mischief-makers, and a significant number of adventurers.</p>
