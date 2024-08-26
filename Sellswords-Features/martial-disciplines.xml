@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Discipline</name>
+		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="1.0.0">
-			<file name="class-ranger.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-ranger.xml" />
+		<update version="0.0.1">
+			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
 	
@@ -222,7 +222,7 @@
 			<p><i>Improved Discipline</i></p>
 			<p>When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to make one attack against the creature, using that weapon.</p>
 		</description>
-		<sheet usage="Reaction">
+		<sheet action="Reaction">
 		
 			<description>Attack a creature that moves into the reach of a melee weapon you are holding.</description>
 			
@@ -238,7 +238,7 @@
 			<p>When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to make one attack against the creature, using that weapon.</p>
 			<p>If the attack misses, you provoke an attack of opportunity from that creature.</p>
 		</description>
-		<sheet usage="Reaction">
+		<sheet action="Reaction">
 		
 			<description>Attack a creature that moves into the reach of a melee weapon you are holding. Provoke Opportunity on a miss.</description>
 			
@@ -286,7 +286,7 @@
 			<p>When you take the Attack action on your turn, you can forgo one of your attacks to direct one of your companions to strike.</p>
 			<p>When you do so, choose a friendly creature who can see or hear you. That creature can immediately use its reaction to make one weapon attack.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>You allow a friendly creature that can hear you to use its reaction to make an attack.</description>
 			
@@ -302,7 +302,7 @@
 			<p>When you take the Attack action on your turn, you can forgo one of your attacks and use your bonus action to direct one of your companions to strike.</p>
 			<p>When you do so, choose a friendly creature who can see or hear you. That creature can immediately use its reaction to make one weapon attack.</p>
 		</description>
-		<sheet usage="1/Attack and 1 Bonus Action">
+		<sheet action="1/Attack and 1 Bonus Action">
 		
 			<description>You allow a friendly creature that can hear you to use its reaction to make an attack.</description>
 			
@@ -350,7 +350,7 @@
 			<p>When you take the attack action on your turn, you may replace one attack with an Influence action instead.</p>
 			<p>You may add your proficiency bonus to the chosen check, if you are not already proficient in that skill.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>Make an Influence check. You are considered proficient in this check.</description>
 			
@@ -365,7 +365,7 @@
 			<p><i>Discipline</i></p>
 			<p>When you take the attack action on your turn, you may replace one attack with an Influence action instead.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>Make an Influence check.</description>
 			
@@ -412,7 +412,7 @@
 			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to disarm a creature, forcing it to drop one item of your choice that it's holding or an unsecured item that it is wearing.</p>
 			<p>On a hit, the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>On a hit, force a strength saving throw. On a failed save, the target drops a target unsecured worn or held item.</description>
 			
@@ -428,7 +428,7 @@
 			<p>On a hit, the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet.</p>
 			<p>On a miss, you provoke an attack of opportunity from the target creature.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>On a hit, force a strength saving throw. On a failed save, the target drops a target unsecured worn or held item. Provoke Opportunity on a miss.</description>
 			
@@ -477,7 +477,7 @@
 			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to give your allies an opening.</p>
 			<p>On a hit, the next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>On a hit, grant advantage to the next attack against the target that isn't made by you.</description>
 			
@@ -493,7 +493,7 @@
 			<p>On a hit, the next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.</p>
 			<p>On a miss, you provoke an attack of opportunity from the target creature.</p>
 		</description>
-		<sheet usage="1/Attack">
+		<sheet action="1/Attack">
 		
 			<description>On a hit, grant advantage to the next attack against the target that isn't made by you. Provoke Opportunity on a miss.</description>
 			
