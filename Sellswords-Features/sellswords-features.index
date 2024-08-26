@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>sellswords-features.index</name>
+		<update version="0.1.1">
+			<file name="sellswords-features.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/sellswords-features.index" />
+		</update>
+	</info>
+	<files>
+		<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/martial-disciplines.xml" />
+		<file name="sellswords-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/sellswords-features.xml" />
+	</files>
+</index>
