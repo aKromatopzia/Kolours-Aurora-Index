@@ -867,16 +867,21 @@
 	<requirements>ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_AUG_PSICRYSTAL_AWAKEN_AUG</requirements>
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet>
 			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
 		</sheet>
+		<rules>
+			<select type="Archetype Feature" supports="PersonaPsicrystal" />
+		<rules>
 	</element>
 	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_SELECT">
 	<supports>Psicrystal</supports>
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
 			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
@@ -889,6 +894,7 @@
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
 			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet display="false" />
 	</element>
@@ -906,23 +912,25 @@
 	<requirements>ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_AUG_PSICRYSTAL_AWAKEN_AUG</requirements>
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet>
 			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
 		</sheet>
+			<select type="Archetype Feature" supports="PersonaPsicrystal" />
+		<sheet>
 	</element>
 	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_SELECT">
 	<supports>Psicrystal</supports>
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
-			<p>Additionally, choose one of the following dispositions for your psicrystal.</p>
 			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN" />
 			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_II" />
-			<select type="Archetype Feature" supports="PersonaPsicrystal" />
 		</rules>
 	</element>
 	<element name="Augmented Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_AUG">
@@ -930,6 +938,7 @@
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
 			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet display="false" />
 	</element>
@@ -941,6 +950,44 @@
 		</description>
 		<sheet>
 			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</sheet>
+	</element>
+	
+	<!-- Psicrystal Personality -->
+	<element name="Belligerent" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PERSONA_BELLIGERENT">
+	<supports>PersonaPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has proficiency in Intimidation.</p>
+		</description>
+		<sheet>
+			<p>Your psicrystal is belligerent, and adds your proficiency to Indimidation.</p>
+		</sheet>
+	</element>
+	<element name="Friendly" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PERSONA_FRIENDLY">
+	<supports>PersonaPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has proficiency in checks to Influence.</p>
+		</description>
+		<sheet>
+			<p>Your psicrystal is friendly, and adds your proficiency bonus to checks to Influence.</p>
+		</sheet>
+	</element>
+	<element name="Heroic" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PERSONA_HEROIC">
+	<supports>PersonaPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has proficiency in WIS saves.</p>
+		</description>
+		<sheet>
+			<p>Your psicrystal is friendly, and adds your proficiency bonus to checks to its WIS saves.</p>
+		</sheet>
+	</element>
+	<element name="Cowardly" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PERSONA_COWARDLY">
+	<supports>PersonaPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has proficiency in Stealth.</p>
+		</description>
+		<sheet>
+			<p>Your psicrystal is cowardly, and adds your proficiency bonus to Stealth.</p>
 		</sheet>
 	</element>
   
