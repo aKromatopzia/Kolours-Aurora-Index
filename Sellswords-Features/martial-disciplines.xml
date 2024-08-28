@@ -1059,7 +1059,7 @@
 		</rules>
 	</element>
 
-	<!-- POWER -->	
+	<!-- PUSH -->	
 	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
 	<element name="Improved Pushing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_PUSH_ATTACK">
 		<supports>ImpDiscipline</supports>
