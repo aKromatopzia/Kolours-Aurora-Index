@@ -823,41 +823,126 @@
 			<select type="Spell" name="Bonus Disciplines (Mystic)" supports="Psionic Disciplines,0" spellcasting="Mystic" level="2"/>
 		</rules>
 	</element>
-	<element name="Elemental Attunement" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_ELEMENTAL_ATTUNEMENT">
+	<element name="Augmented Thoughtform" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_SUGMENTED_THOUGHTFORM">
 		<supports>Order of the Sage</supports>
 		<description>
-			<p>Starting at 3rd level, when a creature’s resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 psi point to cause that use of the discipline to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your psi limit.</p>
+			<p>Starting at 3rd level, you can select one of your psicrystal properties to be further honed. You make this selection another time at 6th and 14th level.</p>
 		</description>
-		<sheet>
-			<description>When a creature’s resistance reduces the damage dealt by a psionic discipline of yours, you can spend 1 psi point to cause it to ignore the creature’s resistance. You can’t spend this point if doing so would increase the discipline’s cost above your psi limit.</description>
-		</sheet>
-	</element>
-	<element name="Arcane Dabbler" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_ARCANE_DABBLER">
-		<supports>Order of the Sage</supports>
-		<description>
-			<p>At 6th level, you learn three wizard spells of your choice and always have them prepared. The spells must be of 1st through 3rd level.</p>
-			<p class="indent">As a bonus action, you can spend psi points to create spell slots that you can use to cast these spells, as well as other spells you are capable of casting. The psi-point cost of each spell slot is detailed on the table below.</p>
-			<table>
-				<thead>
-					<tr><td>Spell Slot Level</td><td>Psi Cost</td></tr>
-				</thead>
-				<tr><td>1st</td><td>2</td></tr>
-				<tr><td>2nd</td><td>3</td></tr>
-				<tr><td>3rd</td><td>5</td></tr>
-				<tr><td>4th</td><td>6</td></tr>
-				<tr><td>5th</td><td>7</td></tr>
-			</table>
-			<p>The spell slot remains until you use it or finish a long rest. You must observe your psi limit when spending psi points to create a spell slot.</p>
-			<p class="indent">Whenever you gain a level in this class, you can replace one of the chosen wizard spells with a different wizard spell of 1st through 3rd level.</p>
-		</description>
-		<sheet>
-			<description>As a bonus action, you can spend psi points to create spell slots: 2 points for a 1st level, 3 for a 2nd, 5 for a 3rd, 6 for a 4th, and 7 for a 5th level spell slot. The spell slot remains until you use it or finish a long rest. You must observe your psi limit when spending psi points to create a spell slot.</description>
-		</sheet>
+		<sheet display="false" />
 		<rules>
-			<select type="Spell" name="Arcane Dabbler" supports="Wizard, (1||2||3)" number="3" level = "6" spellcasting="Arcane Dabbler" />
+			<select type="Archetype Feature" name="Augmented Psicrystal Property" supports="AugPsicrystal" level="3" />
+			<select type="Archetype Feature" name="Augmented Psicrystal Property" supports="AugPsicrystal" level="6" />
+			<select type="Archetype Feature" name="Augmented Psicrystal Property" supports="AugPsicrystal" level="14" />
 		</rules>
 	</element>
-	<element name="Elemental Mastery" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_ELEMENTAL_MASTERY">
+	<element name="Superior Thoughtform" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_SUPERIOR_THOUGHTFORM">
+		<supports>Order of the Sage</supports>
+		<description>
+			<p>At 6th level, your psicrystal gains resistance to nonmagical damage.</p>
+		</description>
+		<sheet>
+			<description>Your psicrystal is resistant to nonmagical damage.</description>
+		</sheet>
+	</element>
+	<element name="Immaculate Thoughtform" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_IMMACULATE_THOUGHTFORM">
+		<supports>Order of the Sage</supports>
+		<description>
+			<p>At 14th level, your psicrystal gains resistance to all damage types; Any damage dealt using its properties is increased by an additional die; You may use Ebb and Flow to spend or restore the psicrystal's hit points instead of your own; You can use Consumptive Power an additional time per day, expending the psicrystal's hit points instead of your own.</p>
+		</description>
+		<sheet>
+			<description>Your psicrystal gains resistance to all damage types; Any damage dealt using its properties is increased by an additional die; You may use Ebb and Flow to spend or restore the psicrystal's hit points instead of your own; You can use Consumptive Power an additional time per day, expending the psicrystal's hit points instead of your own.</description>
+		</sheet>
+	</element>
+	<!-- Psicrystal Properties -->
+	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN">
+	<requirements>!ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_AUG</requirements>
+		<description>
+			<p>You have managed to infuse your psicrystal with its own personality, or perhaps a figment of your own. You may direct the actions it will take as a Bonus Action on your turn. Your psicrystal takes its turn immediately after yours. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</description>
+		<sheet>
+			<p>You may direct the actions your psicrystal will take as a Bonus Action on your turn. Your psicrystal takes its turn immediately after yours. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</sheet>
+	</element>
+	<element name="Augmented Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_II">
+	<requirements>ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_AUG_PSICRYSTAL_AWAKEN_AUG</requirements>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+		</description>
+		<sheet>
+			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</sheet>
+	</element>
+	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_SELECT">
+	<supports>Psicrystal</supports>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN" />
+			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_II" />
+		</rules>
+	</element>
+	<element name="Augmented Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_AUG">
+	<supports>AugPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+	
+	<element name="Psicrystal Propulsion" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION">
+		<requirements>!ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_AUG</requirements>
+		<description>
+			<p>You have managed to infuse your psicrystal with its own personality, or perhaps a figment of your own. You may direct the actions it will take as a Bonus Action on your turn. Your psicrystal takes its turn immediately after yours. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</description>
+		<sheet>
+			<p>You may direct the actions your psicrystal will take as a Bonus Action on your turn. Your psicrystal takes its turn immediately after yours. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</sheet>
+	</element>
+	<element name="Augmented Psicrystal Propulsion" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_II">
+	<requirements>ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_AUG_PSICRYSTAL_AWAKEN_AUG</requirements>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+		</description>
+		<sheet>
+			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</sheet>
+	</element>
+	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_SELECT">
+	<supports>Psicrystal</supports>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p>Additionally, choose one of the following dispositions for your psicrystal.</p>
+			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN" />
+			<grant type="Archetype Feature" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_II" />
+			<select type="Archetype Feature" supports="PersonaPsicrystal" />
+		</rules>
+	</element>
+	<element name="Augmented Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_AUG">
+	<supports>AugPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
+		</description>
+		<sheet display="false" />
+	</element>
+  
+	<element name="Augmented Psicrystal Propulsion" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_II">
+	<supports>PersonaPsicrystal</supports>
+		<description>
+			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+		</description>
+		<sheet>
+			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
+		</sheet>
+	</element>
   
 	<!-- Psionic Disciplines -->
 	<element name="Adaptive Body" type="Spell" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_SPELL_MYSTIC_ADAPTIVE_BODY">
@@ -1514,7 +1599,7 @@
 		<description>
 			<p>You claim dominion over light and darkness with your mind.</p>
 			<p class="indent"><b>Psychic Focus.</b> While focused on this discipline, natural and magical darkness within 30 feet of you has no effect on your vision.</p>
-			<p class="indent"><b>Darkness (1+ psi; conc., 1 min.).</b> As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10- foot radius per psi point spent on this ability. The light produced by other psionics or spells of 2nd level or less is suppressed in this area.</p>
+			<p class="indent"><b>Darkness (1+ psi).</b> As an action, you create an area of magical darkness, which foils darkvision. Choose a spot you can see within 60 feet of you. Magical darkness radiates from that point in a sphere with a 10- foot radius per psi point spent on this ability. The light produced by other psionics or spells of 2nd level or less is suppressed in this area.</p>
 			<p class="indent"><b>Light (2 psi; conc., 1 min.).</b> As an action, an object you touch radiates light in a 20 -foot radius and dim light for an additional 20 feet. The light lasts until your concentration ends. Alternatively, a creature you touch radiates light in the same manner if it fails a Dexterity saving throw. While lit in this manner, it can’t hide, and attack rolls against it gain advantage.</p>
 			<p class="indent"><b>Shadow Beasts (3 psi; conc., 1 hour.).</b> As an action, you cause two shadows to appear in unoccupied spaces you can see within 60 feet of you. The shadows last until your concentration ends, and they obey your commands so long as you can communicate with them. In combat, they take their turns directly after yours, and you choose their behavior during their turns. When this effect ends, the shadows disappear. See the Monster Manual for their stat block. The conjured shadows however do not create more of themselves.</p>
 			<p class="indent"><b>Radiant Beam (5 psi; conc., 1 min.).</b> As an action, you project a beam of light at one creature you can see within 60 feet of you. The target must make a Dexterity saving throw. On a failed save, it takes 6d6 radiant damage and is blinded until your concentration ends. On a successful save, it takes half as much damage. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
