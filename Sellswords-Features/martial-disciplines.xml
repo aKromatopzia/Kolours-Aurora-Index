@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.0.8">
+		<update version="0.1.0">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -664,9 +664,7 @@
 			<p>When you make an attack action on your turn, you may forgo one attack or use your bonus action to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn.</p>
 		</description>
 		<sheet action="1/Attack or 1 Bonus Action">
-		
-			<description>You have advantage on your next attack roll against a creature of your choosing within 5 feet, until the end of this turn.</description>
-			
+			<description>You have advantage on your next attack roll against a creature of your choosing within 5 feet, until the end of this turn.</description>	
 		</sheet>
 	</element>
 	
@@ -675,10 +673,10 @@
 	<element name="Feint" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_FEINT">
 		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_FEINT</requirements>
 		<description>
-			<p>When you move after taking the attack action on your turn, you may replace one attack to roll the damage die of that weapon, adding the number rolled to your AC until you stop moving.</p>
+			<p>You may forgo one attack you can make to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature until the end of your next turn.</p>
 		</description>
 		<sheet action="1/Attack">
-			<description>For as long as you are moving, gain a bonus to your AC equal to the damage die of your weapon.</description>			
+			<description>You have advantage on your next attack roll against a creature of your choosing within 5 feet, until the end of this turn.</description>			
 		</sheet>
 	</element>
 	
@@ -1089,7 +1087,7 @@
 	
 	<!-- This is the one that you select on the sheet-->
 	
-	<element name="Power Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_PUSH_ATTACK">
+	<element name="Pushing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_PUSH_ATTACK">
 		<supports>Discipline</supports>
 		<description>
 			<div class="reference">
