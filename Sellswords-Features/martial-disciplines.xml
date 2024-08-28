@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -1137,7 +1137,7 @@
 	<element name="Quick Toss" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_QUICK_TOSS">
 		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_QUICK_TOSS</requirements>
 		<description>
-			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. 
+			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack.</p>
 			<p>If you make this attack while threatened, you provoke an attack of opportunity from each creature threatening you.</p>
 		</description>
 	<sheet action="Bonus Action">
@@ -1153,7 +1153,7 @@
 		<supports>Discipline</supports>
 		<description>
 			<p><i>Discipline</i></p>
-			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. 
+			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack.</p>
 			<p>If you make this attack while threatened, you provoke an attack of opportunity from each creature threatening you.</p>
 		</description>
 		<sheet display="false"/>
