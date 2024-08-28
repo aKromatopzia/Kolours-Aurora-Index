@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -13,10 +13,12 @@
 		<description>
 			<p><i>Discipline Features</i></p>
 			<p>You learn martial disciplines based on your class and level.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your strength or dex modifier.</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 
-			<description>You know the following Disciplines:</description>
+			<description>Your Discipline DC is 8 + your proficiency + your Strength OR Dexterity modifier.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Improved Disciplines (Level 1)" supports="ImpDiscipline" number="2" requirements="[level:fighter:1]"/>
