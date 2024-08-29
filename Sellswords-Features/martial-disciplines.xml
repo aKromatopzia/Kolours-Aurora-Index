@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.0.2">
+		<update version="0.1.3">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -12,11 +12,13 @@
 	<element name="Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE">
 		<description>
 			<p><i>Discipline Features</i></p>
-			<p>You learn martial disciplines based on your class and level.</p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack modifier.</p>
 		</description>
-		<sheet display="false">
+		<sheet>
 
-			<description>You know the following Disciplines:</description>
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack modifier.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Improved Disciplines (Level 1)" supports="ImpDiscipline" number="2" requirements="[level:fighter:1]"/>
@@ -402,9 +404,71 @@
 			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_COMMANDING_PRESENCE"/>
 		</rules>
 	</element>	
-	
+
+<!-- DEFENSIVE -->	
 	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Defensive Expertise" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_DEFENSE_FIGHTING">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you use the attack action, you can choose to take a penalty to your attack rolls for this round of a value up to your proficiency bonus, and add the chosen penalty as a bonus to your Armor Class. The changes to attack rolls and Armor Class last until the start of your next turn.</p>
+		</description>
+		<sheet action="1/Attack">
+		
+			<description>You can choose to take a penalty to your attack rolls for this round of a value up to your proficiency bonus, and add the chosen penalty as a bonus to your Armor Class. The changes to attack rolls and Armor Class last until the start of your next turn.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Defensive Fighting" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_DEFENSE_FIGHTING">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_DEFENSE_FIGHTING</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you use the attack action, you can choose to take a penalty to your attack rolls for this round of a value up to your proficiency bonus, and add half the chosen penalty as a bonus to your Armor Class, rounded down. The changes to attack rolls and Armor Class last until the start of your next turn.</p>
+		</description>
+		<sheet action="1/Attack">
+		
+			<description>You can choose to take a penalty to your attack rolls for this round of a value up to your proficiency bonus, and add half the chosen penalty as a bonus to your Armor Class, rounded down. The changes to attack rolls and Armor Class last until the start of your next turn.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Defensive Fighting" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_DEFENSE_FIGHTING">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_DEFENSE_FIGHTING" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_DEFENSE_FIGHTING"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Defensive Expertise" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_DEFENSE_FIGHTING">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_DEFENSE_FIGHTING</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_DEFENSE_FIGHTING" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_DEFENSE_FIGHTING"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_DEFENSE_FIGHTING"/>
+		</rules>
+	</element>
+	
 <!-- DISARMING -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
 	<element name="Improved Disarming Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_DISARMING_ATTACK">
 		<supports>ImpDiscipline</supports>
 		<description>
@@ -600,9 +664,7 @@
 			<p>When you make an attack action on your turn, you may forgo one attack or use your bonus action to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn.</p>
 		</description>
 		<sheet action="1/Attack or 1 Bonus Action">
-		
-			<description>You have advantage on your next attack roll against a creature of your choosing within 5 feet, until the end of this turn.</description>
-			
+			<description>You have advantage on your next attack roll against a creature of your choosing within 5 feet, until the end of this turn.</description>	
 		</sheet>
 	</element>
 	
@@ -611,10 +673,10 @@
 	<element name="Feint" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_FEINT">
 		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_FEINT</requirements>
 		<description>
-			<p>When you move after taking the attack action on your turn, you may replace one attack to roll the damage die of that weapon, adding the number rolled to your AC until you stop moving.</p>
+			<p>You may forgo one attack you can make to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature until the end of your next turn.</p>
 		</description>
 		<sheet action="1/Attack">
-			<description>For as long as you are moving, gain a bonus to your AC equal to the damage die of your weapon.</description>			
+			<description>You have advantage on your next attack roll against a creature of your choosing within 5 feet, until the end of this turn.</description>			
 		</sheet>
 	</element>
 	
@@ -649,20 +711,817 @@
 		</rules>
 	</element>	
 
+	<!-- GOAD -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Great Goad" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_GOAD_STRIKE">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to goad the target into attacking you. On a hit, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to goad the target into attacking you. On a hit, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Goading Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_GOAD_STRIKE">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GOAD_STRIKE</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to goad the target into attacking you. On a hit, the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to goad the target into attacking you. On a hit, the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Goading Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_GOAD_STRIKE">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_DEFENSE_FIGHTING" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_GOAD_STRIKE"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Great Goad" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_GOAD_STRIKE">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_GOAD_STRIKE</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_DEFENSE_FIGHTING" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_GOAD_STRIKE"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GOAD_STRIKE"/>
+		</rules>
+	</element>
+
+	<!-- GRAPPLING -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Improved Grappling Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_GRAPPLE_STRIKE">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to grapple the target. On a hit, you may attempt a grapple as a bonus action.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to grapple the target. On a hit, you may attempt a grapple as a bonus action.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Grappling Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_GRAPPLE_STRIKE">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GRAPPLE_STRIKE</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to grapple the target. On a hit, you may attempt a grapple as a bonus action. On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to grapple the target. On a hit, you may attempt a grapple as a bonus action. On a miss, you provoke an attack of opportunity from the target creature.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Grappling Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_GRAPPLE_STRIKE">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_GRAPPLE_STRIKE" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_GRAPPLE_STRIKE"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Grappling Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_GRAPPLE_STRIKE">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_GRAPPLE_STRIKE</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_GRAPPLE_STRIKE" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_GRAPPLE_STRIKE"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GRAPPLE_STRIKE"/>
+		</rules>
+	</element>
+
+	<!-- SPRING -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Improved Spring Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_SPRING_ATTACK">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack to attempt a Spring Attack. Your reach for this attack increases by 5 feet.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack to attempt a Spring Attack. Your reach for this attack increases by 5 feet.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Spring Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SPRING_ATTACK">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_DEFENSE_FIGHTING</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack to attempt a Spring Attack. Your reach for this attack increases by 5 feet. On a miss, you provoke an attack of opportunity from the target creature. The creature is able to make this attack even if its reach is normally only 5 feet.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack to attempt a Spring Attack. Your reach for this attack increases by 5 feet. On a miss, you provoke an attack of opportunity from the target creature. The creature is able to make this attack even if its reach is normally only 5 feet.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Spring Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_SPRING_ATTACK">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_SPRING_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SPRING_ATTACK"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Spring Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_SPRING_ATTACK">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_SPRING_ATTACK</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_SPRING_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_SPRING_ATTACK"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_SPRING_ATTACK"/>
+		</rules>
+	</element>
+
+	<!-- MANEUVERING -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Improved Maneuvering Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_MANEUVERING_ATTACK">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that allows you to maneuver one of your comrades into a more advantageous position. On a hit, you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that allows you to maneuver one of your comrades into a more advantageous position. On a hit, you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Maneuvering Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_MANEUVERING_ATTACK">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MANEUVERING_ATTACK</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that allows you to maneuver one of your comrades into a more advantageous position. On a hit, you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack. On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that allows you to maneuver one of your comrades into a more advantageous position. On a hit, you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack. On a miss, you provoke an attack of opportunity from the target creature.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Maneuvering Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_MANEUVERING_ATTACK">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_MANEUVERING_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_MANEUVERING_ATTACK"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Maneuvering Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_MANEUVERING_ATTACK">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_MANEUVERING_ATTACK</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_MANEUVERING_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_MANEUVERING_ATTACK"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MANEUVERING_ATTACK"/>
+		</rules>
+	</element>
+
+	<!-- MENACING -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Improved Menacing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_MENACING_ATTACK">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to frighten the target. On a hit, the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to frighten the target. On a hit, the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Menacing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_MENACING_ATTACK">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MENACING_ATTACK</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to frighten the target. On a hit, the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn. On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to frighten the target. On a hit, the target must make a Wisdom saving throw. On a failed save, it is frightened of you until the end of your next turn. On a miss, you provoke an attack of opportunity from the target creature.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Menacing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_MENACING_ATTACK">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_MENACING_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_MENACING_ATTACK"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Menacing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_MENACING_ATTACK">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_MENACING_ATTACK</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_MENACING_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_MENACING_ATTACK"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MENACING_ATTACK"/>
+		</rules>
+	</element>
+
+	<!-- POWER -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Great Power Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_POWER_ATTACK">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that possesses greater lethality. You must be proficient with the weapon you use to make this attack. On a hit, you add your proficiency modifier to damage.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that possesses greater lethality. You must be proficient with the weapon you use to make this attack. On a hit, you add your proficiency modifier to damage.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Power Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_POWER_ATTACK">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_POWER_ATTACK</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that sacrifices accuracy for lethality. You do not add your proficiency bonus to the attack roll for this attack, but you must be proficient with the weapon you use to make it. On a hit, you add your proficiency modifier to damage.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that sacrifices accuracy for lethality. You do not add your proficiency bonus to the attack roll for this attack, but you must be proficient with the weapon you use to make it. On a hit, you add your proficiency modifier to damage.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Power Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_POWER_ATTACK">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_POWER_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_POWER_ATTACK"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Great Power Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_POWER_ATTACK">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_POWER_ATTACK</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_POWER_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_POWER_ATTACK"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_POWER_ATTACK"/>
+		</rules>
+	</element>
+
+	<!-- PUSH -->	
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+	<element name="Improved Pushing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_PUSH_ATTACK">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you. On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you. On a miss, you provoke an attack of opportunity from the target creature.</description>			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Pushing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_PUSH_ATTACK">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_PUSH_ATTACK</requirements>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p>
+		</description>
+		<sheet action="1/Attack">
+			<description>You may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</description>
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Pushing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_PUSH_ATTACK">
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_PUSH_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_PUSH_ATTACK"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Pushing Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_PUSH_ATTACK">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_PUSH_ATTACK</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_PUSH_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_PUSH_ATTACK"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_PUSH_ATTACK"/>
+		</rules>
+	</element>
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- TOSS -->
+	<element name="Improved Quick Toss" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_QUICK_TOSS">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack.</p>
+		</description>
+		<sheet action="Bonus Action">
 		
+			<description>Attack with a thrown weapon.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Quick Toss" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_QUICK_TOSS">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_QUICK_TOSS</requirements>
+		<description>
+			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack.</p>
+			<p>If you make this attack while threatened, you provoke an attack of opportunity from each creature threatening you.</p>
+		</description>
+		<sheet action="Bonus Action">
+		
+			<description>Attack with a thrown weapon. Provokes Opportunity from threats.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Quick Toss" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_QUICK_TOSS">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack.</p>
+			<p>If you make this attack while threatened, you provoke an attack of opportunity from each creature threatening you.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_QUICK_TOSS"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Quick Toss" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_QUICK_TOSS">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_QUICK_TOSS</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_QUICK_TOSS" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_QUICK_TOSS"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_QUICK_TOSS"/>
+		</rules>
+	</element>
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- RALLY -->
+	<element name="Swift Rally" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_RALLY">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>You may use a bonus action or forgo one attack you make to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you.</p>
+			<p>That creature gains temporary hit points equal to your proficiency bonus + your Charisma modifier until the end of your next turn.</p>
+		</description>
+		<sheet action="1/Attack or Bonus Action">
+		
+			<description>Grant {{rally:hp}} temporary hitpoints to an ally until the end of your next turn.</description>
+			
+		</sheet>
+		<rules>
+			<stat name="rally:hp:base" value="charisma:modifier" />
+			<stat name="rally:hp:base" value="proficiency" />
+			<stat name="rally:hp:min" value="1" />
+
+			<stat name="rally:hp" value="rally:hp:min" bonus="base"/>
+			<stat name="rally:hp" value="rally:hp:base" bonus="base"/>
+		</rules>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Rally" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_RALLY">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_RALLY</requirements>
+		<description>
+			<p>You may forgo one attack you make to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you.</p>
+			<p>That creature gains temporary hit points equal to your proficiency bonus + your Charisma modifier until the end of your next turn.</p>
+		</description>
+	<sheet action="1/Attack">
+		
+			<description>Grant {{rally:hp}} temporary hitpoints to an ally until the end of your next turn.</description>
+			
+		</sheet>
+		<rules>
+			<stat name="rally:hp:base" value="charisma:modifier" />
+			<stat name="rally:hp:base" value="proficiency" />
+			<stat name="rally:hp:min" value="1" />
+
+			<stat name="rally:hp" value="rally:hp:min" bonus="base"/>
+			<stat name="rally:hp" value="rally:hp:base" bonus="base"/>
+		</rules>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Rally" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_RALLY">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>You may forgo one attack you make to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you.</p>
+			<p>That creature gains temporary hit points equal to your proficiency bonus + your Charisma modifier until the end of your next turn.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_RALLY"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Swift Rally" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_RALLY">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_RALLY</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_RALLY" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_RALLY"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_RALLY"/>
+		</rules>
+	</element>
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- RIPOSTE -->
+	<element name="Improved Riposte" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_RIPOSTE">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When a creature misses you with a melee attack, you can use your reaction to make a melee weapon attack against the creature.</p>
+		</description>
+		<sheet action="Reaction">
+		
+			<description>After a creature misses in melee, attack that creature.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Riposte" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_RIPOSTE">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_RIPOSTE</requirements>
+		<description>
+			<p>When a creature misses you with a melee attack, you can use your reaction to make a melee weapon attack against the creature.</p>
+			<p>On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet action="Reaction">
+		
+			<description>After a creature misses in melee, attack that creature. Provokes Opportunity on a miss.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Riposte" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_RIPOSTE">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When a creature misses you with a melee attack, you can use your reaction to make a melee weapon attack against the creature.</p>
+			<p>On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_RIPOSTE"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Riposte" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_RIPOSTE">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_RIPOSTE</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_RIPOSTE" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_RIPOSTE"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_RIPOSTE"/>
+		</rules>
+	</element>
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- CLEAVE -->
+	<element name="Great Cleave" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_CLEAVE">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When a melee attack you make reduces a target to 0 hit points, you may immediately make an additional melee attack against a creature that is immediately within your reach.</p>
+			<p>You normally may only make this attack once per round, but if this attack brings a target to 0 hit points, you may make it once more in a round.</p>
+		</description>
+		<sheet action="1/Round (Conditional)">
+		
+			<description>After reducing a creature to 0 hitpoints, attack a creature in reach. Can be used again if another creature is reduced to 0 hitpoints.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Cleave" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_CLEAVE">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_CLEAVE</requirements>
+		<description>
+			<p>When a melee attack you make reduces a target to 0 hit points, you may immediately make an additional melee attack against a creature that is immediately within your reach.</p>
+		</description>
+		<sheet action="1/Round">
+		
+			<description>After reducing a creature to 0 hitpoints, attack a creature in reach.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Cleave" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_CLEAVE">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When a melee attack you make reduces a target to 0 hit points, you may immediately make an additional melee attack against a creature that is immediately within your reach.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_CLEAVE"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Great Cleave" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_CLEAVE">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_CLEAVE</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_CLEAVE" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_CLEAVE"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_CLEAVE"/>
+		</rules>
+	</element>
+
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- ASSESSMENT -->
+	<element name="Great Tactical Assessment" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_TACTICAL_ASSESSMENT">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you take the attack action on your turn, you may replace one attack with a Study action instead.</p>
+			<p>You may add your proficiency bonus to the chosen check, if you are not already proficient in that skill.</p>
+		</description>
+		<sheet action="1/Attack">
+		
+			<description>Make an Study check. You are considered proficient in this check.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Tactical Assessment" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_TACTICAL_ASSESSMENT">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_TRIP_ATTACK</requirements>
+		<description>
+			<p>When you take the attack action on your turn, you may replace one attack with a Study action instead.</p>
+		</description>
+		<sheet action="1/Attack">
+		
+			<description>Make an Study check.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Tactical Assessment" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_TACTICAL_ASSESSMENT">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you take the attack action on your turn, you may replace one attack with a Study action instead.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_TACTICAL_ASSESSMENT"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Great Tactical Assessment" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_TACTICAL_ASSESSMENT">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_TACTICAL_ASSESSMENT</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_TACTICAL_ASSESSMENT" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_TACTICAL_ASSESSMENT"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_TACTICAL_ASSESSMENT"/>
+		</rules>
+	</element>
+
+
+	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
+<!-- TRIP -->
+	<element name="Improved Trip Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_TRIP_ATTACK">
+		<supports>ImpDiscipline</supports>
+		<description>
+			<p><i>Improved Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to knock the target down.</p>
+			<p>On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
+		</description>
+		<sheet action="1/Attack">
+		
+			<description>On a hit, force a strength saving throw. On a failed save, target large or smaller creature is knocked Prone.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the first effect that you get from a not-upgraded one. Whenever you improve this one goes away.-->
+	
+	<element name="Trip Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_TRIP_ATTACK">
+		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_TRIP_ATTACK</requirements>
+		<description>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to knock the target down.</p>
+			<p>On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
+			<p>On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet action="1/Attack">
+		
+			<description>On a hit, force a strength saving throw. On a failed save, target large or smaller creature is knocked Prone. Provoke Opportunity on a miss.</description>
+			
+		</sheet>
+	</element>
+	
+	<!-- This is the one that you select on the sheet-->
+	
+	<element name="Trip Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_TRIP_ATTACK">
+		<supports>Discipline</supports>
+		<description>
+			<p><i>Discipline</i></p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to knock the target down.</p>
+			<p>On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target prone.</p>
+			<p>On a miss, you provoke an attack of opportunity from the target creature.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_TRIP_ATTACK"/>
+		</rules>
+	</element>
+	
+	<!-- THIS one is selected to upgrade-->
+	
+	<element name="Improved Trip Attack" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_UPGRADE_TRIP_ATTACK">
+		<requirements>ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_TRIP_ATTACK</requirements>
+		<supports>Discipline</supports>
+		<description>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_TRIP_ATTACK" />
+			</div>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_TRIP_ATTACK"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_TRIP_ATTACK"/>
+		</rules>
+	</element>
 	
 <!--Feature Replacement Grants-->
 	<element name="Bait and Switch Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BAIT_AND_SWITCH" />
 	<element name="Brace Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_BRACE" />
 	<element name="Commander's Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_COMMANDERS_STRIKE" />
 	<element name="Commanding Presence Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_COMMANDING_PRESENCE" />
+	<element name="Defensive Fighting Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_DEFENSE_FIGHTING" />
 	<element name="Disarming Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_DISARMING_ATTACK" />
 	<element name="Exposing Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_EXPOSING_STRIKE" />
 	<element name="Feint Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_FEINT" />
 	<element name="Goading Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GOAD_STRIKE" />
 	<element name="Grappling Strike Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_GRAPPLE_STRIKE" />
 	<element name="Spring Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_SPRING_ATTACK" />
-	<element name="Maneuverng Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MANEUVERING_ATTACK" />
+	<element name="Maneuvering Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MANEUVERING_ATTACK" />
 	<element name="Menacing Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_MENACING_ATTACK" />
 	<element name="Power Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_POWER_ATTACK" />
 	<element name="Pushing Attack Replacement" type="Grants" source="Internal" id="ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_PUSH_ATTACK" />
