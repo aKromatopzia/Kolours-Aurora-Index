@@ -867,6 +867,7 @@
 	<requirements>ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_AUG_PSICRYSTAL_AWAKEN_AUG</requirements>
 		<description>
 			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
+			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
 			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
 		</description>
 		<sheet>
@@ -874,7 +875,7 @@
 		</sheet>
 		<rules>
 			<select type="Archetype Feature" supports="PersonaPsicrystal" />
-		<rules>
+		</rules>
 	</element>
 	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_SELECT">
 	<supports>Psicrystal</supports>
@@ -892,9 +893,9 @@
 	<element name="Augmented Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_AUG">
 	<supports>AugPsicrystal</supports>
 		<description>
-			<p>Your psicrystal has awakened to its own consciousness. You have a continuous mental link with your psicrystal, allowing you to direct it effortlessly.</p>
-			<p class="indent"><strong><em>Augmented.</em></strong> You can direct your psicrystal to act immediately after your turn without effort.</p>
-			<p class="indent">Additionally, choose a personality disposition for your psicrystal. It gains proficiency in a skill based on that choice.</p>
+			<div class="reference">
+				<div element="D_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_AWAKEN_SELECT" />
+			</div>
 		</description>
 		<sheet display="false" />
 	</element>
@@ -917,8 +918,9 @@
 		<sheet>
 			<p>You can direct your psicrystal to act immediately after your turn. On turns without directions, your psicrystal will dodge and can still move.</p>
 		</sheet>
+		<rules>
 			<select type="Archetype Feature" supports="PersonaPsicrystal" />
-		<sheet>
+		</rules>
 	</element>
 	<element name="Awaken Psicrystal" type="Archetype Feature" source="Sellsword's Stuff: Mystic Class" id="ID_SELLSWORD_ARCHETYPE_FEATURE_SAGE_PSICRYSTAL_PROPULSION_SELECT">
 	<supports>Psicrystal</supports>
