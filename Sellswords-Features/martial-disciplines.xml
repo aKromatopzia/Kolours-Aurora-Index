@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.1.4">
+		<update version="0.1.6">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -1141,7 +1141,7 @@
 		<supports>Discipline</supports>
 		<description>
 			<p><i>Discipline</i></p>
-			<p>When you move after taking the attack action on your turn, you may replace one attack to roll the damage die of that weapon, adding the number rolled to your AC until you stop moving.</p>
+			<p>You may forgo one attack you can make to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature until the end of your next turn.</p>
 		</description>
 		<sheet display="false"/>
 		<rules>
