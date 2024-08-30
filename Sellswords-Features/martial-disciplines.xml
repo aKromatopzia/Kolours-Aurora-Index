@@ -3,22 +3,22 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
 	
 	
-	<element name="Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE">
+	<element name="Fighter Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_FIGHTER_DISCIPLINE">
 		<description>
 			<p><i>Discipline Features</i></p>
 			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
 			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
-			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack modifier.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
 		</description>
 		<sheet>
 
-			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack modifier.</description>
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Improved Disciplines (Level 1)" supports="ImpDiscipline" number="2" requirements="[level:fighter:1]"/>
@@ -32,6 +32,40 @@
 			<select type="Class Feature" name="Improved Discipline (Level 16)" supports="ImpDiscipline" requirements="[level:fighter:16]"/>
 			<select type="Class Feature" name="Improved Discipline (Level 18)" supports="ImpDiscipline" requirements="[level:fighter:18]"/>
 			<select type="Class Feature" name="Improved Discipline (Level 20)" supports="ImpDiscipline" requirements="[level:fighter:20]"/>
+		</rules>
+	</element>
+	
+	<element name="Fighter Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_FIGHTER_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_FIGHTER_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FIGHTER_DISCIPLINE"/>
+		</rules>
+	</element>
+	
+	<element name="Rogue Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ROGUE_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
 			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:rogue:2]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:rogue:4]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:rogue:6]"/>
@@ -42,6 +76,41 @@
 			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:rogue:16]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 18)" supports="Discipline" requirements="[level:rogue:18]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:rogue:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Rogue Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_ROGUE_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ROGUE_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ROGUE_DISCIPLINE"/>
+		</rules>
+	</element>	
+	
+	<element name="Monk Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_MONK_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
 			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:monk:2]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:monk:4]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:monk:6]"/>
@@ -52,6 +121,41 @@
 			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:monk:16]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 18)" supports="Discipline" requirements="[level:monk:18]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:monk:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Monk Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_MONK_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_MONK_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_MONK_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Barbarian Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_BARBARIAN_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
 			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:barbarian:1]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:barbarian:2]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:barbarian:4]"/>
@@ -63,79 +167,16 @@
 			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:barbarian:16]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 18)" supports="Discipline" requirements="[level:barbarian:18]"/>
 			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:barbarian:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:ranger:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:ranger:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:ranger:6]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:ranger:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:ranger:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:ranger:14]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:ranger:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:ranger:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:paladin:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:paladin:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:paladin:6]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:paladin:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:paladin:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:paladin:14]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:paladin:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:paladin:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:bard:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:bard:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:bard:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:bard:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:bard:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:bard:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:cleric:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:cleric:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:cleric:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:cleric:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:cleric:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:cleric:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:artificer:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:artificer:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:artificer:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:artificer:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:artificer:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:artificer:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:wizard:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:wizard:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:wizard:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:wizard:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:wizard:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:wizard:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:warlock:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:warlock:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:warlock:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:warlock:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:warlock:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:warlock:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:druid:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:druid:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:druid:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:druid:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:druid:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:druid:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:mystic:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:mystic:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:mystic:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:mystic:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:mystic:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:mystic:20]"/>
-			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:sorcerer:1]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:sorcerer:4]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:sorcerer:8]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:sorcerer:12]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:sorcerer:16]"/>
-			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:sorcerer:20]"/>
 		</rules>
 	</element>
 	
-	<element name="Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_FIGHTER_DISCIPLINE">
+	
+	<element name="Barbarian Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_BARBARIAN_DISCIPLINE">
 		<compendium display="false" />
 		<description>
 			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
 			<div class="reference">
-				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE" />
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_BARBARIAN_DISCIPLINE" />
 			</div>
 		</description>
 		<setters>
@@ -145,10 +186,424 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DISCIPLINE"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_BARBARIAN_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Ranger Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_RANGER_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:ranger:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:ranger:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:ranger:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:ranger:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:ranger:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:ranger:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:ranger:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:ranger:20]"/>
 		</rules>
 	</element>
 	
+	
+	<element name="Ranger Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_RANGER_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_RANGER_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_RANGER_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Paladin Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_PALADIN_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:paladin:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:paladin:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 6)" supports="Discipline" requirements="[level:paladin:6]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:paladin:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:paladin:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 14)" supports="Discipline" requirements="[level:paladin:14]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:paladin:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:paladin:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Paladin Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_PALADIN_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_PALADIN_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_PALADIN_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Bard Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_BARD_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:bard:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:bard:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:bard:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:bard:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:bard:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:bard:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Bard Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_BARD_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_BARD_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_BARD_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Cleric Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_CLERIC_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:cleric:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:cleric:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:cleric:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:cleric:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:cleric:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:cleric:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Cleric Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_CLERIC_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_CLERIC_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_CLERIC_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Artificer Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ARTIFICER_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:artificer:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:artificer:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:artificer:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:artificer:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:artificer:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:artificer:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Artificer Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_ARTIFICER_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ARTIFICER_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ARTIFICER_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Wizard Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_WIZARD_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:wizard:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:wizard:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:wizard:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:wizard:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:wizard:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:wizard:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Wizard Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_WIZARD_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_WIZARD_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_WIZARD_DISCIPLINE"/>
+		</rules>
+	</element>
+
+	<element name="Warlock Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_WARLOCK_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:warlock:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:warlock:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:warlock:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:warlock:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:warlock:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:warlock:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Warlock Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_WARLOCK_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_WARLOCK_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_WARLOCK_DISCIPLINE"/>
+		</rules>
+	</element>
+	
+	<element name="Druid Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DRUID_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:druid:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:druid:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:druid:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:druid:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:druid:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:druid:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Druid Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_DRUID_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DRUID_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_DRUID_DISCIPLINE"/>
+		</rules>
+	</element>	
+
+	<element name="Mystic Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_MYSTIC_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:mystic:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:mystic:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:mystic:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:mystic:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:mystic:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:mystic:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Mystic Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_MYSTIC_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_MYSTIC_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_MYSTIC_DISCIPLINE"/>
+		</rules>
+	</element>	
+
+	<element name="Sorcerer Discipline" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_DISCIPLINE">
+		<description>
+			<p><i>Discipline Features</i></p>
+			<p>You may memorize up to a number of disciplines based on your class and level. On a Long Rest, you can select which disciplines memorized.</p>
+			<p>Disciplines that hit a creature still inflict damage in addition to their normal attack.</p>
+			<p>The DC of your disciplines is equal to 8 + your proficiency bonus + your weapon's Attack bonus.</p>
+		</description>
+		<sheet>
+
+			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Improved Discipline (Level 1)" supports="ImpDiscipline" requirements="[level:sorcerer:1]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 4)" supports="Discipline" requirements="[level:sorcerer:4]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 8)" supports="Discipline" requirements="[level:sorcerer:8]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 12)" supports="Discipline" requirements="[level:sorcerer:12]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 16)" supports="Discipline" requirements="[level:sorcerer:16]"/>
+			<select type="Class Feature" name="Standard Discipline (Level 20)" supports="Discipline" requirements="[level:sorcerer:20]"/>
+		</rules>
+	</element>
+	
+	
+	<element name="Sorcerer Disciplines" type="Item" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_ITEM_SORCERER_DISCIPLINE">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_DISCIPLINE" />
+			</div>
+		</description>
+		<setters>
+			<set name="category">Optional Class Features</set>
+			<set name="keywords">Disciplines, Discipline</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_SORCERER_DISCIPLINE"/>
+		</rules>
+	</element>	
+
 	<!-- This is the one that shows up on your sheet whenever you have improved the other ones, and it gets rid of the first one-->
 <!-- BAIT N SWITCH -->	
 	<element name="Vigilant Bait and Switch" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BAIT_AND_SWITCH">
