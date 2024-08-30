@@ -50,7 +50,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FIGHTER_DISCIPLINE"/>
+			<grant type="Class Feature" id="ID_SELLSWORD_REWORKS_CLASS_FEATURE_FIGHTER_DISCIPLINE"/>
 		</rules>
 	</element>
 	
