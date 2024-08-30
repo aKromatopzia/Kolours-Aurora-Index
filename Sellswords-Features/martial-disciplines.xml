@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -108,7 +108,7 @@
 		</description>
 		<sheet>
 
-			<description>Your Discipline DC is 8 + your proficiency + your weapon's Attack bonus.</description>
+			<description>Your Discipline DC is 8 + your Attack bonus.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Standard Discipline (Level 2)" supports="Discipline" requirements="[level:monk:2]"/>
@@ -724,7 +724,7 @@
 		<supports>Discipline</supports>
 		<description>
 			<div class="reference">
-				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_BRACE" />
+				<div element="ID_SELLSWORD_REWORKS_DISCIPLINE_IMP_BRACE" />
 			</div>
 		</description>
 		<sheet display="false"/>
