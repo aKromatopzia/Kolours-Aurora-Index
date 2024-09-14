@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.1.9">
+		<update version="0.1.10">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -1520,10 +1520,10 @@
 		<supports>ImpDiscipline</supports>
 		<description>
 			<p><i>Improved Discipline</i></p>
-			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you. On a miss, you provoke an attack of opportunity from the target creature.</p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p>
 		</description>
 		<sheet action="1/Attack">
-			<description>You may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you. On a miss, you provoke an attack of opportunity from the target creature.</description>			
+			<description>You may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</description>			
 		</sheet>
 	</element>
 	
@@ -1533,10 +1533,10 @@
 		<requirements>!ID_SELLSWORD_REWORKS_DISCIPLINE_REPLACEMENT_PUSH_ATTACK</requirements>
 		<description>
 			<p><i>Discipline</i></p>
-			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</p>
+			<p>When you make an attack action on your turn, you may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you. On a miss, you provoke an attack of opportunity from the target creature.</p>
 		</description>
 		<sheet action="1/Attack">
-			<description>You may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you.</description>
+			<description>You may replace one attack with a strike that attempts to drive the target back. On a hit, if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 15 feet away from you. On a miss, you provoke an attack of opportunity from the target creature.</description>
 		</sheet>
 	</element>
 	
@@ -1581,9 +1581,7 @@
 			<p>As a bonus action on your turn, you can make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack.</p>
 		</description>
 		<sheet action="Bonus Action">
-		
 			<description>Attack with a thrown weapon.</description>
-			
 		</sheet>
 	</element>
 	
@@ -1596,7 +1594,6 @@
 			<p>If you make this attack while threatened, you provoke an attack of opportunity from each creature threatening you.</p>
 		</description>
 		<sheet action="Bonus Action">
-		
 			<description>Attack with a thrown weapon. Provokes Opportunity from threats.</description>
 			
 		</sheet>
