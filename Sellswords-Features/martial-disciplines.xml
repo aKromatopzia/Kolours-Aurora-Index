@@ -3,7 +3,7 @@
 	<info>
 		<name>Martial Discipline Features</name>
 		<description>Discipline features for martial classes</description>
-		<update version="0.1.10">
+		<update version="0.1.11">
 			<file name="martial-disciplines.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/items-features.xml" />
 		</update>
 	</info>
@@ -768,7 +768,7 @@
 	
 	<!-- This is the one that you select on the sheet-->
 	
-	<element name="Commander's Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_COMMANDERS STRIKE">
+	<element name="Commander's Strike" type="Class Feature" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_REWORKS_DISCIPLINE_SELECT_COMMANDERS_STRIKE">
 		<supports>Discipline</supports>
 		<description>
 			<p><i>Discipline</i></p>
