@@ -7,28 +7,6 @@
 		</update>
 	</info>
 
-	<element name="Arcane Spellblade" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ARCANE_SPELLBLADE">
-		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
-		<description>
-			<p>When you learn this spell, you select one damage type from: Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, or Thunder.</p>
-			<p>You brandish your weapon with a surge of magic, and then you make one attack with the weapon used in the spell’s casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
-			<p>On a hit, you deal the weapon's damage as the damage type you selected when this spell was learned. This damage increases when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).</p>
-		</description>
-		<setters>
-			<set name="keywords">Acid, Radiant, Necrotic, Psychic, Cold, Force, Lightning, Fire, Poison, Thunder</set>
-			<set name="level">0</set>
-			<set name="school">Evocation</set>
-			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">false</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">a weapon with which you have proficiency</set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
 	<element name="Consecrate" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CONSECRATE">
 		<supports>Cleric, Paladin</supports>
 		<description>
@@ -186,6 +164,789 @@
 			<set name="materialComponent">a drop of mercury</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	
+		<element name="Flame Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_FIRE">
+		<supports>Druid, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects, and you can cause fire to leap from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting ability modifier.</p>
+			<p>At 5th level, the initial attack deals an extra 1d6 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d6 + your spellcasting ability modifier. Both damage rolls increase by 1d6 at 11th level (2d6 and 2d6) and 17th level (3d6 and 3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Fire, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Booming Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_SONIC">
+		<supports>Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects and then becomes sheathed in booming energy until the start of your next turn. If the target willingly moves a number of feet equal to or greater than the distance that the attack was made from before then, the target takes 1d6 thunder damage, and the spell ends.</p>
+			<p>At 5th level, the initial attack deals an extra 1d6 thunder damage to the target on a hit, and the damage the target takes for moving increases to 2d6. Both damage rolls increase by 1d6 at 11th level (2d6 and 3d6) and again at 17th level (3d6 and 4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Iceshatter Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_COLD">
+		<supports>Druid, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, make an attack roll against a random hostile creature within a 15 foot cone behind the first creature. On a hit, that creature takes cold damage equal to your spellcasting ability modifier.</p>
+			<p>At 5th level, the initial attack deals an extra 1d6 cold damage to the target on a hit, and the cold damage to the second creature increases to 1d6 + your spellcasting ability modifier. Both damage rolls increase by 1d6 at 11th level (2d6 and 2d6) and 17th level (3d6 and 3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Cold, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Electrostatic Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_LIGHTNING">
+		<supports>Druid, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects and begins to crackle with electric energy until the start of your next turn. The next creature that enters a space that is within 5 feet of the target is shocked by excess electricity for 1d6 Lightning damage, and the spell ends.</p>
+			<p>At 5th level, the initial attack deals an extra 1d6 Lightning damage to the target on a hit, and the damage dealt to the second creature increases to 2d6. Both damage rolls increase by 1d6 at 11th level (2d6 and 3d6) and again at 17th level (3d6 and 4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Lightning, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Censuring Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_RADIANT">
+		<supports>Bard, Cleric</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects and is branded with Radiant energy until the start of your next turn. If this creature uses its reaction, the brand erupts, dealing 1d8 Radiant damage to it, and the spell ends.</p>
+			<p>At 5th level, the initial attack deals an extra 1d8 Radiant damage to the target on a hit, and the damage dealt to by the brand increases to 2d8. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d8) and again at 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Radiant, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Withering Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_NECROTIC">
+		<supports>Cleric, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects, and if the creature is Bloodied, this attack does an additional 1d12 Necrotic damage.</p>
+			<p>At 5th level, the attack deals an extra 1d6 Necrotic damage to the target on a hit if it is not Bloodied, and the damage dealt to Bloodied creatures increases to 2d12. Both damage rolls increase at 11th level (2d6 and 3d12) and again at 17th level (3d6 and 4d12).</p>
+		</description>
+		<setters>
+			<set name="keywords">Necrotic, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Tetherlash Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_FORCE">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects and is wrapped in a ribbon of force until the end of your next turn. If you hit a different creature with this spell before the spell ends, both creatures are pulled 5 feet toward each other and take Force damage equal to your spellcasting ability modifier, and the spell ends for both creatures.</p>
+			<p>At Higher Levels. At 5th level, the attack deals an extra 1d6 Force damage to the target, and the damage dealt by the tether increases by 1d6. Both damage rolls increase by 1d6 at 11th level (2d6) and again at 17th level (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Force, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Venom-Drenched Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_POISON">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects and must make a Constitution saving throw. On a failed save, the creature takes 1d10 Poison damage.</p>
+			<p>At 5th level, the attack deals an extra 1d8 Poison damage to the target, and the damage dealt from a failed save increases by 1d10. Both damage rolls increase by 1d8 at 11th level (2d8 and 3d10) and again at 17th level (3d8 and 4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords">Poison, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Alchemical Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_ACID">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects and is then coated in dripping acid until the end of your next turn. If the target takes Fire or Acid damage while coated in this acid, it takes an additional 1d6 damage of that type.</p>
+			<p>At 5th level, the attack deals an extra 1d6 Acid damage to the target, and additional damage increases by 1d6. Both damage rolls increase by 1d6 at 11th level (2d6 and 3d6) and again at 17th level (3d6 and 4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Acid, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Sympathetic Weapon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPELLBLADE_PSYCHIC">
+		<supports>Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You brandish the weapon used in the spell’s casting and make an attack with it against one creature. The attack may use your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity.</p>
+			<p>On a hit, the target suffers the weapon attack’s normal effects, and a random hostile creature within 30 feet of the target takes Psychic damage equal to your spellcasting ability modifier.</p>
+			<p>At 5th level, the attack deals an extra 1d6 Psychic damage to the target, and the damage dealt to the second creature increases to 1d6 + your spellcasting ability modifier. Both damage rolls increase by 1d6 at 11th level (2d6) and again at 17th level (3d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Acid, Spellblade</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Deft Dagger" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_DEFT_DAGGER">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>With a lashing motion, you conjure and thrust an ephemeral steel spike at a distance. Make a melee spell attack against the target. On a hit, the target takes 1d10 piercing damage.</p>
+			<p>The spell creates more than one spike when you reach higher levels: two spikes at 5th level, three spikes at 11th level, and four spikes at 17th level. Each Spike is targeted at the same creature. Make a separate attack roll for each spike.</p>
+		</description>
+		<setters>
+			<set name="keywords">Piercing</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dagger or metal rod</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Lashing Tendril" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_LASHING_TENDRIL">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>The rope or ribbon used in the spell’s casting transforms into a bladed, flagellating tendril as you whip it toward a foe's legs. Make a ranged spell attack against a creature in range. On a hit, the creature takes 1d6 slashing damage and is knocked Prone.</p>
+			<p>At 5th level, this spell's range increases to 20 feet, and it deals 2d6 Slashing damage on a hit. These both increase again by 5 feet and 1d6 at 11th level (25 feet and 3d6) and 17th level (30 feet and 4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Slashing</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">15 (up to 30 at higher levels) feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cord of rope or ribbon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Trickster's Bolt" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_TRICKSTERS_BOLT">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You suspend a faintly glowing ball of concussive force from your position, and mentally declare a target for it. Whenever you release concentration, or immediately after casting this spell, the ball launches toward its target, provided that you can see it and it is within range. You make a ranged spell attack against the target, dealing 1d8 Bludgeoning damage on a hit.</p>
+			<p>At 5th level, the ball deals 2d8 Bludgeoning damage on a hit. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Bludgeoning</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">a bag of marbles</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Erratic Jolt" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ERRATIC_JOLT">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>Electricity flows through your hand and erupts from the tip of your finger, arcing toward a creature in range in a flash of light. Make a ranged spell attack against that creature, dealing 1d8 Lightning damage on a hit. If one or more of the damage dice for this attack rolls a 1, you may make another ranged spell attack on a creature within 5 feet of the first target, on a hit, that creature also takes 1d8 Lightning damage.</p>
+			<p>At 5th level, this spell deals 2d8 Lightning damage on both hits. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8)</p>
+		</description>
+		<setters>
+			<set name="keywords">Lightning</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Thunderous Whip" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_THUNDEROUS_WHIP">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You magically pull at the air with a swift motion, and after a brief delay, a powerful sound wave that can be heard from 100 feet away erupts at a chosen target. Make a ranged spell attack against a creature of your choice, on a hit, the creature takes 1d8 Thunder damage and has disadvantage on the next Perception (Wisdom) check that relies on hearing that it makes before the start of your next turn.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Negative Energy Ray" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_NEGATIVE_ENERGY_RAY">
+		<supports>Cleric, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You raise your finger in a twisted gesture, and a blood red ray streaks toward a target in range. Make a ranged spell attack against a creature in range, on a hit, the creature takes 1d6 Necrotic damage and subtracts 1d4 from the next attack roll it makes before the end of your next turn.</p>
+			<p>At Higher Levels. At 5th level, this spell's damage increases to 2d6. This increases by 1d6 again at 11th level (3d6) and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Necrotic</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shard from a broken mirror</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Energy Lance" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ENERGY_LANCE">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>A brilliant, ordered beam of coloured light erupts from your spellcasting focus. Make a ranged spell attack against a creature in range. On a hit, the creature takes 1d8 force damage, and you may push it 5 feet away from you.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Force</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spellcasting focus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Caustic Spines" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CAUSTIC_SPINES">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>A part of your body grows a manticore-like spine, dripping with acid. You lurch forward and eject the spine, making a ranged spell attack at a creature within range. On a hit, the creature takes 1d8 Acid damage. This spell is considered a Circle of the Moon spell.</p>
+			<p>The spell creates more than one spine when you reach higher levels: two spines at 5th level, three spines at 11th level, and four spines at 17th level. You may make an attack with each spike successively with the same action.</p>
+		</description>
+		<setters>
+			<set name="keywords">Acid</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a cluster of pine needles</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Illusory Assault" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ILLUSORY_ASSAULT">
+		<supports>Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You conjure an lifelike illusory threat, and threaten a creature at range with it. Make a ranged spell attack against a creature within range. On a hit, the creature takes 1d10 Psychic damage. The target perceives the damage as a type appropriate to the illusion.</p>
+			<p>At 5th level, this spell's damage increases to 2d10. This increases by 1d10 again at 11th level (3d10) and 17th level (4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords">Psychic</set>
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Shadow Crash" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SHADOW_CRASH">
+		<supports>Cleric, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You call forth a fountain of shadows from a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Constitution saving throw or take 1d6 Necrotic damage.</p>
+			<p>At 5th level, this spell's damage increases to 2d6. This increases by 1d6 again at 11th level (3d6) and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Necrotic</set>
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+		<element name="Energy Burst" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_ENERGY_BURST">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You unleash a wild blast of unstable magical energy beneath a target within range. The target must succeed on a Dexterity saving throw or take 1d10 Force damage and is pushed 5 feet in a direction of your choice.</p>
+			<p>At 5th level, this spell's damage increases to 2d10. This increases by 1d10 again at 11th level (3d10) and 17th level (4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords">Force</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spellcasting focus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Sound Burst" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SOUND_BURST">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You cause an eruption of sonic energy which can be heard 100 feet away. Choose one creature within range, it must succeed on a Constitution saving throw or take 1d6 Thunder damage and be deafened until the start of your next turn.</p>
+			<p>At 5th level, this spell's damage increases to 2d6. This increases by 1d6 again at 11th level (3d6) and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spellcasting focus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Spiny Hail" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SPINY_HAIL">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>With a sweeping motion, you conjure a volley of quills, spikes, or other pointed objects form in a 5-foot radius cylinder with a height of 10 feet A target must succeed on a Dexterity saving throw or take 1d6 piercing damage and have its movement speed reduced by 10 until the start of your next turn. The projectiles then fade into nothingness.</p>
+			<p>At 5th level, this spell's damage increases to 2d6. This increases by 1d6 again at 11th level (3d6) and 17th level (4d6).</p>
+		</description>
+		<setters>
+			<set name="keywords">Piercing</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a porcupine quill</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Sen's Pendulum" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SENS_PENDULUM">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You cut into a space that you can see within range to open a small dimensional rift. Until the spell ends, you create a swinging blade trap with a radius of 5 feet. Any creature in the trap's space when you cast the spell must succeed on a Dexterity saving throw or take 1d8 slashing damage.</p>
+			<p>A creature must also make the saving throw when it enters the trap's space on a turn or ends its turn there. A creature is subject to this saving throw only once per turn.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Slashing</set>
+			<set name="level">0</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a porcupine quill</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Kinetic Cannon" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_KINETIC_CANNON">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You make a grasping motion to an unsecured object that weighs between 1 and 5 pounds within range, and motion slinging it toward a creature within 15 feet of that object. It is launched in the direction of the creature, which must make a strength saving throw or take 1d6 Bludgeoning damage and be knocked prone.</p>
+			<p>At 5th level, this spell's damage increases to 2d6 and its casting range increases to 20 feet. This increases by 1d6 and 5 feet again at 11th level (3d6 and 25 feet) and 17th level (4d6 and 30 feet).</p>
+		</description>
+		<setters>
+			<set name="keywords">Bludgeoning</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">15 (up to 30 at higher levels) feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Kindling Claw" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_KINDLING_CLAW">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You swipe your hand at a target in arm's reach, engulfing them in magical flame. Make a melee spell attack at a creature within reach. On a hit, a creature takes 1d6 fire damage and is set ablaze, causing it to take 1d4 fire damage at the beginning of each of its turns. At the end of each of its turns, the creature makes a Dexterity saving throw against your spell save DC, ending the spell on a success.</p>
+			<p>At 5th level, this spell's damage on a hit increases to 2d6. This increases by 1d6 again at 11th level (3d6) and 17th level (4d6). At 11th level, the damage of the flames increases to 2d4 at the start of the creature's turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">Fire</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Shivergrasp" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_SHIVERGRASP">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You reach out at a target in arm's reach, and attempt to siphon their warmth. Make a melee spell attack against a creature in reach. On a hit, the creature takes 1d8 cold damage, and their speed is decreased by 10 until the start of your next turn. Additionally, on a hit, your speed is increased by 10 until the start of your next turn.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Cold</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Reverberate" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REVERBERATE">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You reach out at a target in arm's reach with a vibrating palm. Make a melee spell attack against a creature in range, on a hit, it takes 1d8 Thunder damage and begins to vibrate uncontrollably until the beginning of your next turn. If the creature makes an attack while vibrating, it does so at disadvantage, and the spell ends.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Thunder</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Rebuke" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_REBUKE">
+		<supports>Bard, Cleric, Druid</supports>
+		<description>
+			<p>You lunge at a target in arm's reach as divine energy coats your arm. Make a melee spell attack against a creature in range. On a hit, the creature takes 1d10 Radiant damage. You have advantage on this attack if the creature dealt damage to an allied creature since your last turn.</p>
+			<p>At 5th level, this spell's damage increases to 2d10. This increases by 1d10 again at 11th level (3d10) and 17th level (4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords">Radiant</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Kinetic Slam" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_KINETIC_SLAM">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You motion at a target in arm's reach, gathering magical energy that erupts at your palm. Make a melee spell attack against a creature in range. On a hit, the creature takes 1d8 Force damage and is pushed 10 feet away from you.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Force</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Toxin Skin" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_TOXIN_SKIN">
+		<supports>Artificer, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>Your hand becomes slick and colourful, and you reach out at a target in arm's reach. Make a melee spell attack against a creature in reach. On a hit, the creature takes 1d10 Poison damage, and it breaks out in a rash until the end of your next turn. If this creature makes a saving throw against Poison damage or the Poisoned condition while it has this rash, the save is made at disadvantage, and the spell ends.</p>
+			<p>At 5th level, this spell's damage increases to 2d10. This increases by 1d10 again at 11th level (3d10) and 17th level (4d10).</p>
+		</description>
+		<setters>
+			<set name="keywords">Poison</set>
+			<set name="level">0</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Intruding Thoughts" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_INTRUDING_THOUGHTS">
+		<supports>Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You reach out and grasp a target in arm's reach, attempting to force a Psychic connection. Make a melee spell attack against a target in reach. On a hit, the creature takes 1d8 Psychic damage and is overwhelmed by the intrusion until the start of your next turn. If the creature makes an ability check or saving throw while overwhelmed, it reduces the result of that check or save by 1d4, and this spell ends.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8). </p>
+		</description>
+		<setters>
+			<set name="keywords">Poison</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Intruding Thoughts" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_INTRUDING_THOUGHTS">
+		<supports>Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>You reach out and grasp a target in arm's reach, attempting to force a Psychic connection. Make a melee spell attack against a target in reach. On a hit, the creature takes 1d8 Psychic damage and is overwhelmed by the intrusion until the start of your next turn. If the creature makes an ability check or saving throw while overwhelmed, it reduces the result of that check or save by 1d4, and this spell ends.</p>
+			<p>At 5th level, this spell's damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8). </p>
+		</description>
+		<setters>
+			<set name="keywords">Psychic</set>
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Witch Bolt" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_WITCH_BOLT">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p>A beam of crackling energy lances toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against it. On a hit, the target takes 2d12 Lightning damage.</p>
+			<p>On each of your subsequent turns, you can take a Bonus Action to deal 1d12 Lightning damage to the target automatically, even if the first attack missed. The spell ends if the target is ever outside the spell’s range or if it has Total Cover from you.</p>
+			<p>When using a higher level spell slot, the initial damage increases by 1d12 for each spell slot level above 1.</p>
+		</description>
+		<setters>
+			<set name="keywords">Lightning</set>
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 Feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a twig struck by lightning</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Conjure Minor Elementals" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_CONJURE_MINOR_ELEMENTALS">
+		<supports>Druid, Wizard</supports>
+		<description>
+			<p>You conjure spirits from the Elemental Planes that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra 2d8 damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack).</p>
+			<p>In addition, the ground in the Emanation is Difficult Terrain for your enemies.</p>
+			<p>When using a higher level spell slot, the damage increases by 2d8 for each spell slot level above 4.</p>
+		</description>
+		<setters>
+			<set name="keywords">Lightning, Acid, Cold, Fire</set>
+			<set name="level">4</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>
 </elements>
