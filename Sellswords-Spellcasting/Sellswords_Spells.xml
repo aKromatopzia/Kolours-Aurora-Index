@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Sellsword's Basin: Mercenary Spellcasting</name>
-		<update version="0.0.18">
+		<update version="0.0.19">
 			<file name="Sellswords_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Spellcasting/Sellswords_Spells.xml" />
 		</update>
 	</info>
