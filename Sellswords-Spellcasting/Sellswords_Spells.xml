@@ -949,4 +949,27 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
+	<element name="Starry Wisp" type="Spell" source="Sellsword's Stuff: Mercenary Spellcasting" id="ID_SELLSWORDS_SPELL_STARRY_WISP">
+		<supports>Druid, Bard, Cleric</supports>
+		<description>
+			<p>You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can’t benefit from the Invisible condition.</p>
+			<p>At 5th level, the damage increases to 2d8. This increases by 1d8 again at 11th level (3d8) and 17th level (4d8).</p>
+		</description>
+		<setters>
+			<set name="keywords">Radiant</set>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">60 Feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
 </elements>
