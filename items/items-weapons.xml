@@ -267,41 +267,21 @@
 	</append>
 
 	<!-- Parrying Dagger -->
-	
-	<element
-		name="Parrying Dagger"
-		type="Weapon"
-		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_SELLSWORDS_ITEMS_WEAPON_PARRYING_DAGGER"
-	>
-		
-		<!--For internal ID labeling representing different weapon properties, like ranged, light, martial, reach etc.-->
-		<!--Instructions: pick one or more from each group to keep. Be sure to put commas in properly!-->
+	<element name="Parrying Dagger" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_PARRYING_DAGGER">
 		<supports>
-			<!--Weapon classification-->
 			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
-
 			ID_INTERNAL_DAMAGE_TYPE_PIERCING,
-			<!--I'm too lazy to type everything else out, so just make an educated guess: force, necrotic, radiant, fire, cold, acid, poison, lighting, thunder, psychic-->
-			
-			<!--Weapon properties-->
 			ID_INTERNAL_WEAPON_PROPERTY_FINESSE,
 			ID_INTERNAL_WEAPON_PROPERTY_LIGHT,
 			ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER,
 			ID_UA2023_MASTERY_TRAIT_NICK
-			
-			<!--Since this is a list, make sure there is a comma separating every entry, and there is no comma at the end.-->
 		</supports>
 		
 		<description>
-			<!--This is where the item's description goes. It will show up on Aurora. Format it like any other html diarrhea-->
 			<p>Mastery: Nick</p>
 			<p>You are proficient with this weapon if you are proficient with shortswords.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER" />
-			
 		</description>
-		
-		<!--Various settings regarding the weapon.-->
 		<setters>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">2</set>
@@ -311,21 +291,13 @@
 			<set name="proficiency">ID_SELLSWORDS_PROFICIENCY_WEAPON_PARRYING_DAGGER</set>
 		</setters>
 	</element>
-	
-
-	<element
-		name="Weapon Proficiency (Parrying Dagger)"
-		type="Proficiency"
-		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_SELLSWORDS_PROFICIENCY_WEAPON_PARRYING_DAGGER"
-	>
+	<element name="Weapon Proficiency (Parrying Dagger)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_PARRYING_DAGGER">
 		<supports>
-			Weapon,
-			Melee,
+			Weapon, Melee,
 			ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE,
 			ID_INTERNAL_DAMAGE_TYPE_PIERCING,
 			ID_INTERNAL_WEAPON_PROPERTY_FINESSE,
-			ID_INTERNAL_WEAPON_PROPERTY_LIGHT
+			ID_INTERNAL_WEAPON_PROPERTY_LIGHT,
 			ID_UA2023_MASTERY_TRAIT_NICK
 		</supports>
 	</element>
@@ -336,14 +308,45 @@
 		</rules>
 	</append>
 	
-	<element
-		name="Special Property (Parrying Dagger)"
-		type="Weapon Property"
-		source="Sellsword's Stuff: Custom Weaponry"
-		id="ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER"
-	>
+	<element name="Special Property (Parrying Dagger)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_PARRYING_DAGGER">
 		<description>
 			<p>If you have proficiency with this weapon, and a creature misses you with a melee attack by 3 or more while you have a parrying dagger equipped, you can use your reaction to make a melee weapon attack against that creature with another equipped weapon other than the parrying dagger.</p>
+		</description>
+	</element>
+	
+	<!-- Dart, Gunpowder -->
+	<element name="Dart, Gunpowder" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_GUNPOWDER_DART">
+		<supports>
+			Weapon, Ranged,
+			ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED,
+			ID_INTERNAL_WEAPON_TYPE_FIRE,
+			ID_INTERNAL_WEAPON_PROPERTY_FINESSE,
+			ID_INTERNAL_WEAPON_PROPERTY_LIGHT,
+			ID_INTERNAL_WEAPON_PROPERTY_THROWN,
+			ID_UA2023_MASTERY_TRAIT_VEX
+		</supports>
+		
+		<description>
+			<p>Mastery: Vex</p>
+			<p>You inherit proficiency on this weapon from darts.</p>
+			<p>If you are proficient with Tinkers Tools, you can modify any dart into a Gunpowder Dart, provided you have 10GP worth of gunpowder.</p>
+			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_GUNPOWDER_DART"></div>
+		</description>
+		
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">10</set>
+			<set name="weight" lb="0.8214">23/28 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">20/60</set>
+			<set name="damage" type="fire">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DART</set>
+		</setters>
+	</element>
+	
+	<element name="Explosive! (Gunpowder Dart)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_GUNPOWDER_DART">
+		<description>
+			<p>When this dart hits a creature, it explodes, destroying the dart and causing 1d6 fire damage to the target and all creatures adjacent to it.</p>
 		</description>
 	</element>
 	
