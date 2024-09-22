@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>5.5 Background Selection</name>
+		<description>5.5 Background Selection</description>
+		<update version="0.0.1">
+			<file name="background-sellsword.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/background-sellsword.xml" />
+		</update>
+	</info>
+
+	<element name="5.5 Background Selection" type="Background" source="Sellsword's Backgrounds" id="ID_BACKGROUND_SELLSWORD_FIVE_POINT_FIVE">
+		<description>
+			<p>Each part of your character’s origin reflects facets of your character, their life, and the circumstances that started them on the path to adventure.</p>
+			<p class="indent">While I would really love to make this the more complicated setup that they've got going on with 5.5 proper, the fact of the matter is that I'll go insane, so to compromise, go ahead and pick:</p>
+			<ul class="unstyled">
+				<li>An Origin Feature</li>
+				<li>Two skill proficiencies of your choice</li>
+				<li>A tool proficiency of your choice</li>
+				<li>50 GP, if this is a new character</li>
+			</ul>
+			<p>The rest of the new rules really cut out a whole lot of what was going on with backgrounds, so now I've got a ton of blank space to leave here. Hi.</p>
+		</description>
+		<setters>
+			<set name="short">Origin Feat, 2 Skills, 1 Tool, 50GP</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (5.5 Background)" number="2" supports="Skill" />
+			<select type="Proficiency" name="Tool Proficiency (5.5 Background)" supports="Tool" />
+			<select type="Background Feature" name="Origin Feat" supports="Origin Feat" />
+		</rules>
+	</element>
+
+	<element name="Alert" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_ALERT">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You gain the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Initiative Proficiency:</strong> When you roll Initiative, you can add your Proficiency Bonus to the roll.</li>
+			<li><strong>Initiative Swap:</strong> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can’t make this swap if you or the ally has the Incapacitated condition.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You add your proficiency bonus to your Initiative rolls, and if you may swap your Initiative with a willing ally if neither of you are Incapacitated.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="proficiency" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_JACK_OF_ALL_TRADES_DISABLE" />
+		</rules>
+	</element>
+	
+	<element name="Crafter" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_CRAFTER">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You have an arsenal of profession knowledge that you can utilize for on-the-fly improvisation. You gain the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Tool Proficiency:</strong> You gain proficiency with three different Artisan’s Tools of your choice from the Fast Crafting table.</li>
+			<li><strong>Discount:</strong> Whenever you buy a nonmagical item, you receive a 20 percent discount on it.</li>
+			<li><strong>Fast Crafting:</strong> When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan’s Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.</li>
+			</ul>
+				<table>
+					<thead>
+						<tr><td class="col-25">Tool</td><td>Crafted Gear</td></tr>
+					</thead>
+					<tr><td>Carpenter’s Tools</td><td>Ladder, Torch</td></tr>
+					<tr><td>Leatherworker’s Tools</td><td>Crossbow Bolt Case, Map or Scroll Case, Pouch</td></tr>
+					<tr><td>Mason’s Tools</td><td>Block and Tackle</td></tr>
+					<tr><td>Potter’s Tools</td><td>Jug, Lamp</td></tr>
+					<tr><td>Smith’s Tools</td><td>Ball Bearings, Bucket, Caltrops, Grappling Hook, Iron Pot</td></tr>
+					<tr><td>Tinker’s Tools</td><td>Bell, Shovel, Tinderbox</td></tr>
+					<tr><td>Weaver’s Tools</td><td>Basket, Rope, Net, Tent</td></tr>
+					<tr><td>Woodcarver’s Tools</td><td>Club, Greatclub, Quarterstaff</td></tr>
+				</table>
+		</description>
+		<sheet>
+			<description>You gain proficiency with three Artisan's Tools from the Fast Crafting table, you recieve a 20 percent discount on nonmagical items, and when you finish a long rest, you can use tools you are proficient in to craft an item from its fast crafting table that lasts until your next long rest.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency (Crafter)" number="3" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>
+	
+	<element name="Healer" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_HEALER">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Battle Medic:</strong> If you have a Healer’s Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</li>
+			<li><strong>Healing Rerolls:</strong> Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>If you have a Healer’s Kit, you can Utilize it to allow a creature within 5 feet to expend one of its Hit Point Dice and heal equal to the roll plus your proficiency bonus. When you restore hit points using a spell or this feature, you can reroll 1s and must use the new roll.</description>
+		</sheet>
+	</element>
+	
+	<element name="Lucky" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_LUCKY">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You have inexplicable luck that seems to kick in at just the right moment:</p>
+			<ul class="unstyled">
+			<li><strong>Luck Points:</strong> You have a number of Luck points equal to your proficiency bonus.</li>
+			<li><strong>Lucky:</strong> Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw.</li>
+			<li><strong>Unlucky:</strong> You can spend one luck point when an attack roll is made against you. Roll a d20 and then choose whether the attack uses the attacker's roll or yours.</li>
+			</ul>
+			<p>If more than one creature spends a luck point to influence the outcome of a roll, the points cancel each other out; no additional dice are rolled. You regain your expended luck points when you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description>You have a number of Luck points equal to your proficiency bonus. You may spend 1 point to add an additional d20 to one of your attack rolls, an ability check, or a saving throw and choose which between the two you use. You may also spend one to roll another whenever an attack roll is made against you, and choose which is used.</description>
+		</sheet>
+	</element>
+	
+	<element name="Magic Initiate: Intelligence" type="Feat Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_INTELLIGENCE">
+		<supports>Origin Initiate</supports>
+		<description>
+			<p></p>
+		</description>
+		<sheet> 
+		<description>You use Intelligence as your spellcasting ability for your Magic Initiate spells.</description>
+		</sheet>
+	</element>
+	
+	<element name="Magic Initiate: Wisdom" type="Feat Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_WISDOM">
+		<supports>Origin Initiate</supports>
+		<description>
+			<p>You use Wisdom as your spellcasting ability for your Magic Initiate spells.</p>
+		</description>
+		<sheet> 
+		<description>You use Wisdom as your spellcasting ability for your Magic Initiate spells.</description>
+		</sheet>
+	</element>
+	
+	<element name="Magic Initiate: Charisma" type="Feat Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_CHARISMA">
+		<supports>Origin Initiate</supports>
+		<description>
+			<p>You use Charisma as your spellcasting ability for your Magic Initiate spells.</p>
+		</description>
+		<sheet> 
+		<description>You use Charisma as your spellcasting ability for your Magic Initiate spells.</description>
+		</sheet>
+	</element>
+	
+	<element name="Magic Initiate: Cleric" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_CLERIC">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You've dabbled a little in the arts of divine magic, gaining the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Two Cantrips:</strong> You learn two cantrips of your choice from the Cleric spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (chosen from the feat tab when you select this feat).</li>
+			<li><strong>Level 1 Spell:</strong> Choose a level 1 spell from the Cleric spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+			<li><strong>Spell Change:</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the Cleric spell list.</li>
+			</ul>
+		</description>
+		<sheet> 
+		<description>You've dabbled a little in the arts of divine magic, and have learned two cantrips and one spell from the Cleric spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Cleric" number="2" />
+			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Cleric" />
+			<select type="Feat Feature" name="Cleric Initiate" supports="Origin Initiate" />
+		</rules>
+	</element>
+	
+	<element name="Magic Initiate: Wizard" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_WIZARD">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You've dabbled a little in the arts of divine magic, gaining the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Two Cantrips:</strong> You learn two cantrips of your choice from the Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (chosen from the feat tab when you select this feat).</li>
+			<li><strong>Level 1 Spell:</strong> Choose a level 1 spell from the Wizard spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+			<li><strong>Spell Change:</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the Wizard spell list.</li>
+			</ul>
+		</description>
+		<sheet> 
+		<description>You've dabbled a little in the arts of divine magic, and have learned two cantrips and one spell from the Wizard spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Wizard" number="2" />
+			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Wizard" />
+			<select type="Feat Feature" name="Wizard Initiate" supports="Origin Initiate" />
+		</rules>
+	</element>
+	
+	<element name="Magic Initiate: Druid" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_DRUID">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You've dabbled a little in the arts of divine magic, gaining the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Two Cantrips:</strong> You learn two cantrips of your choice from the Druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (chosen from the feat tab when you select this feat).</li>
+			<li><strong>Level 1 Spell:</strong> Choose a level 1 spell from the Druid spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.</li>
+			<li><strong>Spell Change:</strong> Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the Druid spell list.</li>
+			</ul>
+		</description>
+		<sheet> 
+		<description>You've dabbled a little in the arts of divine magic, and have learned two cantrips and one spell from the Druid spell list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Magic Initiate)" supports="0,Druid" number="2" />
+			<select type="Spell" name="1st-level Spell (Magic Initiate)" supports="1,Druid" />
+			<select type="Feat Feature" name="Druid Initiate" supports="Origin Initiate" />
+		</rules>
+	</element>
+	
+	<element name="Musician" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MUSICIAN">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You are a practiced musician, granting you the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Instrument Training:</strong> You gain proficiency with three Musical Instruments of your choice.</li>
+			<li><strong>Encouraging Song:</strong> As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You gain proficiency with three musical instruments of your choice, and may use a short or long rest to grant Inspiration to a number of allies up to your proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Musical Instrument (Musician)" supports="Musical Instrument" number="3" />
+		</rules>
+	</element>
+	
+	<element name="Savage Attacker" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SAVAGE_ATTACKER">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>You’ve trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.</p>
+		</description>
+		<sheet>
+			<description>You’ve trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.</description>
+		</sheet>
+	</element>
+	
+	<element name="Skilled" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SKILLED">
+		<description>
+			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
+		</description>
+		<sheet>
+		<description>You gain proficiency in any combination of three skills or tools of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Skilled)" supports="Skill||Tool" number="3" />
+		</rules>
+	</element>
+
+	<element name="Tavern Brawler" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_TAVERN_BRAWLER">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>Accustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:</p>
+			<ul class="unstyled">
+			<li><strong>Enhanced Unarmed Strike:</strong> When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</li>
+			<li><strong>Damage Rerolls:</strong> Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.</li>
+			<li><strong>Improvised Weaponry:</strong> You have proficiency with improvised weapons.</li>
+			<li><strong>Push:</strong> When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Accustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, your unarmed damage die is a d4, you may reroll a 1 on the damage of an unarmed strike and must use the new roll, you are proficient with improvised weapons, and once per turn when you hit a creature with an Unarmed Strike as part of an Attack action, you may push it away 5 feet.</description>
+		</sheet>
+	</element>
+	
+	<element name="Tough" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_TOUGH">
+		<supports>Origin Feat</supports>
+		<description>
+			<p>Your hit points maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.</p>
+		</description>
+		<sheet>
+			<description>Your hit points maximum increases by {{tough:hp}}.</description>
+		</sheet>
+		<rules>
+			<stat name="tough:hp" value="level" />
+			<stat name="tough:hp" value="level" />
+			<stat name="hp" value="tough:hp" />
+		</rules>
+	</element>
+	
+</elements>
