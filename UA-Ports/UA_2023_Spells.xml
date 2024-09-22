@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Unearthed Arcana: Bastions And Cantrips</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="UA_2023_Spells.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/UA-Ports/UA_2023_Spells.xml" />
 		</update>
 	</info>
@@ -118,23 +118,23 @@
 		</setters>
 	</element>
 	
-	<element name="Blade Ward" type="Spell" source="UA 2023: One DND" id="ID_UA2023BNC_SPELL_BLADE_WAED">
+	<element name="Blade Ward" type="Spell" source="DND: PHB24" id="ID_DND24_SPELL_BLADE_WAED">
 		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<p>You trace a sigil of warding, imposing Disadvantage on the creature’s attack roll against you.</p>
+			<p>Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll.</p>
 		</description>
 		<setters>
 			<set name="keywords"></set>
 			<set name="level">0</set>
 			<set name="school">Abjuration</set>
-			<set name="time">Reaction, which you take in response to a visible creature targeting you with a melee attack</set>
-			<set name="duration">Instantaneous</set>
+			<set name="time">Action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
 			<set name="range">Self</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
-			<set name="isConcentration">false</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
