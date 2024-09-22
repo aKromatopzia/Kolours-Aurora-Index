@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Features</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="sellsword-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/sellsword-features.xml" />
 		</update>
 	</info>
@@ -26,4 +26,28 @@
 			<select type="Spell" name="Psionic Discipline (Psionic Awakening)" supports="Psionic Disciplines"/>
 		</rules>
 	</element>
+	
+	<element name="Vital Sacrifice" type="Feat" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_FEAT_VITAL_SACRIFICE">
+		<description>
+			<p>You've learned secrets of blood magic that grant you heightened power at the price of your own life force.</p>
+			<p>You increase your Constitution or Intelligence score by 1, to a maximum of 20.</p>
+			<p>As part of an action, you can choose to take 1d6 necrotic damage to gain one of the following benefits:</p>
+			<ul>
+				<li>When you miss with an attack roll, you may roll 1d6 and add it to the total.</li>
+				<li>When you deal damage with an attack or spell, you deal an additional necrotic damage equal to 1d6 + your proficiency bonus.</li>
+				<li>When you cause a creature to make a Strength, Dexterity, or Constitution saving throw, roll a d4 and reduce their save by the amount rolled.</li>
+			</ul>
+			<p>Damage you take from this feature can’t be reduced in any way, and it ignores temporary hitpoints. The damage taken does not disrupt your Concentration.</p>
+		</description>
+		<sheet>
+			<description>You may take 1d6 unmitigated necrotic damage to:
+			Add 1d6 to a missed attack roll.
+			Add an additional 1d6 + {{proficiency}} to damage dealt with an attack or spell.
+			Reduce the result of a Strength, Dexterity, or Constitution save that you caused by 1d4.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Vital Sacrifice)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+	
 </elements>
