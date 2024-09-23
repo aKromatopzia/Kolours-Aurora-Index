@@ -3,7 +3,7 @@
 	<info>
 		<name>5.5 Background Selection</name>
 		<description>5.5 Background Selection</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="background-sellsword.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/background-sellsword.xml" />
 		</update>
 	</info>
@@ -227,6 +227,7 @@
 	</element>
 	
 	<element name="Skilled" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SKILLED">
+		<supports>Origin Feat</supports>
 		<description>
 			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
 		</description>
