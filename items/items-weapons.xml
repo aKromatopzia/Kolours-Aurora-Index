@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Weaponry</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-weapons.xml" />
 		</update>
 	</info>
@@ -16,7 +16,9 @@
 		
 	<element name="Special (Smokepowder)" type="Weapon Property" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER">
 		<description>
-		<p>After this weapon is fired, an Action is required to load it with ammunition and smokepowder. The hand cannon can be loaded by somebody other than its wielder. Damage and range is based on the loaded ammunition. A packet of smokepowder is good for two shots and its ammunition is usually a 1lbs iron ball or pouch of 500 ball bearings.</p>
+		<p>After this weapon is fired, an Action is required to load it with ammunition and smokepowder.</p>
+		<p>A hand cannon can be loaded by somebody other than its wielder. Damage and range is based on the loaded ammunition. A packet of smokepowder is good for two shots and its ammunition is usually a 1lbs iron ball or pouch of 500 ball bearings.</p>
+		<p>A firearm can be loaded with its listed ammunition type, and follows the rules of its Reload trait.</p>
 		</description>
 	</element>
 
@@ -93,7 +95,7 @@
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_RELOAD_18_SHOTS, ID_WOTC_DMG_WEAPON_PROPERTY_FIREARM_BURST_FIRE, ID_UA2023_MASTERY_TRAIT_SLOW</supports>
 		<description>
 			<p><i>This is a test weapon.</i></p>
-			<p>A uniquely-designed crossbow from a bygone era, the avelyn fires thrice per trigger-pull but suffers from a lesser velocity as a result. It's fed from a that can be mounted to its side.</p>
+			<p>A uniquely-designed crossbow from a bygone era, the avelyn fires thrice per trigger-pull but suffers from a lesser velocity as a result. It's fed from a box that can be mounted to its side.</p>
 			<div element="ID_UA2023_MASTERY_TRAIT_SLOW" />
 		</description>
 		<setters>
@@ -513,8 +515,8 @@
 		</description>
 	</element>
 	
-	<!-- Shaaran Six-Shooter -->
-	<element name="Shaaran Six-Shooter" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
+	<!-- Shaaran Six-Chambers -->
+	<element name="Shaaran Six-Chamber" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_SHAAR_REVOLVER">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_6</supports>
 		<description>
 			<p>You know what this is. Rarely used in the wastelands of the Shaar. Known to be reliable and effient under the hot wasteland sun, given the rumour that these were in fact the weapon of choice for the wildspacers that once gathered here.</p>
@@ -537,7 +539,7 @@
 		</setters>
 	</element>
 
-	<element name="Weapon Proficiency (Shaaran Six-Shooter)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER">
+	<element name="Weapon Proficiency (Shaaran Six-Chamber)" type="Proficiency" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_PROFICIENCY_WEAPON_SHAAR_REVOLVER">
 		<supports>Weapon, Ranged, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_UA2023_MASTERY_TRAIT_SLOW, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_6</supports>
 	</element>
 
@@ -574,7 +576,7 @@
 	<element name="Long-gonne" type="Weapon" source="Sellsword's Stuff: Custom Weaponry" id="ID_SELLSWORDS_ITEMS_WEAPON_LONGGONNE">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_UA2023_MASTERY_TRAIT_VEX, ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER, ID_SELLSWORDS_WEAPON_PROPERTY_RELOAD_5</supports>
 		<description>
-			<p>Supposedly a common make amongst wildspacers, this is a long-rifle with an internal chamber. Known for its characteristic chime when reloading.</p>
+			<p>Supposedly a common make amongst wildspacers, of which there are next-to-none to ask. This is a long-rifle with an internal chamber known for its characteristic chime when reloading. It features a bolt </p>
 			<p>This weapon takes large ammunition.</p>
 			<div element="ID_SELLSWORDS_WEAPON_PROPERTY_SPECIAL_SMOKEPOWDER" />
 			<div element="ID_UA2023_MASTERY_TRAIT_VEX" />
