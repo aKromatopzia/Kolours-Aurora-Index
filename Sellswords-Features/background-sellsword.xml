@@ -3,7 +3,7 @@
 	<info>
 		<name>5.5 Background Selection</name>
 		<description>5.5 Background Selection</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="background-sellsword.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/background-sellsword.xml" />
 		</update>
 	</info>
@@ -277,7 +277,7 @@
 			<p>You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures - enough to communicate on a rudimentary level.</p>
 		</description>
 		<sheet>
-		<description>You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures - enough to communicate on a rudimentary level.</description>
+			<description>You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures - enough to communicate on a rudimentary level.</description>
 		</sheet>
 		<rules>
 			<select type="Language" name="Language (Multilingual)" supports="Standard||Regional" number="2" />
