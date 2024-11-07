@@ -3,10 +3,30 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.25">
+		<update version="0.0.24">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
+	
+	<!-- <! Kris of the Yusof Family > -->	
+	<element name="Kris of the Yusof Family" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_YSUOF_KRIS">
+		<description>
+			<p>You gain a +3 bonus to attack and damage rolls made with this magic weapon.</p>
+			<p>1/D, you can draw the weapon and the sword gains the effects of Spirit Guardians (Neutral, Necrotic) for 10 minutes or until it is sheathed. It cannot be unsheathed otherwise.</p>
+			<p>Its wielder is immune to the effect. After 1 minute of being unsheathed, its wielder is also affected. After 10 minutes or if Spirit Guardians would be dispeled or cancelled, its sheath magically teleports back onto the blade.</p>
+			<p>If the sheath can't return to the blade by the duration's end, the blade becomes nonmagical until it is re-sheathed. It also loses the bonuses.</p>
+		</description>
+		<setters>
+			<set name="keywords">scimitar, sellswords, necrotic</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="scimitar">Weapon</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">1</set>
+			<set name="weapon">Scimitar</set>
+		</setters>
+	</element>
 	
 	<element name="Abyssal Huo-Chong" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_INFERNAL_HUO_CHONG">
 		<description>
