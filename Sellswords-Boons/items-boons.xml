@@ -3,10 +3,18 @@
 	<info>
 		<name>Sellswords Boons</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.15">
+		<update version="0.0.16">
 			<file name="items-boons.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Boons/items-boons.xml" />
 		</update>
 	</info>
+	
+	<element name="Favour of the Dark Sea" type="Boon" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_BOON_HADAR_FAVOUR">
+		<description>
+			<p>This boon has 2 charges, you get 1 charge for each additional instance of the boon. You regain these charges at midnight.</p>
+			<p>You can expend 1 charge to cast Arms of Hadar; and 4 charges to cast Hunger of Hadar. The DC is 15.</p>
+		</description>
+	</element>
+
 	<element name="Spellmark Properties" type="Info" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_INFO_SPELLMARK_PROPERTY">
 		<description>
 			<p>Spellmarks and spellscars are commonly regarded as curses or arcane infections, but they can confer beneficial effects and abilities onto their bearers.</p>
