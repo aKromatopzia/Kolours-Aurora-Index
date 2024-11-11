@@ -50,7 +50,7 @@
 		</rules>
 	</element>
 	
-	<element name="Grappler (5.5e) type="Feat" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_FEAT_GRAPPLER">
+	<element name="Grappler (5.5e)" type="Feat" source="Sellsword's Stuff: Features" id="ID_SELLSWORD_FEAT_GRAPPLER">
 		<prerequisite>Strength or Dexterity 13 or higher</prerequisite>
 		<requirements>[level:4],[str:13]||[dex:13]</requirements>
 		<description>
