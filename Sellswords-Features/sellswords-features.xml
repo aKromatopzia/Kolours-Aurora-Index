@@ -3,7 +3,7 @@
 	<info>
 		<name>Sellswords Features</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="sellsword-features.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/sellsword-features.xml" />
 		</update>
 	</info>
