@@ -81,8 +81,9 @@
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION"/>
+			<div element="ID_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE"/>
-			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" />
+			<div element="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT"/>
@@ -102,7 +103,6 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
@@ -113,12 +113,13 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION" level="2"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE" level="3"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT_ROGUE" level="4"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" level="5"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" level="5"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION" level="7"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT" level="11"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_BLINDSENSE" level="14"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT" level="7"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND" level="15"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ELUSIVE" level="18"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK" level="20"/>
