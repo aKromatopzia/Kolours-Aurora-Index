@@ -8,5 +8,6 @@
 	</info>
 	<files>
 		<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog" />
+		<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-mnk" />
 	</files>
 </index>
