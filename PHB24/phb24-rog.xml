@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>PHB24 Rogue</name>
-		<description>PHB24 Rogue</description>
-		<update version="0.0.4">
+		<name>Rogue</name>
+		<description>Rogue</description>
+		<update version="0.0.6">
 			<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog.xml" />
 		</update>
 	</info>

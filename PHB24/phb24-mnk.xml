@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>PHB24 Monk</name>
-		<description>PHB24 Monk</description>
-		<update version="0.0.4">
+		<name>Monk</name>
+		<description>Monk</description>
+		<update version="0.0.6">
 			<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-mnk.xml" />
 		</update>
 	</info>
