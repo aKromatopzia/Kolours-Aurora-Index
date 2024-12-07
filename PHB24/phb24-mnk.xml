@@ -3,8 +3,8 @@
 	<info>
 		<name>PHB24 Monk</name>
 		<description>PHB24 Monk</description>
-		<update version="0.0.1">
-			<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/refs/heads/main/PHB24/phb24-mnk" />
+		<update version="0.0.3">
+			<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-mnk.xml" />
 		</update>
 	</info>
 	

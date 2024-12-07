@@ -3,8 +3,8 @@
 	<info>
 		<name>PHB24 Rogue</name>
 		<description>PHB24 Rogue</description>
-		<update version="0.0.1">
-			<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/refs/heads/main/PHB24/phb24-rog" />
+		<update version="0.0.3">
+			<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog.xml" />
 		</update>
 	</info>
 	
