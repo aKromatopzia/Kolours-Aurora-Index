@@ -3,12 +3,11 @@
 	<info>
 		<name>PHB24 Feats</name>
 		<description>Feats from PHB 24</description>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="phb24-feats.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-feats.xml" />
 		</update>
 	</info>
 	
-<elements>
 	<element name="Elemental Adept" type="Feat" source="PHB24" id="ID_PHB24_FEAT_ELEMENTAL_ADEPT">
 		<prerequisite>The ability to cast at least one spell; Level 4+</prerequisite>
 		<requirements>([type:spell], [level:4])</requirements>
