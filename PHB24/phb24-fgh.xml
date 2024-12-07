@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Fighter</name>
+		<name>PHB24 Fighter</name>
 		<description>Fighter</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="phb24-fgh.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-fgh.xml" />
 		</update>
 	</info>
 
-	<element name="PHB24 Fighter" type="Class" source="PHB24" id="ID_PHB24_CLASS_FIGHTER">
+	<element name="Fighter" type="Class" source="PHB24" id="ID_PHB24_CLASS_FIGHTER">
 		<description>
 			<p>A human in clanging plate armor holds her shield before her as she runs toward the massed goblins. An elf behind her, clad in studded leather armor, peppers the goblins with arrows loosed from his exquisite bow. The half-orc nearby shouts orders, helping the two combatants coordinate their assault to the best advantage.</p>
 			<p class="indent">A dwarf in chain mail interposes his shield between the ogre’s club and his companion, knocking the deadly blow aside. His companion, a half-elf in scale armor, swings two scimitars in a blinding whirl as she circles the ogre, looking for a blind spot in its defenses.</p>

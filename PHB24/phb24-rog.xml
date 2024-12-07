@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Rogue</name>
+		<name>PHB24 Rogue</name>
 		<description>Rogue</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog.xml" />
 		</update>
 	</info>
 	
-	<element name="PHB24 Rogue" type="Class" source="PHB24" id="ID_PHB24_CLASS_ROGUE">
+	<element name="Rogue" type="Class" source="PHB24" id="ID_PHB24_CLASS_ROGUE">
 		<description>
 			<p>Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.</p>
 			<p class="indent">A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target—a notorious slaver—passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin’s blade cuts his throat before he can make a sound.</p>

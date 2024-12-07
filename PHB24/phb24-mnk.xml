@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Monk</name>
+		<name>PHB24 Monk</name>
 		<description>Monk</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-mnk.xml" />
 		</update>
 	</info>
 	
-	<element name="PHB24 Monk" type="Class" source="PHB24" id="ID_PHB24_CLASS_MONK">
+	<element name="Monk" type="Class" source="PHB24" id="ID_PHB24_CLASS_MONK">
 		<description>
 			<p>Her fists a blur as they deflect an incoming hail of arrows, a half-elf springs over a barricade and throws herself into the massed ranks of hobgoblins on the other side. She whirls among them, knocking their blows aside and sending them reeling, until at last she stands alone.</p>
 			<p class="indent">Taking a deep breath, a human covered in tattoos settles into a battle stance. As the first charging orcs reach him, he exhales and a blast of fire roars from his mouth, engulfing his foes.</p>
