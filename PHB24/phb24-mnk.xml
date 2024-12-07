@@ -3,7 +3,7 @@
 	<info>
 		<name>PHB24 Monk</name>
 		<description>PHB24 Monk</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-mnk.xml" />
 		</update>
 	</info>
@@ -156,7 +156,7 @@
 				<li>Martial Melee Weapons that have the Light property</li>
 			</ul>
 			<p>You gain the following benefits while you are unarmed or wielding only Monk weapons and you aren't wearing armor or wielding a Shield.</p>
-			<p><strong>Bonus Unarmed Strike.</strong> You can make an Unarmed Strike as a Bonus Action.
+			<p><strong>Bonus Unarmed Strike.</strong> You can make an Unarmed Strike as a Bonus Action.</p>
 			<p><strong>Martial Arts Die.</strong> You can roll 1d6 in place of the normal damage of your Unarmed Strike or Monk weapons. This die changes as you gain Monk levels, as shown in the Martial Arts column of the Monk Features table.</p>
 			<p><strong>Dexterous Attacks.</strong> You can use your Dexterity modifier instead of your Strength modifier for the attack and damage rolls of your Unarmed Strikes and Monk weapons. In addition, when you use the Grapple or Shove option of your Unarmed Strike, you can use your Dexterity modifier instead of your Strength modifier to determine the save DC.</p>
 		</description>
@@ -260,7 +260,7 @@
 			<p>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</p>
 		</description>
 		<sheet usage="Ki">
-			<description>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.description>
+			<description>Once per turn when you hit a creature with a Monk weapon or an Unarmed Strike, you can expend 1 Focus Point to attempt a stunning strike. The target must make a Constitution saving throw. On a failed save, the target has the Stunned condition until the start of your next turn. On a successful save, the target's Speed is halved until the start of your next turn, and the next attack roll made against the target before then has Advantage.</description>
 		</sheet>
 	</element>
 	
@@ -287,7 +287,7 @@
 	<element name="Self-Restoration" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_MONK_SELF-RESTORATION">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STILLNESS_OF_MIND</requirements>
 		<description>
-			<p>Through sheer force of will, you can remove one of the following conditions from yourself at the end of each of your turns: Charmed, Frightened, or Poisoned.<p/>
+			<p>Through sheer force of will, you can remove one of the following conditions from yourself at the end of each of your turns: Charmed, Frightened, or Poisoned.</p>
 			<p>In addition, forgoing food and drink doesn't give you levels of Exhaustion.</p>
 		</description>
 		<sheet>
