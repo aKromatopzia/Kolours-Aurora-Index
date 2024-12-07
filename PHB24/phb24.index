@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>PHB24.index</name>
-		<update version="0.0.7">
+		<name>phb24.index</name>
+		<update version="0.0.8">
 			<file name="phb24.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24.index" />
 		</update>
 	</info>
