@@ -3,7 +3,7 @@
 	<info>
 		<name>PHB24 Rogue</name>
 		<description>PHB24 Rogue</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog.xml" />
 		</update>
 	</info>
@@ -150,7 +150,7 @@
 	
 	<element name="Cunning Strike" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE">
 		<description>
-			<p>You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.<p>
+			<p>You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.</p>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_POISON"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_TRIP"/>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_WITHDRAW"/>
