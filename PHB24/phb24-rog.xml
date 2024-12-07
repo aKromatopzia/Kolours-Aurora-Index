@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>PHB24 Rogue</name>
+		<description>PHB24 Rogue</description>
+		<update version="0.0.1">
+			<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog" />
+		</update>
+	</info>
+	
+	<element name="PHB24 Rogue" type="Class" source="PHB24" id="ID_PHB24_CLASS_ROGUE">
+		<description>
+			<p>Signaling for her companions to wait, a halfling creeps forward through the dungeon hall. She presses an ear to the door, then pulls out a set of tools and picks the lock in the blink of an eye. Then she disappears into the shadows as her fighter friend moves forward to kick the door open.</p>
+			<p class="indent">A human lurks in the shadows of an alley while his accomplice prepares for her part in the ambush. When their target—a notorious slaver—passes the alleyway, the accomplice cries out, the slaver comes to investigate, and the assassin’s blade cuts his throat before he can make a sound.</p>
+			<p class="indent">Suppressing a giggle, a gnome waggles her fingers and magically lifts the key ring from the guard’s belt. In a moment, the keys are in her hand, the cell door is open, and she and her companions are free to make their escape.</p>
+			<p class="indent">Rogues rely on skill, stealth, and their foes’ vulnerabilities to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.</p>
+			<h4>SKILL AND PRECISION</h4>
+			<p>Rogues devote as much effort to mastering the use of a variety of skills as they do to perfecting their combat abilities, giving them a broad expertise that few other characters can match. Many rogues focus on stealth and deception, while others refine the skills that help them in a dungeon environment, such as climbing, finding and disarming traps, and opening locks.</p>
+			<p class="indent">When it comes to combat, rogues prioritize cunning over brute strength. A rogue would rather make one precise strike, placing it exactly where the attack will hurt the target most, than wear an opponent down with a barrage of attacks. Rogues have an almost supernatural knack for avoiding danger, and a few learn magical tricks to supplement their other abilities.</p>
+			<h4>A SHADY LIVING</h4>
+			<p>Every town and city has its share of rogues. Most of them live up to the worst stereotypes of the class, making a living as burglars, assassins, cutpurses, and con artists. Often, these scoundrels are organized into thieves’ guilds or crime families. Plenty of rogues operate independently, but even they sometimes recruit apprentices to help them in their scams and heists. A few rogues make an honest living as locksmiths, investigators, or exterminators, which can be a dangerous job in a world where dire rats—and wererats—haunt the sewers.</p>
+			<p class="indent">As adventurers, rogues fall on both sides of the law. Some are hardened criminals who decide to seek their fortune in treasure hoards, while others take up a life of adventure to escape from the law. Some have learned and perfected their skills with the explicit purpose of infiltrating ancient ruins and hidden crypts in search of treasure.</p>
+			<h4>CREATING A ROGUE</h4>
+			<p>As you create your rogue character, consider the character’s relationship to the law. Do you have a criminal past—or present? Are you on the run from the law or from an angry thieves’ guild master? Or did you leave your guild in search of bigger risks and bigger rewards? Is it greed that drives you in your adventures, or some other desire or ideal?</p>
+			<p>What was the trigger that led you away from your previous life? Did a great con or heist gone terribly wrong cause you to reevaluate your career? Maybe you were lucky and a successful robbery gave you the coin you needed to escape the squalor of your life. Did wanderlust finally call you away from your home? Perhaps you suddenly found yourself cut off from your family or your mentor, and you had to find a new means of support. Or maybe you made a new friend—another member of your adventuring party—who showed you new possibilities for earning a living and employing your particular talents.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a rogue quickly by following these suggestions. First, Dexterity should be your highest ability score. Make Intelligence your next-highest if you want to excel at Investigation. Choose Charisma instead if you plan to emphasize deception and social interaction. Second, choose the criminal background.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a rogue, you have the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li><strong>Hit Dice:</strong> 1d8 per rogue level</li>
+				<li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+				<li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per rogue level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li><strong>Armor:</strong> Light armor</li>
+				<li><strong>Weapons:</strong> Simple weapons, hand crossbows, longswords, rapiers, shortswords</li>
+				<li><strong>Tools:</strong> Thieves’ tools</li>
+			</ul>
+			<ul class="unstyled">
+				<li><strong>Saving Throws:</strong> Dexterity, Intelligence</li>
+				<li><strong>Skills:</strong> Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a rapier or (b) a shortsword</li>
+				<li>(a) a shortbow and quiver of 20 arrows or (b) a shortsword</li>
+				<li>(a) a burglar’s pack, (b) a dungeoneer’s pack, or (c) an explorer’s pack</li>
+				<li>Leather armor, two daggers, and thieves’ tools</li>
+			</ul>
+			<h5 class="caption">THE ROGUE</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-5">Level</td><td class="col-10">Sneak Attack</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td> 1st</td><td>1d6</td><td class="left">Expertise, Sneak Attack, Thieves’ Cant, Weapon Maastery</td></tr>
+				<tr><td> 2nd</td><td>1d6</td><td class="left">Cunning Action</td></tr>
+				<tr><td> 3rd</td><td>2d6</td><td class="left">Roguish Archetype, Steady Aim</td></tr>
+				<tr><td> 4th</td><td>2d6</td><td class="left">Ability Score Improvement/Feat</td></tr>
+				<tr><td> 5th</td><td>3d6</td><td class="left">Uncanny Dodge, Cunning Strike</td></tr>
+				<tr><td> 6th</td><td>3d6</td><td class="left">Expertise</td></tr>
+				<tr><td> 7th</td><td>4d6</td><td class="left">Evasion, Reliable Talent</td></tr>
+				<tr><td> 8th</td><td>4d6</td><td class="left">Ability Score Improvement/Feat</td></tr>
+				<tr><td> 9th</td><td>Sd6</td><td class="left">Roguish Archetype feature</td></tr>
+				<tr><td>10th</td><td>Sd6</td><td class="left">Ability Score Improvement/Feat</td></tr>
+				<tr><td>11th</td><td>6d6</td><td class="left">Cunning Strike (2/Attack)</td></tr>
+				<tr><td>12th</td><td>6d6</td><td class="left">Ability Score Improvement/Feat</td></tr>
+				<tr><td>13th</td><td>7d6</td><td class="left">Roguish Archetype feature</td></tr>
+				<tr><td>14th</td><td>7d6</td><td class="left">Cunning Strike (More Options)</td></tr>
+				<tr><td>15th</td><td>8d6</td><td class="left">Slippery Mind</td></tr>
+				<tr><td>16th</td><td>8d6</td><td class="left">Ability Score Improvement/Feat</td></tr>
+				<tr><td>17th</td><td>9d6</td><td class="left">Roguish Archetype feature</td></tr>
+				<tr><td>18th</td><td>9d6</td><td class="left">Elusive</td></tr>
+				<tr><td>19th</td><td>10d6</td><td class="left">Epic Boon</td></tr>
+				<tr><td>20th</td><td>10d6</td><td class="left">Stroke of Luck</td></tr>
+			</table>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EXPERTISE"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION"/>
+			<div element="ID_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE"/>
+			<div element="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EVASION"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ELUSIVE"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK"/>
+		</description>
+		<sheet display="false">
+			<description>A scoundrel who uses stealth and trickery to overcome obstacles and enemies.</description>
+		</sheet>
+		<setters>
+			<set name="short">A scoundrel who uses stealth and trickery to overcome obstacles and enemies.</set>
+			<set name="hd">d8</set>
+		</setters>
+		<rules>
+		<!-- I dont wanna do this part -->
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<select type="Proficiency" name="Skill Proficiency (Rogue)" supports="Skill,Rogue" number="4" requirements="!ID_WOTC_PHB_MULTICLASS_ROGUE" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_EXPERTISE" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SNEAKATTACK" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION" level="2"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM" level="3"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ROGUISHARCHETYPE" level="3"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ABILITYSCOREIMPROVEMENT_ROGUE" level="4"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_UNCANNY_DODGE" level="5"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE" level="5"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_EVASION" level="7"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_RELIABLETALENT" level="7"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_SLIPPERYMIND" level="15"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_ELUSIVE" level="18"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_STROKEOFLUCK" level="20"/>
+		</rules>
+		<multiclass id="ID_WOTC_PHB_MULTICLASS_ROGUE">
+			<prerequisite>Dexterity 13</prerequisite>
+			<requirements>[dex:13]</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, one skill from the class’s skill list, thieves’ tools</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<select type="Proficiency" name="Skill Proficiency (Rogue)" supports="Skill,Rogue" number="1" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			</rules>
+		</multiclass>
+	</element>
+	
+	<element name="Steady Aim" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_STEADY_AIM">
+		<description>
+			<p>As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.</description>
+		</sheet>
+	</element>
+	
+	<element name="Cunning Strike" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE">
+		<description>
+			<p>You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.<p>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_POISON"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_TRIP"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_WITHDRAW"/>
+			<p>At 11th level, you can use two options in a single strike.</p>
+			<p>At 14th level, you learn more options.</p>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_DAZE"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_KNOCKOUT"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_OBSCURE"/>
+		</description>
+		<sheet>
+			<description>When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.</description>
+		</sheet>
+		<rules>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_POISON" level="5"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_TRIP" level="5"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_WITHDRAW" level="5"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_DAZE" level="14"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_KNOCKOUT" level="14"/>
+			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_OBSCURE" level="14"/>
+		</rules>
+	</element>
+	
+	<element name="Cunning Strike - Poison" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_POISON">
+		<description>
+			<p>You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success. To use this effect, you must have a Poisoner's Kit on your person.</p>
+		</description>
+		<sheet usage="1d6">
+			<description>You add a toxin to your strike, forcing the target to make a Constitution saving throw. On a failed save, the target has the Poisoned condition for 1 minute. At the end of each of its turns, the Poisoned target repeats the save, ending the effect on itself on a success. To use this effect, you must have a Poisoner's Kit on your person.</description>
+		</sheet>
+	</element>
+	<element name="Cunning Strike - Trip" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_TRIP">
+		<description>
+			<p>If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</p>
+		</description>
+		<sheet usage="1d6">
+			<description>If the target is Large or smaller, it must succeed on a Dexterity saving throw or have the Prone condition.</description>
+		</sheet>
+	</element>
+	<element name="Cunning Strike - Withdraw" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_WITHDRAW">
+		<description>
+			<p>Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</p>
+		</description>
+		<sheet usage="1d6">
+			<description>Immediately after the attack, you move up to half your Speed without provoking Opportunity Attacks.</description>
+		</sheet>
+	</element>
+	<element name="Cunning Strike - Daze" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_DAZE">
+		<description>
+			<p>The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</p>
+		</description>
+		<sheet usage="2d6">
+			<description>The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.</description>
+		</sheet>
+	</element>
+	<element name="Cunning Strike - Daze" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_DAZE">
+		<description>
+			<p>The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet usage="6d6">
+			<description>The target must succeed on a Constitution saving throw, or it has the Unconscious condition for 1 minute or until it takes any damage. The Unconscious target repeats the save at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Cunning Strike - Obscure" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_CUNNING_STRIKE_OBSCURE">
+		<description>
+			<p>The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn.</p>
+		</description>
+		<sheet usage="3d6">
+			<description>The target must succeed on a Dexterity saving throw, or it has the Blinded condition until the end of its next turn. </description>
+		</sheet>
+	</element>
+	
+		<element name="Evasion" type="Class Feature" source="PHB24" id="ID_PHB24_CLASS_FEATURE_ROGUE_EVASION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_EVASION</requirements>
+		<description>
+			<p>You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</description>
+		</sheet>
+	</element>
+	
+	<element name="PHB24 Arcane Trickster" type="Archetype" source="PHB24" id="ID_PHB24_ARCHETYPE_ROGUE_ARCANE_TRICKSTER">
+		<supports>Rogue Archetype</supports>
+		<description>
+			<p>An Artillerist specializes in using magic to hurl energy, projectiles, and explosions on a battlefield. This destructive power was valued by all the armies of the Last War. Now that the war is over, some members of this specialization have sought to build a more peaceful world by using their powers to fight the resurgence of strife in Khorvaire. The gnome artificer Vi, an unlikely yet key member of House Cannith’s warforged project, has been especially vocal about making things right: "It’s about time we fixed things instead of blowing them all to hell."</p>
+			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" />
+			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS" />
+			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON" />
+			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM" />
+			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" />
+			<div element="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_TOOL_PROFICIENCY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARTILLERIST_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM" level="5" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION" level="15" />
+		</rules>
+	</element>
+</elements>
