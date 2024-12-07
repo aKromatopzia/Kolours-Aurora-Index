@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>phb24.index</name>
-		<update version="0.0.8">
+		<update version="0.1.0">
 			<file name="phb24.index" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24.index" />
 		</update>
 	</info>
@@ -10,5 +10,6 @@
 		<file name="phb24-rog.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-rog.xml" />
 		<file name="phb24-mnk.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-mnk.xml" />
 		<file name="phb24-fgh.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-fgh.xml" />
+		<file name="phb24-feats.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-feats.xml" />
 	</files>
 </index>
