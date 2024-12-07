@@ -4,7 +4,7 @@
 		<name>PHB24 Fighter</name>
 		<description>PHB24 Fighter</description>
 		<update version="0.0.1">
-			<file name="phb24-fgh.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-fgh" />
+			<file name="phb24-fgh.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/refs/heads/main/PHB24/phb24-fgh" />
 		</update>
 	</info>
 
