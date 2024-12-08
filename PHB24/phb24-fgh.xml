@@ -3,7 +3,7 @@
 	<info>
 		<name>PHB24 Fighter</name>
 		<description>Fighter</description>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="phb24-fgh.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-fgh.xml" />
 		</update>
 	</info>
@@ -78,11 +78,14 @@
 			</table>
 			<div element="ID_PHB24_CLASS_FEATURE_FIGHTINGSTYLE" />
 			<div element="ID_PHB24_CLASS_FEATURE_SECONDWIND" />
+			<div element="ID_PHB24_CLASS_FEATURE_TACTICAL_MIND" />
 			<div element="ID_PHB24_CLASS_FEATURE_ACTIONSURGE" />
 			<div element="ID_PHB24_CLASS_FEATURE_MARTIALARCHETYPE" />
 			<div element="ID_PHB24_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_FIGHTER" />
 			<div element="ID_PHB24_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_PHB24_CLASS_FEATURE_TACTICAL_SHIFT" />
 			<div element="ID_PHB24_CLASS_FEATURE_INDOMITABLE" />
+
 		</description>
 		<sheet display="false">
 			<description>A master of martial combat, skilled with a variety of weapons and armor.</description>
@@ -114,7 +117,7 @@
 			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_TACTICAL_MASTERY" level="9"/>
 			<grant type="Class Feature" id="ID_PHB24_CLASS_FEATURE_STUDIED_ATTACKS" level="13"/>
 		</rules>
-		<multiclass id="ID_WOTC_PHB_MULTICLASS_FIGHTER">
+		<multiclass id="ID_PHB24_MULTICLASS_FIGHTER">
 			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
 			<requirements>([str:13]||[dex:13])</requirements>
 			<setters>
