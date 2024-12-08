@@ -3,7 +3,7 @@
 	<info>
 		<name>5.5 Background Selection</name>
 		<description>5.5 Background Selection</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="background-sellsword.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/Sellswords-Features/background-sellsword.xml" />
 		</update>
 	</info>
@@ -26,13 +26,14 @@
 		<rules>
 			<select type="Proficiency" name="Skill Proficiency (5.5 Background)" number="2" supports="Skill" />
 			<select type="Proficiency" name="Tool Proficiency (5.5 Background)" supports="Tool" />
-			<select type="Background Feature" name="Origin Feat" supports="Origin Feat" />
+			<select type="Feat" name="Origin Feat" supports="Origin Feat" />
 		</rules>
 	</element>
 
-	<element name="Alert" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_ALERT">
+	<element name="Alert" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_ALERT">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You gain the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Initiative Proficiency:</strong> When you roll Initiative, you can add your Proficiency Bonus to the roll.</li>
@@ -48,9 +49,10 @@
 		</rules>
 	</element>
 	
-	<element name="Crafter" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_CRAFTER">
+	<element name="Crafter" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_CRAFTER">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You have an arsenal of profession knowledge that you can utilize for on-the-fly improvisation. You gain the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Tool Proficiency:</strong> You gain proficiency with three different Artisan’s Tools of your choice from the Fast Crafting table.</li>
@@ -79,9 +81,10 @@
 		</rules>
 	</element>
 	
-	<element name="Healer" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_HEALER">
+	<element name="Healer" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_HEALER">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You are an able physician, allowing you to mend wounds quickly and get your allies back in the fight. You gain the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Battle Medic:</strong> If you have a Healer’s Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.</li>
@@ -93,9 +96,10 @@
 		</sheet>
 	</element>
 	
-	<element name="Lucky" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_LUCKY">
+	<element name="Lucky" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_LUCKY">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You have inexplicable luck that seems to kick in at just the right moment:</p>
 			<ul class="unstyled">
 			<li><strong>Luck Points:</strong> You have a number of Luck points equal to your proficiency bonus.</li>
@@ -139,9 +143,10 @@
 		</sheet>
 	</element>
 	
-	<element name="Magic Initiate: Cleric" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_CLERIC">
+	<element name="Magic Initiate: Cleric" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_CLERIC">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You've dabbled a little in the arts of divine magic, gaining the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Two Cantrips:</strong> You learn two cantrips of your choice from the Cleric spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (chosen from the feat tab when you select this feat).</li>
@@ -159,9 +164,10 @@
 		</rules>
 	</element>
 	
-	<element name="Magic Initiate: Wizard" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_WIZARD">
+	<element name="Magic Initiate: Wizard" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_WIZARD">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You've dabbled a little in the arts of divine magic, gaining the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Two Cantrips:</strong> You learn two cantrips of your choice from the Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (chosen from the feat tab when you select this feat).</li>
@@ -179,9 +185,10 @@
 		</rules>
 	</element>
 	
-	<element name="Magic Initiate: Druid" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_DRUID">
+	<element name="Magic Initiate: Druid" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MAGIC_INITIATE_DRUID">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You've dabbled a little in the arts of divine magic, gaining the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Two Cantrips:</strong> You learn two cantrips of your choice from the Druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat’s spells (chosen from the feat tab when you select this feat).</li>
@@ -199,9 +206,10 @@
 		</rules>
 	</element>
 	
-	<element name="Musician" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MUSICIAN">
+	<element name="Musician" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MUSICIAN">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You are a practiced musician, granting you the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Instrument Training:</strong> You gain proficiency with three Musical Instruments of your choice.</li>
@@ -216,9 +224,10 @@
 		</rules>
 	</element>
 	
-	<element name="Savage Attacker" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SAVAGE_ATTACKER">
+	<element name="Savage Attacker" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SAVAGE_ATTACKER">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You’ve trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon’s damage dice twice and use either roll against the target.</p>
 		</description>
 		<sheet>
@@ -226,9 +235,10 @@
 		</sheet>
 	</element>
 	
-	<element name="Skilled" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SKILLED">
+	<element name="Skilled" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_SKILLED">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>You gain proficiency in any combination of three skills or tools of your choice.</p>
 		</description>
 		<sheet>
@@ -239,9 +249,10 @@
 		</rules>
 	</element>
 
-	<element name="Tavern Brawler" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_TAVERN_BRAWLER">
+	<element name="Tavern Brawler" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_TAVERN_BRAWLER">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>Accustomed to the rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:</p>
 			<ul class="unstyled">
 			<li><strong>Enhanced Unarmed Strike:</strong> When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.</li>
@@ -255,9 +266,10 @@
 		</sheet>
 	</element>
 	
-	<element name="Tough" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_TOUGH">
+	<element name="Tough" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_TOUGH">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>Your hit points maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.</p>
 		</description>
 		<sheet>
@@ -269,9 +281,10 @@
 			<stat name="hp" value="tough:hp" />
 		</rules>
 	</element>
-	<element name="Multilingual" type="Background Feature" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MULTILINGUAL">
+	<element name="Multilingual" type="Feat" source="Sellswords Origin Port" id="ID_SELLSWORDS_ORIGIN_FEATURE_MULTILINGUAL">
 		<supports>Origin Feat</supports>
 		<description>
+			<p><i>Origin Feat</i></p>
 			<p>Perhaps you are far-travelled or simply decided to devote a span of your life to reading Zakharan literature, but you have trained to have fluent understanding of multiple languages, and are capable of quickly picking up on basic phrases.</p>
 			<p>You are proficient in two additional common or regional languages.</p>
 			<p>You can communicate with humanoids who don't speak any language you know. You must observe the humanoids interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures - enough to communicate on a rudimentary level.</p>

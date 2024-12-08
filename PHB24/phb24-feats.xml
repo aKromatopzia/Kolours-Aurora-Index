@@ -3,7 +3,7 @@
 	<info>
 		<name>PHB24 Feats</name>
 		<description>Feats from PHB 24</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="phb24-feats.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/PHB24/phb24-feats.xml" />
 		</update>
 	</info>
@@ -43,16 +43,74 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase, War Caster" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
 		</rules>
 	</element>
-	<element name="Alert" type="Feat" source="PHB24" id="ID_PHB24_FEAT_ALERT">
+	<element name="Mage Slayer" type="Feat" source="PHB24" id="ID_PHB24_FEAT_MAGE_SLAYER">
+		<prerequisite>Level 4+</prerequisite>
+		<requirements>[level:4])</requirements>
 		<description>
-			<p><i>Origin Feat</i></p>
-			<p class="indent"><strong>Initiative Proficiency.</strong>When you roll Initiative, you can add your Proficiency Bonus to the roll.</p>
-			<p class="indent"><strong>Initiative Swap.</strong>Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</p>
+			<p><i>Prerequisite: Level 4+</i></p>]
+			<p>You gain the following benefits:</p>
+			<p class="indent"><strong>ASI.</strong> Increase your Strength or Dexterity by 1, to a maximum of 20.</p>
+			<p class="indent"><strong>Concentration Breaker.</strong> When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</p>
+			<p class="indent"><strong>Guarded Mind.</strong> If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
 		</description>
 		<sheet>
-			<description>When you roll Initiative, you can add your Proficiency Bonus to the roll.
-			Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the Incapacitated condition.</description>
+			<description>You gain the following benefits:</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase, Mage Slayer" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_DEXTERITY" />
+			<grant type="Archetype Feature" id="ID_PHB24_FEAT_MAGE_SLAYER_GM" />
+			<grant type="Archetype Feature" id="ID_PHB24_FEAT_MAGE_SLAYER_CB" />
+		</rules>
+	</element>
+	<element name="Concentration Breaker" type="Feat" source="PHB24" id="ID_PHB24_FEAT_MAGE_SLAYER_CB">
+		<description>
+			<p>You gain the following benefits:</p>
+			<p class="indent"><strong>Concentration Breaker.</strong> When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</p>
+		</description>
+		<sheet>
+			<description>When you damage a creature that is Concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.</description>
 		</sheet>
 	</element>
-	
+	<element name="Guarded Mind" type="Feat" source="PHB24" id="ID_PHB24_FEAT_MAGE_SLAYER_GM">
+		<description>
+			<p class="indent"><strong>Guarded Mind.</strong> If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</p>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="Observant" type="Feat" source="PHB24" id="ID_PHB24_FEAT_OBSERVANT">
+		<prerequisite>Level 4+</prerequisite>
+		<requirements>[level:4])</requirements>
+		<description>
+			<p><i>Prerequisite: Level 4+</i></p>]
+			<p><strong>ASI.</strong>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</p>
+			<p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p>
+			<p class="indent"><strong>Keen Observer.</strong> Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise.</p>
+			<p class="indent"><strong>Quick Search.</strong> You can take the Search action as a Bonus Action.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can take the Search action as a Bonus Action.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase, Observant" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" />
+		</rules>
+	</element>
+	<!-- <element name="Skulker" type="Feat" source="PHB24" id="ID_PHB24_FEAT_SKULKER"> -->
+		<!-- <prerequisite>Level 4+</prerequisite> -->
+		<!-- <requirements>[level:4])</requirements> -->
+		<!-- <description> -->
+			<!-- <p><i>Prerequisite: Level 4+</i></p>] -->
+			<!-- <p><strong>ASI.</strong>Increase your Intelligence or Wisdom by 1, to a maximum of 20.</p> -->
+			<!-- <p>When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.</p> -->
+			<!-- <p class="indent"><strong>Keen Observer.</strong> Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise.</p> -->
+			<!-- <p class="indent"><strong>Quick Search.</strong> You can take the Search action as a Bonus Action.</p> -->
+		<!-- </description> -->
+		<!-- <sheet action="Bonus Action"> -->
+			<!-- <description>You can take the Search action as a Bonus Action.</description> -->
+		<!-- </sheet> -->
+		<!-- <rules> -->
+			<!-- <select type="Ability Score Improvement" name="Ability Score Increase, Observant" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM" /> -->
+		<!-- </rules> -->
+	<!-- </element> -->
 </elements>
