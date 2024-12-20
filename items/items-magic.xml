@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Magic Items</name>
 		<description>Created for Sellswords Basin</description>
-		<update version="0.0.25">
+		<update version="0.0.26">
 			<file name="items-magic.xml" url="https://raw.githubusercontent.com/aKromatopzia/Kolours-Aurora-Index/main/items/items-magic.xml" />
 		</update>
 	</info>
@@ -665,6 +665,31 @@
 		<rules>
 			<stat name="spellcasting:dc" value="2" bonus="vayemniri enforcer's gonne"/>
 		</rules>
+	</element>
+	
+	<!--Lunar Blessing-->
+	<element name="Lunar Blessing" type="Magic Item" source="Sellsword's Stuff: Custom Magic Items" id="ID_SELLSWORDS_MAGIC_ITEMS_LUNAR_BLESSING">
+		<description>
+			<p>This ring has been crafted with twines of a hardened mystic branch. It's embellished with a glittery stone insignia representing the full moon. It protects the wearer with an intensity proportional to the moonlight.</p>
+			<p>If the user is exposed to the moon, all incoming damage is reduced depending on its current phase. In the event of a lunar eclipse, damage will be reduced with respect to the moon's exposure.</p>
+			<ul>New Moon: No reduction</ul>
+			<ul>Crescent Moon: 1 hitpoints of damage</ul>
+			<ul>Half Moon: 2 hitpoints of damage</ul>
+			<ul>Gibbous Moon: 3 hitpoints of damage</ul>
+			<ul>Full Moon: 4 hitpoints of damage</ul>
+			
+			<p>
+				In the event of a solar eclipse, all rolls will gain an additional +1 boost regardless of totality.
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">moon, blessing, lunar, reduction</set>
+			<set name="category">Wondrous Items</set>
+			<set name="attunement">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+			<set name="slot">ring</set>
+		</setters>
 	</element>
 	
 </elements>
